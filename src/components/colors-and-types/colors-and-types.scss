@@ -7,6 +7,16 @@ $firstButtonColor: #BC9CFF;
 $secondButtonColor: #6FCF97;
 
 @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url("components/colors-and-types/fonts/MaterialIcons-Regular.woff") format('woff'),
+    url("components/colors-and-types/fonts/MaterialIcons-Regular.ttf") format('truetype'),
+    url("components/colors-and-types/fonts/MaterialIcons-Regular.svg") format('svg');
+}
+@font-face {
   font-family: "Quicksand";
   src: url("components/colors-and-types/fonts/quicksand-bold.woff") format("woff"),
        url("components/colors-and-types/fonts/quicksand-bold.ttf") format("truetype"),
@@ -70,3 +80,27 @@ $secondButtonColor: #6FCF97;
   color: $textLabelColor;
 }
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
