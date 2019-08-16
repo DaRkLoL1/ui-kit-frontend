@@ -1,10 +1,10 @@
-$titleColor: #1F2041;
-$textLabelColor: rgba(31, 32, 65, 0.75);
-$textColor: rgba(31, 32, 65, 0.5);
-$placeholderColor: rgba(31, 32, 65, 0.25);
-$shadowColor: rgba(31, 32, 65, 0.05);
-$firstButtonColor: #BC9CFF;
-$secondButtonColor: #6FCF97;
+$title-color: #1F2041;
+$text-label-color: rgba(31, 32, 65, 0.75);
+$text-color: rgba(31, 32, 65, 0.5);
+$placeholder-color: rgba(31, 32, 65, 0.25);
+$shadow-color: rgba(31, 32, 65, 0.05);
+$first-button-color: #BC9CFF;
+$second-button-color: #6FCF97;
 
 @font-face {
   font-family: 'Material Icons';
@@ -16,6 +16,7 @@ $secondButtonColor: #6FCF97;
     url("components/colors-and-types/fonts/MaterialIcons-Regular.ttf") format('truetype'),
     url("components/colors-and-types/fonts/MaterialIcons-Regular.svg") format('svg');
 }
+
 @font-face {
   font-family: "Quicksand";
   src: url("components/colors-and-types/fonts/quicksand-bold.woff") format("woff"),
@@ -49,7 +50,7 @@ $secondButtonColor: #6FCF97;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: $titleColor;
+  color: $title-color;
 }
 
 .item-title {
@@ -58,7 +59,7 @@ $secondButtonColor: #6FCF97;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  color: $titleColor;
+  color: $title-color;
 }
 
 .label-or-cta-text {
@@ -68,7 +69,7 @@ $secondButtonColor: #6FCF97;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: $titleColor;
+  color: $title-color;
 }
 
 .body-text {
@@ -77,7 +78,7 @@ $secondButtonColor: #6FCF97;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: $textLabelColor;
+  color: $text-label-color;
 }
 
 .material-icons {

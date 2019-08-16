@@ -3,18 +3,18 @@
   width: 320px;
   padding-left: 14px;
   background: #FFFFFF;
-  border: 1px solid $placeholderColor;
+  border: 1px solid $placeholder-color;
   box-sizing: border-box;
   border-radius: 4px;
-  color: $placeholderColor;
+  color: $placeholder-color;
 
   &:focus, &:hover {
-    border-color: $textColor;
-    color: $textLabelColor;
+    border-color: $text-color;
+    color: $text-label-color;
     outline-style: none;
   }
 
   &::placeholder {
-    color: $placeholderColor;
+    color: $placeholder-color;
   }
 }

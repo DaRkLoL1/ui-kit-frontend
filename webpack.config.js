@@ -41,7 +41,7 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         exclude: [/fonts/],
         use: [
-          'file-loader?name=[name].[ext]'
+          'file-loader?name=./images/[name].[ext]'
         ]
       },
       {

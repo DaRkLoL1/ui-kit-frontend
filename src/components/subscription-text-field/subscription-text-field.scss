@@ -1,25 +1,24 @@
 .subscription-text-field {
-
   display: flex;
   height: 44px;
   width: 267px;
-  background-image:linear-gradient(180deg, $firstButtonColor 0%, #8BA4F9 100%) ;
+  background-image:linear-gradient(180deg, $first-button-color 0%, #8BA4F9 100%) ;
   background-clip: content-box;
   border-radius: 4px;
-  border: 1px solid $placeholderColor;
+  border: 1px solid $placeholder-color;
   box-sizing: border-box;
   overflow: hidden;
 
   &_focused {
-    border-color: $textColor;
+    border-color: $text-color;
   }
 
   &:hover {
-    border-color: $textColor;
+    border-color: $text-color;
   }
   
   &:hover &__input{
-    color: $textLabelColor;
+    color: $text-label-color;
   }
 
   &__input {
@@ -29,17 +28,16 @@
     padding: 0;
     padding-left: 14px;
     box-sizing: border-box;
-    color: $placeholderColor;
+    color: $placeholder-color;
     background: #FFFFFF;
 
     &:focus{
-      color: $textLabelColor;
+      color: $text-label-color;
     }
 
     &::placeholder {
-      color: $placeholderColor;
+      color: $placeholder-color;
     }
-
   }
 
   &__icon {
@@ -51,5 +49,4 @@
     mix-blend-mode: screen;
     cursor: pointer;
   }
-
 }
