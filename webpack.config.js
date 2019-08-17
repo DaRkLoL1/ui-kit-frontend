@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+  devtool: 'sourse-map',
 
   entry: {
     index: './src/index.js'
@@ -16,14 +17,6 @@ module.exports = {
   },
   module: {
     rules: [
-     {
-      test: /\.css$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        'css-loader',
-        'style-loader'
-        ]
-      },
       {
         test: /\.pug$/,
         loader: 'pug-loader'
@@ -31,10 +24,24 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          {
+            loader: 'style-loader',
+          
+          },
           MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+           'resolve-url-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          }
         ]
       },
       {
@@ -45,7 +52,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff|woff2|ttf|svg)$/,
+        test: /\.(woff|woff2|ttf|svg|eot|ijmap.txt)$/,
         use: [
           'file-loader?name=./fonts/[name].[ext]'
         ]
@@ -67,7 +74,7 @@ module.exports = {
       jQuery: "jquery"
   }),
   ],
-  devtool: 'inline-source-map',
+  
   devServer: {
         contentBase: './dist'
   },
