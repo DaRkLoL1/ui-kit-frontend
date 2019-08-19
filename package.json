@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
     "lodash": "^4.17.15",
     "material-icons": "^0.3.1"
   }

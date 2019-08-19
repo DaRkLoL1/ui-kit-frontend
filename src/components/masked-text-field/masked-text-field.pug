@@ -1,5 +1,10 @@
 mixin masked-text-field
-  input(class="masked-text-field body-text" placeholder="ДД.ММ.ГГГГ") 
+  - 
+    let obj = {
+      text: "ДД.ММ.ГГГГ",
+      isMasked: true
+    }
+  +text-field(obj)
   
  
    

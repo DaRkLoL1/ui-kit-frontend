@@ -1,8 +1,17 @@
 doctype html
 html
   head
+    meta(charset="utf-8")
+    title ui-kit
+    meta(name="keywords" content="")
+    mata(name="discription" content="")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
   body
-    i(class="material-icons") face
+    include components/text-field/text-field.pug
+    include components/masked-text-field/masked-text-field.pug
+    .w-320px
+      +text-field({text:"Email"})
+      +masked-text-field
 
     
     

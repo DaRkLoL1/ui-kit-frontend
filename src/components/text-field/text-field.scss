@@ -1,7 +1,8 @@
-@import "../colors-and-types/colors-and-types.scss";
+@import '../colors-and-types/colors-and-types.scss';
+
 .text-field {
   height: 44px;
-  width: 320px;
+  width: 100%;
   padding-left: 14px;
   background: #FFFFFF;
   border: 1px solid $placeholder-color;
@@ -10,8 +11,8 @@
   color: $placeholder-color;
 
   &:focus, &:hover {
-    border-color: $text-color;
-    color: $text-label-color;
+    border-color: $paragraph-color;
+    color: $label-color;
     outline-style: none;
   }
 

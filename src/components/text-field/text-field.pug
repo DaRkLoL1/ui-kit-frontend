@@ -1,2 +1,6 @@
-mixin text-field(text)
-  input(class="text-field body-text" placeholder=text)
+mixin text-field(options)
+  - 
+    var className = "text-field text";
+    className +=  options.isMasked ? " js-mask" : "";
+
+  input(class=className placeholder=options.text)
