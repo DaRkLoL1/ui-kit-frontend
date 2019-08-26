@@ -1,4 +1,11 @@
+include ../text-field/text-field.pug
 mixin subscription-text-field(text)
-  .subscription-text-field  
-    input(placeholder=text class="body-text subscription-text-field__input")
+  - 
+    let obj = {
+      text: text,
+      color: false,
+      borderOff: true
+    }
+  div(class="subscription-text-field text-field")
+    +text-field(obj)
     i(class="material-icons subscription-text-field__icon") arrow_forward

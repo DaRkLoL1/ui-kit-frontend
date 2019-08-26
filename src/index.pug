@@ -4,15 +4,19 @@ html
     meta(charset="utf-8")
     title ui-kit
     meta(name="keywords" content="")
-    mata(name="discription" content="")
+    meta(name="discription" content="")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
   body
     include components/text-field/text-field.pug
     include components/masked-text-field/masked-text-field.pug
+    include components/field-button/field-button.pug
+    
     .w-320px
-      +text-field({text:"Email"})
+      +text-field({text: "Email"})
       +masked-text-field
-
+      +field-button({text: "Email", theme: "gradient"})
+      +field-button({text: "ДД.ММ.ГГГГ"})
+      +field-button({text: "Сколько гостей", opacity: "high"})
     
     
     

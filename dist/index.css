@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url(./fonts/quicksand-bold.woff) format("woff"), url(./fonts/quicksand-bold.ttf) format("truetype"), url(./fonts/quicksand-bold.svg) format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/montserrat-bold.woff) format("woff"), url(./fonts/montserrat-bold.ttf) format("truetype"), url(./fonts/montserrat-bold.svg) format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/montserrat-regular.woff) format("woff"), url(./fonts/montserrat-regular.ttf) format("truetype"), url(./fonts/montserrat-regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  color: rgba(31, 32, 65, 0.5); }
+
+.widjet-title {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: #1F2041; }
+
+.item-title {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1875rem;
+  line-height: 1.26;
+  color: #1F2041; }
+
+.label-text {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #1F2041; }
+
+.text {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.71;
+  color: rgba(31, 32, 65, 0.75); }
+
+.text-field {
+  height: 44px;
+  width: 100%;
+  padding: 0;
+  padding-left: 14px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25); }
+  .text-field:focus, .text-field:hover {
+    border-color: rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 0.75);
+    outline-style: none; }
+  .text-field::placeholder {
+    color: rgba(31, 32, 65, 0.25); }
+  .text-field_opacity_h {
+    color: rgba(31, 32, 65, 0.75); }
+    .text-field_opacity_h::placeholder {
+      color: rgba(31, 32, 65, 0.75); }
+  .text-field_border_off {
+    height: auto;
+    border: none;
+    border-radius: 0; }
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(./fonts/MaterialIcons-Regular.woff2) format("woff2"), url(./fonts/MaterialIcons-Regular.woff) format("woff"), url(./fonts/MaterialIcons-Regular.ttf) format("truetype"); }
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url(./fonts/quicksand-bold.woff) format("woff"), url(./fonts/quicksand-bold.ttf) format("truetype"), url(./fonts/quicksand-bold.svg) format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/montserrat-bold.woff) format("woff"), url(./fonts/montserrat-bold.ttf) format("truetype"), url(./fonts/montserrat-bold.svg) format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/montserrat-regular.woff) format("woff"), url(./fonts/montserrat-regular.ttf) format("truetype"), url(./fonts/montserrat-regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  color: rgba(31, 32, 65, 0.5); }
+
+.widjet-title {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: #1F2041; }
+
+.item-title {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1875rem;
+  line-height: 1.26;
+  color: #1F2041; }
+
+.label-text {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #1F2041; }
+
+.text {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.71;
+  color: rgba(31, 32, 65, 0.75); }
+
+.text-field {
+  height: 44px;
+  width: 100%;
+  padding: 0;
+  padding-left: 14px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25); }
+  .text-field:focus, .text-field:hover {
+    border-color: rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 0.75);
+    outline-style: none; }
+  .text-field::placeholder {
+    color: rgba(31, 32, 65, 0.25); }
+  .text-field_opacity_h {
+    color: rgba(31, 32, 65, 0.75); }
+    .text-field_opacity_h::placeholder {
+      color: rgba(31, 32, 65, 0.75); }
+  .text-field_border_off {
+    height: auto;
+    border: none;
+    border-radius: 0; }
+
+.field-button {
+  display: flex;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(31, 32, 65, 0.25); }
+  .field-button:hover, .field-button_isFocused {
+    border-color: rgba(31, 32, 65, 0.5); }
+  .field-button_bg_gradient {
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: content-box; }
+  .field-button__icon {
+    min-width: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 42px;
+    background: #fff;
+    cursor: pointer;
+    color: rgba(31, 32, 65, 0.5); }
+    .field-button__icon_opacity_h, .field-button__icon_hovered, .field-button__icon_isFocused {
+      color: rgba(31, 32, 65, 0.75); }
+    .field-button__icon_color_gradient {
+      color: #000000;
+      mix-blend-mode: screen; }
+
+.w-320px {
+  width: 300px;
+  margin-top: 100px; }
+

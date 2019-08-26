@@ -1,0 +1,21 @@
+include ../text-field/text-field.pug
+mixin field-button(options)
+  - 
+    let obj = {
+      text: options.text,
+      borderOff: true
+    };
+    let icon = 'keyboard_arrow_down';
+    let className = options.opacity ? ' field-button__icon_opacity_h' : '';
+    let parentClass = '';
+    if(options.theme === 'gradient') {
+      icon = 'arrow_forward';
+      className += ' field-button__icon_color_gradient';
+      parentClass += ' field-button_bg_gradient';
+    } else {
+      obj.opacity = 'high';
+    }
+    
+  div(class="field-button js-field-button" + parentClass)
+    +text-field(obj)
+    i(class="material-icons field-button__icon js-field-button__icon" + className)= icon

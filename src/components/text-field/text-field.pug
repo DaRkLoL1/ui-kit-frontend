@@ -1,6 +1,8 @@
 mixin text-field(options)
   - 
-    var className = "text-field text";
-    className +=  options.isMasked ? " js-mask" : "";
+    var className = 'text-field text'
+    className += options.isMasked ? ' js-mask' : ''
+    className += options.opacity ? ' text-field_opacity_h' : ''
+    className += options.borderOff ? ' text-field_border_off js-text-field' : ''
 
   input(class=className placeholder=options.text)

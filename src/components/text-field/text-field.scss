@@ -3,6 +3,7 @@
 .text-field {
   height: 44px;
   width: 100%;
+  padding: 0;
   padding-left: 14px;
   background: #FFFFFF;
   border: 1px solid $placeholder-color;
@@ -18,5 +19,19 @@
 
   &::placeholder {
     color: $placeholder-color;
+  }
+
+  &_opacity_h {
+    color: $label-color;
+
+    &::placeholder {
+      color: $label-color;
+    }
+  }
+
+  &_border_off {
+    height: auto;
+    border: none;
+    border-radius: 0;
   }
 }
