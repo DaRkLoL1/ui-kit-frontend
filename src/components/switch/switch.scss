@@ -1,0 +1,124 @@
+@import '../colors-and-types/colors-and-types.scss';
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+
+  &_checkbox {
+    padding-left: 30px;
+    line-height: 1.125rem;
+    color: $paragraph-color;
+
+    &_weight_b {
+      font-weight: bold;
+      color: $label-color;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: -1px;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      border: 1px solid $placeholder-color;
+      border-radius: 4px;
+    }
+
+    &_checked::before {
+      border-color: $first-button-color;
+      background-image: url('./vector-checkbox.png');
+      background-repeat: no-repeat;
+      background-position: 50% 40%;
+    }
+
+  }
+
+  &_radio {
+    padding-left: 30px;
+    color: $paragraph-color;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 1px;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      border: 1px solid $placeholder-color;
+      border-radius: 10px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 6px;
+      left: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+
+    &_checked {
+      color: $label-color;
+
+      &::before {
+        border-color: $first-button-color;
+      }
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &_toggle {
+    padding-left: 50px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 40px;
+      height: 20px;
+      border: 1px solid $placeholder-color;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 10px;
+      background-color: $placeholder-color;
+      transition: left 0.3s linear;
+    }
+
+    &_checked {
+
+      &::before {
+        border-color: $first-button-color;
+      }
+
+      &::after {
+        left: 24px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      }
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+}

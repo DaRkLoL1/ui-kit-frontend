@@ -17,8 +17,8 @@ $second-button-color: #6FCF97;
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/montserrat-bold.woff') format("woff"),
-       url('../fonts/montserrat-bold.ttf') format('truetype'),
+  src: url('../fonts/montserrat-bold.ttf') format('truetype'),
+       url('../fonts/montserrat-bold.woff') format("woff"),
        url('../fonts/montserrat-bold.svg') format('svg');
   font-weight: bold;
   font-style: normal;
@@ -39,6 +39,7 @@ html {
   background-color: #FFFFFF;
   color: $paragraph-color;
 }
+
 .widjet-title {
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-style: normal;

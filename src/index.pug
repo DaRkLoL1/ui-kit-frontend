@@ -10,15 +10,18 @@ html
     include components/text-field/text-field.pug
     include components/masked-text-field/masked-text-field.pug
     include components/field-button/field-button.pug
-    
+    include components/switch/switch.pug
     .w-320px
-      +text-field({text: "Email"})
+      p(class='item-title') Войти 123
+      +text-field({text: 'Email'})
       +masked-text-field
-      +field-button({text: "Email", theme: "gradient"})
-      +field-button({text: "ДД.ММ.ГГГГ"})
-      +field-button({text: "Сколько гостей", opacity: "high"})
-    
-    
+      +field-button({text: 'Email', theme: 'gradient'})
+      +field-button({text: 'ДД.ММ.ГГГГ'})
+      +field-button({text: 'Сколько гостей', opacity: 'high'})
+      +switch({type: 'checkbox', text: 'Можно курить'})
+      +switch({type: 'checkbox', text: 'Широкий коридор', weight: 'b'})
+      +switch({type: 'toggle', text: 'Получать спецпредложения'})
+      include components/radio-buttons/radio-buttons.pug
     
     
 
