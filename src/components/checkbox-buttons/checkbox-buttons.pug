@@ -1,7 +1,8 @@
+include ../switch/switch.pug
+
 .checkbox-buttons
-  
   - let arr = ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'];
-  h3.label-or-cta-text(class="checkbox-buttons__title") checkbox buttons
-  each val, i in arr
-    input(class="checkbox-buttons__input" id="check" + i type="checkbox")
-    label(class="checkbox-buttons__label body-text" for="check" + i)= val
+  h3(class='label-text checkbox-buttons__title') checkbox-buttons
+  each val in arr
+    .checkbox-buttons__item
+      +switch({type: 'checkbox', text: val})
