@@ -6,7 +6,16 @@
 @import 'components/radio-buttons/radio-buttons.scss';
 @import 'components/checkbox-buttons/checkbox-buttons.scss';
 @import 'components/expandable-checkbox-list/expandable-checkbox-list.scss';
+@import 'components/rich-checkbox-buttons/rich-checkbox-buttons.scss';
+@import 'components/like-button/like-button.scss';
+.flex {
+  display: flex;
+}
 .w-320px {
   width: 300px;
   margin-top: 100px;
+}
+.w-266px {
+  width: 266px;
+  margin-left: 20px;
 }

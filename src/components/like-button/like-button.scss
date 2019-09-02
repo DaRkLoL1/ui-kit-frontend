@@ -1,0 +1,37 @@
+.like-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 40px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid $placeholder-color;
+  border-radius: 10px;
+  overflow: hidden;
+  color: $placeholder-color;
+  cursor: pointer;
+
+  &_click {
+    border-color: $first-button-color;
+    color: $first-button-color;
+  }
+
+  &__icon {
+    width: 20px;
+    font-size: 10px;
+    line-height: 9px;
+    text-align: center; 
+  }
+
+  &__number {
+    margin-left: 2px;
+    font-size: 0.625rem;
+    line-height: 1.2;
+    color: inherit;
+
+    &_margin_null {
+      margin-left: 0px;
+    }
+  }
+
+}

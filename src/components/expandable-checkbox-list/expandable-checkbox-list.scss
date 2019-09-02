@@ -22,8 +22,11 @@
 
   &__items {
     position: absolute;
-    top: 33px;
+    top: 32px;
     display: none;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 1;
 
     &_display_on {
       display: block;

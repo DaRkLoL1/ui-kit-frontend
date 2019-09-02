@@ -12,20 +12,21 @@ html
     include components/field-button/field-button.pug
     include components/switch/switch.pug
     include components/expandable-checkbox-list/expandable-checkbox-list.pug
-    .w-320px
-      p(class='item-title') Войти 123
-      +text-field({text: 'Email'})
-      +masked-text-field
-      +field-button({text: 'Email', theme: 'gradient'})
-      +field-button({text: 'ДД.ММ.ГГГГ'})
-      +field-button({text: 'Сколько гостей', opacity: 'high'})
-      +switch({type: 'checkbox', text: 'Можно курить'})
-      +switch({type: 'checkbox', text: 'Широкий коридор', weight: 'b'})
-      +switch({type: 'toggle', text: 'Получать спецпредложения'})
-      include components/radio-buttons/radio-buttons.pug
-      include components/checkbox-buttons/checkbox-buttons.pug
-      +expandable-checkbox-list('expandable checkbox list')
-    
-    
-
+    include components/rich-checkbox-buttons/rich-checkbox-buttons.pug
+    include components/like-button/like-button.pug
+    .flex
+      .w-320px
+        p(class='item-title') Войти 123
+        +text-field({text: 'Email'})
+        +masked-text-field
+        +field-button({text: 'ДД.ММ.ГГГГ'})
+        +field-button({text: 'Сколько гостей', opacity: 'high'})
+      .w-266px
+        +field-button({text: 'Email', theme: 'gradient'})
+        +switch({type: 'toggle', text: 'Получать спецпредложения'})
+        include components/radio-buttons/radio-buttons.pug
+        include components/checkbox-buttons/checkbox-buttons.pug
+        +expandable-checkbox-list('expandable checkbox list')
+        +rich-checkbox-buttons('rich checkbox buttons')
+        +like-button(9)
     
