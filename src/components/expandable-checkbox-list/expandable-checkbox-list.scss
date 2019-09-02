@@ -1,0 +1,35 @@
+@import '../switch/switch.scss';
+
+.expandable-checkbox-list {
+  position: relative;
+  width: 266px;
+
+  &__dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  &__icon {
+    width: 44px;
+    text-align: center;
+  }
+
+  &__icon_turn {
+    transform: rotate(-180deg);
+  }
+
+  &__items {
+    position: absolute;
+    top: 33px;
+    display: none;
+
+    &_display_on {
+      display: block;
+    }
+  }
+  &__item {
+    margin-top: 11px;
+  }
+}

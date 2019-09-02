@@ -1,9 +1,8 @@
-@import '../colors-and-types/colors-and-types.scss';
-
 .switch {
   position: relative;
   display: inline-block;
-
+  cursor: pointer;
+  
   &_checkbox {
     padding-left: 30px;
     line-height: 1.125rem;

@@ -4,3 +4,4 @@ import './components/field-button/field-button.js';
 import './components/switch/switch.js';
 import './components/radio-buttons/radio-buttons.js';
 import './components/checkbox-buttons/checkbox-buttons.js';
+import './components/expandable-checkbox-list/expandable-checkbox-list.js';

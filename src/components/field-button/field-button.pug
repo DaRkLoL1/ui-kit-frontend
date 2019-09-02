@@ -11,11 +11,10 @@ mixin field-button(options)
     if(options.theme === 'gradient') {
       icon = 'arrow_forward';
       className += ' field-button__icon_color_gradient';
-      parentClass += ' field-button_bg_gradient';
     } else {
       obj.opacity = 'high';
     }
     
-  div(class="field-button js-field-button" + parentClass)
+  div(class="field-button js-field-button")
     +text-field(obj)
     i(class="material-icons field-button__icon js-field-button__icon" + className)= icon

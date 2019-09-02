@@ -1,10 +1,11 @@
-@import 'components/text-field/text-field.scss';
+@import 'material-icons/iconfont/material-icons.scss';
 @import 'components/colors-and-types/colors-and-types.scss';
+@import 'components/text-field/text-field.scss';
 @import 'components/field-button/field-button.scss';
 @import 'components/switch/switch.scss';
 @import 'components/radio-buttons/radio-buttons.scss';
 @import 'components/checkbox-buttons/checkbox-buttons.scss';
-
+@import 'components/expandable-checkbox-list/expandable-checkbox-list.scss';
 .w-320px {
   width: 300px;
   margin-top: 100px;

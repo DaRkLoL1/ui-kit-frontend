@@ -11,6 +11,7 @@ html
     include components/masked-text-field/masked-text-field.pug
     include components/field-button/field-button.pug
     include components/switch/switch.pug
+    include components/expandable-checkbox-list/expandable-checkbox-list.pug
     .w-320px
       p(class='item-title') Войти 123
       +text-field({text: 'Email'})
@@ -23,6 +24,7 @@ html
       +switch({type: 'toggle', text: 'Получать спецпредложения'})
       include components/radio-buttons/radio-buttons.pug
       include components/checkbox-buttons/checkbox-buttons.pug
+      +expandable-checkbox-list('expandable checkbox list')
     
     
 
