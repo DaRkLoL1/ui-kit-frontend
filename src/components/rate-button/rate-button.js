@@ -1,6 +1,6 @@
 import './jquery.star.rating.min.js';
 
-$(document).ready(function () {
+;(function ($, undefined) {
   let rateButtons = document.querySelectorAll('.js-rate-button');
 
   rateButtons.forEach( item => {
@@ -13,4 +13,4 @@ $(document).ready(function () {
     )
   }) 
 
-});
+})(jQuery);
