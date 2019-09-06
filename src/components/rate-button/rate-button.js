@@ -11,6 +11,8 @@ import './jquery.star.rating.min.js';
         selectedRatings: $(item).attr('data-value')
       }
     )
+
+    $(item).find('i').addClass('rate-button__icon');
   }) 
 
 })(jQuery);

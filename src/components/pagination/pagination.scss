@@ -1,0 +1,46 @@
+.pagination {
+  width: 240px;
+
+  &__items {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 40px;
+    color: $paragraph-color;
+    text-decoration: none;
+
+    &_begin {
+    background: linear-gradient(180deg, $first-button-color 0%, $linear 100%);
+    border-radius: 22px;
+    color: $background;
+    font-weight: bold;
+    }
+
+    &_end {
+      background: linear-gradient(180deg, $second-button-color 0%, $second-linear 100%);
+      border-radius: 22px;
+
+      & > i {
+        line-height: 40px;
+        color: $background;
+      }
+    }
+  }
+
+  &__description {
+    margin:0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+}

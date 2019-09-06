@@ -17,7 +17,7 @@
     min-width: 44px;
     text-align: center;
     box-sizing: border-box;
-    background: #FFFFFF;
+    background: $background;
     cursor: pointer;
     color: $paragraph-color;
 
@@ -27,7 +27,7 @@
 
     &_color_gradient {
       color: $first-button-color;
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background: linear-gradient(180deg, $first-button-color 0%, $linear 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

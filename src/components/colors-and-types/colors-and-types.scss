@@ -5,6 +5,9 @@ $placeholder-color: rgba(31, 32, 65, 0.25);
 $shadow-color: rgba(31, 32, 65, 0.05);
 $first-button-color: #BC9CFF;
 $second-button-color: #6FCF97;
+$background: #FFFFFF;
+$linear: #8BA4F9;
+$second-linear: #66D2EA;
 
 @font-face {
   font-family: 'Quicksand';
@@ -36,7 +39,7 @@ $second-button-color: #6FCF97;
 html {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 16px;
-  background-color: #FFFFFF;
+  background-color: $background;
   color: $paragraph-color;
 }
 

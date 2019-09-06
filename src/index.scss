@@ -1,15 +1,16 @@
 @import 'material-icons/iconfont/material-icons.scss';
-@import 'components/colors-and-types/colors-and-types.scss';
-@import 'components/text-field/text-field.scss';
-@import 'components/field-button/field-button.scss';
-@import 'components/switch/switch.scss';
-@import 'components/radio-buttons/radio-buttons.scss';
-@import 'components/checkbox-buttons/checkbox-buttons.scss';
-@import 'components/expandable-checkbox-list/expandable-checkbox-list.scss';
-@import 'components/rich-checkbox-buttons/rich-checkbox-buttons.scss';
-@import 'components/like-button/like-button.scss';
-@import 'components/bullet-list/bullet-list.scss';
+@import './components/colors-and-types/colors-and-types.scss';
+@import './components/text-field/text-field.scss';
+@import './components/field-button/field-button.scss';
+@import './components/switch/switch.scss';
+@import './components/radio-buttons/radio-buttons.scss';
+@import './components/checkbox-buttons/checkbox-buttons.scss';
+@import './components/expandable-checkbox-list/expandable-checkbox-list.scss';
+@import './components/rich-checkbox-buttons/rich-checkbox-buttons.scss';
+@import './components/like-button/like-button.scss';
+@import './components/bullet-list/bullet-list.scss';
 @import './components/rate-button/rate-button.scss';
+@import './components/pagination/pagination.scss';
 
 .flex {
   display: flex;
