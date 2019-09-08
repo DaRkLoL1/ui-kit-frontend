@@ -26,7 +26,7 @@
     }
 
     &_checked::before {
-      border-color: $first-button-color;
+      border-color: $primary-color;
       background-image: url('./vector-checkbox.png');
       background-repeat: no-repeat;
       background-position: 50% 40%;
@@ -59,14 +59,14 @@
       width: 12px;
       height: 12px;
       border-radius: 10px;
-      background: linear-gradient(180deg, $first-button-color 0%, $linear 100%);
+      background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     }
 
     &_checked {
       color: $label-color;
 
       &::before {
-        border-color: $first-button-color;
+        border-color: $primary-color;
       }
 
       &::after {
@@ -105,12 +105,12 @@
     &_checked {
 
       &::before {
-        border-color: $first-button-color;
+        border-color: $primary-color;
       }
 
       &::after {
         left: 24px;
-        background: linear-gradient(180deg, $first-button-color 0%, $linear 100%);
+        background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
       }
     }
   }

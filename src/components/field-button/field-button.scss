@@ -26,8 +26,8 @@
     }
 
     &_color_gradient {
-      color: $first-button-color;
-      background: linear-gradient(180deg, $first-button-color 0%, $linear 100%);
+      color: $primary-color;
+      background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

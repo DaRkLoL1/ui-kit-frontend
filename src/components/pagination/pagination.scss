@@ -19,14 +19,14 @@
     text-decoration: none;
 
     &_begin {
-    background: linear-gradient(180deg, $first-button-color 0%, $linear 100%);
+    background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     border-radius: 22px;
     color: $background;
     font-weight: bold;
     }
 
     &_end {
-      background: linear-gradient(180deg, $second-button-color 0%, $second-linear 100%);
+      background: linear-gradient(180deg, $secondary-color 0%, $second-linear 100%);
       border-radius: 22px;
 
       & > i {
