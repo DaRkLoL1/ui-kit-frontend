@@ -15,6 +15,9 @@ html
     include components/rich-checkbox-buttons/rich-checkbox-buttons.pug
     include components/like-button/like-button.pug
     include components/rate-button/rate-button.pug
+    include components/submit/submit.pug
+    include components/button/button.pug
+    include components/btn/btn.pug
     .flex
       .w-320px
         p(class='item-title') Войти 123
@@ -22,6 +25,11 @@ html
         +masked-text-field
         +field-button({text: 'ДД.ММ.ГГГГ'})
         +field-button({text: 'Сколько гостей', opacity: 'high'})
+        +submit('перейти к оплате')
+        +button({text: 'click me'})
+        +button({text: 'click me', type: 'ghost'})
+        +btn({text: 'click me'})
+        +btn({text: 'click me', type: 'ghost'})
       .w-266px
         +field-button({text: 'Email', theme: 'gradient'})
         +switch({type: 'toggle', text: 'Получать спецпредложения'})

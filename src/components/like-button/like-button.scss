@@ -12,8 +12,24 @@
   cursor: pointer;
 
   &_click {
-    border-color: $primary-color;
+    position: relative;
+    border: none;
+    padding: 1px;
+    background: $background;
+    background-clip: content-box;
     color: $primary-color;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
+      border-radius: inherit;
+      z-index: -1;
+    }
   }
 
   &__icon {

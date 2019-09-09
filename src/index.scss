@@ -12,12 +12,15 @@
 @import './components/rate-button/rate-button.scss';
 @import './components/pagination/pagination.scss';
 @import './components/range-slider/range-slider.scss';
+@import './components/submit/submit.scss';
+@import './components/button/button.scss';
+@import './components/btn/btn.scss';
 
 .flex {
   display: flex;
 }
 .w-320px {
-  width: 300px;
+  width: 320px;
   margin-top: 100px;
 }
 .w-266px {
