@@ -1,0 +1,13 @@
+@import '../quality/quality.scss';
+
+.set-of-qualities {
+
+  &__line {
+    width: 280px;
+    height: 1px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    background: rgba(31, 32, 65, 0.1);
+  }
+
+}

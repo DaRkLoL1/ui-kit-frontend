@@ -1,0 +1,24 @@
+.quality {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 10px;
+    color: $primary-color;
+    background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    line-height: 41px;
+  }
+
+  &__property {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    font-weight: bold;
+  }
+
+}
