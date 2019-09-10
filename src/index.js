@@ -11,3 +11,5 @@ import './components/like-button/like-button.js';
 import './components/rate-button/rate-button.js';
 import './components/range-slider/range-slider.js';
 import './components/comment/comment.js';
+import './components/date-dropdown/date-dropdown.js';
+import './components/datepicker-inline/datepicker-inline.js';

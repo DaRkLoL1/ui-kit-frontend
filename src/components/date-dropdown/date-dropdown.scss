@@ -1,0 +1,13 @@
+@import '../field-button/field-button.scss';
+@import '../datepicker/datepicker.scss';
+
+.date-dropdown {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  
+  &__first-input, &__second-input {
+    width: 150px;
+  }
+}
+
