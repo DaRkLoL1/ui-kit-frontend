@@ -1,8 +1,8 @@
 include ../switch/switch.pug
-
-.checkbox-buttons
-  - let arr = ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'];
-  h3(class='label-text checkbox-buttons__title') checkbox-buttons
-  each val in arr
-    .checkbox-buttons__item
-      +switch({type: 'checkbox', text: val})
+mixin checkbox-buttons
+  .checkbox-buttons
+    - let arr = ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'];
+    h3(class='label-text checkbox-buttons__title') checkbox-buttons
+    each val in arr
+      .checkbox-buttons__item
+        +switch({type: 'checkbox', text: val})

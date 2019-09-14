@@ -1,6 +1,13 @@
 include ../field-button/field-button.pug
-div(class='date-dropdown js-date-dropdown')
-  div(class='date-dropdown__first-input')
-    +field-button({text: 'ДД.ММ.ГГГГ'})
-  div(class='date-dropdown__second-input')
-    +field-button({text: 'ДД.ММ.ГГГГ'})
+include ../btn/btn.pug
+
+mixin date-dropdown(dates)
+
+  div(class='date-dropdown js-date-dropdown' data-dates=dates)
+    div(class='date-dropdown__first-input')
+      +field-button({text: 'ДД.ММ.ГГГГ', focus: false})
+    div(class='date-dropdown__second-input')
+      +field-button({text: 'ДД.ММ.ГГГГ', focus: false})
+    div(class='js-date-dropdown__buttons date-dropdown__buttons')
+      +btn({type: 'ghost', text: 'очистить'})
+      +btn({text: 'применить'})

@@ -1,9 +1,10 @@
-.bullet-list  
-  - 
-    let arr = [
-      'Нельзя с питомцами',
-      'Без вечеринок и мероприятий',
-      'Время прибытия — после 13:00, а выезд до 12:00'
-    ];
-  each val in arr
-    p(class='bullet-list__item text')=val
+mixin bullet-list  
+  .bullet-list  
+    - 
+      let arr = [
+        'Нельзя с питомцами',
+        'Без вечеринок и мероприятий',
+        'Время прибытия — после 13:00, а выезд до 12:00'
+      ];
+    each val in arr
+      p(class='bullet-list__item text')=val

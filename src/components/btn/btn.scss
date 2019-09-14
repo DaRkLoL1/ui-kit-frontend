@@ -1,10 +1,10 @@
 .btn {
-  width: 61px;
   padding: 0;
   border: none;
   outline: none;
   background: $background;
   color: $primary-color;
+  cursor: pointer;
 
   &_type_ghost {
     color: $paragraph-color;

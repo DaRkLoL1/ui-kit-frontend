@@ -19,7 +19,9 @@ html
     include components/button/button.pug
     include components/btn/btn.pug
     include components/comment/comment.pug 
-
+    include components/checkbox-buttons/checkbox-buttons.pug
+    include components/bullet-list/bullet-list.pug
+    include components/filter-date-dropdown/filter-date-dropdown.pug
     .flex
       .w-320px
         p(class='item-title') Войти 123
@@ -34,17 +36,21 @@ html
         +btn({text: 'click me', type: 'ghost'})
         include components/set-of-qualities/set-of-qualities.pug
         include components/date-dropdown/date-dropdown.pug 
+        +date-dropdown(['2019-09-13','2019-09-16'])
+        +date-dropdown()
         include components/datepicker-inline/datepicker-inline.pug
 
       .w-266px
         +field-button({text: 'Email', theme: 'gradient'})
         +switch({type: 'toggle', text: 'Получать спецпредложения'})
         include components/radio-buttons/radio-buttons.pug
-        include components/checkbox-buttons/checkbox-buttons.pug
+        +filter-date-dropdown(['2019-09-13','2019-09-16'])
+        +filter-date-dropdown()
+        +checkbox-buttons
         +expandable-checkbox-list('expandable checkbox list')
         +rich-checkbox-buttons('rich checkbox buttons')
         +like-button(9)
-        include components/bullet-list/bullet-list.pug
+        +bullet-list
         +rate-button(1)
         +rate-button(4)
         +rate-button(2)

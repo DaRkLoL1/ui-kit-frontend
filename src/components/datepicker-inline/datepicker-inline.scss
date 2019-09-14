@@ -1,10 +1,18 @@
 @import '../datepicker/datepicker.scss';
-
+@import '../btn/btn.scss';
 .datepicker-inline {
   width: 320px;
 
   & .datepicker {
     border-color: $placeholder-color;
     box-shadow: 0px 10px 20px $shadow-color;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 20px;
+    padding-bottom: 17px;
   }
 }

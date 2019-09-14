@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: 'sourse-map',
+  devtool: 'inline-sourse-map',
 
   entry: {
     index: './src/index.js'
@@ -15,11 +15,19 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   module: {
     rules: [
       {
         test: /\.pug$/,
-        loader: 'pug-loader'
+        use: [
+          'html-loader',
+          'pug-html-loader'
+        ]
       },
       {
         test: /\.scss$/,

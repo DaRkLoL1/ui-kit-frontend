@@ -1,12 +1,25 @@
 import '../datepicker/datepicker.min.js';
 
-$('.datepicker-inline').datepicker({
-  range: true,
-  offset: 16,
-  clearButton: true,
-  prevHtml: '<i class="material-icons">arrow_back</i>',
-  nextHtml: '<i class="material-icons">arrow_forward</i>',
-  navTitles: {
-    days: 'MM yyyy',
-  },
-});
+;(function($, undefined) {
+ let datepickerInline = $('.datepicker-inline').datepicker({
+    range: true,
+    offset: 16,
+    prevHtml: '<i class="material-icons">arrow_back</i>',
+    nextHtml: '<i class="material-icons">arrow_forward</i>',
+    navTitles: {
+      days: 'MM yyyy',
+    },
+  }).data('datepicker');
+
+  datepickerInline.selectDate([new Date('2019-09-13'), new Date('2019-09-16')]);
+  $('.js-datepicker-inline .datepicker').append( $('.js-datepicker-inline__buttons') );
+
+  $('.js-datepicker-inline__buttons .btn:first-child').on('click', function () {
+      datepickerInline.clear();
+  })
+
+  $('.js-datepicker-inline__buttons .btn:last-child').on('click', function () {
+    datepickerInline.hide();
+  })
+
+})(jQuery);

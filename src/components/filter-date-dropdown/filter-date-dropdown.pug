@@ -1,0 +1,9 @@
+include ../field-button/field-button.pug
+include ../btn/btn.pug
+
+mixin filter-date-dropdown(dates)
+  div(class='js-filter-date-dropdown filter-date-dropdown' data-dates=dates) 
+    +field-button({text: 'ДД.ММ.ГГГГ', focus: false})
+    div(class='js-filter-date-dropdown__buttons filter-date-dropdown__buttons')
+      +btn({type: 'ghost', text: 'очистить'})
+      +btn({text: 'применить'})

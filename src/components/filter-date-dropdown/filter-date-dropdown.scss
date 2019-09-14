@@ -2,21 +2,14 @@
 @import '../btn/btn.scss';
 @import '../datepicker/datepicker.scss';
 
-.date-dropdown {
-  display: flex;
-  justify-content: space-between;
-  width: 320px;
-  
-  &__first-input, &__second-input {
-    width: 150px;
-  }
+.filter-date-dropdown {
+  width: 266px;
 
   &__buttons {
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 226px;
     margin: 20px;
     margin-bottom: 17px;
   }
 }
-
