@@ -22,29 +22,30 @@ html
     include components/checkbox-buttons/checkbox-buttons.pug
     include components/bullet-list/bullet-list.pug
     include components/filter-date-dropdown/filter-date-dropdown.pug
+    include components/dropdown/dropdown.pug
+    include components/date-dropdown/date-dropdown.pug 
     .flex
       .w-320px
-        p(class='item-title') Войти 123
         +text-field({text: 'Email'})
+        +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
         +masked-text-field
-        +field-button({text: 'ДД.ММ.ГГГГ'})
-        +field-button({text: 'Сколько гостей', opacity: 'high'})
+        +date-dropdown(['2019-09-13'])
+        +filter-date-dropdown(['2019-09-13','2019-09-16'])
         +submit('перейти к оплате')
         +button({text: 'click me'})
         +button({text: 'click me', type: 'ghost'})
         +btn({text: 'click me'})
         +btn({text: 'click me', type: 'ghost'})
         include components/set-of-qualities/set-of-qualities.pug
-        include components/date-dropdown/date-dropdown.pug 
-        +date-dropdown(['2019-09-13','2019-09-16'])
-        +date-dropdown()
+        
+        +date-dropdown(['2019-09-13', '2019-09-19'])
         include components/datepicker-inline/datepicker-inline.pug
 
       .w-266px
+        +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
         +field-button({text: 'Email', theme: 'gradient'})
         +switch({type: 'toggle', text: 'Получать спецпредложения'})
         include components/radio-buttons/radio-buttons.pug
-        +filter-date-dropdown(['2019-09-13','2019-09-16'])
         +filter-date-dropdown()
         +checkbox-buttons
         +expandable-checkbox-list('expandable checkbox list')

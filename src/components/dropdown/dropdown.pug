@@ -1,0 +1,33 @@
+include ../btn/btn.pug
+
+mixin dropdown(options = {}) 
+  -
+    if(!options.arrDefaultNumbers) {
+      options.arrDefaultNumbers = [0, 0, 0];
+    }
+  
+
+  if options.type
+    div(class='js-dropdown dropdown dropdown_with_buttons js-dropdown_with_buttons')
+      .iqdropdown
+        p.iqdropdown-selection.iqdropdown-selection_opacity_m
+        .iqdropdown-menu
+          each val, i in options.arrTitles
+            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=options.arrDefaultNumbers[i]  data-maxcount='10')
+              div
+                p(class='iqdropdown-item')=val
+      div(class='js-dropdown__buttons dropdown__buttons')
+        div(class='js-dropdown__first-button dropdown__first-button dropdown__first-button_hide_clean')
+          +btn({text: 'Очистить', type: 'ghost'})
+        div(class='js-dropdown__second-button dropdown__second-button')
+          +btn({text: 'Применить'})
+  else 
+    div(class='js-dropdown dropdown')
+      .iqdropdown
+        p.iqdropdown-selection
+        .iqdropdown-menu
+          each val, i in options.arrTitles
+            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=options.arrDefaultNumbers[i]  data-maxcount='10')
+              div
+                p(class='iqdropdown-item')=val
+        

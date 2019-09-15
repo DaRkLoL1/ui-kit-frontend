@@ -14,11 +14,11 @@ import '../datepicker/datepicker.min.js';
   datepickerInline.selectDate([new Date('2019-09-13'), new Date('2019-09-16')]);
   $('.js-datepicker-inline .datepicker').append( $('.js-datepicker-inline__buttons') );
 
-  $('.js-datepicker-inline__buttons .btn:first-child').on('click', function () {
+  $('.js-datepicker-inline__first-button').on('click', function () {
       datepickerInline.clear();
   })
 
-  $('.js-datepicker-inline__buttons .btn:last-child').on('click', function () {
+  $('.js-datepicker-inline__second-button').on('click', function () {
     datepickerInline.hide();
   })
 

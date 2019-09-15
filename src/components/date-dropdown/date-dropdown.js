@@ -25,7 +25,8 @@ import '../datepicker/datepicker.min.js';
         let arrDates = formattedDate.split(',');
 
         if(arrDates.length === 1) {
-          $first.val(arrDates[0]);
+          $first.val('');
+          $second.val(arrDates[0]);
         } else {
           $first.val(arrDates[0]);
           $second.val(arrDates[1]);
@@ -37,14 +38,19 @@ import '../datepicker/datepicker.min.js';
     let dates = $item.data('dates');
 
     if(Array.isArray(dates)) {
-      dateDropdown.selectDate([new Date(dates[0]), new Date(dates[1])]);
+      if(dates.length === 1) {
+        dateDropdown.selectDate(new Date(dates[0]))
+      } else {
+        dateDropdown.selectDate([new Date(dates[0]),new Date(dates[1])])
+      }
+      
     }
 
-    $item.find('.btn:first-child').on('click', function () {
+    $item.find('.js-date-dropdown__first-button').on('click', function () {
       dateDropdown.clear();
     });
 
-    $item.find('.btn:last-child').on('click', function () {
+    $item.find('.js-date-dropdown__second-button').on('click', function () {
       dateDropdown.hide();
     });
 

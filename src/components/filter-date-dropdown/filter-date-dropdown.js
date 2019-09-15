@@ -25,15 +25,14 @@ import '../datepicker/datepicker.min.js';
     let dates = $item.data('dates');
 
     if(Array.isArray(dates)) {
-      console.log(dates)
       filterDateDropdown.selectDate([new Date(dates[0]), new Date(dates[1])]);
     }
 
-    $item.find('.btn:first-child').on('click', function () {
+    $item.find('.js-filter-date-dropdown__first-button').on('click', function () {
       filterDateDropdown.clear();
     });
 
-    $item.find('.btn:last-child').on('click', function () {
+    $item.find('.js-filter-date-dropdown__second-button').on('click', function () {
       filterDateDropdown.hide();
     });
 

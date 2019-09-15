@@ -20,9 +20,11 @@
 @import './components/date-dropdown/date-dropdown.scss';
 @import './components/datepicker-inline/datepicker-inline.scss';
 @import './components/filter-date-dropdown/filter-date-dropdown.scss';
+@import './components/dropdown/dropdown.scss';
 
 .flex {
   display: flex;
+  margin-bottom: 50px;
 }
 .w-320px {
   width: 320px;

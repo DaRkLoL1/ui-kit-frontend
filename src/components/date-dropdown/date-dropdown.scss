@@ -5,7 +5,7 @@
 .date-dropdown {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 100%;
   
   &__first-input, &__second-input {
     width: 150px;
@@ -14,9 +14,10 @@
   &__buttons {
     display: flex;
     justify-content: space-between;
-    width: 280px;
-    margin: 20px;
-    margin-bottom: 17px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-bottom: 17px;
   }
 }
 
