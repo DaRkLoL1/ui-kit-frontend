@@ -15,3 +15,4 @@ import './components/date-dropdown/date-dropdown.js';
 import './components/datepicker-inline/datepicker-inline.js';
 import './components/filter-date-dropdown/filter-date-dropdown.js';
 import './components/dropdown/dropdown.js';
+import './components/room/room.js';

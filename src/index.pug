@@ -23,7 +23,9 @@ html
     include components/bullet-list/bullet-list.pug
     include components/filter-date-dropdown/filter-date-dropdown.pug
     include components/dropdown/dropdown.pug
-    include components/date-dropdown/date-dropdown.pug 
+    include components/date-dropdown/date-dropdown.pug
+    include components/room/room.pug
+
     .flex
       .w-320px
         +text-field({text: 'Email'})
@@ -40,6 +42,8 @@ html
         
         +date-dropdown(['2019-09-13', '2019-09-19'])
         include components/datepicker-inline/datepicker-inline.pug
+        +room({class: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.png'})
+        +room({stars: 4, number: 840, cost: '9 990', comments: '65', image: 'room-img-2.png'})
 
       .w-266px
         +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})

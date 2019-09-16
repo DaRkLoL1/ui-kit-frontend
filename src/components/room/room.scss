@@ -1,0 +1,139 @@
+@import '../rate-button/rate-button.scss';
+
+.room {
+  width: 270px;
+  background: $background;
+  box-shadow: 0px 10px 20px $shadow-color;
+  border-radius: 4px;
+  overflow: hidden;
+  &__slide-image {
+    position: relative;
+  }
+
+  &__slide-first-button,
+  &__slide-second-button {
+    position: absolute;
+    top: 0;
+    width: 42px;
+    height: 152px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &__slide-first-button {
+    left: 0;
+  }
+
+  &__slide-second-button {
+    right: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &__first-arrow,
+  &__second-arrow {
+    position: absolute;
+    top: 63.5px;
+    color: $background;
+    cursor: pointer;
+  }
+
+  &__first-arrow {
+    transform: rotate(90deg);
+    left: 10px;
+  }
+
+  &__second-arrow {
+    right: 8px;
+    transform: rotate(90deg);
+  }
+
+  &__slide {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 42px;
+    justify-content: space-between;
+  }
+
+  &__dot {
+    width: 7.5px;
+    height: 7.5px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+    border: 1px solid $background;
+    border-radius: 20px;
+
+    &_selected {
+      background: $background;
+    }
+  }
+
+  &__description {
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  &__number-and-cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 12px;
+  }
+
+  &__number {
+    margin-top:0;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    line-height: 1.214;
+  }
+
+  &__luxe {
+    color: $primary-color;
+  }
+
+  &__cost {
+    margin-top:0;
+    margin-bottom: 0;
+  }
+
+  &__cost-price {
+    font-size: 0.875rem;
+    line-height: 1.285;
+    color: $paragraph-color;
+  }
+
+  &_cost-text {
+    font-size: 0.875rem;
+    line-height: 1.285;
+    color: $paragraph-color;
+  }
+
+  &__line {
+    width: 230px;
+    height: 1px;
+    margin: 10px 20px 8px;
+    background: rgba(31, 32, 65, 0.1);
+  }
+
+  &__stars-and-comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  &__comments {
+    margin-top:0;
+    margin-bottom: 0;
+    line-height: 1.285;
+  }
+
+  &__comments-count {
+    font-weight: bold;
+  }
+
+}

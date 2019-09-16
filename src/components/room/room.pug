@@ -1,0 +1,43 @@
+include ../rate-button/rate-button.pug
+
+mixin room(options)
+  .room 
+    div(class='room__slide-image')
+      img( class='room__image' src='./components/room/' + options.image alt='room')
+      if options.type
+        .room__slide-first-button
+          i(class='material-icons room__first-arrow') expand_more
+        .room__slide-second-button
+          i(class='material-icons room__second-arrow') expand_more
+      ul(class='room__slide')
+        - let i = 0
+        while i < 3
+          if i === 0
+            li(class='room__dot room__dot_selected')
+          li(class='room__dot')
+          - i++
+    div(class='room__description')
+      div(class='room__number-and-cost')
+        if options.class
+          p(class='room__number item-title')
+            = '№ '
+            |
+            span(class='room__numbers item-title')= options.number
+            |
+            span(class='room__luxe label-text')= ' люкс'
+        else
+          p(class='room__number item-title')
+            = '№ '
+            | 
+            span(class='room__numbers item-title')= options.number
+        p(class='room__cost')
+          span(class='room__cost-price label-text')= options.cost
+          span(class='room__cost-text text')= '\u20bd' + ' в сутки'
+      div(class='room__line')
+      div(class='room__stars-and-comments')
+        div(class='room__stars')
+          +rate-button(options.stars)
+        p(class='room__comments text')
+          span(class='room__comments-count')= options.comments
+          span(class='room__comments-text')= ' Отзывов'
+        
