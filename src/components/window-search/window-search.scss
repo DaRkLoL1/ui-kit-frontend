@@ -1,0 +1,47 @@
+@import '../date-dropdown/date-dropdown.scss';
+@import '../dropdown/dropdown.scss';
+@import '../buttons/buttons.scss';
+
+.window-search {
+  width: 100%;
+  background: $background;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__wrapper {
+    width: 320px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    margin:0;
+  }
+
+  &__arrival-departure {
+    margin-top: 21px;
+
+
+    &-title {
+      margin: 0;
+      margin-bottom: 4px;
+      word-spacing: 92px;
+    }
+  }
+
+  &__company {
+    margin-top: 22px;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__button {
+    margin-top: 31px;
+  }
+}

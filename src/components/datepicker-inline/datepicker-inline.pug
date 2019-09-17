@@ -1,7 +1,9 @@
 include ../buttons/buttons.pug
-div(class='datepicker-inline js-datepicker-inline')
-  div(class='datepicker-inline__buttons js-datepicker-inline__buttons')
-    div(class='js-datepicker-inline__first-button datepicker-inline__first-button')
-      +buttons({text: 'очистить', style: 'ghost'})
-    div(class='js-datepicker-inline__second-button datepicker-inline__second-button')
-      +buttons({text: 'применить'})
+
+mixin datepicker-inline
+  div(class='datepicker-inline js-datepicker-inline')
+    div(class='datepicker-inline__buttons js-datepicker-inline__buttons')
+      div(class='js-datepicker-inline__first-button datepicker-inline__first-button')
+        +buttons({text: 'очистить', style: 'ghost'})
+      div(class='js-datepicker-inline__second-button datepicker-inline__second-button')
+        +buttons({text: 'применить'})

@@ -1,0 +1,16 @@
+include ../date-dropdown/date-dropdown.pug
+include ../dropdown/dropdown.pug
+include ../buttons/buttons.pug
+
+mixin window-search 
+  .window-search 
+    .window-search__wrapper
+      h3(class='window-search__title widjet-title') Найдём номера под ваши пожелания
+      .window-search__arrival-departure
+        h3(class='label-text window-search__arrival-departure-title') прибытие выезд
+        +date-dropdown
+      .window-search__company
+        h3(class='label-text window-search__company-title') гости
+        +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
+      .window-search__button
+        +buttons({size: 'big', type: 'submit', text: 'подобрать номер'})

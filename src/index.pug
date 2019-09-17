@@ -25,6 +25,13 @@ html
     include components/room-booking/room-booking.pug
     include components/buttons/buttons.pug 
     include components/window-registration/window-registration.pug
+    include components/set-of-qualities/set-of-qualities.pug
+    include components/datepicker-inline/datepicker-inline.pug
+    include components/radio-buttons/radio-buttons.pug
+    include components/pagination/pagination.pug
+    include components/range-slider/range-slider.pug
+    include components/window-login/window-login.pug
+    include components/window-search/window-search.pug
 
     .flex
       .w-320px
@@ -38,10 +45,9 @@ html
         +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
         +masked-text-field
         +date-dropdown(['2019-09-13'])
-        include components/set-of-qualities/set-of-qualities.pug
-        
+        +set-of-qualities
         +date-dropdown(['2019-09-13', '2019-09-19'])
-        include components/datepicker-inline/datepicker-inline.pug
+        +datepicker-inline
         +room({class: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.png'})
         +room({stars: 4, number: 840, cost: '9 990', comments: '65', image: 'room-img-2.png'})
 
@@ -50,7 +56,7 @@ html
         +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
         +field-button({text: 'Email', theme: 'gradient'})
         +switch({type: 'toggle', text: 'Получать спецпредложения'})
-        include components/radio-buttons/radio-buttons.pug
+        +radio-buttons
         +filter-date-dropdown()
         +checkbox-buttons
         +expandable-checkbox-list('expandable checkbox list')
@@ -60,12 +66,14 @@ html
         +rate-button(1)
         +rate-button(4)
         +rate-button(2)
-        include components/pagination/pagination.pug
-        include components/range-slider/range-slider.pug
+        +pagination
         +range-slider('range slider')
       .w-380px
         +room-booking
         +window-registration
+        +window-login
+        +window-search
+
     +comment({image: 'image-1.png', name: 'Мурад Сарафанов', time: '5 дней назад', 
       text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.' + 
         ' И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})

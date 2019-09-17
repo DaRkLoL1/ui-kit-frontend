@@ -1,0 +1,17 @@
+include ../text-field/text-field.pug
+include ../buttons/buttons.pug
+
+mixin window-login
+  .window-login 
+    .window-login__wrapper
+      h3(class='widjet-title window-login__title') Войти
+      .window-login__email
+        +text-field({text: 'Email'})
+      .window-login__password 
+        +text-field({text: 'Пароль'})
+      .window-login__submit
+        +buttons({size: 'big', type: 'submit', text: 'войти'})
+      .window-login__footer
+        p(class='window-login__text text') Нет аккаунта на Toxin?
+        .window-login__button  
+          +buttons({size: 'medium', style: 'ghost', text: 'создать'})

@@ -1,7 +1,8 @@
 include ../text-field/text-field.pug
 include ../masked-text-field/masked-text-field.pug
 include ../switch/switch.pug
-include ../buttons/buttons.pug 
+include ../buttons/buttons.pug
+include ../radio-buttons/radio-buttons.pug
 
 mixin window-registration
   .window-registration
@@ -12,7 +13,7 @@ mixin window-registration
       .window-registration__last-name
         +text-field({text: 'Фамилия'})
       .window-registration__sex
-        include ../radio-buttons/radio-buttons.pug
+        +radio-buttons
       .window-registration__date
         h3(class='label-text window-registration__birthday-title') дата рождения
         .window-registration__masked-date
@@ -30,7 +31,7 @@ mixin window-registration
       .window-registration__footer
         p(class='window-registration__text text') Уже есть аккаунт на Toxin
         .window-registration__button  
-          +buttons({size: 'medium', style: 'ghost', text: 'Войти'})
+          +buttons({size: 'medium', style: 'ghost', text: 'войти'})
 
 
         

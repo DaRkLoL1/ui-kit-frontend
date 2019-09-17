@@ -17,3 +17,4 @@ import './components/filter-date-dropdown/filter-date-dropdown.js';
 import './components/dropdown/dropdown.js';
 import './components/room/room.js';
 import './components/window-registration/window-registration.js';
+import './components/window-search/window-search.js';
