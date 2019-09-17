@@ -1,5 +1,5 @@
 include ../field-button/field-button.pug
-include ../btn/btn.pug
+include ../buttons/buttons.pug
 
 mixin date-dropdown(dates)
 
@@ -10,6 +10,6 @@ mixin date-dropdown(dates)
       +field-button({text: 'ДД.ММ.ГГГГ', focus: false})
     div(class='js-date-dropdown__buttons date-dropdown__buttons')
       div(class='js-date-dropdown__first-button date-dropdown__first-button')
-        +btn({type: 'ghost', text: 'очистить'})
+        +buttons({style: 'ghost', text: 'очистить'})
       div(class='js-date-dropdown__second-button date-dropdown__second-button')
-        +btn({text: 'применить'})
+        +buttons({text: 'применить'})

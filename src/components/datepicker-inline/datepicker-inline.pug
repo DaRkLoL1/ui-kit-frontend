@@ -1,7 +1,7 @@
-include ../btn/btn.pug
+include ../buttons/buttons.pug
 div(class='datepicker-inline js-datepicker-inline')
   div(class='datepicker-inline__buttons js-datepicker-inline__buttons')
     div(class='js-datepicker-inline__first-button datepicker-inline__first-button')
-      +btn({text: 'очистить', type: 'ghost'})
+      +buttons({text: 'очистить', style: 'ghost'})
     div(class='js-datepicker-inline__second-button datepicker-inline__second-button')
-      +btn({text: 'применить'})
+      +buttons({text: 'применить'})

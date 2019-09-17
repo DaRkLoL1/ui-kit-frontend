@@ -100,17 +100,18 @@
     margin-bottom: 0;
   }
 
-  &__cost-price {
+  &__cost-price,
+  &__cost-sign,
+  &__cost-text {
     font-size: 0.875rem;
     line-height: 1.285;
     color: $paragraph-color;
   }
 
-  &_cost-text {
-    font-size: 0.875rem;
-    line-height: 1.285;
-    color: $paragraph-color;
+  &__cost-sign {
+    font-family: 'rouble';
   }
+
 
   &__line {
     width: 230px;
@@ -130,10 +131,13 @@
     margin-top:0;
     margin-bottom: 0;
     line-height: 1.285;
+    color: $paragraph-color;
   }
 
   &__comments-count {
     font-weight: bold;
   }
+
+  
 
 }

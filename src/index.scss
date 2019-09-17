@@ -12,9 +12,6 @@
 @import './components/rate-button/rate-button.scss';
 @import './components/pagination/pagination.scss';
 @import './components/range-slider/range-slider.scss';
-@import './components/submit/submit.scss';
-@import './components/button/button.scss';
-@import './components/btn/btn.scss';
 @import './components/set-of-qualities/set-of-qualities.scss';
 @import './components/comment/comment.scss';
 @import './components/date-dropdown/date-dropdown.scss';
@@ -22,10 +19,19 @@
 @import './components/filter-date-dropdown/filter-date-dropdown.scss';
 @import './components/dropdown/dropdown.scss';
 @import './components/room/room.scss';
+@import './components/room-booking/room-booking.scss';
+@import './components/buttons/buttons.scss';
+@import './components/window-registration/window-registration.scss';
+
 
 .flex {
   display: flex;
   margin-bottom: 50px;
+}
+.w-380px {
+  width: 380px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 .w-320px {
   width: 320px;

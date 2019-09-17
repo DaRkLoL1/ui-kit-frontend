@@ -1,21 +1,37 @@
-$($('.js-radio-buttons .js-switch')[0]).addClass('switch_radio_checked');
-$('.js-radio-buttons').on('click', function (event) {
+import '../switch/switch.js';
 
-  let target = event.target;
-  
-  if(target === document.querySelector('.js-radio-buttons')) return;
-  
-  $(target).find('.js-switch__input').prop('checked', true);
-  
-  $(target).addClass('switch_radio_checked');
+;(function ($, undefined){
 
-  let arrRadio = $('.js-radio-buttons .js-switch');
+  let arrRadioButtons = document.querySelectorAll('.js-radio-buttons');
   
-  arrRadio.each(function (){
+  arrRadioButtons.forEach( item => {
 
-    if( !$(this).find('.js-switch__input').prop('checked') ) {
-      $(this).removeClass('switch_radio_checked');
-    }
-  })
+    let $item = $(item);
+    
+    let $arrRadio = $item.find('.js-switch');
+    
+    $($arrRadio[0]).addClass('switch_radio_checked');
+
+    
+
+    $item.on('click', function (event) {
+
+      let $target = $(event.target);
   
-});
+      if($target.hasClass('js-radio-buttons')) return;
+  
+      $target.find('.js-switch__input').prop('checked', true);
+  
+      $target.addClass('switch_radio_checked');
+
+      $arrRadio.each(function (i, item){
+        let $item = $(item);
+        if( ! ($item.find('.js-switch__input').prop('checked') ) ) {
+          $(item).removeClass('switch_radio_checked');
+        }
+      })
+  
+    });
+  });
+
+})(jQuery);

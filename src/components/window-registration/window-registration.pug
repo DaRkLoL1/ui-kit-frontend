@@ -1,0 +1,37 @@
+include ../text-field/text-field.pug
+include ../masked-text-field/masked-text-field.pug
+include ../switch/switch.pug
+include ../buttons/buttons.pug 
+
+mixin window-registration
+  .window-registration
+    .window-registration__wrapper
+      h3(class='widjet-title window-registration__title') Регистрация аккаунта
+      .window-registration__first-name
+          +text-field({text: 'Имя'})
+      .window-registration__last-name
+        +text-field({text: 'Фамилия'})
+      .window-registration__sex
+        include ../radio-buttons/radio-buttons.pug
+      .window-registration__date
+        h3(class='label-text window-registration__birthday-title') дата рождения
+        .window-registration__masked-date
+          +masked-text-field
+      .window-registration__data
+        h3(class='label-text window-registration__data-title') данные для входа в сервис
+        .window-registration__email
+          +text-field({text: 'Email'})
+        .window-registration__password
+          +text-field({text: 'Пароль'})
+      .window-registration__toggle
+        +switch({type: 'toggle', text: 'Получать спецпредложения'})
+      .window-registration__submit
+        +buttons({size: 'big', type: 'submit', text: 'перейти к оплате'})
+      .window-registration__footer
+        p(class='window-registration__text text') Уже есть аккаунт на Toxin
+        .window-registration__button  
+          +buttons({size: 'medium', style: 'ghost', text: 'Войти'})
+
+
+        
+      

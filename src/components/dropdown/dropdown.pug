@@ -1,4 +1,4 @@
-include ../btn/btn.pug
+include ../buttons/buttons.pug
 
 mixin dropdown(options = {}) 
   -
@@ -18,9 +18,9 @@ mixin dropdown(options = {})
                 p(class='iqdropdown-item')=val
       div(class='js-dropdown__buttons dropdown__buttons')
         div(class='js-dropdown__first-button dropdown__first-button dropdown__first-button_hide_clean')
-          +btn({text: 'Очистить', type: 'ghost'})
+          +buttons({text: 'Очистить', style: 'ghost'})
         div(class='js-dropdown__second-button dropdown__second-button')
-          +btn({text: 'Применить'})
+          +buttons({text: 'Применить'})
   else 
     div(class='js-dropdown dropdown')
       .iqdropdown

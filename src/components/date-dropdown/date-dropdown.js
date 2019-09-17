@@ -1,4 +1,4 @@
-import '../datepicker/datepicker.min.js';
+import 'air-datepicker';
 
 ;(function ($, undefined) {
 

@@ -32,7 +32,8 @@ mixin room(options)
             span(class='room__numbers item-title')= options.number
         p(class='room__cost')
           span(class='room__cost-price label-text')= options.cost
-          span(class='room__cost-text text')= '\u20bd' + ' в сутки'
+          span(class='room__cost-sign') c
+          span(class='room__cost-text text')= ' в сутки'
       div(class='room__line')
       div(class='room__stars-and-comments')
         div(class='room__stars')

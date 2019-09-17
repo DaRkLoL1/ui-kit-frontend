@@ -1,6 +1,6 @@
 
 import './index.scss';
-import './components/masked-text-field/masked-text-field.js'
+import './components/masked-text-field/masked-text-field.js';
 import './components/field-button/field-button.js';
 import './components/switch/switch.js';
 import './components/radio-buttons/radio-buttons.js';
@@ -16,3 +16,4 @@ import './components/datepicker-inline/datepicker-inline.js';
 import './components/filter-date-dropdown/filter-date-dropdown.js';
 import './components/dropdown/dropdown.js';
 import './components/room/room.js';
+import './components/window-registration/window-registration.js';

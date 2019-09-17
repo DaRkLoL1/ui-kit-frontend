@@ -1,0 +1,19 @@
+mixin buttons(options)
+  - 
+    let size = '';
+    size = options.size ? ' buttons_' + options.size : '';
+
+    let style = '';
+
+    if(size.length > 0) {
+      style = options.style ? size + '_ghost' : '';
+    } else {
+      style = options.style ? ' buttons_ghost' : '';
+    }
+
+    if(style === ' buttons_big_ghost') {
+      style = '';
+    }
+
+    let type = options.type ? 'submit' : 'button';
+  button(class='label-text buttons' + size + style type=type)=options.text

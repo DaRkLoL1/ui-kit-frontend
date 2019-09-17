@@ -157,7 +157,7 @@
     color: $paragraph-color;
   }
 
-  & .iqdropdown-selection_opacity_m:hover::after {
+  &:hover .iqdropdown-selection_opacity_m::after {
     color: $label-color;
   }
 
