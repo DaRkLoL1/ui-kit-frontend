@@ -1,0 +1,36 @@
+@import 'material-icons/iconfont/material-icons.scss';
+@import './components/colors-and-types/colors-and-types.scss';
+@import './components/window-registration/window-registration.scss';
+@import './components/window-login/window-login.scss';
+@import './components/window-search/window-search.scss';
+@import './components/room/room.scss';
+@import './components/room-booking/room-booking.scss';
+@import './components/datepicker-inline/datepicker-inline.scss';
+
+html{
+  background-color: #E5E5E5;
+  background-image: url('./favicon.png');
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+  padding-top: 150px;
+  padding-left: 140px;
+}
+
+.cards {
+  display: flex;
+  
+  margin: auto;
+
+  &__wrapper-1,
+  &__wrapper-2 {
+    width: 380px;
+    margin-right: 40px;
+  }
+
+  &__search,
+  &__booking,
+  &__datepicker,
+  &__room-1 {
+    margin-bottom: 40px;
+  }
+}

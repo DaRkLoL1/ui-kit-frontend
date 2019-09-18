@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    title ui-kit
+    title form elements
     meta(name="keywords" content="")
     meta(name="discription" content="")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
@@ -21,22 +21,16 @@ html
     include components/filter-date-dropdown/filter-date-dropdown.pug
     include components/dropdown/dropdown.pug
     include components/date-dropdown/date-dropdown.pug
-    include components/room/room.pug
-    include components/room-booking/room-booking.pug
     include components/buttons/buttons.pug 
-    include components/window-registration/window-registration.pug
     include components/set-of-qualities/set-of-qualities.pug
-    include components/datepicker-inline/datepicker-inline.pug
     include components/radio-buttons/radio-buttons.pug
     include components/pagination/pagination.pug
     include components/range-slider/range-slider.pug
-    include components/window-login/window-login.pug
-    include components/window-search/window-search.pug
+
 
     .flex
       .w-320px
         +buttons({size: 'big', type: 'submit', text: 'перейти к оплате'})
-        +buttons({size: 'big', style: 'ghost', type: 'submit', text: 'перейти к оплате'})
         +buttons({size: 'medium', text: 'click me'})
         +buttons({size: 'medium', style: 'ghost', text: 'click me'})
         +buttons({style: 'ghost', text: 'click me'})
@@ -46,33 +40,22 @@ html
         +masked-text-field
         +date-dropdown(['2019-09-13'])
         +set-of-qualities
-        +date-dropdown(['2019-09-13', '2019-09-19'])
-        +datepicker-inline
-        +room({class: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.png'})
-        +room({stars: 4, number: 840, cost: '9 990', comments: '65', image: 'room-img-2.png'})
-
+        
       .w-266px
         +filter-date-dropdown(['2019-09-13','2019-09-16'])
         +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
         +field-button({text: 'Email', theme: 'gradient'})
         +switch({type: 'toggle', text: 'Получать спецпредложения'})
         +radio-buttons
-        +filter-date-dropdown()
         +checkbox-buttons
         +expandable-checkbox-list('expandable checkbox list')
         +rich-checkbox-buttons('rich checkbox buttons')
         +like-button(9)
         +bullet-list
-        +rate-button(1)
         +rate-button(4)
-        +rate-button(2)
         +pagination
         +range-slider('range slider')
-      .w-380px
-        +room-booking
-        +window-registration
-        +window-login
-        +window-search
+        
 
     +comment({image: 'image-1.png', name: 'Мурад Сарафанов', time: '5 дней назад', 
       text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.' + 

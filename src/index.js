@@ -12,9 +12,6 @@ import './components/rate-button/rate-button.js';
 import './components/range-slider/range-slider.js';
 import './components/comment/comment.js';
 import './components/date-dropdown/date-dropdown.js';
-import './components/datepicker-inline/datepicker-inline.js';
 import './components/filter-date-dropdown/filter-date-dropdown.js';
 import './components/dropdown/dropdown.js';
-import './components/room/room.js';
-import './components/window-registration/window-registration.js';
-import './components/window-search/window-search.js';
+

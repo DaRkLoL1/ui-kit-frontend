@@ -45,3 +45,9 @@
     margin-top: 31px;
   }
 }
+
+@media (max-width: 330px) {
+  .window-search {
+    border: none;
+  }
+}

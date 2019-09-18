@@ -8,18 +8,15 @@ module.exports = {
   devtool: 'inline-sourse-map',
 
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    cards: './src/cards.js'
   },
 
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all'
-    }
-  },
+  
   module: {
     rules: [
       {
@@ -74,6 +71,13 @@ module.exports = {
       hash: false,
       template: './src/index.pug',
       filename: 'index.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/cards.pug',
+      filename: 'cards.html',
+      chunks: ['cards']
     }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
@@ -83,6 +87,6 @@ module.exports = {
   ],
   
   devServer: {
-        contentBase: './dist'
+        contentBase: './dist/cards.html'
   },
 };
