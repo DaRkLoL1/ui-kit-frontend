@@ -19,23 +19,19 @@
 @import './components/dropdown/dropdown.scss';
 @import './components/buttons/buttons.scss';
 
+body{
+  background-image: url('./favicon.png');
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+  padding-top: 150px;
+}
 
+.elements {
+  width: 1160px;
+  margin: auto;
 
-.flex {
-  display: flex;
-  margin-bottom: 50px;
-}
-.w-380px {
-  width: 380px;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-.w-320px {
-  width: 320px;
-  margin-top: 100px;
-  margin-left: 50px;
-}
-.w-266px {
-  width: 266px;
-  margin-left: 20px;
+  &__wrapper-1 {
+    display: flex;
+    justify-content: space-between;
+  }
 }

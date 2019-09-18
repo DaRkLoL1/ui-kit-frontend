@@ -4150,20 +4150,23 @@ body {
     padding: 20px;
     padding-bottom: 17px; }
 
-html {
+body {
   background-color: #E5E5E5;
   background-image: url(./images/favicon.png);
   background-repeat: no-repeat;
-  background-position: 30px 30px;
-  padding-top: 150px;
-  padding-left: 140px; }
+  background-position: 20px 30px;
+  padding-top: 150px; }
 
 .cards {
   display: flex;
-  margin: auto; }
-  .cards__wrapper-1, .cards__wrapper-2 {
-    width: 380px;
-    margin-right: 40px; }
+  justify-content: space-between;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto; }
+  .cards__search, .cards__booking, .cards__registration, .cards__login {
+    width: 380px; }
   .cards__search, .cards__booking, .cards__datepicker, .cards__room-1 {
     margin-bottom: 40px; }
+  .cards__search {
+    margin-bottom: 38px; }
 

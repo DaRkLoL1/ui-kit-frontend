@@ -27,9 +27,60 @@ html
     include components/pagination/pagination.pug
     include components/range-slider/range-slider.pug
 
+    .elements
+      .elements__wrapper-1
+        .elements__first-line
+          .elements__text-field
+            h3(class='elements__title label-text') text field
+            +text-field({text: 'Email'})
+          .elements__dropdown
+            h3(class='elements__title label-text') dropdown
+            +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
+          .elements__masked-text-field
+            h3(class='elements__title label-text') masked text field
+            +masked-text-field
+          .elements__date-dropdown
+            .elements__titles
+              h3(class='elements__title label-text') date dropdown
+              h3(class='elements__title label-text') date dropdown
+            +date-dropdown(['2019-08-19'])
+          .elements__filter-date-dropdown
+            h3(class='elements__title label-text') filter date dropdown
+            +filter-date-dropdown(['2019-09-13','2019-09-16'])
+          .elements__subscription-text-field
+            h3(class='elements__title label-text') subscription text field
+            +field-button({text: 'Email', theme: 'gradient'})
+          .elements__dropdown
+            h3(class='elements__title label-text') dropdown
+            +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
+          .elements__expandable-checkbox-list
+            +expandable-checkbox-list('expandable checkbox list')
+        .elements__second-line
+          .elements__checkbox-buttons
+            +checkbox-buttons
+          .elements__radio-buttons
+            h3(class='elements__title label-text') radio buttons
+            +radio-buttons
+          .elements__toggle
+            h3(class='elements__title label-text') toggle
+            +switch({type: 'toggle', text: 'Получать спецпредложения'})
+          .elements__like-button
+            h3(class='elements__title label-text') like-button
+            +like-button(9)
+          .elements__rate-button
+            h3(class='elements__title label-text') rate-button
+            +rate-button(4)
+          .
 
-    .flex
-      .w-320px
+
+
+
+
+
+
+
+
+
         +buttons({size: 'big', type: 'submit', text: 'перейти к оплате'})
         +buttons({size: 'medium', text: 'click me'})
         +buttons({size: 'medium', style: 'ghost', text: 'click me'})
@@ -41,7 +92,7 @@ html
         +date-dropdown(['2019-09-13'])
         +set-of-qualities
         
-      .w-266px
+      
         +filter-date-dropdown(['2019-09-13','2019-09-16'])
         +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
         +field-button({text: 'Email', theme: 'gradient'})
