@@ -36,8 +36,8 @@
   }
 
   &__item .ui-slider-handle {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background: linear-gradient(180deg, $secondary-color 0%, $second-linear 100%);
     border-radius: 10px;
     border: 2px solid $background;
@@ -46,7 +46,7 @@
   }
 
   &__item.ui-slider-horizontal .ui-slider-handle {
-    top: 2px;
+    top: 0px;
     margin-top: -6px;
   }
 

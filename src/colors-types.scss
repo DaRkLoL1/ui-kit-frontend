@@ -1,0 +1,104 @@
+@import 'material-icons/iconfont/material-icons.scss';
+@import './components/colors-and-types/colors-and-types.scss';
+
+body{
+  background-image: url('./favicon.png');
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+  padding-top: 145px;
+}
+
+.colors-and-type {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  margin: auto;
+
+  &__wrapper-1 {
+    width: 270px;
+  }
+
+  &__wrapper-2 {
+    width: 430px;
+  }
+}
+
+.colors { 
+  display: flex;
+  margin-bottom: 20px;
+
+  &__square {
+    width: 70px;
+    height: 70px;
+    background-color: $title-color;
+    border-radius: 6px;
+
+    &_opacity_75 {
+      background-color: $label-color;
+    }
+
+    &_opacity_50 {
+      background-color: $paragraph-color;
+    }
+
+    &_opacity_25 {
+      background-color: $placeholder-color;
+    }
+
+    &_opacity_5 {
+      background-color: $shadow-color;
+    }
+
+    &_color_purple {
+      background-color: $primary-color;
+    }
+
+    &_color_green {
+      background-color: $secondary-color;
+    }
+  }
+
+  &__title {
+    margin-left: 40px;
+  }
+  &__name {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  &__color {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 1.1875rem;
+    line-height: 1.26;
+    color: $title-color;
+  }
+
+}
+
+.types {
+  display: flex;
+  align-items: flex-start;
+  width: 430px;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  &__tag {
+    width: 40px;
+    margin-right: 30px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: $placeholder-color;
+    text-align: right;
+  }
+
+  &__text {
+    width: 350px;
+
+    &_width_301 {
+      width: 301px;
+    }
+  }
+
+}

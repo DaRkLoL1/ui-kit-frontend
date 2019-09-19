@@ -9,7 +9,9 @@ module.exports = {
 
   entry: {
     index: './src/index.js',
-    cards: './src/cards.js'
+    cards: './src/cards.js',
+    elements: './src/elements.js',
+    'colors-types': './src/colors-types.js'
   },
 
   output: {
@@ -79,6 +81,18 @@ module.exports = {
       filename: 'cards.html',
       chunks: ['cards']
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/elements.pug',
+      filename: 'elements.html',
+      chunks: ['elements']
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/colors-types.pug',
+      filename: 'colors-types.html',
+      chunks: ['colors-types']
+    }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -87,6 +101,6 @@ module.exports = {
   ],
   
   devServer: {
-        contentBase: './dist/cards.html'
+        contentBase: './dist'
   },
 };

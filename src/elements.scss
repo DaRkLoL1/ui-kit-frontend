@@ -1,0 +1,76 @@
+@import 'material-icons/iconfont/material-icons.scss';
+@import './components/colors-and-types/colors-and-types.scss';
+@import './components/text-field/text-field.scss';
+@import './components/field-button/field-button.scss';
+@import './components/switch/switch.scss';
+@import './components/radio-buttons/radio-buttons.scss';
+@import './components/checkbox-buttons/checkbox-buttons.scss';
+@import './components/expandable-checkbox-list/expandable-checkbox-list.scss';
+@import './components/rich-checkbox-buttons/rich-checkbox-buttons.scss';
+@import './components/like-button/like-button.scss';
+@import './components/bullet-list/bullet-list.scss';
+@import './components/rate-button/rate-button.scss';
+@import './components/pagination/pagination.scss';
+@import './components/range-slider/range-slider.scss';
+@import './components/set-of-qualities/set-of-qualities.scss';
+@import './components/comment/comment.scss';
+@import './components/date-dropdown/date-dropdown.scss';
+@import './components/filter-date-dropdown/filter-date-dropdown.scss';
+@import './components/dropdown/dropdown.scss';
+@import './components/buttons/buttons.scss';
+
+body{
+  background-image: url('./favicon.png');
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+  padding-top: 150px;
+}
+
+.elements {
+  width: 1160px;
+  margin: auto;
+
+  &__title {
+    margin-bottom: 5px;
+    margin-top: 18px;
+  }
+
+  &__wrapper-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__first-line {
+    width: 320px;
+  }
+
+  &__second-line {
+    width: 266px;
+  }
+
+  &__titles{
+    display: flex;
+
+    & .elements__title:last-child {
+      margin-left: 55px;
+    }
+  }
+
+  &__buttons-1,
+  &__buttons-2 {
+    width: 99px;
+  }
+
+  &__filter-date-dropdown,
+  &__subscription-text-field,
+  &__dropdown-2,
+  &__range-slider,
+  &__bullet-list {
+    width: 266px;
+  }
+
+  &__wrapper-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+}

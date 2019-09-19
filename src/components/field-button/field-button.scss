@@ -8,6 +8,7 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid $placeholder-color;
+  background: $background;
 
   &:hover, &_isFocused {
     border-color: $paragraph-color;

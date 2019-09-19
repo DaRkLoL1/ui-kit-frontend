@@ -1,37 +1,17 @@
 @import 'material-icons/iconfont/material-icons.scss';
+@import '~@fortawesome/fontawesome-free/css/all';
 @import './components/colors-and-types/colors-and-types.scss';
-@import './components/text-field/text-field.scss';
-@import './components/field-button/field-button.scss';
-@import './components/switch/switch.scss';
-@import './components/radio-buttons/radio-buttons.scss';
-@import './components/checkbox-buttons/checkbox-buttons.scss';
-@import './components/expandable-checkbox-list/expandable-checkbox-list.scss';
-@import './components/rich-checkbox-buttons/rich-checkbox-buttons.scss';
-@import './components/like-button/like-button.scss';
-@import './components/bullet-list/bullet-list.scss';
-@import './components/rate-button/rate-button.scss';
-@import './components/pagination/pagination.scss';
-@import './components/range-slider/range-slider.scss';
-@import './components/set-of-qualities/set-of-qualities.scss';
-@import './components/comment/comment.scss';
-@import './components/date-dropdown/date-dropdown.scss';
-@import './components/filter-date-dropdown/filter-date-dropdown.scss';
-@import './components/dropdown/dropdown.scss';
-@import './components/buttons/buttons.scss';
+@import './components/footer-copyright/footer-copyright.scss';
 
-body{
+html {
+  background-color: #E5E5E5;
+}
+
+body {
+  margin: 0;
+  background-color: #E5E5E5;
   background-image: url('./favicon.png');
   background-repeat: no-repeat;
   background-position: 20px 30px;
-  padding-top: 150px;
-}
-
-.elements {
-  width: 1160px;
-  margin: auto;
-
-  &__wrapper-1 {
-    display: flex;
-    justify-content: space-between;
-  }
+  padding-top: 145px;
 }
