@@ -1,0 +1,22 @@
+include ../buttons/buttons.pug
+
+mixin header(options)
+  header.header
+    .header__wrapper
+      img(src='./components/header/logo.png')
+      .header__content
+        .header__nav
+          ul.header__list
+            each val in options.list
+              li(class='header__item' + ( val.style ? ' header__item_contains_arrow' : '') )
+                a(href='#' class='text header__link' + ( val.weight ? ' header__link_weight_bold' : '' )  + ( val.style ? ' header__link_contains_arrow' : '') )= val.text
+        if options.logged
+          .header__logged
+            .header__line
+            p(class='header__name text')= options.name
+        else 
+          .header__buttons
+            .header__login
+              +buttons({size: 'medium', style: 'ghost', text: options.buttons[0]})
+            .header__register
+              +buttons({size: 'medium', text: options.buttons[1]})

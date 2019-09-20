@@ -4,7 +4,8 @@
 body{
   background-image: url('./favicon.png');
   background-repeat: no-repeat;
-  background-position: 20px 30px;
+  background-position: 30px 30px;
+  margin: 0;
   padding-top: 145px;
 }
 
@@ -12,7 +13,7 @@ body{
   display: flex;
   justify-content: space-between;
   width: 1120px;
-  margin: auto;
+  margin-left: 150px;
 
   &__wrapper-1 {
     width: 270px;

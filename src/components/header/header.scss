@@ -1,0 +1,152 @@
+@import '../buttons/buttons.scss';
+
+.header {
+  background: $background;
+  box-shadow: 0px 10px 20px $shadow-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &__content,
+  &__list,
+  &__logged, 
+  &__buttons,
+  &__wrapper{
+    display: flex;
+    align-items: center;
+  }
+  
+  &__wrapper {
+    justify-content: space-between;
+    width: 80.5%;
+    margin: auto;
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 29px;
+
+    &_contains_arrow  {
+      margin-right: 20px;
+    }
+  }
+
+  &__link,
+  &__name {
+    line-height: 1.214;
+    color: $paragraph-color;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &_weight_bold {
+      font-weight: bold;
+      color: $label-color;
+    }
+
+    &_contains_arrow {
+      &::after {
+        content: 'expand_more';
+        font-family: 'Material Icons';
+        font-size: 24px;
+        line-height: 17px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__login {
+    position: relative;
+    width: 79px;
+    height: 34px;
+    z-index: 1;
+  } 
+
+  &__register {
+    width: 101px;
+    height: 34px;
+    margin-left: 20px;
+  }
+
+  &__name {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__line {
+    width: 1px;
+    height: 30px;
+    background: rgba(31, 32, 65, 0.1);
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .header {
+
+    &__wrapper {
+      width: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .header {
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__nav {
+      margin: 10px;
+    }
+    &__item {
+      margin-right: 10px;
+
+      &_contains_arrow  {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+
+    &__content {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+    
+    &__nav {
+      margin: 0;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__register {
+      margin-left: 10px;
+    }
+  }
+}
