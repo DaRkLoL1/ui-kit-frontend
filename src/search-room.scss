@@ -1,0 +1,155 @@
+@import 'material-icons/iconfont/material-icons.scss';
+@import '~@fortawesome/fontawesome-free/css/all';
+@import './components/colors-and-types/colors-and-types.scss';
+@import './components/footer-copyright/footer-copyright.scss';
+@import './components/header/header.scss';
+@import './components/filter-date-dropdown/filter-date-dropdown.scss';
+@import './components/dropdown/dropdown.scss';
+@import './components/range-slider/range-slider.scss';
+@import './components/checkbox-buttons/checkbox-buttons.scss';
+@import './components/rich-checkbox-buttons/rich-checkbox-buttons.scss';
+@import './components/expandable-checkbox-list/expandable-checkbox-list.scss';
+@import './components/pagination/pagination.scss';
+@import './components/room/room.scss';
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 80.5%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 68px;
+    border-bottom: 1px solid $placeholder-color;
+  }
+
+  &__action {
+    width: 266px;
+  }
+
+  &__numbers {
+    margin-left: 60px;
+  }
+
+  &__rooms {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__room {
+    margin-top: 20px;
+  }
+
+  &__pagination {
+    width: 240px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__main-title {
+    margin: 0;
+  }
+
+  &__title {
+    margin:0;
+    margin-bottom: 5px;
+  }
+
+  &__dropdown-1,
+  &__slider  {
+    margin-top: 20px;
+  }
+
+  &__expandable-checkbox-list  {
+    margin-top: 18px;
+  }
+
+  &__checkbox-buttons,
+  &__rich-checkbox-buttons,
+  &__dropdown-2 {
+    margin-top: 31px;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.1666;
+    margin-top: 13px;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .wrapper {
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &__dropdown-1,
+    &__slider,
+    &__expandable-checkbox-list,
+    &__checkbox-buttons,
+    &__rich-checkbox-buttons,
+    &__dropdown-2 {
+    margin-top: 0px;
+  }
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    
+    
+    &__content {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .wrapper {
+    
+    
+    &__content {
+      width: 95%;
+    }
+
+    &__rooms {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    
+    
+    &__content {
+      width: 99%;
+    }
+  }
+}

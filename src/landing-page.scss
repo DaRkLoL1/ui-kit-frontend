@@ -1,0 +1,75 @@
+@import 'material-icons/iconfont/material-icons.scss';
+@import '~@fortawesome/fontawesome-free/css/all';
+@import './components/colors-and-types/colors-and-types.scss';
+@import './components/footer-copyright/footer-copyright.scss';
+@import './components/header/header.scss';
+@import './components/window-search/window-search.scss';
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+
+  &__search {
+    width: 380px;
+    padding-top: 70px;
+    padding-bottom: 318px;
+    margin-left: 140px;
+  }
+
+  &__content {
+    background: url('./landing-page-img-1.png');
+    background-position: 0 -70px;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    width: 300px;
+    text-align: right;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 134px;
+    padding-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 680px) {
+  .wrapper {
+
+    &__search {
+      margin: auto;
+    }
+
+    &__text{
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+
+  .wrapper {
+    &__search {
+      width: auto;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+

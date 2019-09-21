@@ -16,7 +16,10 @@
     background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     border-radius: 22px;
     color: $background;
-
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+    
     &:hover {
       opacity: 0.5;
     }
@@ -24,9 +27,11 @@
     &_ghost {
       position: relative;
       box-sizing: border-box;
-      padding: 2px;
+      border: 2px solid transparent;
+      padding-left: 18px;
+      padding-right: 18px;
       background: $background;
-      background-clip: content-box;
+      background-clip: padding-box;
       color: $primary-color;
 
       &::before {
@@ -36,6 +41,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        margin: -2px;
         background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
         border-radius: inherit;
         z-index: -1;

@@ -11,7 +11,12 @@ module.exports = {
     index: './src/index.js',
     cards: './src/cards.js',
     elements: './src/elements.js',
-    'colors-types': './src/colors-types.js'
+    registration: './src/registration.js',
+    'colors-types': './src/colors-types.js',
+    'headers-footers': './src/headers-footers.js',
+    'landing-page': './src/landing-page.js',
+    'search-room': './src/search-room.js',
+    'sign-in': './src/sign-in.js',
   },
 
   output: {
@@ -77,6 +82,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: false,
+      template: './src/registration.pug',
+      filename: 'registration.html',
+      chunks: ['registration']
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
       template: './src/cards.pug',
       filename: 'cards.html',
       chunks: ['cards']
@@ -92,6 +103,30 @@ module.exports = {
       template: './src/colors-types.pug',
       filename: 'colors-types.html',
       chunks: ['colors-types']
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/headers-footers.pug',
+      filename: 'headers-footers.html',
+      chunks: ['headers-footers']
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/landing-page.pug',
+      filename: 'landing-page.html',
+      chunks: ['landing-page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/search-room.pug',
+      filename: 'search-room.html',
+      chunks: ['search-room']
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/sign-in.pug',
+      filename: 'sign-in.html',
+      chunks: ['sign-in']
     }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({

@@ -4830,151 +4830,64 @@ html {
   .header__login, .header__register, .header__line {
     margin-left: 0; } }
 
-.text-field {
-  height: 44px;
-  width: 100%;
-  padding: 0;
-  padding-left: 14px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: rgba(31, 32, 65, 0.25); }
-  .text-field:focus, .text-field:hover {
-    border-color: rgba(31, 32, 65, 0.5);
-    color: rgba(31, 32, 65, 0.75);
-    outline-style: none; }
-  .text-field::placeholder {
-    color: rgba(31, 32, 65, 0.25); }
-  .text-field_opacity_h {
-    color: rgba(31, 32, 65, 0.75); }
-    .text-field_opacity_h::placeholder {
-      color: rgba(31, 32, 65, 0.75); }
-  .text-field_border_off {
-    height: auto;
-    border: none;
-    border-radius: 0; }
-
-.buttons {
-  padding: 0;
-  border: none;
-  outline: none;
+.footer-creative {
+  padding-top: 100px;
+  padding-bottom: 110px;
   background: #FFFFFF;
-  color: #BC9CFF;
-  cursor: pointer; }
-  .buttons_ghost {
-    color: rgba(31, 32, 65, 0.5); }
-  .buttons_medium {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    color: #FFFFFF;
-    padding-left: 20px;
-    padding-right: 20px;
-    white-space: nowrap; }
-    .buttons_medium:hover {
-      opacity: 0.5; }
-    .buttons_medium_ghost {
-      position: relative;
-      box-sizing: border-box;
-      border: 2px solid transparent;
-      padding-left: 18px;
-      padding-right: 18px;
-      background: #FFFFFF;
-      background-clip: padding-box;
-      color: #BC9CFF; }
-      .buttons_medium_ghost::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: -2px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        border-radius: inherit;
-        z-index: -1; }
-      .buttons_medium_ghost:hover {
-        opacity: 1; }
-      .buttons_medium_ghost:hover::before {
-        opacity: 0.5; }
-  .buttons_big {
-    position: relative;
-    width: 100%;
-    height: 44px;
-    padding: 0;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    color: #FFFFFF; }
-    .buttons_big::after {
-      content: 'arrow_forward';
-      position: absolute;
-      top: 7px;
-      right: 8px;
-      font-family: 'Material Icons';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      text-transform: none; }
-
-.window-login {
-  width: 100%;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
-  .window-login__wrapper {
-    width: 320px;
-    margin: auto;
-    padding-top: 40px;
-    padding-bottom: 30px; }
-  .window-login__title {
-    margin: 0; }
-  .window-login__email {
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .footer-creative__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto; }
+  .footer-creative__text {
+    text-align: center;
     margin-top: 19px;
-    margin-bottom: 10px; }
-  .window-login__submit {
-    margin-top: 20px; }
-  .window-login__footer {
+    margin-bottom: 29px; }
+  .footer-creative__icons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 30px; }
-  .window-login__text {
-    margin: 0; }
-  .window-login__button {
-    position: relative;
-    width: 99px;
-    height: 44px;
-    z-index: 1; }
+    width: 112px; }
+  .footer-creative__icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #BC9CFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent;
+    /* Прозрачный текст */ }
 
-@media (max-width: 330px) {
-  .window-login {
-    border: none; } }
+@media (max-width: 1000px) {
+  .footer-creative {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .footer-creative__wrapper {
+      width: 60%; } }
+
+@media (max-width: 700px) {
+  .footer-creative__wrapper {
+    width: 70%; } }
+
+@media (max-width: 500px) {
+  .footer-creative {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .footer-creative__wrapper {
+      width: 90%; } }
 
 html {
-  height: 100%; }
+  background-color: #E5E5E5; }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin: 0; }
+  margin: 0;
+  background-color: #E5E5E5;
+  background-image: url(./images/favicon.png);
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+  padding-top: 110px; }
 
-.wrapper__content {
-  background: url(./images/registration-sign-in-img-1.png);
-  background-position: 0 -70px;
-  box-sizing: border-box; }
-
-.wrapper__window {
-  padding-top: 163px;
-  padding-bottom: 163px;
-  width: 380px;
-  margin: auto; }
-
-@media (max-width: 380px) {
-  .wrapper__window {
-    width: 100%; } }
+.wrapper {
+  margin-top: 40px; }
 

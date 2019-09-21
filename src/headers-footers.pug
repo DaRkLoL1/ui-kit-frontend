@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Headers & Footers
+    meta(name="keywords" content="")
+    meta(name="discription" content="")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+  body
+    include ./components/footer-copyright/footer-copyright.pug 
+    include ./components/header/header.pug
+    include ./components/footer-creative/footer-creative.pug
+    .wrapper
+      +header({
+        list: [
+          {text: 'Home', weight: 'bold'},
+          {text: 'About Us'},
+          {text: 'Services', style: 'containArrow'},
+          {text: 'Careers'},
+          {text: 'News'},
+          {text: 'Documentation'},
+        ],
+        buttons: [
+          'login',
+          'register'
+        ]
+      })
+    .wrapper
+      +header({
+        list: [
+          {text: 'Home', weight: 'bold'},
+          {text: 'About Us'},
+          {text: 'Services', style: 'containArrow'},
+          {text: 'Careers'},
+          {text: 'News'},
+          {text: 'Documentation'},
+        ],
+        logged: true,
+        name: 'Cosmin Negoita '
+      })
+    .wrapper
+      +footer-copyright({
+        copyright: 'Copyright © 2018 Toxin UI Kit. All rights reserved.',
+        subscribe: [
+          'Subscribe to our newsletter',
+          'Receive our latest news and promotions in your inbox!',
+          'Your email address'
+        ],
+        text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
+        lists: [
+          ['Navigation', 'About Us', 'News', 'Support', 'Products'],
+          ['ABOUT US', 'Who we are', 'Our team', 'Careers', 'Investors'],
+          ['Support', 'Documentation', 'Community', 'Get in Touch']
+        ]
+      })
+    .wrapper 
+      +footer-creative('Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.')

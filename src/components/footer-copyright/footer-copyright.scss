@@ -15,11 +15,14 @@
     width: 80.5%;
     margin: auto;
   }
-
+  &__wrapper-footer {
+    justify-content: space-between;
+  }
   &__wrapper-copyright {
     justify-content: space-between;
     align-items: center;
-    padding: 11px;
+    padding: 11px 0;
+
   }
 
   &__description {
@@ -29,9 +32,8 @@
 
   &__lists {
     display: flex;
-    justify-content: space-between;
-    width: 513px;
-    margin-left: 40px;
+    justify-content: space-around;
+    width: 55%;
     padding-top: 5px;
   }
 
@@ -39,7 +41,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
+    
 
     &-title {
       margin-top: 0;
@@ -57,7 +59,7 @@
 
   &__subscribe {
     width: 260px;
-    margin-left: 87px;
+    
     padding-top: 5px;
 
     &-title {

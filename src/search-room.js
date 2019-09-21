@@ -1,0 +1,9 @@
+import './search-room.scss';
+import './components/footer-copyright/footer-copyright.js';
+import './components/filter-date-dropdown/filter-date-dropdown.js';
+import './components/dropdown/dropdown.js';
+import './components/range-slider/range-slider.js';
+import './components/checkbox-buttons/checkbox-buttons.js';
+import './components/rich-checkbox-buttons/rich-checkbox-buttons.js';
+import './components/expandable-checkbox-list/expandable-checkbox-list.js';
+import './components/room/room.js';

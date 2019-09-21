@@ -3,7 +3,7 @@
 @import './components/colors-and-types/colors-and-types.scss';
 @import './components/footer-copyright/footer-copyright.scss';
 @import './components/header/header.scss';
-@import './components/window-login/window-login.scss';
+@import './components/window-registration/window-registration.scss';
 
 html {
   height: 100%;
@@ -26,10 +26,10 @@ body {
   }
 
   &__window {
-    padding-top: 163px;
-    padding-bottom: 163px;
     width: 380px;
     margin: auto;
+    padding-top: 30px;
+    padding-bottom: 26px;
   }
 }
 

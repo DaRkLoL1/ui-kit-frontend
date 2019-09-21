@@ -2,14 +2,14 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    title Sign in
+    title Landing page
     meta(name="keywords" content="")
     meta(name="discription" content="")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
   body
     include ./components/footer-copyright/footer-copyright.pug 
     include ./components/header/header.pug
-    include ./components/window-login/window-login.pug
+    include ./components/window-search/window-search.pug
     
     .wrapper 
       +header({
@@ -26,8 +26,9 @@ html
         ]
       })
       .wrapper__content
-        .wrapper__window
-          +window-login
+        .wrapper__search
+          +window-search
+        p(class='wrapper__text text') Лучшие номера для вашей работы, отдыха и просто вдохновения
     +footer-copyright({
         copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',
         subscribe: [
