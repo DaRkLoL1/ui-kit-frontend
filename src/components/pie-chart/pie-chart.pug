@@ -1,0 +1,19 @@
+
+mixin pie-chart
+  .pie-chart
+    h2(class='pie-chart__title item-title') Впечатления от номера
+    .pie-chart__content
+      .pie-chart__circle
+        p(class='pie-chart__vote')
+          span(class='pie-chart__number widjet-title') 260
+          span(class='pie-chart__text label-text') голосов
+      ul(class='pie-chart__list')
+        - 
+          let arrColor = [
+            ['Великолепно', ''],
+            ['Хорошо', ' pie-chart__item_list-item_green'],
+            ['Удовлетворительно', ' pie-chart__item_list-item_purple'],
+            ['Разочарован', ' pie-chart__item_list-item_black'],
+          ]
+        each val in arrColor
+          li(class='pie-chart__item text' + val[1])= val[0]

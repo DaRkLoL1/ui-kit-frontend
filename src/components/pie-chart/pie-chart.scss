@@ -1,0 +1,102 @@
+
+.pie-chart {
+  width: 310px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+
+  &__content {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__circle {
+    display: flex;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid transparent;
+    background-size: 100% 100%, 49% 49%;
+    background-image:
+      linear-gradient(white, white),
+      linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-position: center center, right top;
+    background-repeat: no-repeat;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 50%;
+      margin: -10px;
+      box-sizing: border-box;
+      border: 5px solid transparent;
+      background-size: 100% 100%, 49% 100%, 49% 49%;
+      background-image:linear-gradient(white, white),
+        linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%),
+        linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      background-position: center center, left bottom, right bottom;
+      background-repeat: no-repeat;
+      background-origin: content-box, border-box, border-box;
+      background-clip: content-box, border-box, border-box;
+      z-index: -1;
+    }
+  }
+
+  &__vote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__number,
+  &__text {
+    color: $primary-color;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 1px;
+    padding-left: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 1px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+    }
+
+    &_list-item_green::before {
+      background: linear-gradient(180deg, $secondary-color 0%, $second-linear 100%);
+    }
+
+    &_list-item_purple::before {
+      background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
+    }
+    
+    &_list-item_black::before {
+      background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+    }
+  }
+} 

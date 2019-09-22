@@ -7,17 +7,7 @@ const webpack = require('webpack');
 module.exports = {
   devtool: 'inline-sourse-map',
 
-  entry: {
-    index: './src/index.js',
-    cards: './src/cards.js',
-    elements: './src/elements.js',
-    registration: './src/registration.js',
-    'colors-types': './src/colors-types.js',
-    'headers-footers': './src/headers-footers.js',
-    'landing-page': './src/landing-page.js',
-    'search-room': './src/search-room.js',
-    'sign-in': './src/sign-in.js',
-  },
+  entry: {},
 
   output: {
     filename: '[name].js',
@@ -74,60 +64,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/index.pug',
-      filename: 'index.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/registration.pug',
-      filename: 'registration.html',
-      chunks: ['registration']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/cards.pug',
-      filename: 'cards.html',
-      chunks: ['cards']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/elements.pug',
-      filename: 'elements.html',
-      chunks: ['elements']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/colors-types.pug',
-      filename: 'colors-types.html',
-      chunks: ['colors-types']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/headers-footers.pug',
-      filename: 'headers-footers.html',
-      chunks: ['headers-footers']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/landing-page.pug',
-      filename: 'landing-page.html',
-      chunks: ['landing-page']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/search-room.pug',
-      filename: 'search-room.html',
-      chunks: ['search-room']
-    }),
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/sign-in.pug',
-      filename: 'sign-in.html',
-      chunks: ['sign-in']
-    }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -139,3 +75,25 @@ module.exports = {
         contentBase: './dist'
   },
 };
+
+[
+  'room-details', 
+  'registration', 
+  'cards', 'elements', 
+  'colors-types', 
+  'headers-footers', 
+  'landing-page', 
+  'search-room',
+  'sign-in'
+].forEach( item => {
+  module.exports.entry[item] = './src/' + item +'.js';
+
+  module.exports.plugins.push(
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/' + item + '.pug',
+      filename: item + '.html',
+      chunks: [item]
+    })
+  );
+})

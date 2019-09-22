@@ -1094,21 +1094,66 @@ a.ui-button:active,
     line-height: 41px; }
   .quality__property {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0;
+    margin: 0; }
   .quality__header {
     font-weight: bold; }
 
 .set-of-qualities__line {
   width: 280px;
   height: 1px;
-  margin-top: 6px;
-  margin-bottom: 8px;
+  margin-top: 20px;
+  margin-bottom: 22px;
   background: rgba(31, 32, 65, 0.1); }
+
+.like-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 40px;
+  min-width: 40px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  color: rgba(31, 32, 65, 0.25);
+  cursor: pointer; }
+  .like-button_click {
+    position: relative;
+    border: none;
+    padding: 1px;
+    background: #FFFFFF;
+    background-clip: content-box;
+    color: #BC9CFF; }
+    .like-button_click::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: inherit;
+      z-index: -1; }
+  .like-button__icon {
+    width: 20px;
+    font-size: 10px;
+    line-height: 9px;
+    text-align: center; }
+  .like-button__number {
+    margin-left: 2px;
+    font-size: 0.625rem;
+    line-height: 1.2;
+    color: inherit; }
+    .like-button__number_margin_null {
+      margin-left: 0px; }
 
 .comment {
   display: flex;
   flex-direction: column;
-  width: 711px; }
+  width: 100%; }
   .comment__header {
     display: flex;
     align-items: center;
@@ -3342,4 +3387,6 @@ body {
   .elements__wrapper-2 {
     display: flex;
     justify-content: space-between; }
+  .elements__comment {
+    width: 711px; }
 

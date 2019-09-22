@@ -1,7 +1,9 @@
+@import '../like-button/like-button.scss';
+
 .comment {
   display: flex;
   flex-direction: column;
-  width: 711px;
+  width: 100%;
 
   &__header {
     display: flex;
