@@ -79,7 +79,8 @@ module.exports = {
 [
   'room-details', 
   'registration', 
-  'cards', 'elements', 
+  'cards', 
+  'elements', 
   'colors-types', 
   'headers-footers', 
   'landing-page', 
