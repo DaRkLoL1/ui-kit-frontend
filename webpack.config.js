@@ -72,7 +72,8 @@ module.exports = {
   ],
   
   devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        index: 'sign-in.html'
   },
 };
 

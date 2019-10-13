@@ -9,7 +9,7 @@ mixin header(options)
           ul.header__list
             each val in options.list
               li(class='header__item' + ( val.style ? ' header__item_contains_arrow' : '') )
-                a(href='#' class='text header__link' + ( val.weight ? ' header__link_weight_bold' : '' )  + ( val.style ? ' header__link_contains_arrow' : '') )= val.text
+                a(href='/mock-address/change-me' class='text header__link' + ( val.weight ? ' header__link_weight_bold' : '' )  + ( val.style ? ' header__link_contains_arrow' : '') )= val.text
         if options.logged
           .header__logged
             .header__line

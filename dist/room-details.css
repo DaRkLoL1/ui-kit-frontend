@@ -6480,19 +6480,19 @@ body {
   .wrapper__main-img {
     width: 68%;
     height: 100%;
-    background: url(./images/room-details-img-1.png);
+    background: url(./images/room-details-img-1.jpg);
     background-repeat: no-repeat; }
   .wrapper__secondary-images {
     width: 32%;
     height: 100%; }
   .wrapper__secondary-img-1 {
     height: 50%;
-    background: url(./images/room-details-img-2.png);
+    background: url(./images/room-details-img-2.jpg);
     background-repeat: no-repeat;
     transform: matrix(-1, 0, 0, 1, 0, 0); }
   .wrapper__secondary-img-2 {
     height: 50%;
-    background: url(./images/room-details-img-3.png);
+    background: url(./images/room-details-img-3.jpg);
     background-repeat: no-repeat; }
   .wrapper__content {
     width: 80.5%;
