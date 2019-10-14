@@ -13303,9 +13303,8 @@ module.exports = function (list, options) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../like-button/like-button.js */ "./src/components/like-button/like-button.js");
-/* harmony import */ var _like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__);
-
+/* harmony import */ var _like_button_like_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../like-button/like-button */ "./src/components/like-button/like-button.js");
+/* harmony import */ var _like_button_like_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_like_button_like_button__WEBPACK_IMPORTED_MODULE_0__);
 
 
 
@@ -13324,17 +13323,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 
 
-;(function ($, undefined) {
+;(function ($) {
+  const arrDateDropdown = document.querySelectorAll('.js-date-dropdown');
 
-  let arrDateDropdown = document.querySelectorAll('.js-date-dropdown');
+  arrDateDropdown.forEach((item) => {
+    const $item = $(item);
+    const $first = $item.find('.date-dropdown__first-input .js-text-field');
+    const $second = $item.find('.date-dropdown__second-input .js-text-field');
 
-  arrDateDropdown.forEach( (item) => {
-
-    let $item = $(item);
-    let $first = $item.find('.date-dropdown__first-input .js-text-field');
-    let $second = $item.find('.date-dropdown__second-input .js-text-field');
-
-    let dateDropdown = $first.datepicker({
+    const dateDropdown = $first.datepicker({
       range: true,
       offset: 16,
       prevHtml: '<i class="material-icons">arrow_back</i>',
@@ -13344,48 +13341,42 @@ __webpack_require__.r(__webpack_exports__);
       },
       altField: $second,
       altFieldDateFormat: '',
-      onSelect(formattedDate, date, inst) {
-        
-        let arrDates = formattedDate.split(',');
+      onSelect(formattedDate) {
+        const arrDates = formattedDate.split(',');
 
-        if(arrDates.length === 1) {
+        if (arrDates.length === 1) {
           $first.val('');
           $second.val(arrDates[0]);
         } else {
           $first.val(arrDates[0]);
           $second.val(arrDates[1]);
         }
-        
-      }
+      },
     }).data('datepicker');
-    
-    let dates = $item.data('dates');
+    const dates = $item.data('dates');
 
-    if(Array.isArray(dates)) {
-      if(dates.length === 1) {
-        dateDropdown.selectDate(new Date(dates[0]))
+    if (Array.isArray(dates)) {
+      if (dates.length === 1) {
+        dateDropdown.selectDate(new Date(dates[0]));
       } else {
-        dateDropdown.selectDate([new Date(dates[0]),new Date(dates[1])])
+        dateDropdown.selectDate([new Date(dates[0]), new Date(dates[1])]);
       }
-      
     }
 
-    $item.find('.js-date-dropdown__first-button').on('click', function () {
+    $item.find('.js-date-dropdown__first-button').on('click', () => {
       dateDropdown.clear();
     });
 
-    $item.find('.js-date-dropdown__second-button').on('click', function () {
+    $item.find('.js-date-dropdown__second-button').on('click', () => {
       dateDropdown.hide();
     });
 
-    $item.find('.date-dropdown__first-input, .date-dropdown__second-input').on('click', function () {
+    $item.find('.date-dropdown__first-input, .date-dropdown__second-input').on('click', () => {
       dateDropdown.show();
     });
-    
-    dateDropdown['$datepicker'].append( $item.find('.js-date-dropdown__buttons') );
-
-  })
-})(jQuery)
+    dateDropdown.$datepicker.append($item.find('.js-date-dropdown__buttons'));
+  });
+}(jQuery));
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -13399,93 +13390,80 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../item-quantity-dropdown/item-quantity-dropdown.min.js */ "./src/components/item-quantity-dropdown/item-quantity-dropdown.min.js");
-/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_item_quantity_dropdown_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../item-quantity-dropdown/item-quantity-dropdown.min */ "./src/components/item-quantity-dropdown/item-quantity-dropdown.min.js");
+/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__);
 
 
 
-;(function ($, undefined) {
+;(function ($) {
+  const arrDropdown = document.querySelectorAll('.js-dropdown');
 
-  let arrDropdown = document.querySelectorAll('.js-dropdown');
+  arrDropdown.forEach((item) => {
+    const setValueDropdown = function ($dropdown) {
+      const arrItems = $dropdown.find('.counter');
 
-  arrDropdown.forEach( item => {
-
-    let setValueDropdown = function ($dropdown) {
-      let arrItems = $dropdown.find('.counter');
-
-      let arrCount  = [];
-      arrItems.each(function (i, item) {
-        arrCount.push( Number.parseInt($(item).text()) );
+      const arrCount = [];
+      arrItems.each((i, item) => {
+        arrCount.push(Number.parseInt($(item).text(), 10));
       });
 
-      let buttons = $dropdown.find('.button-decrement');
-      
-      arrCount.forEach( (item, i) => {
-        let $button = $(buttons[i]);
+      const buttons = $dropdown.find('.button-decrement');
+      arrCount.forEach((item, i) => {
+        const $button = $(buttons[i]);
 
-        if(item === 0) {
+        if (item === 0) {
           $button.addClass('button-zero');
         } else {
           $button.removeClass('button-zero');
         }
-
       });
-      
       let text = '';
 
-      if( $dropdown.hasClass('js-dropdown_with_buttons') ) {
-
-        let arrValues = [
+      if ($dropdown.hasClass('js-dropdown_with_buttons')) {
+        const arrValues = [
           ['гость', 'гостя', 'гостей'],
-          ['младенец', 'младенца','младенцев']
+          ['младенец', 'младенца', 'младенцев'],
         ];
-        
-        let lastCount = arrCount.pop();
-        let firstCount = arrCount.reduce((a,b) => {
-          return a + b;
-        });
-        
-        let arrNewCount = [firstCount, lastCount];
+        const lastCount = arrCount.pop();
+        const firstCount = arrCount.reduce((a, b) => (a + b));
+        const arrNewCount = [firstCount, lastCount];
 
-        arrNewCount.forEach( (item, i) => {
-          if(item === 1) {
-            text += item + ' ' + arrValues[i][0] + ', ';
+        arrNewCount.forEach((item, i) => {
+          if (item === 1) {
+            text += `${item} ${arrValues[i][0]}, `;
           } 
-          else if(item > 1 && item < 5) {
-            text += item + ' ' + arrValues[i][1] + ', ';
+          if (item > 1 && item < 5) {
+            text += `${item} ${arrValues[i][1]}, `;
           }
-          else if(item > 4) {
-            text += item + ' ' + arrValues[i][2] + ', ';
+          if (item > 4) {
+            text += `${item} ${arrValues[i][2]}, `;
           }
         });
-        
-        let $clear = $dropdown.find('.js-dropdown__first-button');
+        const $clear = $dropdown.find('.js-dropdown__first-button');
 
-        if(text.length > 0) {
+        if (text.length > 0) {
           text = text.slice(0, text.length - 2);
           $clear.removeClass('dropdown__first-button_hide_clean');
         } else {
           text = 'Сколько гостей';
           $clear.addClass('dropdown__first-button_hide_clean');
         }
-
       } else {
-
-        let arrValues = [
+        const arrValues = [
           ['спальня', 'спальни', 'спален'],
-          ['кровать', 'кровати', 'кроватей'], 
-          ['ванная комната', 'ванные комнаты','ванных комнат']
+          ['кровать', 'кровати', 'кроватей'],
+          ['ванная комната', 'ванные комнаты', 'ванных комнат'],
         ];
 
-        arrCount.forEach( (item, i) => {
-          if(item === 1) {
-            text += item + ' ' + arrValues[i][0] + ', ';
-          } 
-          else if(item > 1 && item < 5) {
-            text += item + ' ' + arrValues[i][1] + ', ';
+        arrCount.forEach((item, i) => {
+          if (item === 1) {
+            text += `${item} ${arrValues[i][0]}, `;
           }
-          else if(item > 4 || item === 0) {
-            text += item + ' ' + arrValues[i][2] + ', ';
+          if (item > 1 && item < 5) {
+            text += `${item} ${arrValues[i][1]}, `;
+          }
+          if (item > 4 || item === 0) {
+            text += `${item} ${arrValues[i][2]}, `;
           }
         });
 
@@ -13493,51 +13471,43 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       $dropdown.find('.iqdropdown-selection').text(text);
-    }
-
-    let $item = $(item);
+    };
+    const $item = $(item);
 
     $item.find('.iqdropdown').iqDropdown({
       selectionText: '',
       textPlural: '',
-      onChange: (id, count, totalItems) => {
+      onChange: () => {
         setValueDropdown($item);
       },
     });
 
-    if( $item.hasClass('js-dropdown_with_buttons') ) {
-      let $buttons = $item.find('.js-dropdown__buttons');
+    if ($item.hasClass('js-dropdown_with_buttons')) {
+      const $buttons = $item.find('.js-dropdown__buttons');
 
-      $buttons.on('click', function (event) {
+      $buttons.on('click', (event) => {
         event.stopPropagation();
       });
 
-      let $clear = $buttons.find('.js-dropdown__first-button');
+      const $clear = $buttons.find('.js-dropdown__first-button');
 
-      $clear.on('click', function (event) {
-
-        while( Number.parseInt( $item.find('.counter').text() )  !== 0 ) {
+      $clear.on('click', () => {
+        while (Number.parseInt($item.find('.counter').text(), 10) !== 0) {
           $item.find('.button-decrement').trigger('click');
         }
-
       });
 
-      let $get = $buttons.find('.js-dropdown__second-button');
-      
-      $get.on('click', function (event) {
+      const $get = $buttons.find('.js-dropdown__second-button');
+      $get.on('click', () => {
         $item.find('.iqdropdown').trigger('click');
       });
-      
-      $item.find('.iqdropdown-menu').append( $buttons );
-
+      $item.find('.iqdropdown-menu').append($buttons);
     }
 
-
     setValueDropdown($item);
+  });
+}(jQuery));
 
-  })
-
-})(jQuery);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -13550,27 +13520,27 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
-  $('.js-field-button_focused .js-text-field').on('focus', function (event){
-    let target = event.currentTarget;
-    $(target).parent().addClass('field-button_isFocused');
-    $(target).next().addClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('focus', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().addClass('field-button_isFocused');
+  $target.next().addClass('field-button__icon_isFocused');
+});
 
-  $('.js-field-button_focused .js-text-field').on('blur', function (event){
-    let target = event.currentTarget;
-    $(target).parent().removeClass('field-button_isFocused');
-    $(target).next().removeClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('blur', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().removeClass('field-button_isFocused');
+  $target.next().removeClass('field-button__icon_isFocused');
+});
 
-  
-    $('.js-field-button .js-field-button__icon').hover(function (event) {
-      $(event.currentTarget).addClass('field-button__icon_hovered');
-    }, function (event) {
-       $(event.currentTarget).removeClass('field-button__icon_hovered');
-    })
+$('.js-field-button .js-field-button__icon').hover(
+  (event) => {
+    $(event.currentTarget).addClass('field-button__icon_hovered');
+  },
+  (event) => {
+    $(event.currentTarget).removeClass('field-button__icon_hovered');
+  },
+);
 
-  
-  
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -13584,8 +13554,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button.js */ "./src/components/field-button/field-button.js");
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button */ "./src/components/field-button/field-button.js");
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 /***/ }),
@@ -13610,35 +13581,33 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.js-like-button').on('click', function (event) {
-  let $target = $(event.currentTarget);
-  let $icon = $( $target.find('.like-button__icon') );
-  let $number = $( $target.find('.like-button__number') );
-  let text = Number.parseInt( $number.text() );
-  
-  if( !($target.hasClass('like-button_click')) ) {
+/* WEBPACK VAR INJECTION */(function($) {$('.js-like-button').on('click', (event) => {
+  const $target = $(event.currentTarget);
+  const $icon = $($target.find('.like-button__icon'));
+  const $number = $($target.find('.like-button__number'));
+  let text = Number.parseInt($number.text(), 10);
+  if (!($target.hasClass('like-button_click'))) {
     $target.addClass('like-button_click');
-
     text += 1;
     $number.text(text);
-    if(text > 9) {
+
+    if (text > 9) {
       $number.addClass('like-button__number_margin_null');
     }
-
     $icon.text('favorite');
   } else {
     $target.removeClass('like-button_click');
-
     text -= 1;
     $number.text(text);
-    if(text < 10) {
+
+    if (text < 10) {
       $number.removeClass('like-button__number_margin_null');
     }
 
     $icon.text('favorite_border');
   }
+});
 
-})
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -13652,8 +13621,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _date_dropdown_date_dropdown_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../date-dropdown/date-dropdown.js */ "./src/components/date-dropdown/date-dropdown.js");
-/* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dropdown/dropdown.js */ "./src/components/dropdown/dropdown.js");
+/* harmony import */ var _date_dropdown_date_dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../date-dropdown/date-dropdown */ "./src/components/date-dropdown/date-dropdown.js");
+/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dropdown/dropdown */ "./src/components/dropdown/dropdown.js");
 
 
 
@@ -13670,10 +13639,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _room_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./room-details.scss */ "./src/room-details.scss");
 /* harmony import */ var _room_details_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_room_details_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_footer_copyright_footer_copyright_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright.js */ "./src/components/footer-copyright/footer-copyright.js");
-/* harmony import */ var _components_comment_comment_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/comment/comment.js */ "./src/components/comment/comment.js");
-/* harmony import */ var _components_room_booking_room_booking_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/room-booking/room-booking.js */ "./src/components/room-booking/room-booking.js");
-
+/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
+/* harmony import */ var _components_comment_comment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/comment/comment */ "./src/components/comment/comment.js");
+/* harmony import */ var _components_room_booking_room_booking__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/room-booking/room-booking */ "./src/components/room-booking/room-booking.js");
 
 
 

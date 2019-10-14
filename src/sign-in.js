@@ -1,5 +1,4 @@
-
 import './sign-in.scss';
-import './components/favicons/favicons.js';
-import './components/footer-copyright/footer-copyright.js';
-import './components/window-login/window-login.js';
+import './components/favicons/favicons';
+import './components/footer-copyright/footer-copyright';
+import './components/window-login/window-login';

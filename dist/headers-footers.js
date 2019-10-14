@@ -11008,27 +11008,27 @@ module.exports = function (list, options) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
-  $('.js-field-button_focused .js-text-field').on('focus', function (event){
-    let target = event.currentTarget;
-    $(target).parent().addClass('field-button_isFocused');
-    $(target).next().addClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('focus', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().addClass('field-button_isFocused');
+  $target.next().addClass('field-button__icon_isFocused');
+});
 
-  $('.js-field-button_focused .js-text-field').on('blur', function (event){
-    let target = event.currentTarget;
-    $(target).parent().removeClass('field-button_isFocused');
-    $(target).next().removeClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('blur', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().removeClass('field-button_isFocused');
+  $target.next().removeClass('field-button__icon_isFocused');
+});
 
-  
-    $('.js-field-button .js-field-button__icon').hover(function (event) {
-      $(event.currentTarget).addClass('field-button__icon_hovered');
-    }, function (event) {
-       $(event.currentTarget).removeClass('field-button__icon_hovered');
-    })
+$('.js-field-button .js-field-button__icon').hover(
+  (event) => {
+    $(event.currentTarget).addClass('field-button__icon_hovered');
+  },
+  (event) => {
+    $(event.currentTarget).removeClass('field-button__icon_hovered');
+  },
+);
 
-  
-  
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -11042,8 +11042,9 @@ module.exports = function (list, options) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button.js */ "./src/components/field-button/field-button.js");
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button */ "./src/components/field-button/field-button.js");
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 /***/ }),
@@ -11059,9 +11060,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _headers_footers_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./headers-footers.scss */ "./src/headers-footers.scss");
 /* harmony import */ var _headers_footers_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_headers_footers_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_footer_copyright_footer_copyright_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright.js */ "./src/components/footer-copyright/footer-copyright.js");
-
-
+/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
 
 
 

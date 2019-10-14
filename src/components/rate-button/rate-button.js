@@ -1,18 +1,16 @@
-import './jquery.star.rating.min.js';
+import './jquery.star.rating.min';
 
-;(function ($, undefined) {
-  let rateButtons = document.querySelectorAll('.js-rate-button');
+;(function ($) {
+  const rateButtons = document.querySelectorAll('.js-rate-button');
 
-  rateButtons.forEach( item => {
+  rateButtons.forEach((item) => {
     $(item).addRating(
       {
-        max : 5,
-        icon : 'star',
-        selectedRatings: $(item).attr('data-value')
-      }
-    )
-
+        max: 5,
+        icon: 'star',
+        selectedRatings: $(item).attr('data-value'),
+      },
+    );
     $(item).find('i').addClass('rate-button__icon');
-  }) 
-
-})(jQuery);
+  });
+}(jQuery));

@@ -11622,27 +11622,27 @@ module.exports = function (list, options) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
-  $('.js-field-button_focused .js-text-field').on('focus', function (event){
-    let target = event.currentTarget;
-    $(target).parent().addClass('field-button_isFocused');
-    $(target).next().addClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('focus', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().addClass('field-button_isFocused');
+  $target.next().addClass('field-button__icon_isFocused');
+});
 
-  $('.js-field-button_focused .js-text-field').on('blur', function (event){
-    let target = event.currentTarget;
-    $(target).parent().removeClass('field-button_isFocused');
-    $(target).next().removeClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('blur', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().removeClass('field-button_isFocused');
+  $target.next().removeClass('field-button__icon_isFocused');
+});
 
-  
-    $('.js-field-button .js-field-button__icon').hover(function (event) {
-      $(event.currentTarget).addClass('field-button__icon_hovered');
-    }, function (event) {
-       $(event.currentTarget).removeClass('field-button__icon_hovered');
-    })
+$('.js-field-button .js-field-button__icon').hover(
+  (event) => {
+    $(event.currentTarget).addClass('field-button__icon_hovered');
+  },
+  (event) => {
+    $(event.currentTarget).removeClass('field-button__icon_hovered');
+  },
+);
 
-  
-  
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -11656,8 +11656,9 @@ module.exports = function (list, options) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button.js */ "./src/components/field-button/field-button.js");
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button */ "./src/components/field-button/field-button.js");
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 /***/ }),
@@ -11674,94 +11675,92 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery-mask-plugin */ "./node_modules/jquery-mask-plugin/dist/jquery.mask.js");
 /* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__);
 
+
 {
-
-let createMaskOption = function (val) {
-  
-  if(Number.parseInt(val[6]) === 1) {
-    return {
-      O: {pattern: /[5-9]/},
-      X: {pattern: /[9]/},
-      A: {pattern: /[0-3]/},
-      B: {pattern: /[0-9]/},
-      S: {pattern: /[0-1]/},
-      R: {pattern: /[1-9]/},
-      Y: {pattern: /[1-2]/},
-      K: {pattern: /[0-9]/}
+  const createMaskOption = function (val) {
+    if (Number.parseInt(val[6], 10) === 1) {
+      return {
+        O: { pattern: /[5-9]/ },
+        X: { pattern: /[9]/ },
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[0-9]/ },
+        S: { pattern: /[0-1]/ },
+        R: { pattern: /[1-9]/ },
+        Y: { pattern: /[1-2]/ },
+        K: { pattern: /[0-9]/ },
+      };
     }
-  }
-  else if(Number.parseInt(val[3]) === 1) {
-    return {
-      R: {pattern: /[0-2]/},
-      A: {pattern: /[0-3]/},
-      B: {pattern: /[0-1]/},
-      S: {pattern: /[0-1]/},
-      Y: {pattern: /[1-2]/},
-      X: {pattern: /[0]/},
-      O: {pattern: /[0-1]/},
-      K: {pattern: /[0-9]/}
+    if (Number.parseInt(val[3], 10) === 1) {
+      return {
+        R: { pattern: /[0-2]/ },
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[0-1]/ },
+        S: { pattern: /[0-1]/ },
+        Y: { pattern: /[1-2]/ },
+        X: { pattern: /[0]/ },
+        O: { pattern: /[0-1]/ },
+        K: { pattern: /[0-9]/ },
+      };
     }
-  }
-
-  else if(Number.parseInt(val[0]) === 0) {
-    return {
-      A: {pattern: /[0-3]/},
-      B: {pattern: /[1-9]/},
-      S: {pattern: /[0-1]/},
-      R: {pattern: /[1-9]/},
-      Y: {pattern: /[1-2]/},
-      X: {pattern: /[0]/},
-      O: {pattern: /[0-1]/},
-      K: {pattern: /[0-9]/}
+    if (Number.parseInt(val[0], 10) === 0) {
+      return {
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[1-9]/ },
+        S: { pattern: /[0-1]/ },
+        R: { pattern: /[1-9]/ },
+        Y: { pattern: /[1-2]/ },
+        X: { pattern: /[0]/ },
+        O: { pattern: /[0-1]/ },
+        K: { pattern: /[0-9]/ },
+      };
     }
-  }
-  else if(Number.parseInt(val[0]) === 3) {
-    return {
-      A: {pattern: /[0-3]/},
-      B: {pattern: /[0-1]/},
-      S: {pattern: /[0-1]/},
-      R: {pattern: /[1-9]/},
-      Y: {pattern: /[1-2]/},
-      X: {pattern: /[0]/},
-      O: {pattern: /[0-1]/},
-      K: {pattern: /[0-9]/}
+    if (Number.parseInt(val[0], 10) === 3) {
+      return {
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[0-1]/ },
+        S: { pattern: /[0-1]/ },
+        R: { pattern: /[1-9]/ },
+        Y: { pattern: /[1-2]/ },
+        X: { pattern: /[0]/ },
+        O: { pattern: /[0-1]/ },
+        K: { pattern: /[0-9]/ },
+      };
     }
-  }
 
-  return {
-    B: {pattern: /[0-9]/},
-    A: {pattern: /[0-3]/},
-    S: {pattern: /[0-1]/},
-    R: {pattern: /[1-9]/},
-    Y: {pattern: /[1-2]/},
-    X: {pattern: /[0]/},
-    O: {pattern: /[0-1]/},
-    K: {pattern: /[0-9]/}
-  }
+    return {
+      B: { pattern: /[0-9]/ },
+      A: { pattern: /[0-3]/ },
+      S: { pattern: /[0-1]/ },
+      R: { pattern: /[1-9]/ },
+      Y: { pattern: /[1-2]/ },
+      X: { pattern: /[0]/ },
+      O: { pattern: /[0-1]/ },
+      K: { pattern: /[0-9]/ },
+    };
+  };
 
+  $('.js-mask').mask('AB.SR.YXOQ', {
+    translation: {
+      A: { pattern: /[0-3]/ },
+      B: { pattern: /[0-9]/ },
+      S: { pattern: /[0-1]/ },
+      R: { pattern: /[1-9]/ },
+      Y: { pattern: /[1-2]/ },
+      X: { pattern: /[0]/ },
+      O: { pattern: /[0-1]/ },
+      K: { pattern: /[0-9]/ },
+    },
+
+    onKeyPress(val, e, field, options) {
+      const obj = createMaskOption(val);
+      field.mask('AB.SR.YXOK', {
+        translation: obj,
+        onKeyPress: options.onKeyPress,
+      });
+    },
+  });
 }
 
-$('.js-mask').mask('AB.SR.YXOQ',{'translation': {
-    A: {pattern: /[0-3]/},
-    B: {pattern: /[0-9]/},
-    S: {pattern: /[0-1]/},
-    R: {pattern: /[1-9]/},
-    Y: {pattern: /[1-2]/},
-    X: {pattern: /[0]/},
-    O: {pattern: /[0-1]/},
-    K: {pattern: /[0-9]/}
-  },
-  onKeyPress: function(val, e, field, options) {
-    let obj = createMaskOption(val);
-    field.mask('AB.SR.YXOK', {
-      'translation': obj,
-      'onKeyPress': options.onKeyPress
-    });
-  }
-});
-  
-
-}
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -11775,45 +11774,33 @@ $('.js-mask').mask('AB.SR.YXOQ',{'translation': {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _switch_switch_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch.js */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch_js__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
+/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
 
 
-;(function ($, undefined){
-
-  let arrRadioButtons = document.querySelectorAll('.js-radio-buttons');
-  
-  arrRadioButtons.forEach( item => {
-
-    let $item = $(item);
-    
-    let $arrRadio = $item.find('.js-switch');
-    
+;(function ($) {
+  const arrRadioButtons = document.querySelectorAll('.js-radio-buttons');
+  arrRadioButtons.forEach((item) => {
+    const $item = $(item);
+    const $arrRadio = $item.find('.js-switch');
     $($arrRadio[0]).addClass('switch_radio_checked');
 
-    
-
-    $item.on('click', function (event) {
-
-      let $target = $(event.target);
-  
-      if($target.hasClass('js-radio-buttons')) return;
-  
+    $item.on('click', (event) => {
+      const $target = $(event.target);
+      if ($target.hasClass('js-radio-buttons')) return;
       $target.find('.js-switch__input').prop('checked', true);
-  
       $target.addClass('switch_radio_checked');
 
-      $arrRadio.each(function (i, item){
-        let $item = $(item);
-        if( ! ($item.find('.js-switch__input').prop('checked') ) ) {
-          $(item).removeClass('switch_radio_checked');
+      $arrRadio.each((i, RadioItem) => {
+        const $RadioItem = $(RadioItem);
+        if (!($RadioItem.find('.js-switch__input').prop('checked'))) {
+          $RadioItem.removeClass('switch_radio_checked');
         }
-      })
-  
+      });
     });
   });
+}(jQuery));
 
-})(jQuery);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -11825,21 +11812,18 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.js-switch').on('click', function (event) {
-  
-  let target = event.currentTarget;
-  let $input = $(target).find('.js-switch__input');
-  
-  if( !($input.attr('type') === 'checkbox') ) return;
+/* WEBPACK VAR INJECTION */(function($) {$('.js-switch').on('click', (event) => {
+  const $target = $(event.currentTarget);
+  const $input = $target.find('.js-switch__input');
+  if (!($input.attr('type') === 'checkbox')) return;
 
-  let className = $(target).hasClass('switch_checkbox') ? 'switch_checkbox' : 'switch_toggle';
-  if($input.prop('checked')) {
-    $(target).addClass(className + '_checked');
+  const className = $target.hasClass('switch_checkbox') ? 'switch_checkbox' : 'switch_toggle';
+  if ($input.prop('checked')) {
+    $target.addClass(`${className}_checked`);
   } else {
-    $(target).removeClass(className + '_checked');
+    $target.removeClass(`${className}_checked`);
   }
-
-})
+});
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
@@ -11854,10 +11838,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _radio_buttons_radio_buttons_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../radio-buttons/radio-buttons.js */ "./src/components/radio-buttons/radio-buttons.js");
-/* harmony import */ var _masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../masked-text-field/masked-text-field.js */ "./src/components/masked-text-field/masked-text-field.js");
-/* harmony import */ var _switch_switch_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../switch/switch.js */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_switch_switch_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _radio_buttons_radio_buttons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../radio-buttons/radio-buttons */ "./src/components/radio-buttons/radio-buttons.js");
+/* harmony import */ var _masked_text_field_masked_text_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../masked-text-field/masked-text-field */ "./src/components/masked-text-field/masked-text-field.js");
+/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
+/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -11875,9 +11860,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registration.scss */ "./src/registration.scss");
 /* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_registration_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_footer_copyright_footer_copyright_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright.js */ "./src/components/footer-copyright/footer-copyright.js");
-/* harmony import */ var _components_window_registration_window_registration_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/window-registration/window-registration.js */ "./src/components/window-registration/window-registration.js");
-
+/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
+/* harmony import */ var _components_window_registration_window_registration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/window-registration/window-registration */ "./src/components/window-registration/window-registration.js");
 
 
 

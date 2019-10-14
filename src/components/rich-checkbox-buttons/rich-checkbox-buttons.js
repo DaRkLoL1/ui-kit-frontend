@@ -1,1 +1,1 @@
-import '../switch/switch.js';
+import '../switch/switch';

@@ -1,1 +1,1 @@
-import '../field-button/field-button.js';
+import '../field-button/field-button';

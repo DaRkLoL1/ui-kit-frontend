@@ -1,36 +1,31 @@
-import './jquery-ui-slider.js';
-import './jquery-ui-slider-touch-punch.js';
+import './jquery-ui-slider';
+import './jquery-ui-slider-touch-punch';
 
 
-;(function ($, undefined) {
-  let getResult = function (values) {
+;(function ($) {
+  const getResult = function (values) {
+    return values.map((item) => {
+      let sliderItem = String(item);
 
-    return values.map( item => {
-      item = item + '';
-
-      if(item.length > 3) {
-        let lengthSlice = item.length - 3;
-        item = item.slice(0, lengthSlice) + ' ' + item.slice(lengthSlice);
+      if (sliderItem.length > 3) {
+        const lengthSlice = sliderItem.length - 3;
+        sliderItem = `${sliderItem.slice(0, lengthSlice)} ${sliderItem.slice(lengthSlice)}`;
       }
-
-      return item;
+      return sliderItem;
     });
-
-  }
+  };
 
   $('.js-range-slider__item').slider({
     animate: 'slow',
     range: true,
-    max: 15500,   
-    values: [ 5000, 10000 ],
-    slide : function(event, ui) { 
-
-        let result = getResult(ui.values);
-        $('.js-range-slider__result').text( result[ 0 ] + '\u20bd - ' + result[ 1 ] + '\u20bd' );        
-    }
+    max: 15500,
+    values: [5000, 10000],
+    slide(event, ui) {
+      const result = getResult(ui.values);
+      $('.js-range-slider__result').text(`${result[0]}\u20bd - ${result[1]}\u20bd`);
+    },
   });
 
-  let result = getResult( $('.js-range-slider__item').slider('values') );
-  $( '.js-range-slider__result' ).text(  result[ 0 ] + '\u20bd - ' + result[ 1 ] + '\u20bd'  );
-
-})(jQuery);
+  const result = getResult($('.js-range-slider__item').slider('values'));
+  $('.js-range-slider__result').text(`${result[0]}\u20bd - ${result[1]}\u20bd`);
+}(jQuery));

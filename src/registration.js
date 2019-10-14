@@ -1,4 +1,3 @@
-
 import './registration.scss';
-import './components/footer-copyright/footer-copyright.js';
-import './components/window-registration/window-registration.js';
+import './components/footer-copyright/footer-copyright';
+import './components/window-registration/window-registration';

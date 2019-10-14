@@ -11138,6 +11138,7 @@ webpackContext.id = "./src/components/favicons sync recursive ./!./!./node_modul
 const faviconsContext = __webpack_require__("./src/components/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$");
 faviconsContext.keys().forEach(faviconsContext);
 
+
 /***/ }),
 
 /***/ "./src/components/field-button/field-button.js":
@@ -11148,27 +11149,27 @@ faviconsContext.keys().forEach(faviconsContext);
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
-  $('.js-field-button_focused .js-text-field').on('focus', function (event){
-    let target = event.currentTarget;
-    $(target).parent().addClass('field-button_isFocused');
-    $(target).next().addClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('focus', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().addClass('field-button_isFocused');
+  $target.next().addClass('field-button__icon_isFocused');
+});
 
-  $('.js-field-button_focused .js-text-field').on('blur', function (event){
-    let target = event.currentTarget;
-    $(target).parent().removeClass('field-button_isFocused');
-    $(target).next().removeClass('field-button__icon_isFocused');
-  });
+$('.js-field-button_focused .js-text-field').on('blur', (event) => {
+  const $target = $(event.currentTarget);
+  $target.parent().removeClass('field-button_isFocused');
+  $target.next().removeClass('field-button__icon_isFocused');
+});
 
-  
-    $('.js-field-button .js-field-button__icon').hover(function (event) {
-      $(event.currentTarget).addClass('field-button__icon_hovered');
-    }, function (event) {
-       $(event.currentTarget).removeClass('field-button__icon_hovered');
-    })
+$('.js-field-button .js-field-button__icon').hover(
+  (event) => {
+    $(event.currentTarget).addClass('field-button__icon_hovered');
+  },
+  (event) => {
+    $(event.currentTarget).removeClass('field-button__icon_hovered');
+  },
+);
 
-  
-  
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -11182,8 +11183,9 @@ faviconsContext.keys().forEach(faviconsContext);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button.js */ "./src/components/field-button/field-button.js");
-/* harmony import */ var _field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button */ "./src/components/field-button/field-button.js");
+/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 /***/ }),
@@ -11210,12 +11212,11 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sign_in_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sign-in.scss */ "./src/sign-in.scss");
 /* harmony import */ var _sign_in_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sign_in_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_favicons_favicons_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/favicons/favicons.js */ "./src/components/favicons/favicons.js");
-/* harmony import */ var _components_favicons_favicons_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_favicons_favicons_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_footer_copyright_footer_copyright_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright.js */ "./src/components/footer-copyright/footer-copyright.js");
-/* harmony import */ var _components_window_login_window_login_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/window-login/window-login.js */ "./src/components/window-login/window-login.js");
-/* harmony import */ var _components_window_login_window_login_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_window_login_window_login_js__WEBPACK_IMPORTED_MODULE_3__);
-
+/* harmony import */ var _components_favicons_favicons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/favicons/favicons */ "./src/components/favicons/favicons.js");
+/* harmony import */ var _components_favicons_favicons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_favicons_favicons__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
+/* harmony import */ var _components_window_login_window_login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/window-login/window-login */ "./src/components/window-login/window-login.js");
+/* harmony import */ var _components_window_login_window_login__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_window_login_window_login__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
