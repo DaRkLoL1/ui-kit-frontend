@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/elements.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/elements/elements.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -13604,10 +13604,10 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/elements.scss":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/elements.scss ***!
-  \**********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/elements/elements.scss":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/elements/elements.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14640,34 +14640,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/elements.js":
-/*!*************************!*\
-  !*** ./src/elements.js ***!
-  \*************************/
+/***/ "./src/elements/elements.js":
+/*!**********************************!*\
+  !*** ./src/elements/elements.js ***!
+  \**********************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _elements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements.scss */ "./src/elements.scss");
+/* harmony import */ var _elements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements.scss */ "./src/elements/elements.scss");
 /* harmony import */ var _elements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_elements_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_masked_text_field_masked_text_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/masked-text-field/masked-text-field */ "./src/components/masked-text-field/masked-text-field.js");
-/* harmony import */ var _components_field_button_field_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/field-button/field-button */ "./src/components/field-button/field-button.js");
+/* harmony import */ var _components_masked_text_field_masked_text_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/masked-text-field/masked-text-field */ "./src/components/masked-text-field/masked-text-field.js");
+/* harmony import */ var _components_field_button_field_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/field-button/field-button */ "./src/components/field-button/field-button.js");
 /* harmony import */ var _components_field_button_field_button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_field_button_field_button__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_switch_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/switch/switch */ "./src/components/switch/switch.js");
+/* harmony import */ var _components_switch_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/switch/switch */ "./src/components/switch/switch.js");
 /* harmony import */ var _components_switch_switch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_switch_switch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_radio_buttons_radio_buttons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/radio-buttons/radio-buttons */ "./src/components/radio-buttons/radio-buttons.js");
-/* harmony import */ var _components_checkbox_buttons_checkbox_buttons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/checkbox-buttons/checkbox-buttons */ "./src/components/checkbox-buttons/checkbox-buttons.js");
-/* harmony import */ var _components_expandable_checkbox_list_expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/expandable-checkbox-list/expandable-checkbox-list */ "./src/components/expandable-checkbox-list/expandable-checkbox-list.js");
-/* harmony import */ var _components_rich_checkbox_buttons_rich_checkbox_buttons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/rich-checkbox-buttons/rich-checkbox-buttons */ "./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js");
-/* harmony import */ var _components_like_button_like_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/like-button/like-button */ "./src/components/like-button/like-button.js");
+/* harmony import */ var _components_radio_buttons_radio_buttons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/radio-buttons/radio-buttons */ "./src/components/radio-buttons/radio-buttons.js");
+/* harmony import */ var _components_checkbox_buttons_checkbox_buttons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/checkbox-buttons/checkbox-buttons */ "./src/components/checkbox-buttons/checkbox-buttons.js");
+/* harmony import */ var _components_expandable_checkbox_list_expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/expandable-checkbox-list/expandable-checkbox-list */ "./src/components/expandable-checkbox-list/expandable-checkbox-list.js");
+/* harmony import */ var _components_rich_checkbox_buttons_rich_checkbox_buttons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/rich-checkbox-buttons/rich-checkbox-buttons */ "./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js");
+/* harmony import */ var _components_like_button_like_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/like-button/like-button */ "./src/components/like-button/like-button.js");
 /* harmony import */ var _components_like_button_like_button__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_like_button_like_button__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/rate-button/rate-button */ "./src/components/rate-button/rate-button.js");
-/* harmony import */ var _components_range_slider_range_slider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/range-slider/range-slider */ "./src/components/range-slider/range-slider.js");
-/* harmony import */ var _components_comment_comment__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/comment/comment */ "./src/components/comment/comment.js");
-/* harmony import */ var _components_date_dropdown_date_dropdown__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/date-dropdown/date-dropdown */ "./src/components/date-dropdown/date-dropdown.js");
-/* harmony import */ var _components_filter_date_dropdown_filter_date_dropdown__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/filter-date-dropdown/filter-date-dropdown */ "./src/components/filter-date-dropdown/filter-date-dropdown.js");
-/* harmony import */ var _components_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/dropdown/dropdown */ "./src/components/dropdown/dropdown.js");
+/* harmony import */ var _components_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/rate-button/rate-button */ "./src/components/rate-button/rate-button.js");
+/* harmony import */ var _components_range_slider_range_slider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/range-slider/range-slider */ "./src/components/range-slider/range-slider.js");
+/* harmony import */ var _components_comment_comment__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/comment/comment */ "./src/components/comment/comment.js");
+/* harmony import */ var _components_date_dropdown_date_dropdown__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/date-dropdown/date-dropdown */ "./src/components/date-dropdown/date-dropdown.js");
+/* harmony import */ var _components_filter_date_dropdown_filter_date_dropdown__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/filter-date-dropdown/filter-date-dropdown */ "./src/components/filter-date-dropdown/filter-date-dropdown.js");
+/* harmony import */ var _components_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/dropdown/dropdown */ "./src/components/dropdown/dropdown.js");
 
 
 
@@ -14687,14 +14687,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/elements.scss":
-/*!***************************!*\
-  !*** ./src/elements.scss ***!
-  \***************************/
+/***/ "./src/elements/elements.scss":
+/*!************************************!*\
+  !*** ./src/elements/elements.scss ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/dist/cjs.js??ref--5-2!../node_modules/resolve-url-loader!../node_modules/sass-loader/lib/loader.js??ref--5-4!./elements.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/elements.scss");
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/lib/loader.js??ref--5-4!./elements.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/elements/elements.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -14705,7 +14705,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
 if (content.locals) {
   module.exports = content.locals;

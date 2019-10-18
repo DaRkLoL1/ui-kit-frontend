@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/cards.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/cards/cards.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -13604,10 +13604,10 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/cards.scss":
-/*!*******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/cards.scss ***!
-  \*******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/cards/cards.scss":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/cards/cards.scss ***!
+  \*************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13908,21 +13908,21 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./src/cards.js":
-/*!**********************!*\
-  !*** ./src/cards.js ***!
-  \**********************/
+/***/ "./src/cards/cards.js":
+/*!****************************!*\
+  !*** ./src/cards/cards.js ***!
+  \****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _cards_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards.scss */ "./src/cards.scss");
+/* harmony import */ var _cards_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards.scss */ "./src/cards/cards.scss");
 /* harmony import */ var _cards_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_cards_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_room_room__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/room/room */ "./src/components/room/room.js");
-/* harmony import */ var _components_window_registration_window_registration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/window-registration/window-registration */ "./src/components/window-registration/window-registration.js");
-/* harmony import */ var _components_window_search_window_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/window-search/window-search */ "./src/components/window-search/window-search.js");
-/* harmony import */ var _components_datepicker_inline_datepicker_inline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/datepicker-inline/datepicker-inline */ "./src/components/datepicker-inline/datepicker-inline.js");
+/* harmony import */ var _components_room_room__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/room/room */ "./src/components/room/room.js");
+/* harmony import */ var _components_window_registration_window_registration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/window-registration/window-registration */ "./src/components/window-registration/window-registration.js");
+/* harmony import */ var _components_window_search_window_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/window-search/window-search */ "./src/components/window-search/window-search.js");
+/* harmony import */ var _components_datepicker_inline_datepicker_inline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/datepicker-inline/datepicker-inline */ "./src/components/datepicker-inline/datepicker-inline.js");
 
 
 
@@ -13932,14 +13932,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/cards.scss":
-/*!************************!*\
-  !*** ./src/cards.scss ***!
-  \************************/
+/***/ "./src/cards/cards.scss":
+/*!******************************!*\
+  !*** ./src/cards/cards.scss ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/dist/cjs.js??ref--5-2!../node_modules/resolve-url-loader!../node_modules/sass-loader/lib/loader.js??ref--5-4!./cards.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/cards.scss");
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/lib/loader.js??ref--5-4!./cards.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/cards/cards.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -13950,7 +13950,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
 if (content.locals) {
   module.exports = content.locals;

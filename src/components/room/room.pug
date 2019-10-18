@@ -3,7 +3,7 @@ include ../rate-button/rate-button.pug
 mixin room(options)
   .room 
     div(class='room__slide-image')
-      img( class='room__image' src='./components/room/' + options.image alt='room')
+      img( class='room__image' src='../components/room/' + options.image alt='room')
       if options.type
         .room__slide-first-button
           i(class='material-icons room__first-arrow') expand_more

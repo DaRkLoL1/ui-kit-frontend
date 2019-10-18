@@ -11,17 +11,16 @@ module.exports = {
 
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
-  
   module: {
     rules: [
       {
         test: /\.pug$/,
         use: [
           'html-loader',
-          'pug-html-loader'
-        ]
+          'pug-html-loader',
+        ],
       },
       {
         test: /\.scss$/,
@@ -36,29 +35,29 @@ module.exports = {
               sourceMap: true,
             },
           },
-           'resolve-url-loader',
+          'resolve-url-loader',
           {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
             },
-          }
-        ]
+          },
+        ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         exclude: [/fonts/],
         use: [
-          'file-loader?name=./images/[name].[ext]'
-        ]
+          'file-loader?name=./images/[name].[ext]',
+        ],
       },
       {
         test: /\.(woff|woff2|ttf|svg|eot|ijmap.txt)$/,
         use: [
-          'file-loader?name=./fonts/[name].[ext]'
-        ]
-      }
-    ]
+          'file-loader?name=./fonts/[name].[ext]',
+        ],
+      },
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -66,36 +65,36 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-  }),
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
   ],
-  
+
   devServer: {
-        contentBase: './dist',
-        index: 'sign-in.html'
+    contentBase: './dist',
+    index: 'cards.html',
   },
 };
 
 [
-  'room-details', 
-  'registration', 
-  'cards', 
-  'elements', 
-  'colors-types', 
-  'headers-footers', 
-  'landing-page', 
+  'room-details',
+  'registration',
+  'cards',
+  'elements',
+  'colors-types',
+  'headers-footers',
+  'landing-page',
   'search-room',
-  'sign-in'
-].forEach( item => {
-  module.exports.entry[item] = './src/' + item +'.js';
+  'sign-in',
+].forEach((item) => {
+  module.exports.entry[item] = `./src/${item}/${item}.js`;
 
   module.exports.plugins.push(
     new HtmlWebpackPlugin({
       hash: false,
-      template: './src/' + item + '.pug',
-      filename: item + '.html',
-      chunks: [item]
-    })
+      template: `./src/${item}/${item}.pug`,
+      filename: `${item}.html`,
+      chunks: [item],
+    }),
   );
-})
+});

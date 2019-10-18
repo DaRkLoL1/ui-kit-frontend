@@ -81,15 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/colors-types.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/colors-types/colors-types.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/colors-types.scss":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/colors-types.scss ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/colors-types/colors-types.scss":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/colors-types/colors-types.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -390,30 +390,30 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./src/colors-types.js":
-/*!*****************************!*\
-  !*** ./src/colors-types.js ***!
-  \*****************************/
+/***/ "./src/colors-types/colors-types.js":
+/*!******************************************!*\
+  !*** ./src/colors-types/colors-types.js ***!
+  \******************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _colors_types_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colors-types.scss */ "./src/colors-types.scss");
+/* harmony import */ var _colors_types_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colors-types.scss */ "./src/colors-types/colors-types.scss");
 /* harmony import */ var _colors_types_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_colors_types_scss__WEBPACK_IMPORTED_MODULE_0__);
 
 
 
 /***/ }),
 
-/***/ "./src/colors-types.scss":
-/*!*******************************!*\
-  !*** ./src/colors-types.scss ***!
-  \*******************************/
+/***/ "./src/colors-types/colors-types.scss":
+/*!********************************************!*\
+  !*** ./src/colors-types/colors-types.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/dist/cjs.js??ref--5-2!../node_modules/resolve-url-loader!../node_modules/sass-loader/lib/loader.js??ref--5-4!./colors-types.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/colors-types.scss");
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/lib/loader.js??ref--5-4!./colors-types.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/colors-types/colors-types.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -424,7 +424,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
 if (content.locals) {
   module.exports = content.locals;

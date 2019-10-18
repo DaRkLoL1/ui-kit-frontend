@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/headers-footers.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/headers-footers/headers-footers.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10696,10 +10696,10 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/headers-footers.scss":
-/*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/headers-footers.scss ***!
-  \*****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/headers-footers/headers-footers.scss":
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/headers-footers/headers-footers.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11049,32 +11049,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/headers-footers.js":
-/*!********************************!*\
-  !*** ./src/headers-footers.js ***!
-  \********************************/
+/***/ "./src/headers-footers/headers-footers.js":
+/*!************************************************!*\
+  !*** ./src/headers-footers/headers-footers.js ***!
+  \************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _headers_footers_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./headers-footers.scss */ "./src/headers-footers.scss");
+/* harmony import */ var _headers_footers_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./headers-footers.scss */ "./src/headers-footers/headers-footers.scss");
 /* harmony import */ var _headers_footers_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_headers_footers_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
+/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
 
 
 
 
 /***/ }),
 
-/***/ "./src/headers-footers.scss":
-/*!**********************************!*\
-  !*** ./src/headers-footers.scss ***!
-  \**********************************/
+/***/ "./src/headers-footers/headers-footers.scss":
+/*!**************************************************!*\
+  !*** ./src/headers-footers/headers-footers.scss ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/dist/cjs.js??ref--5-2!../node_modules/resolve-url-loader!../node_modules/sass-loader/lib/loader.js??ref--5-4!./headers-footers.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/headers-footers.scss");
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/lib/loader.js??ref--5-4!./headers-footers.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/headers-footers/headers-footers.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -11085,7 +11085,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
 if (content.locals) {
   module.exports = content.locals;

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/room-details.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/room-details/room-details.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -12990,10 +12990,10 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/room-details.scss":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/room-details.scss ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/room-details/room-details.scss":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/room-details/room-details.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13628,20 +13628,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/room-details.js":
-/*!*****************************!*\
-  !*** ./src/room-details.js ***!
-  \*****************************/
+/***/ "./src/room-details/room-details.js":
+/*!******************************************!*\
+  !*** ./src/room-details/room-details.js ***!
+  \******************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _room_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./room-details.scss */ "./src/room-details.scss");
+/* harmony import */ var _room_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./room-details.scss */ "./src/room-details/room-details.scss");
 /* harmony import */ var _room_details_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_room_details_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
-/* harmony import */ var _components_comment_comment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/comment/comment */ "./src/components/comment/comment.js");
-/* harmony import */ var _components_room_booking_room_booking__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/room-booking/room-booking */ "./src/components/room-booking/room-booking.js");
+/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
+/* harmony import */ var _components_comment_comment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/comment/comment */ "./src/components/comment/comment.js");
+/* harmony import */ var _components_room_booking_room_booking__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/room-booking/room-booking */ "./src/components/room-booking/room-booking.js");
 
 
 
@@ -13650,14 +13650,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/room-details.scss":
-/*!*******************************!*\
-  !*** ./src/room-details.scss ***!
-  \*******************************/
+/***/ "./src/room-details/room-details.scss":
+/*!********************************************!*\
+  !*** ./src/room-details/room-details.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/dist/cjs.js??ref--5-2!../node_modules/resolve-url-loader!../node_modules/sass-loader/lib/loader.js??ref--5-4!./room-details.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/room-details.scss");
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/lib/loader.js??ref--5-4!./room-details.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/room-details/room-details.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -13668,7 +13668,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
 if (content.locals) {
   module.exports = content.locals;

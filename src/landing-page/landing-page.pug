@@ -1,0 +1,41 @@
+extends ../components/block-head/block-head.pug
+block title
+  title Landing page
+block body
+  body
+    include ../components/footer-copyright/footer-copyright.pug 
+    include ../components/header/header.pug
+    include ../components/window-search/window-search.pug
+    
+    .wrapper 
+      +header({
+        list: [
+          {text: 'О нас'},
+          {text: 'Услуги', style: 'containArrow'},
+          {text: 'Вакансии'},
+          {text: 'Новости'},
+          {text: 'Соглашения', style: 'containArrow'},
+        ],
+        buttons: [
+          'войти',
+          'зарегистрироваться'
+        ]
+      })
+      .wrapper__content
+        .wrapper__search
+          +window-search
+        p(class='wrapper__text text') Лучшие номера для вашей работы, отдыха и просто вдохновения
+    +footer-copyright({
+        copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',
+        subscribe: [
+          'Подписка',
+          'Получайте специальные предложения и новости сервиса',
+          'Email'
+        ],
+        text: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+        lists: [
+          ['Навигация','О нас', 'Новости', 'Служба поддержки', 'Услуги'],
+          ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'],
+          ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']
+        ]
+      })

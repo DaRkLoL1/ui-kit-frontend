@@ -1,0 +1,96 @@
+extends ../components/block-head/block-head.pug
+block title
+  title Search room
+block body
+  body
+    
+    include ../components/footer-copyright/footer-copyright.pug 
+    include ../components/header/header.pug
+    include ../components/window-search/window-search.pug
+    include ../components/filter-date-dropdown/filter-date-dropdown.pug
+    include ../components/dropdown/dropdown.pug
+    include ../components/range-slider/range-slider.pug
+    include ../components/checkbox-buttons/checkbox-buttons.pug
+    include ../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
+    include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
+    include ../components/pagination/pagination.pug
+    include ../components/room/room.pug
+
+    .wrapper 
+      +header({
+        list: [
+          {text: 'О нас'},
+          {text: 'Услуги', style: 'containArrow'},
+          {text: 'Вакансии'},
+          {text: 'Новости'},
+          {text: 'Соглашения', style: 'containArrow'},
+        ],
+        buttons: [
+          'войти',
+          'зарегистрироваться'
+        ]
+      })
+      main.wrapper__content
+        .wrapper__action  
+          .wrapper__datepicker
+            h3(class='wrapper__title label-text') даты пребывания в отеле
+            +filter-date-dropdown(['2019-08-19','2019-08-23'])
+          .wrapper__dropdown-1
+            h3(class='wrapper__title label-text') гости
+            +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы'], arrDefaultNumbers: [2, 1, 1]})
+          .wrapper__slider
+            +range-slider('диапазон цены')
+            p(class='wrapper__description text') Стоимость за сутки пребывания в номере
+          .wrapper__checkbox-buttons
+            +checkbox-buttons
+          .wrapper__rich-checkbox-buttons
+            +rich-checkbox-buttons('доступность')
+          .wrapper__dropdown-2
+            h3(class='wrapper__title label-text') удобства номера
+            +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
+          .wrapper__expandable-checkbox-list
+            +expandable-checkbox-list('дополнительные удобства')
+        .wrapper__numbers
+          h1(class='wrapper__main-title widjet-title') Номера, которые мы для вас подобрали
+          .wrapper__rooms
+            .wrapper__room
+              +room({class: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.jpg'})
+            .wrapper__room
+              +room({stars: 4, number: 840, cost: '9 990', comments: '65', image: 'room-img-2.jpg'})
+            .wrapper__room
+              +room({class: 'luxe', stars: 3, number: 980, cost: '8 500', comments: '35', image: 'room-img-3.jpg'})
+            .wrapper__room
+              +room({stars: 5, number: 856, cost: '7 300', comments: '19', image: 'room-img-4.jpg'})
+            .wrapper__room
+              +room({stars: 4, number: 740, cost: '6 000', comments: '44', image: 'room-img-5.jpg'})
+            .wrapper__room
+              +room({stars: 4, number: 982, cost: '5 800', comments: '56', image: 'room-img-6.jpg'})
+            .wrapper__room
+              +room({stars: 5, number: 678, cost: '5 500', comments: '45', image: 'room-img-7.jpg'})
+            .wrapper__room
+              +room({stars: 4, number: 450, cost: '5 300', comments: '39', image: 'room-img-8.jpg'})
+            .wrapper__room
+              +room({stars: 3, number: 350, cost: '5 000', comments: '77', image: 'room-img-9.jpg'})
+            .wrapper__room
+              +room({stars: 5, number: 666, cost: '5 000', comments: '25', image: 'room-img-10.jpg'})
+            .wrapper__room
+              +room({stars: 3, number: 444, cost: '5 000', comments: '15', image: 'room-img-11.jpg'})
+            .wrapper__room
+              +room({stars: 3, number: 352, cost: '5 000', comments: '55', image: 'room-img-12.jpg'})
+          .wrapper__pagination
+            +pagination
+    +footer-copyright({
+        copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',
+        subscribe: [
+          'Подписка',
+          'Получайте специальные предложения и новости сервиса',
+          'Email'
+        ],
+        text: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+        lists: [
+          ['Навигация','О нас', 'Новости', 'Служба поддержки', 'Услуги'],
+          ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'],
+          ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']
+        ]
+      })
+
