@@ -27,7 +27,7 @@ mixin footer-copyright({text = '', lists = [], subscribe = [], copyright = '' } 
         p(class='footer-copyright__copyright-text text')= copyright
         .footer-copyright__icons
           each val in ['twitter', 'facebook-square', 'instagram']
-            i(class='footer-copyright__icon fab fa-' + val)
+            i(class=`footer-copyright__icon fab fa-${val}`)
 
 
 

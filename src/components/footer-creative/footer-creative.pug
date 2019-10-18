@@ -6,4 +6,4 @@ mixin footer-creative(text)
       p(class='footer-creative__text text')= text
       .footer-creative__icons
         each val in ['twitter', 'facebook-square', 'instagram']
-          i(class='footer-creative__icon fab fa-' + val)
+          i(class=`footer-creative__icon fab fa-${val}`)

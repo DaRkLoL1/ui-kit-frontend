@@ -3,11 +3,11 @@ mixin pagination
   .pagination
     ul(class='pagination__items')
       li
-        a(href='#' class='text pagination__item pagination__item_begin')='1'
+        a(href='/mock-address/change-me' class='text pagination__item pagination__item_begin')='1'
       each val in ['2', '3', '...', '15']
         li  
-          a(href='#' class='text pagination__item')= val
+          a(href='/mock-address/change-me' class='text pagination__item')= val
       li
-        a(href='#' class='pagination__item pagination__item_end')
+        a(href='/mock-address/change-me' class='pagination__item pagination__item_end')
           i(class='material-icons') arrow_forward
     p(class='text pagination__description') 1 – 12 из 100+ вариантов аренды

@@ -16,4 +16,4 @@ mixin buttons({size = '', style = '', type = '', text = ''} = {})
     }
 
     let typeButton = type ? 'submit' : 'button';
-  button(class='label-text buttons' + sizeButton + styleButton type=typeButton)=text
+  button(class=`label-text buttons${sizeButton}${styleButton}` type=typeButton)=text
