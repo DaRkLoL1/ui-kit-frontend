@@ -1,6 +1,6 @@
-mixin quality(options)
+mixin quality({icon = '', header = '', text = ''} = {})
   .quality  
-    i(class='material-icons quality__icon')=options.icon
+    i(class='material-icons quality__icon')=icon
     p(class='text quality__property')
-      span(class='quality__header')=options.header
-      span(class='quality__description')=options.text
+      span(class='quality__header')=header
+      span(class='quality__description')=text

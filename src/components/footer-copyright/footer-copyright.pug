@@ -1,14 +1,14 @@
 include ../field-button/field-button.pug
 
-mixin footer-copyright(options) 
+mixin footer-copyright({text = '', lists = [], subscribe = [], copyright = '' } = {}) 
   footer(class='footer-copyright')
     .footer-copyright__footer
       .footer-copyright__wrapper-footer
         .footer-copyright__description
           img(class='footer-copyright__logo' src='../components/footer-copyright/logo.png' alt='logo')
-          p(class='footer-copyright__text text')= options.text
+          p(class='footer-copyright__text text')= text
         .footer-copyright__lists
-          each value in options.lists
+          each value in lists
             ul(class='footer-copyright__list')
               each val, i in value
                 if i === 0
@@ -18,13 +18,13 @@ mixin footer-copyright(options)
                   li(class='footer-copyright__list-item')
                     a(class='footer-copyright__list-link text' href='/mock-address/change-me')= val
         .footer-copyright__subscribe
-          h3(class='footer-copyright__subscribe-title label-text')= options.subscribe[0]
-          p(class='footer-copyright__subscribe-text text')= options.subscribe[1]
+          h3(class='footer-copyright__subscribe-title label-text')= subscribe[0]
+          p(class='footer-copyright__subscribe-text text')= subscribe[1]
           .footer-copyright__subscribe-input
-            +field-button({text: options.subscribe[2], theme: 'gradient'})
+            +field-button({text: subscribe[2], theme: 'gradient'})
     .footer-copyright__copyright
       .footer-copyright__wrapper-copyright
-        p(class='footer-copyright__copyright-text text')= options.copyright
+        p(class='footer-copyright__copyright-text text')= copyright
         .footer-copyright__icons
           each val in ['twitter', 'facebook-square', 'instagram']
             i(class='footer-copyright__icon fab fa-' + val)

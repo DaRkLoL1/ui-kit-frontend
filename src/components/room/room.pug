@@ -1,10 +1,10 @@
 include ../rate-button/rate-button.pug
 
-mixin room(options)
+mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', comments = '100', image = 'room-img-1.jpg'} = {})
   .room 
     div(class='room__slide-image')
-      img( class='room__image' src='../components/room/' + options.image alt='room')
-      if options.type
+      img( class='room__image' src='../components/room/' + image alt='room')
+      if type
         .room__slide-first-button
           i(class='material-icons room__first-arrow') expand_more
         .room__slide-second-button
@@ -18,27 +18,27 @@ mixin room(options)
           - i++
     div(class='room__description')
       div(class='room__number-and-cost')
-        if options.class
+        if classRoom
           p(class='room__number item-title')
             = '№ '
             |
-            span(class='room__numbers item-title')= options.number
+            span(class='room__numbers item-title')= number
             |
             span(class='room__luxe label-text')= ' люкс'
         else
           p(class='room__number item-title')
             = '№ '
             | 
-            span(class='room__numbers item-title')= options.number
+            span(class='room__numbers item-title')= number
         p(class='room__cost')
-          span(class='room__cost-price label-text')= options.cost
+          span(class='room__cost-price label-text')= cost
           span(class='room__cost-sign') c
           span(class='room__cost-text text')= ' в сутки'
       div(class='room__line')
       div(class='room__stars-and-comments')
         div(class='room__stars')
-          +rate-button(options.stars)
+          +rate-button(stars)
         p(class='room__comments text')
-          span(class='room__comments-count')= options.comments
+          span(class='room__comments-count')= comments
           span(class='room__comments-text')= ' Отзывов'
         

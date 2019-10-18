@@ -1,19 +1,19 @@
 include ../buttons/buttons.pug
 
-mixin dropdown(options = {}) 
+mixin dropdown({arrDefaultNumbers = '', type = '', arrTitles = [], } = {}) 
   -
-    if(!options.arrDefaultNumbers) {
-      options.arrDefaultNumbers = [0, 0, 0];
+    if(!arrDefaultNumbers) {
+      arrDefaultNumbers = [0, 0, 0];
     }
   
 
-  if options.type
+  if type
     div(class='js-dropdown dropdown dropdown_with_buttons js-dropdown_with_buttons')
       .iqdropdown
         p.iqdropdown-selection.iqdropdown-selection_opacity_m
         .iqdropdown-menu
-          each val, i in options.arrTitles
-            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=options.arrDefaultNumbers[i]  data-maxcount='10')
+          each val, i in arrTitles
+            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=arrDefaultNumbers[i]  data-maxcount='10')
               div
                 p(class='iqdropdown-item')=val
       div(class='js-dropdown__buttons dropdown__buttons')
@@ -26,8 +26,8 @@ mixin dropdown(options = {})
       .iqdropdown
         p.iqdropdown-selection
         .iqdropdown-menu
-          each val, i in options.arrTitles
-            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=options.arrDefaultNumbers[i]  data-maxcount='10')
+          each val, i in arrTitles
+            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=arrDefaultNumbers[i]  data-maxcount='10')
               div
                 p(class='iqdropdown-item')=val
         

@@ -1,13 +1,13 @@
 include ../like-button/like-button.pug
 
-mixin comment(options)
+mixin comment({image = '', name = '', time = '', text = '', like = 10} = {})
   .comment
     .comment__header  
-      img(class='comment__image' src='../components/comment/' + options.image alt='image-visitor')
+      img(class='comment__image' src='../components/comment/' + image alt='image-visitor')
       p(class='text comment__name-and-time')
-        span(class='comment__name')=options.name
-        span(class='comment__time')=options.time
+        span(class='comment__name')= name
+        span(class='comment__time')= time
     .comment__main
       .comment__like
-        +like-button(options.like)
-      p(class='text comment__text')=options.text
+        +like-button(like)
+      p(class='text comment__text')= text

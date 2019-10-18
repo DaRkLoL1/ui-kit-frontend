@@ -1,22 +1,21 @@
-mixin switch(options)
+mixin switch({type = 'checkbox', name = '', weight = '', text = ''} = {})
   -
     let className = 'switch text js-switch';
-    let type = '';
-    let name = '';
-    if(options.type === 'checkbox') {
-      className += options.weight === 'b' ? ' switch_checkbox_weight_b' : '';
+    let typeName = '';
+
+    if(type === 'checkbox') {
+      className += weight === 'b' ? ' switch_checkbox_weight_b' : '';
       className += ' switch_checkbox';
-      type = 'checkbox';
+      typeName = 'checkbox';
     }
-    else if(options.type === 'radio') {
+    else if(type === 'radio') {
       className += ' switch_radio';
-      type = 'radio';
-      name = options.name;
+      typeName = 'radio';
     }
-    else if(options.type === 'toggle') {
+    else if(type === 'toggle') {
       className += ' switch_toggle';
-      type = 'checkbox';
+      typeName = 'checkbox';
     }
   label(class=className)
-    input(type=type name=name class='switch__input js-switch__input')
-    =options.text
+    input(type=typeName name=name class='switch__input js-switch__input')
+    =text
