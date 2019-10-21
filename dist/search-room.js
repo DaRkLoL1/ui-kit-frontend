@@ -2380,6 +2380,708 @@ __webpack_require__(/*! ./timepicker */ "./node_modules/air-datepicker/src/js/ti
 
 /***/ }),
 
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/android-chrome-48x48.png":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/android-chrome-48x48.png ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/android-chrome-48x48.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/apple-touch-icon.png":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/apple-touch-icon.png ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/apple-touch-icon.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/browserconfig.xml":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/browserconfig.xml ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/browserconfig.xml";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-16x16.png":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-16x16.png ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/favicon-16x16.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-32x32.png":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-32x32.png ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/favicon-32x32.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon.ico":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon.ico ***!
+  \****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/favicon.ico";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/mstile-150x150.png":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/mstile-150x150.png ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/mstile-150x150.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/safari-pinned-tab.svg":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/safari-pinned-tab.svg ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/safari-pinned-tab.svg";
+
+/***/ }),
+
+/***/ "./node_modules/jquery-mask-plugin/dist/jquery.mask.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/jquery-mask-plugin/dist/jquery.mask.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * jquery.mask.js
+ * @version: v1.14.16
+ * @author: Igor Escobar
+ *
+ * Created by Igor Escobar on 2012-03-10. Please report any bug at github.com/igorescobar/jQuery-Mask-Plugin
+ *
+ * Copyright (c) 2012 Igor Escobar http://igorescobar.com
+ *
+ * The MIT License (http://www.opensource.org/licenses/mit-license.php)
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/* jshint laxbreak: true */
+/* jshint maxcomplexity:17 */
+/* global define */
+
+// UMD (Universal Module Definition) patterns for JavaScript modules that work everywhere.
+// https://github.com/umdjs/umd/blob/master/templates/jqueryPlugin.js
+(function (factory, jQuery, Zepto) {
+
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else {}
+
+}(function ($) {
+    'use strict';
+
+    var Mask = function (el, mask, options) {
+
+        var p = {
+            invalid: [],
+            getCaret: function () {
+                try {
+                    var sel,
+                        pos = 0,
+                        ctrl = el.get(0),
+                        dSel = document.selection,
+                        cSelStart = ctrl.selectionStart;
+
+                    // IE Support
+                    if (dSel && navigator.appVersion.indexOf('MSIE 10') === -1) {
+                        sel = dSel.createRange();
+                        sel.moveStart('character', -p.val().length);
+                        pos = sel.text.length;
+                    }
+                    // Firefox support
+                    else if (cSelStart || cSelStart === '0') {
+                        pos = cSelStart;
+                    }
+
+                    return pos;
+                } catch (e) {}
+            },
+            setCaret: function(pos) {
+                try {
+                    if (el.is(':focus')) {
+                        var range, ctrl = el.get(0);
+
+                        // Firefox, WebKit, etc..
+                        if (ctrl.setSelectionRange) {
+                            ctrl.setSelectionRange(pos, pos);
+                        } else { // IE
+                            range = ctrl.createTextRange();
+                            range.collapse(true);
+                            range.moveEnd('character', pos);
+                            range.moveStart('character', pos);
+                            range.select();
+                        }
+                    }
+                } catch (e) {}
+            },
+            events: function() {
+                el
+                .on('keydown.mask', function(e) {
+                    el.data('mask-keycode', e.keyCode || e.which);
+                    el.data('mask-previus-value', el.val());
+                    el.data('mask-previus-caret-pos', p.getCaret());
+                    p.maskDigitPosMapOld = p.maskDigitPosMap;
+                })
+                .on($.jMaskGlobals.useInput ? 'input.mask' : 'keyup.mask', p.behaviour)
+                .on('paste.mask drop.mask', function() {
+                    setTimeout(function() {
+                        el.keydown().keyup();
+                    }, 100);
+                })
+                .on('change.mask', function(){
+                    el.data('changed', true);
+                })
+                .on('blur.mask', function(){
+                    if (oldValue !== p.val() && !el.data('changed')) {
+                        el.trigger('change');
+                    }
+                    el.data('changed', false);
+                })
+                // it's very important that this callback remains in this position
+                // otherwhise oldValue it's going to work buggy
+                .on('blur.mask', function() {
+                    oldValue = p.val();
+                })
+                // select all text on focus
+                .on('focus.mask', function (e) {
+                    if (options.selectOnFocus === true) {
+                        $(e.target).select();
+                    }
+                })
+                // clear the value if it not complete the mask
+                .on('focusout.mask', function() {
+                    if (options.clearIfNotMatch && !regexMask.test(p.val())) {
+                       p.val('');
+                   }
+                });
+            },
+            getRegexMask: function() {
+                var maskChunks = [], translation, pattern, optional, recursive, oRecursive, r;
+
+                for (var i = 0; i < mask.length; i++) {
+                    translation = jMask.translation[mask.charAt(i)];
+
+                    if (translation) {
+
+                        pattern = translation.pattern.toString().replace(/.{1}$|^.{1}/g, '');
+                        optional = translation.optional;
+                        recursive = translation.recursive;
+
+                        if (recursive) {
+                            maskChunks.push(mask.charAt(i));
+                            oRecursive = {digit: mask.charAt(i), pattern: pattern};
+                        } else {
+                            maskChunks.push(!optional && !recursive ? pattern : (pattern + '?'));
+                        }
+
+                    } else {
+                        maskChunks.push(mask.charAt(i).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'));
+                    }
+                }
+
+                r = maskChunks.join('');
+
+                if (oRecursive) {
+                    r = r.replace(new RegExp('(' + oRecursive.digit + '(.*' + oRecursive.digit + ')?)'), '($1)?')
+                         .replace(new RegExp(oRecursive.digit, 'g'), oRecursive.pattern);
+                }
+
+                return new RegExp(r);
+            },
+            destroyEvents: function() {
+                el.off(['input', 'keydown', 'keyup', 'paste', 'drop', 'blur', 'focusout', ''].join('.mask '));
+            },
+            val: function(v) {
+                var isInput = el.is('input'),
+                    method = isInput ? 'val' : 'text',
+                    r;
+
+                if (arguments.length > 0) {
+                    if (el[method]() !== v) {
+                        el[method](v);
+                    }
+                    r = el;
+                } else {
+                    r = el[method]();
+                }
+
+                return r;
+            },
+            calculateCaretPosition: function(oldVal) {
+                var newVal = p.getMasked(),
+                    caretPosNew = p.getCaret();
+                if (oldVal !== newVal) {
+                    var caretPosOld = el.data('mask-previus-caret-pos') || 0,
+                        newValL = newVal.length,
+                        oldValL = oldVal.length,
+                        maskDigitsBeforeCaret = 0,
+                        maskDigitsAfterCaret = 0,
+                        maskDigitsBeforeCaretAll = 0,
+                        maskDigitsBeforeCaretAllOld = 0,
+                        i = 0;
+
+                    for (i = caretPosNew; i < newValL; i++) {
+                        if (!p.maskDigitPosMap[i]) {
+                            break;
+                        }
+                        maskDigitsAfterCaret++;
+                    }
+
+                    for (i = caretPosNew - 1; i >= 0; i--) {
+                        if (!p.maskDigitPosMap[i]) {
+                            break;
+                        }
+                        maskDigitsBeforeCaret++;
+                    }
+
+                    for (i = caretPosNew - 1; i >= 0; i--) {
+                        if (p.maskDigitPosMap[i]) {
+                            maskDigitsBeforeCaretAll++;
+                        }
+                    }
+
+                    for (i = caretPosOld - 1; i >= 0; i--) {
+                        if (p.maskDigitPosMapOld[i]) {
+                            maskDigitsBeforeCaretAllOld++;
+                        }
+                    }
+
+                    // if the cursor is at the end keep it there
+                    if (caretPosNew > oldValL) {
+                      caretPosNew = newValL * 10;
+                    } else if (caretPosOld >= caretPosNew && caretPosOld !== oldValL) {
+                        if (!p.maskDigitPosMapOld[caretPosNew])  {
+                          var caretPos = caretPosNew;
+                          caretPosNew -= maskDigitsBeforeCaretAllOld - maskDigitsBeforeCaretAll;
+                          caretPosNew -= maskDigitsBeforeCaret;
+                          if (p.maskDigitPosMap[caretPosNew])  {
+                            caretPosNew = caretPos;
+                          }
+                        }
+                    }
+                    else if (caretPosNew > caretPosOld) {
+                        caretPosNew += maskDigitsBeforeCaretAll - maskDigitsBeforeCaretAllOld;
+                        caretPosNew += maskDigitsAfterCaret;
+                    }
+                }
+                return caretPosNew;
+            },
+            behaviour: function(e) {
+                e = e || window.event;
+                p.invalid = [];
+
+                var keyCode = el.data('mask-keycode');
+
+                if ($.inArray(keyCode, jMask.byPassKeys) === -1) {
+                    var newVal = p.getMasked(),
+                        caretPos = p.getCaret(),
+                        oldVal = el.data('mask-previus-value') || '';
+
+                    // this is a compensation to devices/browsers that don't compensate
+                    // caret positioning the right way
+                    setTimeout(function() {
+                      p.setCaret(p.calculateCaretPosition(oldVal));
+                    }, $.jMaskGlobals.keyStrokeCompensation);
+
+                    p.val(newVal);
+                    p.setCaret(caretPos);
+                    return p.callbacks(e);
+                }
+            },
+            getMasked: function(skipMaskChars, val) {
+                var buf = [],
+                    value = val === undefined ? p.val() : val + '',
+                    m = 0, maskLen = mask.length,
+                    v = 0, valLen = value.length,
+                    offset = 1, addMethod = 'push',
+                    resetPos = -1,
+                    maskDigitCount = 0,
+                    maskDigitPosArr = [],
+                    lastMaskChar,
+                    check;
+
+                if (options.reverse) {
+                    addMethod = 'unshift';
+                    offset = -1;
+                    lastMaskChar = 0;
+                    m = maskLen - 1;
+                    v = valLen - 1;
+                    check = function () {
+                        return m > -1 && v > -1;
+                    };
+                } else {
+                    lastMaskChar = maskLen - 1;
+                    check = function () {
+                        return m < maskLen && v < valLen;
+                    };
+                }
+
+                var lastUntranslatedMaskChar;
+                while (check()) {
+                    var maskDigit = mask.charAt(m),
+                        valDigit = value.charAt(v),
+                        translation = jMask.translation[maskDigit];
+
+                    if (translation) {
+                        if (valDigit.match(translation.pattern)) {
+                            buf[addMethod](valDigit);
+                             if (translation.recursive) {
+                                if (resetPos === -1) {
+                                    resetPos = m;
+                                } else if (m === lastMaskChar && m !== resetPos) {
+                                    m = resetPos - offset;
+                                }
+
+                                if (lastMaskChar === resetPos) {
+                                    m -= offset;
+                                }
+                            }
+                            m += offset;
+                        } else if (valDigit === lastUntranslatedMaskChar) {
+                            // matched the last untranslated (raw) mask character that we encountered
+                            // likely an insert offset the mask character from the last entry; fall
+                            // through and only increment v
+                            maskDigitCount--;
+                            lastUntranslatedMaskChar = undefined;
+                        } else if (translation.optional) {
+                            m += offset;
+                            v -= offset;
+                        } else if (translation.fallback) {
+                            buf[addMethod](translation.fallback);
+                            m += offset;
+                            v -= offset;
+                        } else {
+                          p.invalid.push({p: v, v: valDigit, e: translation.pattern});
+                        }
+                        v += offset;
+                    } else {
+                        if (!skipMaskChars) {
+                            buf[addMethod](maskDigit);
+                        }
+
+                        if (valDigit === maskDigit) {
+                            maskDigitPosArr.push(v);
+                            v += offset;
+                        } else {
+                            lastUntranslatedMaskChar = maskDigit;
+                            maskDigitPosArr.push(v + maskDigitCount);
+                            maskDigitCount++;
+                        }
+
+                        m += offset;
+                    }
+                }
+
+                var lastMaskCharDigit = mask.charAt(lastMaskChar);
+                if (maskLen === valLen + 1 && !jMask.translation[lastMaskCharDigit]) {
+                    buf.push(lastMaskCharDigit);
+                }
+
+                var newVal = buf.join('');
+                p.mapMaskdigitPositions(newVal, maskDigitPosArr, valLen);
+                return newVal;
+            },
+            mapMaskdigitPositions: function(newVal, maskDigitPosArr, valLen) {
+              var maskDiff = options.reverse ? newVal.length - valLen : 0;
+              p.maskDigitPosMap = {};
+              for (var i = 0; i < maskDigitPosArr.length; i++) {
+                p.maskDigitPosMap[maskDigitPosArr[i] + maskDiff] = 1;
+              }
+            },
+            callbacks: function (e) {
+                var val = p.val(),
+                    changed = val !== oldValue,
+                    defaultArgs = [val, e, el, options],
+                    callback = function(name, criteria, args) {
+                        if (typeof options[name] === 'function' && criteria) {
+                            options[name].apply(this, args);
+                        }
+                    };
+
+                callback('onChange', changed === true, defaultArgs);
+                callback('onKeyPress', changed === true, defaultArgs);
+                callback('onComplete', val.length === mask.length, defaultArgs);
+                callback('onInvalid', p.invalid.length > 0, [val, e, el, p.invalid, options]);
+            }
+        };
+
+        el = $(el);
+        var jMask = this, oldValue = p.val(), regexMask;
+
+        mask = typeof mask === 'function' ? mask(p.val(), undefined, el,  options) : mask;
+
+        // public methods
+        jMask.mask = mask;
+        jMask.options = options;
+        jMask.remove = function() {
+            var caret = p.getCaret();
+            if (jMask.options.placeholder) {
+                el.removeAttr('placeholder');
+            }
+            if (el.data('mask-maxlength')) {
+                el.removeAttr('maxlength');
+            }
+            p.destroyEvents();
+            p.val(jMask.getCleanVal());
+            p.setCaret(caret);
+            return el;
+        };
+
+        // get value without mask
+        jMask.getCleanVal = function() {
+           return p.getMasked(true);
+        };
+
+        // get masked value without the value being in the input or element
+        jMask.getMaskedVal = function(val) {
+           return p.getMasked(false, val);
+        };
+
+       jMask.init = function(onlyMask) {
+            onlyMask = onlyMask || false;
+            options = options || {};
+
+            jMask.clearIfNotMatch  = $.jMaskGlobals.clearIfNotMatch;
+            jMask.byPassKeys       = $.jMaskGlobals.byPassKeys;
+            jMask.translation      = $.extend({}, $.jMaskGlobals.translation, options.translation);
+
+            jMask = $.extend(true, {}, jMask, options);
+
+            regexMask = p.getRegexMask();
+
+            if (onlyMask) {
+                p.events();
+                p.val(p.getMasked());
+            } else {
+                if (options.placeholder) {
+                    el.attr('placeholder' , options.placeholder);
+                }
+
+                // this is necessary, otherwise if the user submit the form
+                // and then press the "back" button, the autocomplete will erase
+                // the data. Works fine on IE9+, FF, Opera, Safari.
+                if (el.data('mask')) {
+                  el.attr('autocomplete', 'off');
+                }
+
+                // detect if is necessary let the user type freely.
+                // for is a lot faster than forEach.
+                for (var i = 0, maxlength = true; i < mask.length; i++) {
+                    var translation = jMask.translation[mask.charAt(i)];
+                    if (translation && translation.recursive) {
+                        maxlength = false;
+                        break;
+                    }
+                }
+
+                if (maxlength) {
+                    el.attr('maxlength', mask.length).data('mask-maxlength', true);
+                }
+
+                p.destroyEvents();
+                p.events();
+
+                var caret = p.getCaret();
+                p.val(p.getMasked());
+                p.setCaret(caret);
+            }
+        };
+
+        jMask.init(!el.is('input'));
+    };
+
+    $.maskWatchers = {};
+    var HTMLAttributes = function () {
+        var input = $(this),
+            options = {},
+            prefix = 'data-mask-',
+            mask = input.attr('data-mask');
+
+        if (input.attr(prefix + 'reverse')) {
+            options.reverse = true;
+        }
+
+        if (input.attr(prefix + 'clearifnotmatch')) {
+            options.clearIfNotMatch = true;
+        }
+
+        if (input.attr(prefix + 'selectonfocus') === 'true') {
+           options.selectOnFocus = true;
+        }
+
+        if (notSameMaskObject(input, mask, options)) {
+            return input.data('mask', new Mask(this, mask, options));
+        }
+    },
+    notSameMaskObject = function(field, mask, options) {
+        options = options || {};
+        var maskObject = $(field).data('mask'),
+            stringify = JSON.stringify,
+            value = $(field).val() || $(field).text();
+        try {
+            if (typeof mask === 'function') {
+                mask = mask(value);
+            }
+            return typeof maskObject !== 'object' || stringify(maskObject.options) !== stringify(options) || maskObject.mask !== mask;
+        } catch (e) {}
+    },
+    eventSupported = function(eventName) {
+        var el = document.createElement('div'), isSupported;
+
+        eventName = 'on' + eventName;
+        isSupported = (eventName in el);
+
+        if ( !isSupported ) {
+            el.setAttribute(eventName, 'return;');
+            isSupported = typeof el[eventName] === 'function';
+        }
+        el = null;
+
+        return isSupported;
+    };
+
+    $.fn.mask = function(mask, options) {
+        options = options || {};
+        var selector = this.selector,
+            globals = $.jMaskGlobals,
+            interval = globals.watchInterval,
+            watchInputs = options.watchInputs || globals.watchInputs,
+            maskFunction = function() {
+                if (notSameMaskObject(this, mask, options)) {
+                    return $(this).data('mask', new Mask(this, mask, options));
+                }
+            };
+
+        $(this).each(maskFunction);
+
+        if (selector && selector !== '' && watchInputs) {
+            clearInterval($.maskWatchers[selector]);
+            $.maskWatchers[selector] = setInterval(function(){
+                $(document).find(selector).each(maskFunction);
+            }, interval);
+        }
+        return this;
+    };
+
+    $.fn.masked = function(val) {
+        return this.data('mask').getMaskedVal(val);
+    };
+
+    $.fn.unmask = function() {
+        clearInterval($.maskWatchers[this.selector]);
+        delete $.maskWatchers[this.selector];
+        return this.each(function() {
+            var dataMask = $(this).data('mask');
+            if (dataMask) {
+                dataMask.remove().removeData('mask');
+            }
+        });
+    };
+
+    $.fn.cleanVal = function() {
+        return this.data('mask').getCleanVal();
+    };
+
+    $.applyDataMask = function(selector) {
+        selector = selector || $.jMaskGlobals.maskElements;
+        var $selector = (selector instanceof $) ? selector : $(selector);
+        $selector.filter($.jMaskGlobals.dataMaskAttr).each(HTMLAttributes);
+    };
+
+    var globals = {
+        maskElements: 'input,td,span,div',
+        dataMaskAttr: '*[data-mask]',
+        dataMask: true,
+        watchInterval: 300,
+        watchInputs: true,
+        keyStrokeCompensation: 10,
+        // old versions of chrome dont work great with input event
+        useInput: !/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent) && eventSupported('input'),
+        watchDataMask: false,
+        byPassKeys: [9, 16, 17, 18, 36, 37, 38, 39, 40, 91],
+        translation: {
+            '0': {pattern: /\d/},
+            '9': {pattern: /\d/, optional: true},
+            '#': {pattern: /\d/, recursive: true},
+            'A': {pattern: /[a-zA-Z0-9]/},
+            'S': {pattern: /[a-zA-Z]/}
+        }
+    };
+
+    $.jMaskGlobals = $.jMaskGlobals || {};
+    globals = $.jMaskGlobals = $.extend(true, {}, globals, $.jMaskGlobals);
+
+    // looking for inputs with data-mask attribute
+    if (globals.dataMask) {
+        $.applyDataMask();
+    }
+
+    setInterval(function() {
+        if ($.jMaskGlobals.watchDataMask) {
+            $.applyDataMask();
+        }
+    }, globals.watchInterval);
+}, window.jQuery, window.Zepto));
+
+
+/***/ }),
+
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
@@ -13294,19 +13996,204 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./src/components sync recursive \\.js$":
+/*!***********************************!*\
+  !*** ./src/components sync \.js$ ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./checkbox-buttons/checkbox-buttons.js": "./src/components/checkbox-buttons/checkbox-buttons.js",
+	"./comment/comment.js": "./src/components/comment/comment.js",
+	"./date-dropdown/date-dropdown.js": "./src/components/date-dropdown/date-dropdown.js",
+	"./datepicker-inline/datepicker-inline.js": "./src/components/datepicker-inline/datepicker-inline.js",
+	"./dropdown/dropdown.js": "./src/components/dropdown/dropdown.js",
+	"./expandable-checkbox-list/expandable-checkbox-list.js": "./src/components/expandable-checkbox-list/expandable-checkbox-list.js",
+	"./favicons/favicons.js": "./src/components/favicons/favicons.js",
+	"./field-button/field-button.js": "./src/components/field-button/field-button.js",
+	"./filter-date-dropdown/filter-date-dropdown.js": "./src/components/filter-date-dropdown/filter-date-dropdown.js",
+	"./footer-copyright/footer-copyright.js": "./src/components/footer-copyright/footer-copyright.js",
+	"./item-quantity-dropdown/item-quantity-dropdown.min.js": "./src/components/item-quantity-dropdown/item-quantity-dropdown.min.js",
+	"./like-button/like-button.js": "./src/components/like-button/like-button.js",
+	"./masked-text-field/masked-text-field.js": "./src/components/masked-text-field/masked-text-field.js",
+	"./radio-buttons/radio-buttons.js": "./src/components/radio-buttons/radio-buttons.js",
+	"./range-slider/jquery-ui-slider-touch-punch.js": "./src/components/range-slider/jquery-ui-slider-touch-punch.js",
+	"./range-slider/jquery-ui-slider.js": "./src/components/range-slider/jquery-ui-slider.js",
+	"./range-slider/range-slider.js": "./src/components/range-slider/range-slider.js",
+	"./rate-button/jquery.star.rating.min.js": "./src/components/rate-button/jquery.star.rating.min.js",
+	"./rate-button/rate-button.js": "./src/components/rate-button/rate-button.js",
+	"./rich-checkbox-buttons/rich-checkbox-buttons.js": "./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js",
+	"./room-booking/room-booking.js": "./src/components/room-booking/room-booking.js",
+	"./room/room.js": "./src/components/room/room.js",
+	"./switch/switch.js": "./src/components/switch/switch.js",
+	"./window-login/window-login.js": "./src/components/window-login/window-login.js",
+	"./window-registration/window-registration.js": "./src/components/window-registration/window-registration.js",
+	"./window-search/window-search.js": "./src/components/window-search/window-search.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/components sync recursive \\.js$";
+
+/***/ }),
+
 /***/ "./src/components/checkbox-buttons/checkbox-buttons.js":
 /*!*************************************************************!*\
   !*** ./src/components/checkbox-buttons/checkbox-buttons.js ***!
   \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+
+/***/ }),
+
+/***/ "./src/components/comment/comment.js":
+/*!*******************************************!*\
+  !*** ./src/components/comment/comment.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+
+/***/ }),
+
+/***/ "./src/components/date-dropdown/date-dropdown.js":
+/*!*******************************************************!*\
+  !*** ./src/components/date-dropdown/date-dropdown.js ***!
+  \*******************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 
 
+;(function ($) {
+  const arrDateDropdown = document.querySelectorAll('.js-date-dropdown');
+
+  arrDateDropdown.forEach((item) => {
+    const $item = $(item);
+    const $first = $item.find('.date-dropdown__first-input .js-text-field');
+    const $second = $item.find('.date-dropdown__second-input .js-text-field');
+
+    const dateDropdown = $first.datepicker({
+      range: true,
+      offset: 16,
+      prevHtml: '<i class="material-icons">arrow_back</i>',
+      nextHtml: '<i class="material-icons">arrow_forward</i>',
+      navTitles: {
+        days: 'MM yyyy',
+      },
+      altField: $second,
+      altFieldDateFormat: '',
+      onSelect(formattedDate) {
+        const arrDates = formattedDate.split(',');
+
+        if (arrDates.length === 1) {
+          $first.val('');
+          $second.val(arrDates[0]);
+        } else {
+          $first.val(arrDates[0]);
+          $second.val(arrDates[1]);
+        }
+      },
+    }).data('datepicker');
+    const dates = $item.data('dates');
+
+    if (Array.isArray(dates)) {
+      if (dates.length === 1) {
+        dateDropdown.selectDate(new Date(dates[0]));
+      } else {
+        dateDropdown.selectDate([new Date(dates[0]), new Date(dates[1])]);
+      }
+    }
+
+    $item.find('.js-date-dropdown__first-button').on('click', () => {
+      dateDropdown.clear();
+    });
+
+    $item.find('.js-date-dropdown__second-button').on('click', () => {
+      dateDropdown.hide();
+    });
+
+    $item.find('.date-dropdown__first-input, .date-dropdown__second-input').on('click', () => {
+      dateDropdown.show();
+    });
+    dateDropdown.$datepicker.append($item.find('.js-date-dropdown__buttons'));
+  });
+}(jQuery));
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/datepicker-inline/datepicker-inline.js":
+/*!***************************************************************!*\
+  !*** ./src/components/datepicker-inline/datepicker-inline.js ***!
+  \***************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
+
+
+;(function ($) {
+  const datepickerInline = $('.datepicker-inline').datepicker({
+    range: true,
+    offset: 16,
+    prevHtml: '<i class="material-icons">arrow_back</i>',
+    nextHtml: '<i class="material-icons">arrow_forward</i>',
+    navTitles: {
+      days: 'MM yyyy',
+    },
+  }).data('datepicker');
+
+  datepickerInline.selectDate([new Date('2019-09-13'), new Date('2019-09-16')]);
+  $('.js-datepicker-inline .datepicker').append($('.js-datepicker-inline__buttons'));
+
+  $('.js-datepicker-inline__first-button').on('click', () => {
+    datepickerInline.clear();
+  });
+
+  $('.js-datepicker-inline__second-button').on('click', () => {
+    datepickerInline.hide();
+  });
+}(jQuery));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -13314,14 +14201,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************!*\
   !*** ./src/components/dropdown/dropdown.js ***!
   \*********************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../item-quantity-dropdown/item-quantity-dropdown.min */ "./src/components/item-quantity-dropdown/item-quantity-dropdown.min.js");
-/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
 ;(function ($) {
@@ -13445,14 +14332,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*****************************************************************************!*\
   !*** ./src/components/expandable-checkbox-list/expandable-checkbox-list.js ***!
   \*****************************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function($) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 $('.js-expandable-checkbox-list__dropdown').on('click', (event) => {
   const $target = $(event.currentTarget);
@@ -13469,6 +14356,59 @@ $('.js-expandable-checkbox-list__dropdown').on('click', (event) => {
 });
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$":
+/*!************************************************************************************************************************************!*\
+  !*** ./src/components/favicons sync !./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext] \.(svg|png|ico|xml|json)$ ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./android-chrome-48x48.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/android-chrome-48x48.png",
+	"./apple-touch-icon.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/apple-touch-icon.png",
+	"./browserconfig.xml": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/browserconfig.xml",
+	"./favicon-16x16.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-16x16.png",
+	"./favicon-32x32.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-32x32.png",
+	"./favicon.ico": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon.ico",
+	"./mstile-150x150.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/mstile-150x150.png",
+	"./safari-pinned-tab.svg": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/safari-pinned-tab.svg"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/components/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$";
+
+/***/ }),
+
+/***/ "./src/components/favicons/favicons.js":
+/*!*********************************************!*\
+  !*** ./src/components/favicons/favicons.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const faviconsContext = __webpack_require__("./src/components/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$");
+faviconsContext.keys().forEach(faviconsContext);
+
 
 /***/ }),
 
@@ -13566,14 +14506,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************************!*\
   !*** ./src/components/footer-copyright/footer-copyright.js ***!
   \*************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../field-button/field-button */ "./src/components/field-button/field-button.js");
-/* harmony import */ var _field_button_field_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_field_button_field_button__WEBPACK_IMPORTED_MODULE_0__);
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
 /***/ }),
@@ -13587,6 +14527,186 @@ __webpack_require__.r(__webpack_exports__);
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {!function(n,t){ true?module.exports=t():undefined}(window,function(){return function(n){var t={};function e(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return n[o].call(r.exports,r,r.exports,e),r.l=!0,r.exports}return e.m=n,e.c=t,e.d=function(n,t,o){e.o(n,t)||Object.defineProperty(n,t,{enumerable:!0,get:o})},e.r=function(n){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(n,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(n,"__esModule",{value:!0})},e.t=function(n,t){if(1&t&&(n=e(n)),8&t)return n;if(4&t&&"object"==typeof n&&n&&n.__esModule)return n;var o=Object.create(null);if(e.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:n}),2&t&&"string"!=typeof n)for(var r in n)e.d(o,r,function(t){return n[t]}.bind(null,r));return o},e.n=function(n){var t=n&&n.__esModule?function(){return n.default}:function(){return n};return e.d(t,"a",t),t},e.o=function(n,t){return Object.prototype.hasOwnProperty.call(n,t)},e.p="",e(e.s=0)}([function(n,t,e){"use strict";e.r(t);e(1);!function(n){var t={maxItems:1/0,minItems:0,selectionText:"item",textPlural:"items",controls:{position:"right",displayCls:"iqdropdown-content",controlsCls:"iqdropdown-item-controls",counterCls:"counter"},items:{},onChange:function(){},beforeDecrement:function(){return!0},beforeIncrement:function(){return!0}};n.fn.iqDropdown=function(e){return this.each(function(){var o=n(this),r=o.find("p.iqdropdown-selection").last(),i=o.find("div.iqdropdown-menu").find("div.iqdropdown-menu-option"),u=n.extend(!0,{},t,e),c={},a=0;function l(){var n=1!==a&&u.textPlural.length>0?u.textPlural:u.selectionText;r.html("".concat(a," ").concat(n))}o.click(function(){o.toggleClass("menu-open")}),i.each(function(){var t=n(this),e=t.data("id"),o=Number(t.data("defaultcount")||"0");c[e]=o,a+=o,function(n,t){var e=Number(t.data("mincount")),o=Number(t.data("maxcount"));u.items[n]={minCount:Number.isNaN(Number(e))?0:e,maxCount:Number.isNaN(Number(o))?1/0:o}}(e,t),function(t,e){var o=n("<div />").addClass(u.controls.controlsCls),r=n('\n          <button class="button-decrement">\n            <i class="icon-decrement"></i>\n          </button>\n        '),i=n('\n          <button class="button-increment">\n            <i class="icon-decrement icon-increment"></i>\n          </button>\n        '),s=n("<span>".concat(c[t],"</span>")).addClass(u.controls.counterCls);e.children("div").addClass(u.controls.displayCls),o.append(r,s,i),"right"===u.controls.position?e.append(o):e.prepend(o),r.click(function(n){var e=u.items,o=u.minItems,r=u.beforeDecrement,i=u.onChange;r(t,c)&&a>o&&c[t]>e[t].minCount&&(c[t]-=1,a-=1,s.html(c[t]),l(),i(t,c[t],a)),n.preventDefault()}),i.click(function(n){var e=u.items,o=u.maxItems,r=u.beforeIncrement,i=u.onChange;r(t,c)&&a<o&&c[t]<e[t].maxCount&&(c[t]+=1,a+=1,s.html(c[t]),l(),i(t,c[t],a)),n.preventDefault()}),e.click(function(n){return n.stopPropagation()})}(e,t)}),l()}),this}}(jQuery)},function(n,t,e){}])});
 //# sourceMappingURL=item-quantity-dropdown.min.js.map
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/like-button/like-button.js":
+/*!***************************************************!*\
+  !*** ./src/components/like-button/like-button.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$('.js-like-button').on('click', (event) => {
+  const $target = $(event.currentTarget);
+  const $icon = $($target.find('.like-button__icon'));
+  const $number = $($target.find('.like-button__number'));
+  let text = Number.parseInt($number.text(), 10);
+  if (!($target.hasClass('like-button_click'))) {
+    $target.addClass('like-button_click');
+    text += 1;
+    $number.text(text);
+
+    if (text > 9) {
+      $number.addClass('like-button__number_margin_null');
+    }
+    $icon.text('favorite');
+  } else {
+    $target.removeClass('like-button_click');
+    text -= 1;
+    $number.text(text);
+
+    if (text < 10) {
+      $number.removeClass('like-button__number_margin_null');
+    }
+
+    $icon.text('favorite_border');
+  }
+});
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/masked-text-field/masked-text-field.js":
+/*!***************************************************************!*\
+  !*** ./src/components/masked-text-field/masked-text-field.js ***!
+  \***************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery-mask-plugin */ "./node_modules/jquery-mask-plugin/dist/jquery.mask.js");
+/* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__);
+
+
+{
+  const createMaskOption = function (val) {
+    if (Number.parseInt(val[6], 10) === 1) {
+      return {
+        O: { pattern: /[5-9]/ },
+        X: { pattern: /[9]/ },
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[0-9]/ },
+        S: { pattern: /[0-1]/ },
+        R: { pattern: /[1-9]/ },
+        Y: { pattern: /[1-2]/ },
+        K: { pattern: /[0-9]/ },
+      };
+    }
+    if (Number.parseInt(val[3], 10) === 1) {
+      return {
+        R: { pattern: /[0-2]/ },
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[0-1]/ },
+        S: { pattern: /[0-1]/ },
+        Y: { pattern: /[1-2]/ },
+        X: { pattern: /[0]/ },
+        O: { pattern: /[0-1]/ },
+        K: { pattern: /[0-9]/ },
+      };
+    }
+    if (Number.parseInt(val[0], 10) === 0) {
+      return {
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[1-9]/ },
+        S: { pattern: /[0-1]/ },
+        R: { pattern: /[1-9]/ },
+        Y: { pattern: /[1-2]/ },
+        X: { pattern: /[0]/ },
+        O: { pattern: /[0-1]/ },
+        K: { pattern: /[0-9]/ },
+      };
+    }
+    if (Number.parseInt(val[0], 10) === 3) {
+      return {
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[0-1]/ },
+        S: { pattern: /[0-1]/ },
+        R: { pattern: /[1-9]/ },
+        Y: { pattern: /[1-2]/ },
+        X: { pattern: /[0]/ },
+        O: { pattern: /[0-1]/ },
+        K: { pattern: /[0-9]/ },
+      };
+    }
+
+    return {
+      B: { pattern: /[0-9]/ },
+      A: { pattern: /[0-3]/ },
+      S: { pattern: /[0-1]/ },
+      R: { pattern: /[1-9]/ },
+      Y: { pattern: /[1-2]/ },
+      X: { pattern: /[0]/ },
+      O: { pattern: /[0-1]/ },
+      K: { pattern: /[0-9]/ },
+    };
+  };
+
+  $('.js-mask').mask('AB.SR.YXOQ', {
+    translation: {
+      A: { pattern: /[0-3]/ },
+      B: { pattern: /[0-9]/ },
+      S: { pattern: /[0-1]/ },
+      R: { pattern: /[1-9]/ },
+      Y: { pattern: /[1-2]/ },
+      X: { pattern: /[0]/ },
+      O: { pattern: /[0-1]/ },
+      K: { pattern: /[0-9]/ },
+    },
+
+    onKeyPress(val, e, field, options) {
+      const obj = createMaskOption(val);
+      field.mask('AB.SR.YXOK', {
+        translation: obj,
+        onKeyPress: options.onKeyPress,
+      });
+    },
+  });
+}
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/radio-buttons/radio-buttons.js":
+/*!*******************************************************!*\
+  !*** ./src/components/radio-buttons/radio-buttons.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+;(function ($) {
+  const arrRadioButtons = document.querySelectorAll('.js-radio-buttons');
+  arrRadioButtons.forEach((item) => {
+    const $item = $(item);
+    const $arrRadio = $item.find('.js-switch');
+    $($arrRadio[0]).addClass('switch_radio_checked');
+
+    $item.on('click', (event) => {
+      const $target = $(event.target);
+      if ($target.hasClass('js-radio-buttons')) return;
+      $target.find('.js-switch__input').prop('checked', true);
+      $target.addClass('switch_radio_checked');
+
+      $arrRadio.each((i, RadioItem) => {
+        const $RadioItem = $(RadioItem);
+        if (!($RadioItem.find('.js-switch__input').prop('checked'))) {
+          $RadioItem.removeClass('switch_radio_checked');
+        }
+      });
+    });
+  });
+}(jQuery));
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -13636,18 +14756,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*!*****************************************************!*\
   !*** ./src/components/range-slider/range-slider.js ***!
   \*****************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _jquery_ui_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./jquery-ui-slider */ "./src/components/range-slider/jquery-ui-slider.js");
-/* harmony import */ var _jquery_ui_slider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jquery_ui_slider__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _jquery_ui_slider_touch_punch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./jquery-ui-slider-touch-punch */ "./src/components/range-slider/jquery-ui-slider-touch-punch.js");
-/* harmony import */ var _jquery_ui_slider_touch_punch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_jquery_ui_slider_touch_punch__WEBPACK_IMPORTED_MODULE_1__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
-
-
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 ;(function ($) {
   const getResult = function (values) {
@@ -13707,14 +14823,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./src/components/rate-button/rate-button.js ***!
   \***************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./jquery.star.rating.min */ "./src/components/rate-button/jquery.star.rating.min.js");
-/* harmony import */ var _jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 ;(function ($) {
   const rateButtons = document.querySelectorAll('.js-rate-button');
@@ -13739,15 +14855,30 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************************!*\
   !*** ./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js ***!
   \***********************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
+/***/ }),
+
+/***/ "./src/components/room-booking/room-booking.js":
+/*!*****************************************************!*\
+  !*** ./src/components/room-booking/room-booking.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 /***/ }),
 
@@ -13755,13 +14886,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************!*\
   !*** ./src/components/room/room.js ***!
   \*************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _rate_button_rate_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../rate-button/rate-button */ "./src/components/rate-button/rate-button.js");
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
 /***/ }),
@@ -13790,6 +14922,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/window-login/window-login.js":
+/*!*****************************************************!*\
+  !*** ./src/components/window-login/window-login.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+/***/ }),
+
+/***/ "./src/components/window-registration/window-registration.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/window-registration/window-registration.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+/***/ }),
+
+/***/ "./src/components/window-search/window-search.js":
+/*!*******************************************************!*\
+  !*** ./src/components/window-search/window-search.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+/***/ }),
+
 /***/ "./src/search-room/search-room.js":
 /*!****************************************!*\
   !*** ./src/search-room/search-room.js ***!
@@ -13801,24 +14978,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _search_room_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./search-room.scss */ "./src/search-room/search-room.scss");
 /* harmony import */ var _search_room_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_search_room_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_footer_copyright_footer_copyright__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/footer-copyright/footer-copyright */ "./src/components/footer-copyright/footer-copyright.js");
-/* harmony import */ var _components_filter_date_dropdown_filter_date_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/filter-date-dropdown/filter-date-dropdown */ "./src/components/filter-date-dropdown/filter-date-dropdown.js");
-/* harmony import */ var _components_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/dropdown/dropdown */ "./src/components/dropdown/dropdown.js");
-/* harmony import */ var _components_range_slider_range_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/range-slider/range-slider */ "./src/components/range-slider/range-slider.js");
-/* harmony import */ var _components_checkbox_buttons_checkbox_buttons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/checkbox-buttons/checkbox-buttons */ "./src/components/checkbox-buttons/checkbox-buttons.js");
-/* harmony import */ var _components_rich_checkbox_buttons_rich_checkbox_buttons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/rich-checkbox-buttons/rich-checkbox-buttons */ "./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js");
-/* harmony import */ var _components_expandable_checkbox_list_expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/expandable-checkbox-list/expandable-checkbox-list */ "./src/components/expandable-checkbox-list/expandable-checkbox-list.js");
-/* harmony import */ var _components_room_room__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/room/room */ "./src/components/room/room.js");
 
 
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
-
-
-
-
-
-
-
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 /***/ }),
 

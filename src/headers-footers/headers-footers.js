@@ -1,2 +1,7 @@
 import './headers-footers.scss';
-import '../components/footer-copyright/footer-copyright';
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../components/', true, /\.js$/));

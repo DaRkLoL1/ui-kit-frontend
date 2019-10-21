@@ -1,9 +1,7 @@
 import './search-room.scss';
-import '../components/footer-copyright/footer-copyright';
-import '../components/filter-date-dropdown/filter-date-dropdown';
-import '../components/dropdown/dropdown';
-import '../components/range-slider/range-slider';
-import '../components/checkbox-buttons/checkbox-buttons';
-import '../components/rich-checkbox-buttons/rich-checkbox-buttons';
-import '../components/expandable-checkbox-list/expandable-checkbox-list';
-import '../components/room/room';
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../components/', true, /\.js$/));

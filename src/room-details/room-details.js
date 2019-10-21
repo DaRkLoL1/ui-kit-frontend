@@ -1,4 +1,7 @@
 import './room-details.scss';
-import '../components/footer-copyright/footer-copyright';
-import '../components/comment/comment';
-import '../components/room-booking/room-booking';
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../components/', true, /\.js$/));

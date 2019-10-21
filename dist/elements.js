@@ -2380,6 +2380,94 @@ __webpack_require__(/*! ./timepicker */ "./node_modules/air-datepicker/src/js/ti
 
 /***/ }),
 
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/android-chrome-48x48.png":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/android-chrome-48x48.png ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/android-chrome-48x48.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/apple-touch-icon.png":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/apple-touch-icon.png ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/apple-touch-icon.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/browserconfig.xml":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/browserconfig.xml ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/browserconfig.xml";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-16x16.png":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-16x16.png ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/favicon-16x16.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-32x32.png":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-32x32.png ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/favicon-32x32.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon.ico":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon.ico ***!
+  \****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/favicon.ico";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/mstile-150x150.png":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/mstile-150x150.png ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/mstile-150x150.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/safari-pinned-tab.svg":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/safari-pinned-tab.svg ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/favicons/safari-pinned-tab.svg";
+
+/***/ }),
+
 /***/ "./node_modules/jquery-mask-plugin/dist/jquery.mask.js":
 /*!*************************************************************!*\
   !*** ./node_modules/jquery-mask-plugin/dist/jquery.mask.js ***!
@@ -13908,18 +13996,76 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./src/components sync recursive \\.js$":
+/*!***********************************!*\
+  !*** ./src/components sync \.js$ ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./checkbox-buttons/checkbox-buttons.js": "./src/components/checkbox-buttons/checkbox-buttons.js",
+	"./comment/comment.js": "./src/components/comment/comment.js",
+	"./date-dropdown/date-dropdown.js": "./src/components/date-dropdown/date-dropdown.js",
+	"./datepicker-inline/datepicker-inline.js": "./src/components/datepicker-inline/datepicker-inline.js",
+	"./dropdown/dropdown.js": "./src/components/dropdown/dropdown.js",
+	"./expandable-checkbox-list/expandable-checkbox-list.js": "./src/components/expandable-checkbox-list/expandable-checkbox-list.js",
+	"./favicons/favicons.js": "./src/components/favicons/favicons.js",
+	"./field-button/field-button.js": "./src/components/field-button/field-button.js",
+	"./filter-date-dropdown/filter-date-dropdown.js": "./src/components/filter-date-dropdown/filter-date-dropdown.js",
+	"./footer-copyright/footer-copyright.js": "./src/components/footer-copyright/footer-copyright.js",
+	"./item-quantity-dropdown/item-quantity-dropdown.min.js": "./src/components/item-quantity-dropdown/item-quantity-dropdown.min.js",
+	"./like-button/like-button.js": "./src/components/like-button/like-button.js",
+	"./masked-text-field/masked-text-field.js": "./src/components/masked-text-field/masked-text-field.js",
+	"./radio-buttons/radio-buttons.js": "./src/components/radio-buttons/radio-buttons.js",
+	"./range-slider/jquery-ui-slider-touch-punch.js": "./src/components/range-slider/jquery-ui-slider-touch-punch.js",
+	"./range-slider/jquery-ui-slider.js": "./src/components/range-slider/jquery-ui-slider.js",
+	"./range-slider/range-slider.js": "./src/components/range-slider/range-slider.js",
+	"./rate-button/jquery.star.rating.min.js": "./src/components/rate-button/jquery.star.rating.min.js",
+	"./rate-button/rate-button.js": "./src/components/rate-button/rate-button.js",
+	"./rich-checkbox-buttons/rich-checkbox-buttons.js": "./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js",
+	"./room-booking/room-booking.js": "./src/components/room-booking/room-booking.js",
+	"./room/room.js": "./src/components/room/room.js",
+	"./switch/switch.js": "./src/components/switch/switch.js",
+	"./window-login/window-login.js": "./src/components/window-login/window-login.js",
+	"./window-registration/window-registration.js": "./src/components/window-registration/window-registration.js",
+	"./window-search/window-search.js": "./src/components/window-search/window-search.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/components sync recursive \\.js$";
+
+/***/ }),
+
 /***/ "./src/components/checkbox-buttons/checkbox-buttons.js":
 /*!*************************************************************!*\
   !*** ./src/components/checkbox-buttons/checkbox-buttons.js ***!
   \*************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
 /***/ }),
@@ -13928,14 +14074,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************!*\
   !*** ./src/components/comment/comment.js ***!
   \*******************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _like_button_like_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../like-button/like-button */ "./src/components/like-button/like-button.js");
-/* harmony import */ var _like_button_like_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_like_button_like_button__WEBPACK_IMPORTED_MODULE_0__);
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
 /***/ }),
@@ -14011,18 +14157,58 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/components/dropdown/dropdown.js":
-/*!*********************************************!*\
-  !*** ./src/components/dropdown/dropdown.js ***!
-  \*********************************************/
+/***/ "./src/components/datepicker-inline/datepicker-inline.js":
+/*!***************************************************************!*\
+  !*** ./src/components/datepicker-inline/datepicker-inline.js ***!
+  \***************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../item-quantity-dropdown/item-quantity-dropdown.min */ "./src/components/item-quantity-dropdown/item-quantity-dropdown.min.js");
-/* harmony import */ var _item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_item_quantity_dropdown_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
+/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 
+
+;(function ($) {
+  const datepickerInline = $('.datepicker-inline').datepicker({
+    range: true,
+    offset: 16,
+    prevHtml: '<i class="material-icons">arrow_back</i>',
+    nextHtml: '<i class="material-icons">arrow_forward</i>',
+    navTitles: {
+      days: 'MM yyyy',
+    },
+  }).data('datepicker');
+
+  datepickerInline.selectDate([new Date('2019-09-13'), new Date('2019-09-16')]);
+  $('.js-datepicker-inline .datepicker').append($('.js-datepicker-inline__buttons'));
+
+  $('.js-datepicker-inline__first-button').on('click', () => {
+    datepickerInline.clear();
+  });
+
+  $('.js-datepicker-inline__second-button').on('click', () => {
+    datepickerInline.hide();
+  });
+}(jQuery));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/dropdown/dropdown.js":
+/*!*********************************************!*\
+  !*** ./src/components/dropdown/dropdown.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
 ;(function ($) {
@@ -14146,14 +14332,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*****************************************************************************!*\
   !*** ./src/components/expandable-checkbox-list/expandable-checkbox-list.js ***!
   \*****************************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function($) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 $('.js-expandable-checkbox-list__dropdown').on('click', (event) => {
   const $target = $(event.currentTarget);
@@ -14170,6 +14356,59 @@ $('.js-expandable-checkbox-list__dropdown').on('click', (event) => {
 });
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$":
+/*!************************************************************************************************************************************!*\
+  !*** ./src/components/favicons sync !./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext] \.(svg|png|ico|xml|json)$ ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./android-chrome-48x48.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/android-chrome-48x48.png",
+	"./apple-touch-icon.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/apple-touch-icon.png",
+	"./browserconfig.xml": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/browserconfig.xml",
+	"./favicon-16x16.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-16x16.png",
+	"./favicon-32x32.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon-32x32.png",
+	"./favicon.ico": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/favicon.ico",
+	"./mstile-150x150.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/mstile-150x150.png",
+	"./safari-pinned-tab.svg": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/components/favicons/safari-pinned-tab.svg"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/components/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$";
+
+/***/ }),
+
+/***/ "./src/components/favicons/favicons.js":
+/*!*********************************************!*\
+  !*** ./src/components/favicons/favicons.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const faviconsContext = __webpack_require__("./src/components/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$");
+faviconsContext.keys().forEach(faviconsContext);
+
 
 /***/ }),
 
@@ -14260,6 +14499,22 @@ __webpack_require__.r(__webpack_exports__);
 }(jQuery));
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/footer-copyright/footer-copyright.js":
+/*!*************************************************************!*\
+  !*** ./src/components/footer-copyright/footer-copyright.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
 
 /***/ }),
 
@@ -14420,14 +14675,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************************!*\
   !*** ./src/components/radio-buttons/radio-buttons.js ***!
   \*******************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 ;(function ($) {
   const arrRadioButtons = document.querySelectorAll('.js-radio-buttons');
@@ -14501,18 +14756,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*!*****************************************************!*\
   !*** ./src/components/range-slider/range-slider.js ***!
   \*****************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _jquery_ui_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./jquery-ui-slider */ "./src/components/range-slider/jquery-ui-slider.js");
-/* harmony import */ var _jquery_ui_slider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jquery_ui_slider__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _jquery_ui_slider_touch_punch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./jquery-ui-slider-touch-punch */ "./src/components/range-slider/jquery-ui-slider-touch-punch.js");
-/* harmony import */ var _jquery_ui_slider_touch_punch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_jquery_ui_slider_touch_punch__WEBPACK_IMPORTED_MODULE_1__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
-
-
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 ;(function ($) {
   const getResult = function (values) {
@@ -14572,14 +14823,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./src/components/rate-button/rate-button.js ***!
   \***************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* harmony import */ var _jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./jquery.star.rating.min */ "./src/components/rate-button/jquery.star.rating.min.js");
-/* harmony import */ var _jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(jQuery) {function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 ;(function ($) {
   const rateButtons = document.querySelectorAll('.js-rate-button');
@@ -14604,14 +14855,45 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************************!*\
   !*** ./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js ***!
   \***********************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _switch_switch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_switch_switch__WEBPACK_IMPORTED_MODULE_0__);
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+
+/***/ }),
+
+/***/ "./src/components/room-booking/room-booking.js":
+/*!*****************************************************!*\
+  !*** ./src/components/room-booking/room-booking.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+/***/ }),
+
+/***/ "./src/components/room/room.js":
+/*!*************************************!*\
+  !*** ./src/components/room/room.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 
 /***/ }),
@@ -14640,6 +14922,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/window-login/window-login.js":
+/*!*****************************************************!*\
+  !*** ./src/components/window-login/window-login.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+/***/ }),
+
+/***/ "./src/components/window-registration/window-registration.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/window-registration/window-registration.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+/***/ }),
+
+/***/ "./src/components/window-search/window-search.js":
+/*!*******************************************************!*\
+  !*** ./src/components/window-search/window-search.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
+
+/***/ }),
+
 /***/ "./src/elements/elements.js":
 /*!**********************************!*\
   !*** ./src/elements/elements.js ***!
@@ -14651,39 +14978,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements.scss */ "./src/elements/elements.scss");
 /* harmony import */ var _elements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_elements_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_masked_text_field_masked_text_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/masked-text-field/masked-text-field */ "./src/components/masked-text-field/masked-text-field.js");
-/* harmony import */ var _components_field_button_field_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/field-button/field-button */ "./src/components/field-button/field-button.js");
-/* harmony import */ var _components_field_button_field_button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_field_button_field_button__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_switch_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/switch/switch */ "./src/components/switch/switch.js");
-/* harmony import */ var _components_switch_switch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_switch_switch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_radio_buttons_radio_buttons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/radio-buttons/radio-buttons */ "./src/components/radio-buttons/radio-buttons.js");
-/* harmony import */ var _components_checkbox_buttons_checkbox_buttons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/checkbox-buttons/checkbox-buttons */ "./src/components/checkbox-buttons/checkbox-buttons.js");
-/* harmony import */ var _components_expandable_checkbox_list_expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/expandable-checkbox-list/expandable-checkbox-list */ "./src/components/expandable-checkbox-list/expandable-checkbox-list.js");
-/* harmony import */ var _components_rich_checkbox_buttons_rich_checkbox_buttons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/rich-checkbox-buttons/rich-checkbox-buttons */ "./src/components/rich-checkbox-buttons/rich-checkbox-buttons.js");
-/* harmony import */ var _components_like_button_like_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/like-button/like-button */ "./src/components/like-button/like-button.js");
-/* harmony import */ var _components_like_button_like_button__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_like_button_like_button__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/rate-button/rate-button */ "./src/components/rate-button/rate-button.js");
-/* harmony import */ var _components_range_slider_range_slider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/range-slider/range-slider */ "./src/components/range-slider/range-slider.js");
-/* harmony import */ var _components_comment_comment__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/comment/comment */ "./src/components/comment/comment.js");
-/* harmony import */ var _components_date_dropdown_date_dropdown__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/date-dropdown/date-dropdown */ "./src/components/date-dropdown/date-dropdown.js");
-/* harmony import */ var _components_filter_date_dropdown_filter_date_dropdown__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/filter-date-dropdown/filter-date-dropdown */ "./src/components/filter-date-dropdown/filter-date-dropdown.js");
-/* harmony import */ var _components_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/dropdown/dropdown */ "./src/components/dropdown/dropdown.js");
 
 
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+importAll(__webpack_require__("./src/components sync recursive \\.js$"));
 
 /***/ }),
 

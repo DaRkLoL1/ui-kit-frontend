@@ -1,4 +1,7 @@
 import './sign-in.scss';
-import '../components/favicons/favicons';
-import '../components/footer-copyright/footer-copyright';
-import '../components/window-login/window-login';
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../components/', true, /\.js$/));

@@ -1,3 +1,7 @@
 import './registration.scss';
-import '../components/footer-copyright/footer-copyright';
-import '../components/window-registration/window-registration';
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../components/', true, /\.js$/));

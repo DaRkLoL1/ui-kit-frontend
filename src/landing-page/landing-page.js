@@ -1,3 +1,7 @@
 import './landing-page.scss';
-import '../components/footer-copyright/footer-copyright';
-import '../components/window-search/window-search';
+
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../components/', true, /\.js$/));
