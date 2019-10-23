@@ -2,96 +2,96 @@ extends ../components/block-head/block-head.pug
 block title
   title Form Elements
 block body
-  body
-    include ../components/text-field/text-field.pug
-    include ../components/masked-text-field/masked-text-field.pug
-    include ../components/field-button/field-button.pug
-    include ../components/switch/switch.pug
-    include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
-    include ../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
-    include ../components/like-button/like-button.pug
-    include ../components/rate-button/rate-button.pug
-    include ../components/comment/comment.pug 
-    include ../components/checkbox-buttons/checkbox-buttons.pug
-    include ../components/bullet-list/bullet-list.pug
-    include ../components/filter-date-dropdown/filter-date-dropdown.pug
-    include ../components/dropdown/dropdown.pug
-    include ../components/date-dropdown/date-dropdown.pug
-    include ../components/buttons/buttons.pug 
-    include ../components/set-of-qualities/set-of-qualities.pug
-    include ../components/radio-buttons/radio-buttons.pug
-    include ../components/pagination/pagination.pug
-    include ../components/range-slider/range-slider.pug
+  
+  include ../components/text-field/text-field.pug
+  include ../components/masked-text-field/masked-text-field.pug
+  include ../components/field-button/field-button.pug
+  include ../components/switch/switch.pug
+  include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
+  include ../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
+  include ../components/like-button/like-button.pug
+  include ../components/rate-button/rate-button.pug
+  include ../components/comment/comment.pug 
+  include ../components/checkbox-buttons/checkbox-buttons.pug
+  include ../components/bullet-list/bullet-list.pug
+  include ../components/filter-date-dropdown/filter-date-dropdown.pug
+  include ../components/dropdown/dropdown.pug
+  include ../components/date-dropdown/date-dropdown.pug
+  include ../components/buttons/buttons.pug 
+  include ../components/set-of-qualities/set-of-qualities.pug
+  include ../components/radio-buttons/radio-buttons.pug
+  include ../components/pagination/pagination.pug
+  include ../components/range-slider/range-slider.pug
 
-    .elements
-      .elements__wrapper-1
-        .elements__first-line
-          .elements__text-field
-            h3(class='elements__title label-text') text field
-            +text-field({text: 'Email'})
-          .elements__dropdown
-            h3(class='elements__title label-text') dropdown
-            +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
-          .elements__masked-text-field
-            h3(class='elements__title label-text') masked text field
-            +masked-text-field
-          .elements__date-dropdown
-            .elements__titles
-              h3(class='elements__title label-text') date dropdown
-              h3(class='elements__title label-text') date dropdown
-            +date-dropdown(['2019-08-19'])
-          .elements__filter-date-dropdown
-            h3(class='elements__title label-text') filter date dropdown
-            +filter-date-dropdown(['2019-09-13','2019-09-16'])
-          .elements__subscription-text-field
-            h3(class='elements__title label-text') subscription text field
-            +field-button({text: 'Email', theme: 'gradient'})
-          .elements__dropdown-2
-            h3(class='elements__title label-text') dropdown
-            +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
-          .elements__expandable-checkbox-list
-            +expandable-checkbox-list('expandable checkbox list')
-        .elements__second-line
-          .elements__checkbox-buttons
-            +checkbox-buttons
-          .elements__radio-buttons
-            h3(class='elements__title label-text') radio buttons
-            +radio-buttons
-          .elements__toggle
-            h3(class='elements__title label-text') toggle
-            +switch({type: 'toggle', text: 'Получать спецпредложения'})
-          .elements__like-button
-            h3(class='elements__title label-text') like-button
-            +like-button(9)
-          .elements__rate-button
-            h3(class='elements__title label-text') rate-button
-            +rate-button(4)
-          .elements__rich-checkbox-buttons
-            +rich-checkbox-buttons('rich checkbox buttons')
-        .elements__third-line
-          .elements__range-slider
-            +range-slider('range slider')
-          .elements__buttons
-            h3(class='elements__title label-text') buttons
-            .elements__buttons-1
-              +buttons({size: 'medium', text: 'click me'})
-            .elements__buttons-2
-              +buttons({size: 'medium', style: 'ghost', text: 'click me'})
-            .elements__buttons-3
-              +buttons({text: 'click me'})
-              +buttons({style: 'ghost', text: 'click me'})
-            .elements__buttons-4
-               +buttons({size: 'big', type: 'submit', text: 'перейти к оплате'})
-          .elements__pagination
-            h3(class='elements__title label-text') pagination
-            +pagination
-          .elements__bullet-list
-            h3(class='elements__title label-text') bullet-list
-            +bullet-list
-      .elements__wrapper-2
-        .elements__set-of-qualities
-          +set-of-qualities
-        .elements__comment
-          +comment({image: 'comment-img-1.png', name: 'Мурад Сарафанов', time: '5 дней назад', like: 11,
-            text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.' + 
-              ' И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+  .elements
+    .elements__wrapper-1
+      .elements__first-line
+        .elements__text-field
+          h3(class='elements__title label-text') text field
+          +text-field({text: 'Email'})
+        .elements__dropdown
+          h3(class='elements__title label-text') dropdown
+          +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
+        .elements__masked-text-field
+          h3(class='elements__title label-text') masked text field
+          +masked-text-field
+        .elements__date-dropdown
+          .elements__titles
+            h3(class='elements__title label-text') date dropdown
+            h3(class='elements__title label-text') date dropdown
+          +date-dropdown(['2019-08-19'])
+        .elements__filter-date-dropdown
+          h3(class='elements__title label-text') filter date dropdown
+          +filter-date-dropdown(['2019-09-13','2019-09-16'])
+        .elements__subscription-text-field
+          h3(class='elements__title label-text') subscription text field
+          +field-button({text: 'Email', theme: 'gradient'})
+        .elements__dropdown-2
+          h3(class='elements__title label-text') dropdown
+          +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
+        .elements__expandable-checkbox-list
+          +expandable-checkbox-list('expandable checkbox list')
+      .elements__second-line
+        .elements__checkbox-buttons
+          +checkbox-buttons
+        .elements__radio-buttons
+          h3(class='elements__title label-text') radio buttons
+          +radio-buttons
+        .elements__toggle
+          h3(class='elements__title label-text') toggle
+          +switch({type: 'toggle', text: 'Получать спецпредложения'})
+        .elements__like-button
+          h3(class='elements__title label-text') like-button
+          +like-button(9)
+        .elements__rate-button
+          h3(class='elements__title label-text') rate-button
+          +rate-button(4)
+        .elements__rich-checkbox-buttons
+          +rich-checkbox-buttons('rich checkbox buttons')
+      .elements__third-line
+        .elements__range-slider
+          +range-slider('range slider')
+        .elements__buttons
+          h3(class='elements__title label-text') buttons
+          .elements__buttons-1
+            +buttons({size: 'medium', text: 'click me'})
+          .elements__buttons-2
+            +buttons({size: 'medium', style: 'ghost', text: 'click me'})
+          .elements__buttons-3
+            +buttons({text: 'click me'})
+            +buttons({style: 'ghost', text: 'click me'})
+          .elements__buttons-4
+              +buttons({size: 'big', type: 'submit', text: 'перейти к оплате'})
+        .elements__pagination
+          h3(class='elements__title label-text') pagination
+          +pagination
+        .elements__bullet-list
+          h3(class='elements__title label-text') bullet-list
+          +bullet-list
+    .elements__wrapper-2
+      .elements__set-of-qualities
+        +set-of-qualities
+      .elements__comment
+        +comment({image: 'comment-img-1.png', name: 'Мурад Сарафанов', time: '5 дней назад', like: 11,
+          text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.' + 
+            ' И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})

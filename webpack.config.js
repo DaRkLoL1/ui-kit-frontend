@@ -6,11 +6,9 @@ const webpack = require('webpack');
 
 module.exports = {
   devtool: 'inline-sourse-map',
-
-  entry: {},
-
+  entry: './src/index.js',
   output: {
-    filename: '[name].js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -61,7 +59,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: 'index.css',
     }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
@@ -87,8 +85,6 @@ module.exports = {
   'search-room',
   'sign-in',
 ].forEach((item) => {
-  module.exports.entry[item] = `./src/${item}/${item}.js`;
-
   module.exports.plugins.push(
     new HtmlWebpackPlugin({
       hash: false,
