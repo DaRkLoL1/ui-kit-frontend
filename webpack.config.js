@@ -37,6 +37,8 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
+              data: '@import "colors/colors.scss";',
+              includePaths: [__dirname, 'src'],
               sourceMap: true,
             },
           },

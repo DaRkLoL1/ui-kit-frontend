@@ -4,5 +4,4 @@ function importAll(r) {
   r.keys().forEach(r);
 }
 
-importAll(require.context('./components/', true, /\.js$/));
-importAll(require.context('./', true, /\.scss$/));
+importAll(require.context('./', true, /\.scss|js$/));
