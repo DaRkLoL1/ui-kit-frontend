@@ -88,7 +88,7 @@ module.exports = {
   module.exports.plugins.push(
     new HtmlWebpackPlugin({
       hash: false,
-      template: `./src/${item}/${item}.pug`,
+      template: `./src/pages/${item}/${item}.pug`,
       filename: `${item}.html`,
       chunks: [item],
     }),
