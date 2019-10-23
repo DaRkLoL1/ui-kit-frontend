@@ -1,6 +1,8 @@
-import './jquery-ui-slider';
-import './jquery-ui-slider-touch-punch';
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
+importAll(require.context('../', true, /\.js$/));
 
 ;(function ($) {
   const getResult = function (values) {

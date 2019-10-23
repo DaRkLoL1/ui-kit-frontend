@@ -1,4 +1,8 @@
-import '../item-quantity-dropdown/item-quantity-dropdown.min';
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../', true, /\.js$/));
 
 
 ;(function ($) {

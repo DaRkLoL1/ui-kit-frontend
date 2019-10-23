@@ -1,4 +1,8 @@
-import '../switch/switch';
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../', true, /\.js$/));
 
 $('.js-expandable-checkbox-list__dropdown').on('click', (event) => {
   const $target = $(event.currentTarget);

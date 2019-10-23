@@ -1,2 +1,5 @@
-import '../date-dropdown/date-dropdown';
-import '../dropdown/dropdown';
+function importAll (r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('../', true, /\.js$/));
