@@ -4,7 +4,7 @@ include ../button/button.pug
 mixin window-login
   form(class='window-login')
     .window-login__wrapper
-      h1(class='widjet-title window-login__title') Войти
+      h1(class='window-login__title') Войти
       .window-login__email
         +text-field({text: 'Email'})
       .window-login__password 
@@ -12,6 +12,6 @@ mixin window-login
       .window-login__submit
         +button({size: 'big', type: 'submit', text: 'войти'})
       .window-login__footer
-        p(class='window-login__text text') Нет аккаунта на Toxin?
+        p(class='window-login__text') Нет аккаунта на Toxin?
         .window-login__button  
           +button({size: 'medium', style: 'ghost', text: 'создать'})

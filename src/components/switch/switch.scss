@@ -1,6 +1,12 @@
 .switch {
   position: relative;
   display: inline-block;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.71;
+  color: $label-color;
   cursor: pointer;
   
   &_checkbox {

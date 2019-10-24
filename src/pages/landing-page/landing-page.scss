@@ -19,11 +19,17 @@
 
   &__text {
     width: 300px;
-    text-align: right;
     margin: 0;
     margin-left: auto;
     margin-right: 134px;
     padding-bottom: 20px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $label-color;
+    text-align: right;
   }
 }
 

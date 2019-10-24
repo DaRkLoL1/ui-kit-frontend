@@ -19,26 +19,26 @@ mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', 
     div(class='room__description')
       div(class='room__number-and-cost')
         if classRoom
-          p(class='room__number item-title')
+          p(class='room__number')
             = '№ '
             |
-            span(class='room__numbers item-title')= number
+            span(class='room__numbers')= number
             |
-            span(class='room__luxe label-text')= ' люкс'
+            span(class='room__luxe')= ' люкс'
         else
-          p(class='room__number item-title')
+          p(class='room__number')
             = '№ '
             | 
-            span(class='room__numbers item-title')= number
+            span(class='room__numbers')= number
         p(class='room__cost')
-          span(class='room__cost-price label-text')= cost
+          span(class='room__cost-price')= cost
           span(class='room__cost-sign') c
-          span(class='room__cost-text text')= ' в сутки'
+          span(class='room__cost-text')= ' в сутки'
       div(class='room__line')
       div(class='room__stars-and-comments')
         div(class='room__stars')
           +rate-button(stars)
-        p(class='room__comments text')
+        p(class='room__comments')
           span(class='room__comments-count')= comments
           span(class='room__comments-text')= ' Отзывов'
         

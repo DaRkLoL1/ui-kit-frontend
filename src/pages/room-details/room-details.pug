@@ -37,7 +37,7 @@ block body
             .room-details__details
               .room-details__info-and-feel
                 .room-details__data-on-numbers 
-                  h2(class='room-details__title item-title') Сведения о номере
+                  h2(class='room-details__title') Сведения о номере
                   .room-details__set-of-qualities
                     +set-of-qualities
                   .room-details__quality
@@ -46,8 +46,8 @@ block body
                   +pie-chart
               .room-details__comments
                 .room-details__comments-wrapper
-                  h2(class='main-content__comments-title item-title') Отзывы посетителей номера
-                  p(class='main-content__comments-counter text') 2 отзыва
+                  h2(class='room-details__comments-title') Отзывы посетителей номера
+                  p(class='room-details__comments-counter') 2 отзыва
                 .room-details__comment-1
                   +comment({image: 'comment-img-1.png', name: 'Мурад Сарафанов', time: '5 дней назад', like: 11, 
                     text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.' + 
@@ -60,11 +60,11 @@ block body
               +room-booking
           .room-details__rules-cancel
             .room-details__rules
-              h2(class='main-content__rules-title item-title') Правила
+              h2(class='room-details__rules-title') Правила
               +bullet-list
             .room-details__cancel
-              h2(class='main-content__cancel-title item-title') Отмена
-              p(class='main-content__cancel-text text') Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+              h2(class='room-details__cancel-title') Отмена
+              p(class='room-details__cancel-text') Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
     +footer-copyright({
       copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',

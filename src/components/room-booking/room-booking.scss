@@ -21,11 +21,30 @@
   &__number {
     margin-top:0;
     margin-bottom: 0;
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.214;
+    color: $title-color;
+  }
+
+  &__numbers {
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: $title-color;
   }
 
   &__luxe {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
     color: $primary-color;
   }
 
@@ -33,6 +52,13 @@
     align-self: flex-end;
     margin-top:0;
     margin-bottom: 0;
+  }
+
+  &__cost-price {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   &__cost-price,
@@ -46,16 +72,35 @@
   &__cost-sign {
     font-family: 'rouble';
   }
+  &__cost-text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
 
   &__titles {
     margin-top: 20px;
     margin-bottom: 4px;
     word-spacing: 92px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $title-color;
   }
 
   &__title {
     margin-top: 21px;
     margin-bottom: 4px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $title-color;
   }
 
   &__calculation {
@@ -66,7 +111,12 @@
     display: flex;
     justify-content: space-between;
     padding-top: 4px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
     line-height: 1.285;
+    color: $label-color;
   }
 
   &__name {
@@ -94,6 +144,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.26;
+    color: $title-color;
 
     &-name {
       position: relative;
@@ -109,6 +165,12 @@
 
     &-price {
       margin: 0;
+      font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.1875rem;
+      line-height: 1.26;
+      color: $title-color;
     }
 
     &-rouble {

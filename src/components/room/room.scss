@@ -85,17 +85,43 @@
   &__number {
     margin-top:0;
     margin-bottom: 0;
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.214;
+    color: $title-color;
+  }
+
+  &__numbers {
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.26;
+    color: $title-color;
   }
 
   &__luxe {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
     color: $primary-color;
   }
 
   &__cost {
     margin-top:0;
     margin-bottom: 0;
+  }
+
+  &__cost-price {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   &__cost-price,
@@ -110,6 +136,11 @@
     font-family: 'rouble';
   }
 
+  &__cost-text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
 
   &__line {
     width: 230px;
@@ -130,12 +161,15 @@
     margin-bottom: 0;
     line-height: 1.285;
     color: $paragraph-color;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.285;
+    color: $paragraph-color;
   }
 
   &__comments-count {
     font-weight: bold;
   }
-
-  
-
 }

@@ -12,17 +12,20 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    font-size: 0.75rem;
     text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
     line-height: 40px;
     color: $paragraph-color;
-    text-decoration: none;
 
     &_begin {
-    background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
-    border-radius: 22px;
-    color: $background;
-    font-weight: bold;
+      background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
+      border-radius: 22px;
+      color: $background;
+      font-weight: bold;
     }
 
     &_end {
@@ -40,7 +43,11 @@
     margin:0;
     margin-top: 10px;
     text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $label-color;
   }
-
-
 }

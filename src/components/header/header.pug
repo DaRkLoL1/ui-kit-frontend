@@ -9,11 +9,11 @@ mixin header({list = [], name = '', buttons = [], logged = false} = {})
           ul.header__list
             each val in list
               li(class=`header__item${val.style ? ' header__item_contains_arrow' : ''}`)
-                a(href='/mock-address/change-me' class=`text header__link${val.weight ? ' header__link_weight_bold' : ''}${val.style ? ' header__link_contains_arrow' : ''}`)= val.text
+                a(href='/mock-address/change-me' class=`header__link${val.weight ? ' header__link_weight_bold' : ''}${val.style ? ' header__link_contains_arrow' : ''}`)= val.text
         if logged
           .header__logged
             .header__line
-            p(class='header__name text')= name
+            p(class='header__name')= name
         else 
           .header__buttons
             .header__login

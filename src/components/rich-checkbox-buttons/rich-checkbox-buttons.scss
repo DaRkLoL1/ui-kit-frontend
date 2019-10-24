@@ -3,6 +3,13 @@
 
   &__title {
     margin-bottom: 15px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $title-color;
   }
 
   &__item {
@@ -13,8 +20,11 @@
     padding-left: 30px;
     margin-top: 6px;
     margin-bottom: 8px;
-    color: $paragraph-color;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 0.75rem;
-    line-height: 1.17
+    line-height: 1.17;
+    color: $paragraph-color;
   }
 }

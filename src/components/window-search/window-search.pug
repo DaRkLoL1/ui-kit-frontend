@@ -5,12 +5,12 @@ include ../button/button.pug
 mixin window-search 
   form(class='window-search')
     .window-search__wrapper
-      h1(class='window-search__title widjet-title') Найдём номера под ваши пожелания
+      h1(class='window-search__title') Найдём номера под ваши пожелания
       .window-search__arrival-departure
-        h3(class='label-text window-search__arrival-departure-title') прибытие выезд
+        h3(class='window-search__arrival-departure-title') прибытие выезд
         +date-dropdown
       .window-search__company
-        h3(class='label-text window-search__company-title') гости
+        h3(class='window-search__company-title') гости
         +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
       .window-search__button
         +button({size: 'big', type: 'submit', text: 'подобрать номер'})

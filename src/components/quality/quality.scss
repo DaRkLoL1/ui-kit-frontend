@@ -17,6 +17,12 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $label-color;
   }
 
   &__header {

@@ -16,6 +16,12 @@
   &__title {
     margin:0;
     margin-bottom: 19px;
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: $title-color;
   }
 
   &__last-name,
@@ -38,6 +44,13 @@
   &__birthday-title,
   &__data-title {
     margin-bottom: 4px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $title-color;
   }
 
   &__toggle {
@@ -53,6 +66,12 @@
 
   &__text {
     margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $label-color;
   }
 
   &__button {

@@ -6,6 +6,12 @@
     margin-top: 0;
     margin-bottom: 11px;
     padding-left: 21px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $label-color;
 
     &:last-child {
       margin-bottom: 0;

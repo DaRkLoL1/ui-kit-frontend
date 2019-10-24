@@ -4,6 +4,12 @@
   &__title {
     margin-top: 0;
     margin-bottom: 21px;
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.26;
+    color: $title-color;
   }
 
   &__content {
@@ -59,9 +65,26 @@
     margin: auto;
   }
 
+  &__number {
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
   &__number,
   &__text {
     color: $primary-color;
+  }
+
+  &__text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
   }
 
   &__list {
@@ -74,6 +97,12 @@
     position: relative;
     padding-top: 1px;
     padding-left: 15px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $label-color;
 
     &::before {
       content: '';

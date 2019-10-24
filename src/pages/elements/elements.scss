@@ -12,6 +12,13 @@
   &__title {
     margin-bottom: 5px;
     margin-top: 18px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $title-color;
   }
 
   &__wrapper-1 {

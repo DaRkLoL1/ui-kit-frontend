@@ -6,21 +6,21 @@ mixin room-booking
   form(class='room-booking')
     .room-booking__wrapper
       .room-booking__number-and-cost
-        p(class='room-booking__number item-title')
+        p(class='room-booking__number')
           = '№ '
           |
-          span(class='room-booking__numbers widjet-title')=888
+          span(class='room-booking__numbers')=888
           |  
-          span(class='room-booking__luxe label-text')= ' люкс'
+          span(class='room-booking__luxe')= ' люкс'
         p(class='room-booking__cost')
-          span(class='room-booking__cost-price label-text')='9 900'
+          span(class='room-booking__cost-price')='9 900'
           span(class='room-booking__cost-sign') c
-          span(class='room-booking__cost-text text')= ' в сутки'
+          span(class='room-booking__cost-text')= ' в сутки'
       .room-booking__arrival-departure 
-        h3(class='room-booking__titles label-text') прибытие выезд
+        h3(class='room-booking__titles') прибытие выезд
         +date-dropdown(['2019-08-19','2019-08-23'])
       .room-booking__company
-        h3(class='room-booking__title label-text') гости
+        h3(class='room-booking__title') гости
         +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы'], arrDefaultNumbers: [2, 1, 0]})
       .room-booking__calculation
         - 
@@ -31,16 +31,16 @@ mixin room-booking
           ];
         each val, i in arrCalculated
           if i === 1 || i === 2
-            p(class='room-booking__name-price text')
+            p(class='room-booking__name-price')
               span(class='room-booking__name room-booking__name_warning')=val[0]
               span(class='room-booking_price')=val[1]
           else
-            p(class='room-booking__name-price text')
+            p(class='room-booking__name-price')
               span(class='room-booking__name')=val[0]
               span(class='room-booking_price')=val[1]
-      div(class='room-booking__total item-title')
+      div(class='room-booking__total')
         p(class='room-booking__total-name') Итого
-        P(class='room-booking__total-price item-title')
+        P(class='room-booking__total-price')
           span(class='room-booking__total-numbers')='38 081'
           span(class='room-booking__total-rouble') p
       .room-booking__button

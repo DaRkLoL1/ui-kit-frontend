@@ -13,9 +13,11 @@
     width: 80.5%;
     margin: auto;
   }
+
   &__footer {
     justify-content: space-between;
   }
+
   &__copyright {
     justify-content: space-between;
     align-items: center;
@@ -24,6 +26,15 @@
 
   &__description {
     width: 260px; 
+  }
+
+  &__text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $label-color;
   }
 
   &__lists {
@@ -42,6 +53,13 @@
     &-title {
       margin-top: 0;
       margin-bottom: 19px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: $title-color;
     }
 
     &-item{
@@ -49,19 +67,41 @@
     }
 
     &-link{ 
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.875rem;
+      line-height: 1.71;
+      color: $label-color;
       text-decoration: none;
     }
   }
 
   &__subscribe {
     width: 260px;
-    
     padding-top: 5px;
 
     &-title {
       margin: 0;
       margin-bottom: 18px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: $title-color;
     }
+
+    &-text {
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.875rem;
+      line-height: 1.71;
+      color: $label-color;
+    }
+
     &-input {
       width: 260px;
       margin-top: 24px;

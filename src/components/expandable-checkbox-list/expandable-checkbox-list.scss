@@ -8,6 +8,16 @@
     align-items: center;
     cursor: pointer;
   }
+
+  &__title {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $title-color;
+  }
   
   &__icon {
     width: 44px;

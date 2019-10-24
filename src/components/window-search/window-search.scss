@@ -15,6 +15,12 @@
 
   &__title {
     margin:0;
+    font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: $title-color;
   }
 
   &__arrival-departure {
@@ -25,6 +31,13 @@
       margin: 0;
       margin-bottom: 4px;
       word-spacing: 92px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: $title-color;
     }
   }
 
@@ -34,6 +47,13 @@
     &-title {
       margin: 0;
       margin-bottom: 4px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: $title-color;
     }
   }
 
