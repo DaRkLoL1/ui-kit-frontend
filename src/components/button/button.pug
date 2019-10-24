@@ -1,14 +1,15 @@
+
 mixin button({size = '', style = '', type = '', text = ''} = {})
   - 
     let sizeButton = '';
-    sizeButton = size ? ' button_' + size : '';
+    sizeButton = size ? ' button_size_' + size : '';
 
     let styleButton = '';
 
     if(sizeButton.length > 0) {
-      styleButton = style ? sizeButton + '_ghost' : '';
+      styleButton = style ? ' button_style_ghost' : '';
     } else {
-      styleButton = style ? ' button_ghost' : '';
+      styleButton = style ? ' button_color_ghost' : '';
     }
 
     if(styleButton === ' buttons_big_ghost') {
