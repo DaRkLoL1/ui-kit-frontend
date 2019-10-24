@@ -1,31 +1,29 @@
 .footer-copyright {
   background: $background;
 
-  &__footer {
+  &__top-wrapper {
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     padding-top: 100px;
     padding-bottom: 95px;
   }
 
-  &__wrapper-footer,
-  &__wrapper-copyright {
+  &__footer,
+  &__copyright {
     display: flex;
     width: 80.5%;
     margin: auto;
   }
-  &__wrapper-footer {
+  &__footer {
     justify-content: space-between;
   }
-  &__wrapper-copyright {
+  &__copyright {
     justify-content: space-between;
     align-items: center;
     padding: 11px 0;
-
   }
 
   &__description {
-    width: 260px;
-    
+    width: 260px; 
   }
 
   &__lists {
@@ -70,7 +68,7 @@
     }
   }
 
-  &__copyright {
+  &__bottom-wrapper {
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   }
 
@@ -94,14 +92,13 @@
 @media (max-width: 1150px) {
 
   .footer-copyright {
-
-    &__wrapper-footer {
+    &__footer {
       justify-content: space-between;
     }
 
 
-    &__wrapper-footer,
-    &__wrapper-copyright {
+    &__footer,
+    &__copyright {
       width: 90%;
   }
 
@@ -123,12 +120,12 @@
 
   .footer-copyright {
 
-    &__footer {
+    &__top-wrapper {
       padding-top: 50px;
       padding-bottom: 50px;
     }
 
-    &__wrapper-footer {
+    &__footer {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
@@ -144,10 +141,7 @@
     &__subscribe {
       margin-top: 40px;
     }
-
-
   }
-
 }
 
 
@@ -155,11 +149,11 @@
 
   .footer-copyright {
 
-    &__footer {
+    &__top-wrapper {
       padding-top: 20px;
       padding-bottom: 20px;
     }
-    &__wrapper-copyright {
+    &__copyright {
       flex-direction: column;
       width: auto;
       margin: 0;
@@ -175,7 +169,7 @@
       margin-top: 30px;
     }
 
-    &__wrapper-footer {
+    &__footer {
       display: block;
     }
 
@@ -183,8 +177,7 @@
 }
 
 @media (max-width: 340px) { 
-  .footer-copyright__wrapper-copyright {
+  .footer-copyright__copyright {
     text-align: center;
   }
-
 }
