@@ -1,17 +1,9 @@
-html {
-  height: 100%;
-}
-
-body {
+.registration {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  margin: 0;
-}
-
-.wrapper {
-
+  
   &__content {
     background: url('./registration-sign-in-img-1.jpg');
     background-position: 0 -70px;
@@ -27,7 +19,7 @@ body {
 }
 
 @media (max-width: 380px) {
-  .wrapper__window {
+  .registration__window {
     width: 100%;
   }
 } 

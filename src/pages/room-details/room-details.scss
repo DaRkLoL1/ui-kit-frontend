@@ -1,17 +1,12 @@
-html {
-  height: 100%;
-}
-
-body {
+.room-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  margin: 0;
-}
-
-.wrapper {
-  border-bottom: 1px solid $placeholder-color;
+  
+  &__wrapper {
+    border-bottom: 1px solid $placeholder-color;
+  }
 
   &__images {
     display: flex;
@@ -49,15 +44,12 @@ body {
     padding-top: 70px;
     padding-bottom: 73px;
   }
-}
 
-.main-content {
-
-  &__wrapper {
+  &__main-content-wrapper {
     display: flex;
     justify-content: space-between;
   }
-  
+
   &__info-and-feel {
     display: flex;
   }
@@ -134,7 +126,7 @@ body {
 
 
 @media (max-width: 1350px) {
-  .wrapper {
+  .room-details {
 
     &__content {
       width: 100%;
@@ -146,9 +138,9 @@ body {
 }
 
 @media (max-width: 1100px) {
-  .main-content {
+  .room-details {
 
-    &__wrapper {
+    &__main-content-wrapper {
       flex-direction: column;
     }
 
@@ -159,7 +151,7 @@ body {
 }
 
 @media (max-width: 730px) {
-  .main-content {
+  .room-details {
 
     &__comments {
       width: 100%;
@@ -177,7 +169,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  .main-content {
+  .room-details {
 
     &__rules-cancel {
       flex-direction: column;
@@ -191,14 +183,14 @@ body {
 }
 
 @media (max-width: 400px) {
-  .wrapper__content {
+  .room-details__content {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (max-width: 380px) {
-  .main-content {
+  .room-details {
     
     &__booking,
     &__cancel {

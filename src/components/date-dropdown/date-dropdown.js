@@ -40,11 +40,11 @@ import 'air-datepicker';
       }
     }
 
-    $item.find('.js-date-dropdown__first-button').on('click', () => {
+    $item.find('.js-date-dropdown__clear-button').on('click', () => {
       dateDropdown.clear();
     });
 
-    $item.find('.js-date-dropdown__second-button').on('click', () => {
+    $item.find('.js-date-dropdown__apply-button').on('click', () => {
       dateDropdown.hide();
     });
 

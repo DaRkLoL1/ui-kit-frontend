@@ -1,13 +1,13 @@
-body{
+.elements {
   background-image: url('./icon.png');
   background-repeat: no-repeat;
   background-position: 30px 30px;
   padding-top: 150px;
-}
 
-.elements {
-  width: 1160px;
-  margin: auto;
+  &__main-wrapper {
+    width: 1160px;
+    margin: auto;
+  }
 
   &__title {
     margin-bottom: 5px;

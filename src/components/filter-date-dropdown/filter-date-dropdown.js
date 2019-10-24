@@ -24,11 +24,11 @@ import 'air-datepicker';
       filterDateDropdown.selectDate([new Date(dates[0]), new Date(dates[1])]);
     }
 
-    $item.find('.js-filter-date-dropdown__first-button').on('click', () => {
+    $item.find('.js-filter-date-dropdown__clear-button').on('click', () => {
       filterDateDropdown.clear();
     });
 
-    $item.find('.js-filter-date-dropdown__second-button').on('click', () => {
+    $item.find('.js-filter-date-dropdown__apply-button').on('click', () => {
       filterDateDropdown.hide();
     });
 

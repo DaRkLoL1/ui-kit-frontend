@@ -10,20 +10,21 @@ block body
   include ../../components/room-booking/room-booking.pug
 
   .cards
-    .cards__wrapper-1
-      .cards__search
-        +window-search
-      .cards__registration
-        +window-registration
-    .cards__wrapper-2
-      .cards__booking
-        +room-booking
-      .cards__login
-        +window-login
-    .cards__wrapper-3
-      .cards__datepicker
-        +datepicker-inline
-      .cards__room-1
-        +room({classRoom: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.jpg'})
-      .cards__room-2
-        +room({stars: 4, number: 840, cost: '9 990', comments: '65', image: 'room-img-2.jpg'})
+    .cards__main-wrapper
+      .cards__wrapper-1
+        .cards__search
+          +window-search
+        .cards__registration
+          +window-registration
+      .cards__wrapper-2
+        .cards__booking
+          +room-booking
+        .cards__login
+          +window-login
+      .cards__wrapper-3
+        .cards__datepicker
+          +datepicker-inline
+        .cards__room-1
+          +room({classRoom: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.jpg'})
+        .cards__room-2
+          +room({stars: 4, number: 840, cost: '9 990', comments: '65', image: 'room-img-2.jpg'})

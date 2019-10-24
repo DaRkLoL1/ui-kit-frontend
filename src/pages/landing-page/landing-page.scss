@@ -1,17 +1,9 @@
-html {
-  height: 100%;
-}
-
-body {
+.landing-page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  margin: 0;
-}
-
-.wrapper {
-
+  
   &__search {
     width: 380px;
     padding-top: 70px;
@@ -37,7 +29,7 @@ body {
 
 
 @media (max-width: 680px) {
-  .wrapper {
+  .landing-page {
 
     &__search {
       margin: auto;
@@ -51,7 +43,7 @@ body {
 
 @media (max-width: 380px) {
 
-  .wrapper {
+  .landing-page {
     &__search {
       width: auto;
     }

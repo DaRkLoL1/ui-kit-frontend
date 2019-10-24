@@ -15,11 +15,11 @@ import 'air-datepicker';
     datepickerInline.selectDate([new Date('2019-09-13'), new Date('2019-09-16')]);
     $('.js-datepicker-inline .datepicker').append($('.js-datepicker-inline__buttons'));
 
-    $('.js-datepicker-inline__first-button').on('click', () => {
+    $('.js-datepicker-inline__clear-button').on('click', () => {
       datepickerInline.clear();
     });
 
-    $('.js-datepicker-inline__second-button').on('click', () => {
+    $('.js-datepicker-inline__apply-button').on('click', () => {
       datepickerInline.hide();
     });
   }

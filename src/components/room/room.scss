@@ -8,8 +8,8 @@
     position: relative;
   }
 
-  &__slide-first-button,
-  &__slide-second-button {
+  &__slide-left-button,
+  &__slide-right-button {
     position: absolute;
     top: 0;
     width: 42px;
@@ -17,29 +17,29 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
   }
 
-  &__slide-first-button {
+  &__slide-left-button {
     left: 0;
   }
 
-  &__slide-second-button {
+  &__slide-right-button {
     right: 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
-  &__first-arrow,
-  &__second-arrow {
+  &__left-arrow,
+  &__right-arrow {
     position: absolute;
     top: 63.5px;
     color: $background;
     cursor: pointer;
   }
 
-  &__first-arrow {
+  &__left-arrow {
     transform: rotate(90deg);
     left: 10px;
   }
 
-  &__second-arrow {
+  &__right-arrow {
     right: 8px;
     transform: rotate(90deg);
   }

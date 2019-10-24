@@ -1,17 +1,17 @@
-body{
+.colors-and-type {
   background-image: url('./icon.png');
   background-repeat: no-repeat;
   background-position: 30px 30px;
   margin: 0;
   padding-top: 145px;
-}
 
-.colors-and-type {
-  display: flex;
-  justify-content: space-between;
-  width: 1120px;
-  margin-left: 150px;
-
+  &__main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    margin-left: 150px;
+  }
+  
   &__wrapper-1 {
     width: 270px;
   }

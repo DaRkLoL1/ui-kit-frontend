@@ -44,14 +44,14 @@ import '../item-quantity-dropdown/item-quantity-dropdown.min';
             text += `${item} ${arrValues[i][2]}, `;
           }
         });
-        const $clear = $dropdown.find('.js-dropdown__first-button');
+        const $clear = $dropdown.find('.js-dropdown__clear-button');
 
         if (text.length > 0) {
           text = text.slice(0, text.length - 2);
-          $clear.removeClass('dropdown__first-button_hide_clean');
+          $clear.removeClass('dropdown__clear-button_hide_clean');
         } else {
           text = 'Сколько гостей';
-          $clear.addClass('dropdown__first-button_hide_clean');
+          $clear.addClass('dropdown__clear-button_hide_clean');
         }
       } else {
         const arrValues = [
@@ -94,7 +94,7 @@ import '../item-quantity-dropdown/item-quantity-dropdown.min';
         event.stopPropagation();
       });
 
-      const $clear = $buttons.find('.js-dropdown__first-button');
+      const $clear = $buttons.find('.js-dropdown__clear-button');
 
       $clear.on('click', () => {
         while (Number.parseInt($item.find('.counter').text(), 10) !== 0) {
@@ -102,7 +102,7 @@ import '../item-quantity-dropdown/item-quantity-dropdown.min';
         }
       });
 
-      const $get = $buttons.find('.js-dropdown__second-button');
+      const $get = $buttons.find('.js-dropdown__apply-button');
       $get.on('click', () => {
         $item.find('.iqdropdown').trigger('click');
       });
