@@ -1,5 +1,5 @@
 include ../text-field/text-field.pug
-include ../buttons/buttons.pug
+include ../button/button.pug
 
 mixin window-login
   form(class='window-login')
@@ -10,8 +10,8 @@ mixin window-login
       .window-login__password 
         +text-field({text: 'Пароль'})
       .window-login__submit
-        +buttons({size: 'big', type: 'submit', text: 'войти'})
+        +button({size: 'big', type: 'submit', text: 'войти'})
       .window-login__footer
         p(class='window-login__text text') Нет аккаунта на Toxin?
         .window-login__button  
-          +buttons({size: 'medium', style: 'ghost', text: 'создать'})
+          +button({size: 'medium', style: 'ghost', text: 'создать'})

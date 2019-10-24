@@ -1,6 +1,6 @@
 include ../date-dropdown/date-dropdown.pug
 include ../dropdown/dropdown.pug
-include ../buttons/buttons.pug 
+include ../button/button.pug 
 
 mixin room-booking
   form(class='room-booking')
@@ -44,4 +44,4 @@ mixin room-booking
           span(class='room-booking__total-numbers')='38 081'
           span(class='room-booking__total-rouble') p
       .room-booking__button
-        +buttons({size: 'big', type: 'submit', text: 'забронировать'})
+        +button({size: 'big', type: 'submit', text: 'забронировать'})

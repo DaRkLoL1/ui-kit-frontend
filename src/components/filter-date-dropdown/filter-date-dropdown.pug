@@ -1,11 +1,11 @@
 include ../field-button/field-button.pug
-include ../buttons/buttons.pug
+include ../button/button.pug
 
 mixin filter-date-dropdown(dates)
   div(class='js-filter-date-dropdown filter-date-dropdown' data-dates=dates) 
     +field-button({text: 'ДД.ММ.ГГГГ', focus: false})
     div(class='js-filter-date-dropdown__buttons filter-date-dropdown__buttons')
       div(class='js-filter-date-dropdown__first-button filter-date-dropdown__first-button')
-        +buttons({style: 'ghost', text: 'очистить'})
+        +button({style: 'ghost', text: 'очистить'})
       div(class='js-filter-date-dropdown__second-button filter-date-dropdown__second-button')
-        +buttons({text: 'применить'})
+        +button({text: 'применить'})

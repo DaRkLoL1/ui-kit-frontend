@@ -1,14 +1,14 @@
-mixin buttons({size = '', style = '', type = '', text = ''} = {})
+mixin button({size = '', style = '', type = '', text = ''} = {})
   - 
     let sizeButton = '';
-    sizeButton = size ? ' buttons_' + size : '';
+    sizeButton = size ? ' button_' + size : '';
 
     let styleButton = '';
 
     if(sizeButton.length > 0) {
       styleButton = style ? sizeButton + '_ghost' : '';
     } else {
-      styleButton = style ? ' buttons_ghost' : '';
+      styleButton = style ? ' button_ghost' : '';
     }
 
     if(styleButton === ' buttons_big_ghost') {
@@ -16,4 +16,4 @@ mixin buttons({size = '', style = '', type = '', text = ''} = {})
     }
 
     let typeButton = type ? 'submit' : 'button';
-  button(class=`label-text buttons${sizeButton}${styleButton}` type=typeButton)=text
+  button(class=`label-text button${sizeButton}${styleButton}` type=typeButton)=text

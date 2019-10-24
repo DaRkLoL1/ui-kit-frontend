@@ -1,4 +1,4 @@
-include ../buttons/buttons.pug
+include ../button/button.pug
 
 mixin header({list = [], name = '', buttons = [], logged = false} = {})
   header.header
@@ -17,6 +17,6 @@ mixin header({list = [], name = '', buttons = [], logged = false} = {})
         else 
           .header__buttons
             .header__login
-              +buttons({size: 'medium', style: 'ghost', text: buttons[0]})
+              +button({size: 'medium', style: 'ghost', text: buttons[0]})
             .header__register
-              +buttons({size: 'medium', text: buttons[1]})
+              +button({size: 'medium', text: buttons[1]})

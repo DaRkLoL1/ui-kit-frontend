@@ -16,7 +16,7 @@ block body
   include ../../components/filter-date-dropdown/filter-date-dropdown.pug
   include ../../components/dropdown/dropdown.pug
   include ../../components/date-dropdown/date-dropdown.pug
-  include ../../components/buttons/buttons.pug 
+  include ../../components/button/button.pug 
   include ../../components/set-of-qualities/set-of-qualities.pug
   include ../../components/radio-buttons/radio-buttons.pug
   include ../../components/pagination/pagination.pug
@@ -73,14 +73,14 @@ block body
         .elements__buttons
           h3(class='elements__title label-text') buttons
           .elements__buttons-1
-            +buttons({size: 'medium', text: 'click me'})
+            +button({size: 'medium', text: 'click me'})
           .elements__buttons-2
-            +buttons({size: 'medium', style: 'ghost', text: 'click me'})
+            +button({size: 'medium', style: 'ghost', text: 'click me'})
           .elements__buttons-3
-            +buttons({text: 'click me'})
-            +buttons({style: 'ghost', text: 'click me'})
+            +button({text: 'click me'})
+            +button({style: 'ghost', text: 'click me'})
           .elements__buttons-4
-              +buttons({size: 'big', type: 'submit', text: 'перейти к оплате'})
+              +button({size: 'big', type: 'submit', text: 'перейти к оплате'})
         .elements__pagination
           h3(class='elements__title label-text') pagination
           +pagination
