@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
-module.exports = {
+const config = {
   devtool: 'inline-sourse-map',
   entry: './src/index.js',
   output: {
@@ -87,7 +87,7 @@ module.exports = {
   'search-room',
   'sign-in',
 ].forEach((item) => {
-  module.exports.plugins.push(
+  config.plugins.push(
     new HtmlWebpackPlugin({
       hash: false,
       template: `./src/pages/${item}/${item}.pug`,
@@ -96,3 +96,5 @@ module.exports = {
     }),
   );
 });
+
+module.exports = config;
