@@ -50,10 +50,16 @@ block body
             h3(class='elements__title') dropdown
             +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
           .elements__expandable-checkbox-list
-            +expandable-checkbox-list('expandable checkbox list')
+            +expandable-checkbox-list({
+              text: 'expandable checkbox list',
+              arr: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь']
+            })
         .elements__second-line
           .elements__checkbox-buttons
-            +checkbox-buttons
+            +checkbox-buttons({
+              text: 'checkbox-buttons',
+              arr: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
+            })
           .elements__radio-buttons
             h3(class='elements__title') radio buttons
             +radio-buttons
@@ -67,7 +73,19 @@ block body
             h3(class='elements__title') rate-button
             +rate-button(4)
           .elements__rich-checkbox-buttons
-            +rich-checkbox-buttons('rich checkbox buttons')
+            +rich-checkbox-buttons({
+              text: 'rich checkbox buttons', 
+              arr: [
+                {
+                  checkboxText: 'Широкий коридор',
+                  descriptor: 'Ширина коридоров в номере не менее 91 см.'
+                },
+                {
+                  checkboxText: 'Помощник для инвалидов',
+                  descriptor: 'На 1 этаже вас встретит специалист и проводит до номера.'
+                }
+              ]
+            })
         .elements__third-line
           .elements__range-slider
             +range-slider('range slider')
@@ -87,7 +105,11 @@ block body
             +pagination
           .elements__bullet-list
             h3(class='elements__title') bullet-list
-            +bullet-list
+            +bullet-list([
+              'Нельзя с питомцами',
+              'Без вечеринок и мероприятий',
+              'Время прибытия — после 13:00, а выезд до 12:00'
+            ])
       .elements__wrapper-2
         .elements__set-of-qualities
           +set-of-qualities

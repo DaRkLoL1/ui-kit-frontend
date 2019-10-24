@@ -1,19 +1,8 @@
 include ../switch/switch.pug 
 
-mixin rich-checkbox-buttons(text) 
+mixin rich-checkbox-buttons({text = 'rich-checkbox-buttons', arr = []}= {}) 
   .rich-checkbox-buttons
     h3(class='rich-checkbox-buttons__title')=text
-    - 
-      let arr = [
-        {
-          checkboxText: 'Широкий коридор',
-          descriptor: 'Ширина коридоров в номере не менее 91 см.'
-        },
-        {
-          checkboxText: 'Помощник для инвалидов',
-          descriptor: 'На 1 этаже вас встретит специалист и проводит до номера.'
-        }
-      ];
     .rich-checkbox-buttons__item
       each val in arr 
         +switch({type: 'checkbox', text: val.checkboxText, weight: 'b'})
