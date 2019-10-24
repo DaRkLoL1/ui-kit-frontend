@@ -1,4 +1,3 @@
-
 $('.js-field-button_focused .js-text-field').on('focus', (event) => {
   const $target = $(event.currentTarget);
   $target.parent().addClass('field-button_isFocused');

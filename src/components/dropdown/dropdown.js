@@ -1,9 +1,4 @@
-function importAll (r) {
-  r.keys().forEach(r);
-}
-
-importAll(require.context('../', true, /\.js$/));
-
+import '../item-quantity-dropdown/item-quantity-dropdown.min';
 
 ;(function ($) {
   const arrDropdown = document.querySelectorAll('.js-dropdown');

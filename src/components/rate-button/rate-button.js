@@ -1,8 +1,4 @@
-function importAll (r) {
-  r.keys().forEach(r);
-}
-
-importAll(require.context('../', true, /\.js$/));
+import './jquery.star.rating.min';
 
 ;(function ($) {
   const rateButtons = document.querySelectorAll('.js-rate-button');
