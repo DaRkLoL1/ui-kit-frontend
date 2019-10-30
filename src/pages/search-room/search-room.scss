@@ -61,7 +61,7 @@
     color: $title-color;
   }
 
-  &__dropdown-1,
+  &__dropdown-visit,
   &__slider  {
     margin-top: 20px;
   }
@@ -72,7 +72,7 @@
 
   &__checkbox-buttons,
   &__rich-checkbox-buttons,
-  &__dropdown-2 {
+  &__dropdown-furniture {
     margin-top: 31px;
   }
 
@@ -104,12 +104,12 @@
       width: 100%;
     }
 
-    &__dropdown-1,
+    &__dropdown-visit,
     &__slider,
     &__expandable-checkbox-list,
     &__checkbox-buttons,
     &__rich-checkbox-buttons,
-    &__dropdown-2 {
+    &__dropdown-furniture {
     margin-top: 0px;
   }
   }

@@ -25,14 +25,14 @@
     height: 100%;
   }
 
-  &__secondary-img-1 {
+  &__secondary-img-top {
     height: 50%;
     background: url('./room-details-img-2.jpg');
     background-repeat: no-repeat;
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
-  &__secondary-img-2 {
+  &__secondary-img-bottom {
     height: 50%;
     background: url('./room-details-img-3.jpg');
     background-repeat: no-repeat;
@@ -101,10 +101,10 @@
     }
   }
 
-  &__comment-1 {
+  &__comment-top {
     margin-top: 21px;
   }
-  &__comment-2 {
+  &__comment-bottom {
     margin-top: 23px;
   }
 

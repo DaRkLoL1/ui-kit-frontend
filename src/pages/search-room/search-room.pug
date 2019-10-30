@@ -34,7 +34,7 @@ block body
           .search-room__datepicker
             h3(class='search-room__title') даты пребывания в отеле
             +filter-date-dropdown(['2019-08-19','2019-08-23'])
-          .search-room__dropdown-1
+          .search-room__dropdown-visit
             h3(class='search-room__title') гости
             +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы'], arrDefaultNumbers: [2, 1, 1]})
           .search-room__slider
@@ -59,7 +59,7 @@ block body
                 }
               ]
             })
-          .search-room__dropdown-2
+          .search-room__dropdown-furniture
             h3(class='search-room__title') удобства номера
             +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
           .search-room__expandable-checkbox-list
