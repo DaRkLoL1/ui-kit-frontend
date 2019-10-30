@@ -5,8 +5,8 @@ import 'air-datepicker';
 
   arrDateDropdown.forEach((item) => {
     const $item = $(item);
-    const $first = $item.find('.date-dropdown__first-input .js-text-field');
-    const $second = $item.find('.date-dropdown__second-input .js-text-field');
+    const $first = $item.find('.js-date-dropdown__left-input .js-text-field');
+    const $second = $item.find('.js-date-dropdown__right-input .js-text-field');
 
     const dateDropdown = $first.datepicker({
       range: true,
@@ -48,7 +48,7 @@ import 'air-datepicker';
       dateDropdown.hide();
     });
 
-    $item.find('.date-dropdown__first-input, .date-dropdown__second-input').on('click', () => {
+    $item.find('.js-date-dropdown__left-input, .js-date-dropdown__right-input').on('click', () => {
       dateDropdown.show();
     });
     dateDropdown.$datepicker.append($item.find('.js-date-dropdown__buttons'));

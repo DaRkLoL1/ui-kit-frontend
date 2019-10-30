@@ -4,9 +4,9 @@ include ../button/button.pug
 mixin date-dropdown(dates)
 
   div(class='date-dropdown js-date-dropdown' data-dates=dates)
-    div(class='date-dropdown__first-input')
+    div(class='date-dropdown__input js-date-dropdown__left-input')
       +field-button({text: 'ДД.ММ.ГГГГ', focus: false})
-    div(class='date-dropdown__second-input')
+    div(class='date-dropdown__input js-date-dropdown__right-input')
       +field-button({text: 'ДД.ММ.ГГГГ', focus: false})
     div(class='js-date-dropdown__buttons date-dropdown__buttons')
       div(class='js-date-dropdown__clear-button date-dropdown__clear-button')
