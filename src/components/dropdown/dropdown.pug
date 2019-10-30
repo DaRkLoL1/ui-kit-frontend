@@ -18,7 +18,7 @@ mixin dropdown({arrDefaultNumbers = '', type = '', arrTitles = [], } = {})
                 p(class='iqdropdown-item')=val
       div(class='js-dropdown__buttons dropdown__buttons')
         div(class='js-dropdown__clear-button dropdown__clear-button dropdown__clear-button_hide_clean')
-          +button({text: 'Очистить', style: 'ghost'})
+          +button({text: 'Очистить', color: 'grey'})
         div(class='js-dropdown__apply-button dropdown__apply-button')
           +button({text: 'Применить'})
   else 

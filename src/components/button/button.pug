@@ -1,20 +1,14 @@
 
-mixin button({size = '', style = '', type = '', text = ''} = {})
+mixin button({size = '', style = '', type = '', text = '', color = ''} = {})
   - 
     let sizeButton = '';
     sizeButton = size ? ' button_size_' + size : '';
 
     let styleButton = '';
+    styleButton = style ? ' button_style_ghost' : '';
 
-    if(sizeButton.length > 0) {
-      styleButton = style ? ' button_style_ghost' : '';
-    } else {
-      styleButton = style ? ' button_color_ghost' : '';
-    }
-
-    if(styleButton === ' buttons_big_ghost') {
-      styleButton = '';
-    }
+    let colorButton = '';
+    colorButton = color ? ' button_color_grey' : '';
 
     let typeButton = type ? 'submit' : 'button';
-  button(class=`button${sizeButton}${styleButton}` type=typeButton)=text
+  button(class=`button${sizeButton}${styleButton}${colorButton}` type=typeButton)=text
