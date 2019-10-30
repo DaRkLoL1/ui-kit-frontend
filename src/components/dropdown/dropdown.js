@@ -1,6 +1,6 @@
 import '../item-quantity-dropdown/item-quantity-dropdown.min';
 
-;(function ($) {
+(function ($) {
   const arrDropdown = document.querySelectorAll('.js-dropdown');
 
   arrDropdown.forEach((item) => {

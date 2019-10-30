@@ -5,7 +5,6 @@ module.exports = {
         "jquery": true,
     },
     "extends": [
-        "jquery",
         "eslint:recommended",
         "airbnb-base",    
     ],

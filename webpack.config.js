@@ -72,7 +72,7 @@ const config = {
 
   devServer: {
     contentBase: './dist',
-    index: 'cards.html',
+    index: 'colors-types.html',
   },
 };
 

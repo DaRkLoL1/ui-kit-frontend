@@ -1,7 +1,7 @@
 import './jquery-ui-slider';
 import './jquery-ui-slider-touch-punch';
 
-;(function ($) {
+(function ($) {
   const getResult = function (values) {
     return values.map((item) => {
       let sliderItem = String(item);

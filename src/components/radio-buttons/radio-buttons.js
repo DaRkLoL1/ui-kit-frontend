@@ -1,4 +1,4 @@
-;(function ($) {
+(function ($) {
   const arrRadioButtons = document.querySelectorAll('.js-radio-buttons');
   arrRadioButtons.forEach((item) => {
     const $item = $(item);

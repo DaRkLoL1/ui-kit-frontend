@@ -1,6 +1,6 @@
 import 'air-datepicker';
 
-;(function ($) {
+(function ($) {
   if ($('.datepicker-inline').length > 0) {
     const datepickerInline = $('.datepicker-inline').datepicker({
       range: true,

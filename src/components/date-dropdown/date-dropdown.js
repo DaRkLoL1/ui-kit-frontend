@@ -1,6 +1,6 @@
 import 'air-datepicker';
 
-;(function ($) {
+(function ($) {
   const arrDateDropdown = document.querySelectorAll('.js-date-dropdown');
 
   arrDateDropdown.forEach((item) => {
