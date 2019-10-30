@@ -1,4 +1,4 @@
-import '../item-quantity-dropdown/item-quantity-dropdown.min';
+import 'item-quantity-dropdown/lib/item-quantity-dropdown.min';
 
 (function ($) {
   const arrDropdown = document.querySelectorAll('.js-dropdown');

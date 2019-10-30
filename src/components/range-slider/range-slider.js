@@ -1,5 +1,4 @@
-import './jquery-ui-slider';
-import './jquery-ui-slider-touch-punch';
+import 'jquery-ui-slider/jquery-ui.min';
 
 (function ($) {
   const getResult = function (values) {
