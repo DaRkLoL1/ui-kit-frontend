@@ -1,16 +1,19 @@
 import './jquery.star.rating.min';
 
-;(function ($) {
-  const rateButtons = document.querySelectorAll('.js-rate-button');
+export default class RateButton {
+  constructor(item) {
+    this.item = item;
+  }
 
-  rateButtons.forEach((item) => {
-    $(item).addRating(
+  createStars() {
+    const $item = $(this.item);
+    $item.addRating(
       {
         max: 5,
         icon: 'star',
-        selectedRatings: $(item).attr('data-value'),
+        selectedRatings: $item.attr('data-value'),
       },
     );
-    $(item).find('i').addClass('rate-button__icon');
-  });
-}(jQuery));
+    $item.find('i').addClass('rate-button__icon');
+  }
+}

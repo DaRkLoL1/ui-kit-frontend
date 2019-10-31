@@ -1,14 +1,16 @@
 import 'air-datepicker';
 
-(function ($) {
-  const arrDateDropdown = document.querySelectorAll('.js-date-dropdown');
+export default class DateDropdown {
+  constructor(item) {
+    this.item = item;
+  }
 
-  arrDateDropdown.forEach((item) => {
-    const $item = $(item);
-    const $first = $item.find('.js-date-dropdown__left-input .js-text-field');
-    const $second = $item.find('.js-date-dropdown__right-input .js-text-field');
+  createDatepicker() {
+    const $item = $(this.item);
+    const $left = $item.find('.js-date-dropdown__left-input .js-text-field');
+    const $right = $item.find('.js-date-dropdown__right-input .js-text-field');
 
-    const dateDropdown = $first.datepicker({
+    this.dateDropdown = $left.datepicker({
       range: true,
       offset: 16,
       prevHtml: '<i class="material-icons">arrow_back</i>',
@@ -16,17 +18,17 @@ import 'air-datepicker';
       navTitles: {
         days: 'MM yyyy',
       },
-      altField: $second,
+      altField: $right,
       altFieldDateFormat: '',
       onSelect(formattedDate) {
         const arrDates = formattedDate.split(',');
 
         if (arrDates.length === 1) {
-          $first.val('');
-          $second.val(arrDates[0]);
+          $left.val('');
+          $right.val(arrDates[0]);
         } else {
-          $first.val(arrDates[0]);
-          $second.val(arrDates[1]);
+          $left.val(arrDates[0]);
+          $right.val(arrDates[1]);
         }
       },
     }).data('datepicker');
@@ -34,23 +36,31 @@ import 'air-datepicker';
 
     if (Array.isArray(dates)) {
       if (dates.length === 1) {
-        dateDropdown.selectDate(new Date(dates[0]));
+        this.dateDropdown.selectDate(new Date(dates[0]));
       } else {
-        dateDropdown.selectDate([new Date(dates[0]), new Date(dates[1])]);
+        this.dateDropdown.selectDate([new Date(dates[0]), new Date(dates[1])]);
       }
     }
 
-    $item.find('.js-date-dropdown__clear-button').on('click', () => {
-      dateDropdown.clear();
-    });
-
-    $item.find('.js-date-dropdown__apply-button').on('click', () => {
-      dateDropdown.hide();
-    });
-
     $item.find('.js-date-dropdown__left-input, .js-date-dropdown__right-input').on('click', () => {
-      dateDropdown.show();
+      this.dateDropdown.show();
     });
-    dateDropdown.$datepicker.append($item.find('.js-date-dropdown__buttons'));
-  });
-}(jQuery));
+  }
+
+  addButtons() {
+    const $item = $(this.item);
+    const $buttons = $item.find('.js-date-dropdown__buttons');
+    const $clear = $item.find('.js-date-dropdown__clear-button');
+    const $apply = $item.find('.js-date-dropdown__apply-button');
+
+    $clear.on('click', () => {
+      this.dateDropdown.clear();
+    });
+
+    $apply.on('click', () => {
+      this.dateDropdown.hide();
+    });
+
+    this.dateDropdown.$datepicker.append($buttons);
+  }
+}

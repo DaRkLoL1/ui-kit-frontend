@@ -1,8 +1,14 @@
 import 'air-datepicker';
 
-(function ($) {
-  if ($('.datepicker-inline').length > 0) {
-    const datepickerInline = $('.datepicker-inline').datepicker({
+export default class DatepickerInline {
+  constructor(item) {
+    this.item = item;
+  }
+
+  createDatepicker() {
+    const $item = $(this.item);
+
+    this.datepickerInline = $item.datepicker({
       range: true,
       offset: 16,
       prevHtml: '<i class="material-icons">arrow_back</i>',
@@ -12,15 +18,23 @@ import 'air-datepicker';
       },
     }).data('datepicker');
 
-    datepickerInline.selectDate([new Date('2019-09-13'), new Date('2019-09-16')]);
-    $('.js-datepicker-inline .datepicker').append($('.js-datepicker-inline__buttons'));
-
-    $('.js-datepicker-inline__clear-button').on('click', () => {
-      datepickerInline.clear();
-    });
-
-    $('.js-datepicker-inline__apply-button').on('click', () => {
-      datepickerInline.hide();
-    });
+    this.datepickerInline.selectDate([new Date('2019-09-13'), new Date('2019-09-16')]);
   }
-}(jQuery));
+
+  addButtons() {
+    const $item = $(this.item);
+    const $buttons = $item.find('.js-datepicker-inline__buttons');
+    const $clear = $item.find('.js-datepicker-inline__clear-button');
+    const $apply = $item.find('.js-datepicker-inline__apply-button');
+
+    $clear.on('click', () => {
+      this.datepickerInline.clear();
+    });
+
+    $apply.on('click', () => {
+      this.datepickerInline.hide();
+    });
+
+    $item.find('.datepicker').append($buttons);
+  }
+}
