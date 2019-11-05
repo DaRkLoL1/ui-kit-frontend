@@ -27,11 +27,8 @@ export default class RangeSlider {
   static getResult(values) {
     return values.map((item) => {
       let sliderItem = String(item);
+      sliderItem = `${sliderItem.slice(0, -3)} ${sliderItem.slice(-3)}`;
 
-      if (sliderItem.length > 3) {
-        const lengthSlice = sliderItem.length - 3;
-        sliderItem = `${sliderItem.slice(0, lengthSlice)} ${sliderItem.slice(lengthSlice)}`;
-      }
       return sliderItem;
     });
   }
