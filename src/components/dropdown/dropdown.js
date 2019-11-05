@@ -22,7 +22,7 @@ export default class Dropdown {
   addButtons() {
     const $item = $(this.item);
 
-    if ($item.hasClass('js-dropdown_with_buttons')) {
+    if ($item.hasClass('js-dropdown_with-buttons')) {
       const $buttons = $item.find('.js-dropdown__buttons');
       const $clear = $buttons.find('.js-dropdown__clear-button');
       const $apply = $buttons.find('.js-dropdown__apply-button');
@@ -128,7 +128,7 @@ export default class Dropdown {
 
     this.text = '';
 
-    if ($item.hasClass('js-dropdown_with_buttons')) {
+    if ($item.hasClass('js-dropdown_with-buttons')) {
       this.setValueVisitorAndSetText(arrCount);
     } else {
       this.setValueFurnitureAndSetText(arrCount);
