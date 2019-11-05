@@ -1,7 +1,33 @@
 import 'jquery-mask-plugin';
 
-{
-  const createMaskOption = function (val) {
+export default class Mask {
+  constructor() {
+    Mask.createMask();
+  }
+
+  static createMask() {
+    $('.js-mask').mask('AB.SR.YXOQ', {
+      translation: {
+        A: { pattern: /[0-3]/ },
+        B: { pattern: /[0-9]/ },
+        S: { pattern: /[0-1]/ },
+        R: { pattern: /[1-9]/ },
+        Y: { pattern: /[1-2]/ },
+        X: { pattern: /[0]/ },
+        O: { pattern: /[0-1]/ },
+        K: { pattern: /[0-9]/ },
+      },
+      onKeyPress(val, e, field, options) {
+        const obj = Mask.createMaskOption(val);
+        field.mask('AB.SR.YXOK', {
+          translation: obj,
+          onKeyPress: options.onKeyPress,
+        });
+      },
+    });
+  }
+
+  static createMaskOption(val) {
     if (Number.parseInt(val[6], 10) === 1) {
       return {
         O: { pattern: /[5-9]/ },
@@ -61,26 +87,5 @@ import 'jquery-mask-plugin';
       O: { pattern: /[0-1]/ },
       K: { pattern: /[0-9]/ },
     };
-  };
-
-  $('.js-mask').mask('AB.SR.YXOQ', {
-    translation: {
-      A: { pattern: /[0-3]/ },
-      B: { pattern: /[0-9]/ },
-      S: { pattern: /[0-1]/ },
-      R: { pattern: /[1-9]/ },
-      Y: { pattern: /[1-2]/ },
-      X: { pattern: /[0]/ },
-      O: { pattern: /[0-1]/ },
-      K: { pattern: /[0-9]/ },
-    },
-
-    onKeyPress(val, e, field, options) {
-      const obj = createMaskOption(val);
-      field.mask('AB.SR.YXOK', {
-        translation: obj,
-        onKeyPress: options.onKeyPress,
-      });
-    },
-  });
+  }
 }
