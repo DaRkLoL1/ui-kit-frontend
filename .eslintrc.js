@@ -17,5 +17,6 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "no-new": 1,
     }
 };

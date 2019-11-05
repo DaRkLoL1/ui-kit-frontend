@@ -1,14 +1,14 @@
 import 'air-datepicker';
 
 export default class DatepickerInline {
-  constructor(item) {
-    this.item = item;
+  constructor(datepicker) {
+    this.$datepicker = $(datepicker);
+    this.createDatepicker();
+    this.addButtons();
   }
 
   createDatepicker() {
-    const $item = $(this.item);
-
-    this.datepickerInline = $item.datepicker({
+    this.datepickerInline = this.$datepicker.datepicker({
       range: true,
       offset: 16,
       prevHtml: '<i class="material-icons">arrow_back</i>',
@@ -22,10 +22,9 @@ export default class DatepickerInline {
   }
 
   addButtons() {
-    const $item = $(this.item);
-    const $buttons = $item.find('.js-datepicker-inline__buttons');
-    const $clear = $item.find('.js-datepicker-inline__clear-button');
-    const $apply = $item.find('.js-datepicker-inline__apply-button');
+    const $buttons = this.$datepicker.find('.js-datepicker-inline__buttons');
+    const $clear = this.$datepicker.find('.js-datepicker-inline__clear-button');
+    const $apply = this.$datepicker.find('.js-datepicker-inline__apply-button');
 
     $clear.on('click', () => {
       this.datepickerInline.clear();
@@ -35,6 +34,6 @@ export default class DatepickerInline {
       this.datepickerInline.hide();
     });
 
-    $item.find('.datepicker').append($buttons);
+    this.$datepicker.find('.datepicker').append($buttons);
   }
 }

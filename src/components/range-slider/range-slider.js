@@ -2,13 +2,13 @@ import 'jquery-ui-slider/jquery-ui.min';
 
 export default class RangeSlider {
   constructor(slider) {
-    this.slider = slider;
+    this.$slider = $(slider);
+    this.createSlider();
   }
 
   createSlider() {
-    const $slider = $(this.slider);
-    const $item = $slider.find('.js-range-slider__item');
-    const $result = $slider.find('.js-range-slider__result');
+    const $item = this.$slider.find('.js-range-slider__item');
+    const $result = this.$slider.find('.js-range-slider__result');
     $item.slider({
       animate: 'slow',
       range: true,

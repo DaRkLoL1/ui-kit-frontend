@@ -1,19 +1,19 @@
 import './jquery.star.rating.min';
 
 export default class RateButton {
-  constructor(item) {
-    this.item = item;
+  constructor(rate) {
+    this.$rate = $(rate);
+    this.createStars();
   }
 
   createStars() {
-    const $item = $(this.item);
-    $item.addRating(
+    this.$rate.addRating(
       {
         max: 5,
         icon: 'star',
-        selectedRatings: $item.attr('data-value'),
+        selectedRatings: this.$rate.attr('data-value'),
       },
     );
-    $item.find('i').addClass('rate-button__icon');
+    this.$rate.find('i').addClass('rate-button__icon');
   }
 }

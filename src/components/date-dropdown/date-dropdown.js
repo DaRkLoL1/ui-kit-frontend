@@ -1,14 +1,15 @@
 import 'air-datepicker';
 
 export default class DateDropdown {
-  constructor(item) {
-    this.item = item;
+  constructor(datepicker) {
+    this.$datepicker = $(datepicker);
+    this.createDatepicker();
+    this.addButtons();
   }
 
   createDatepicker() {
-    const $item = $(this.item);
-    const $left = $item.find('.js-date-dropdown__left-input .js-text-field');
-    const $right = $item.find('.js-date-dropdown__right-input .js-text-field');
+    const $left = this.$datepicker.find('.js-date-dropdown__left-input .js-text-field');
+    const $right = this.$datepicker.find('.js-date-dropdown__right-input .js-text-field');
 
     this.dateDropdown = $left.datepicker({
       range: true,
@@ -32,7 +33,7 @@ export default class DateDropdown {
         }
       },
     }).data('datepicker');
-    const dates = $item.data('dates');
+    const dates = this.$datepicker.data('dates');
 
     if (Array.isArray(dates)) {
       if (dates.length === 1) {
@@ -42,16 +43,15 @@ export default class DateDropdown {
       }
     }
 
-    $item.find('.js-date-dropdown__left-input, .js-date-dropdown__right-input').on('click', () => {
+    this.$datepicker.find('.js-date-dropdown__left-input, .js-date-dropdown__right-input').on('click', () => {
       this.dateDropdown.show();
     });
   }
 
   addButtons() {
-    const $item = $(this.item);
-    const $buttons = $item.find('.js-date-dropdown__buttons');
-    const $clear = $item.find('.js-date-dropdown__clear-button');
-    const $apply = $item.find('.js-date-dropdown__apply-button');
+    const $buttons = this.$datepicker.find('.js-date-dropdown__buttons');
+    const $clear = this.$datepicker.find('.js-date-dropdown__clear-button');
+    const $apply = this.$datepicker.find('.js-date-dropdown__apply-button');
 
     $clear.on('click', () => {
       this.dateDropdown.clear();
