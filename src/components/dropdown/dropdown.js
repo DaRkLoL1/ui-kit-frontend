@@ -24,22 +24,25 @@ export default class Dropdown {
       const $buttons = this.$dropdown.find('.js-dropdown__buttons');
       const $clear = $buttons.find('.js-dropdown__clear-button');
       const $apply = $buttons.find('.js-dropdown__apply-button');
-
-      $buttons.on('click', (event) => {
-        event.stopPropagation();
-      });
-
-      $clear.on('click', () => {
-        while (Number.parseInt(this.$dropdown.find('.counter').text(), 10) !== 0) {
-          this.$dropdown.find('.button-decrement').trigger('click');
-        }
-      });
-
-      $apply.on('click', () => {
-        this.$dropdown.find('.iqdropdown').trigger('click');
-      });
-      this.$dropdown.find('.iqdropdown-menu').append($buttons);
+      this.addHandlesForButtons($buttons, $clear, $apply);
     }
+  }
+
+  addHandlesForButtons($buttons, $clear, $apply) {
+    $buttons.on('click', (event) => {
+      event.stopPropagation();
+    });
+
+    $clear.on('click', () => {
+      while (Number.parseInt(this.$dropdown.find('.counter').text(), 10) !== 0) {
+        this.$dropdown.find('.button-decrement').trigger('click');
+      }
+    });
+
+    $apply.on('click', () => {
+      this.$dropdown.find('.iqdropdown').trigger('click');
+    });
+    this.$dropdown.find('.iqdropdown-menu').append($buttons);
   }
 
   checkOnNull(arrCount) {

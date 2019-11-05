@@ -1,9 +1,9 @@
 export default class Switch {
   constructor() {
-    Switch.createSwitch();
+    Switch.addHandleClick();
   }
 
-  static createSwitch() {
+  static addHandleClick() {
     $('.js-switch').on('click', (event) => {
       const $target = $(event.currentTarget);
       const $input = $target.find('.js-switch__input');
