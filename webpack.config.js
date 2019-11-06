@@ -68,6 +68,11 @@ const config = {
       $: 'jquery',
       jQuery: 'jquery',
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: './src/index.pug',
+      filename: 'index.html',
+    }),
   ],
 
   devServer: {
@@ -92,7 +97,7 @@ const config = {
       hash: false,
       template: `./src/pages/${item}/${item}.pug`,
       filename: `${item}.html`,
-      chunks: [item],
+      chunks: ['name'],
     }),
   );
 });
