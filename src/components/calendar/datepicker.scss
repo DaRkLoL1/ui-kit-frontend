@@ -193,3 +193,8 @@
 .-in-range-.datepicker--cell-year.-other-decade-.-current-{
   color: $background;
 }
+
+.datepicker-inline .datepicker {
+  border-color: $placeholder-color;
+  box-shadow: 0px 10px 20px $shadow-color;
+}

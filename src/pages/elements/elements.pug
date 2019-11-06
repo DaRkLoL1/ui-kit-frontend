@@ -13,14 +13,13 @@ block body
   include ../../components/comment/comment.pug 
   include ../../components/checkbox-buttons/checkbox-buttons.pug
   include ../../components/bullet-list/bullet-list.pug
-  include ../../components/filter-date-dropdown/filter-date-dropdown.pug
   include ../../components/dropdown/dropdown.pug
-  include ../../components/date-dropdown/date-dropdown.pug
   include ../../components/button/button.pug 
   include ../../components/set-of-qualities/set-of-qualities.pug
   include ../../components/radio-buttons/radio-buttons.pug
   include ../../components/pagination/pagination.pug
   include ../../components/range-slider/range-slider.pug
+  include ../../components/calendar/calendar.pug
 
   .elements
     .elements__main-wrapper
@@ -39,10 +38,10 @@ block body
             .elements__titles
               h3(class='elements__title') date dropdown
               h3(class='elements__title') date dropdown
-            +date-dropdown(['2019-08-19'])
+            +calendar({dates: ['2019-08-19'], type: 'dropdown'})
           .elements__filter-date-dropdown
             h3(class='elements__title') filter date dropdown
-            +filter-date-dropdown(['2019-09-13','2019-09-16'])
+            +calendar({dates: ['2019-09-13','2019-09-16'], type: 'filter'})
           .elements__subscription-text-field
             h3(class='elements__title') subscription text field
             +field-button({text: 'Email', theme: 'gradient'})

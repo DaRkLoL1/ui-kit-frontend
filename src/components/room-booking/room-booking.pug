@@ -1,4 +1,4 @@
-include ../date-dropdown/date-dropdown.pug
+include ../calendar/calendar.pug
 include ../dropdown/dropdown.pug
 include ../button/button.pug 
 
@@ -18,7 +18,7 @@ mixin room-booking
           span(class='room-booking__cost-text')= ' в сутки'
       .room-booking__arrival-departure 
         h3(class='room-booking__titles') прибытие выезд
-        +date-dropdown(['2019-08-19','2019-08-23'])
+        +calendar({dates: ['2019-08-19','2019-08-23'], type: 'dropdown'})
       .room-booking__company
         h3(class='room-booking__title') гости
         +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы'], arrDefaultNumbers: [2, 1, 0]})

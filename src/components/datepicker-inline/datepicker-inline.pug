@@ -1,9 +1,0 @@
-include ../button/button.pug
-
-mixin datepicker-inline
-  div(class='datepicker-inline js-datepicker-inline')
-    div(class='datepicker-inline__buttons js-datepicker-inline__buttons')
-      div(class='js-datepicker-inline__clear-button datepicker-inline__clear-button')
-        +button({text: 'очистить', color: 'grey'})
-      div(class='js-datepicker-inline__apply-button datepicker-inline__apply-button')
-        +button({text: 'применить'})

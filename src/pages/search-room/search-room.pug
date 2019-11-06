@@ -5,7 +5,6 @@ block body
   include ../../components/footer-copyright/footer-copyright.pug 
   include ../../components/header/header.pug
   include ../../components/window-search/window-search.pug
-  include ../../components/filter-date-dropdown/filter-date-dropdown.pug
   include ../../components/dropdown/dropdown.pug
   include ../../components/range-slider/range-slider.pug
   include ../../components/checkbox-buttons/checkbox-buttons.pug
@@ -13,6 +12,7 @@ block body
   include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
   include ../../components/pagination/pagination.pug
   include ../../components/room/room.pug
+  include ../../components/calendar/calendar.pug
 
   .search-room
     .search-room__wrapper 
@@ -33,7 +33,7 @@ block body
         .search-room__action  
           .search-room__datepicker
             h3(class='search-room__title') даты пребывания в отеле
-            +filter-date-dropdown(['2019-08-19','2019-08-23'])
+            +calendar({dates: ['2019-08-19','2019-08-23'], type: 'filter'})
           .search-room__dropdown-visit
             h3(class='search-room__title') гости
             +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы'], arrDefaultNumbers: [2, 1, 1]})

@@ -1,4 +1,4 @@
-include ../date-dropdown/date-dropdown.pug
+include ../calendar/calendar.pug
 include ../dropdown/dropdown.pug
 include ../button/button.pug
 
@@ -8,7 +8,7 @@ mixin window-search
       h1(class='window-search__title') Найдём номера под ваши пожелания
       .window-search__arrival-departure
         h3(class='window-search__arrival-departure-title') прибытие выезд
-        +date-dropdown
+        +calendar({type: 'dropdown'})
       .window-search__company
         h3(class='window-search__company-title') гости
         +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})

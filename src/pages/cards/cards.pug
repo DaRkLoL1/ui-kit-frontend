@@ -4,10 +4,10 @@ block title
 block body
   include ../../components/window-login/window-login.pug
   include ../../components/window-search/window-search.pug
-  include ../../components/datepicker-inline/datepicker-inline.pug
   include ../../components/window-registration/window-registration.pug
   include ../../components/room/room.pug
   include ../../components/room-booking/room-booking.pug
+  include ../../components/calendar/calendar.pug
 
   .cards
     .cards__main-wrapper
@@ -23,7 +23,7 @@ block body
           +window-login
       .cards__wrapper
         .cards__datepicker
-          +datepicker-inline
+          +calendar({dates: ['2019-09-13','2019-09-16']})
         .cards__room-luxe
           +room({classRoom: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.jpg'})
         .cards__room

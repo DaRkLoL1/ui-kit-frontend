@@ -1,5 +1,14 @@
-.filter-date-dropdown {
+.calendar {
   width: 100%;
+
+  &_type_dropdown {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 150px;
+  }
 
   &__buttons {
     display: flex;
