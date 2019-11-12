@@ -1,9 +1,9 @@
 export default class Like {
   constructor() {
-    Like.addHandleClick();
+    this.addHandleClick();
   }
 
-  static addHandleClick() {
+  addHandleClick() {
     $('.js-like-button').on('click', (event) => {
       const $target = $(event.currentTarget);
       const $icon = $target.find('.like-button__icon');

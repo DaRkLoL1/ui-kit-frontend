@@ -1,9 +1,9 @@
 export default class CheckboxList {
   constructor() {
-    CheckboxList.addHandleClick();
+    this.addHandleClick();
   }
 
-  static addHandleClick() {
+  addHandleClick() {
     $('.js-expandable-checkbox-list__dropdown').on('click', (event) => {
       const $target = $(event.currentTarget);
       const $icon = $target.find('.expandable-checkbox-list__icon');

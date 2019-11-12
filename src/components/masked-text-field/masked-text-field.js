@@ -2,10 +2,10 @@ import 'jquery-mask-plugin';
 
 export default class Mask {
   constructor() {
-    Mask.createMask();
+    this.createMask();
   }
 
-  static createMask() {
+  createMask() {
     $('.js-mask').mask('AB.SR.YXOQ', {
       translation: {
         A: { pattern: /[0-3]/ },
