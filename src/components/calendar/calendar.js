@@ -8,7 +8,7 @@ export default class Calendar {
   }
 
   createDatepicker() {
-    let param = {
+    this.param = {
       range: true,
       offset: 16,
       prevHtml: '<i class="material-icons">arrow_back</i>',
@@ -19,46 +19,58 @@ export default class Calendar {
     };
 
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      const $left = this.$datepicker.find('.js-calendar__left-input .js-text-field');
-      const $right = this.$datepicker.find('.js-calendar__right-input .js-text-field');
-
-      param = Object.assign(param,
-        {
-          altField: $right,
-          altFieldDateFormat: '',
-          onSelect(formattedDate) {
-            const arrDates = formattedDate.split(',');
-
-            if (arrDates.length === 1) {
-              $left.val('');
-              $right.val(arrDates[0]);
-            } else {
-              $left.val(arrDates[0]);
-              $right.val(arrDates[1]);
-            }
-          },
-        });
-      this.calendar = $left.datepicker(param).data('datepicker');
-
-      this.setMethodShow();
+      this.createDropdownDatepicker();
     } else if (this.$datepicker.hasClass('js-calendar_type_filter')) {
-      const $textField = this.$datepicker.find('.js-text-field');
-
-      param = Object.assign(param,
-        {
-          multipleDatesSeparator: ' - ',
-          dateFormat: 'dd M',
-        });
-
-      this.calendar = $textField.datepicker(param).data('datepicker');
-      this.calendar.$datepicker.css('width', '266px');
-
-      this.setMethodShow();
+      this.createFilterDatepicker();
     } else {
-      this.calendar = this.$datepicker.datepicker(param).data('datepicker');
+      this.createInlineDatepicker();
     }
 
     this.setDate();
+  }
+
+  createDropdownDatepicker() {
+    const $left = this.$datepicker.find('.js-calendar__left-input .js-text-field');
+    const $right = this.$datepicker.find('.js-calendar__right-input .js-text-field');
+
+    this.param = Object.assign(this.param,
+      {
+        altField: $right,
+        altFieldDateFormat: '',
+        onSelect(formattedDate) {
+          const arrDates = formattedDate.split(',');
+
+          if (arrDates.length === 1) {
+            $left.val('');
+            $right.val(arrDates[0]);
+          } else {
+            $left.val(arrDates[0]);
+            $right.val(arrDates[1]);
+          }
+        },
+      });
+    this.calendar = $left.datepicker(this.param).data('datepicker');
+
+    this.setMethodShow();
+  }
+
+  createFilterDatepicker() {
+    const $textField = this.$datepicker.find('.js-text-field');
+
+    this.param = Object.assign(this.param,
+      {
+        multipleDatesSeparator: ' - ',
+        dateFormat: 'dd M',
+      });
+
+    this.calendar = $textField.datepicker(this.param).data('datepicker');
+    this.calendar.$datepicker.css('width', '266px');
+
+    this.setMethodShow();
+  }
+
+  createInlineDatepicker() {
+    this.calendar = this.$datepicker.datepicker(this.param).data('datepicker');
   }
 
   setDate() {
