@@ -13,7 +13,7 @@ mixin dropdown({arrDefaultNumbers = '', type = '', arrTitles = [], } = {})
         p.iqdropdown-selection.iqdropdown-selection_opacity_m
         .iqdropdown-menu
           each val, i in arrTitles
-            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=arrDefaultNumbers[i]  data-maxcount='10')
+            div(class='iqdropdown-menu-option' data-id=`item${i + 1}` data-defaultcount=arrDefaultNumbers[i]  data-maxcount='10')
               div
                 p(class='iqdropdown-item')=val
       div(class='js-dropdown__buttons dropdown__buttons')
@@ -27,7 +27,7 @@ mixin dropdown({arrDefaultNumbers = '', type = '', arrTitles = [], } = {})
         p.iqdropdown-selection
         .iqdropdown-menu
           each val, i in arrTitles
-            div(class='iqdropdown-menu-option' data-id='item' + (i + 1) data-defaultcount=arrDefaultNumbers[i]  data-maxcount='10')
+            div(class='iqdropdown-menu-option' data-id=`item${i + 1}` data-defaultcount=arrDefaultNumbers[i]  data-maxcount='10')
               div
                 p(class='iqdropdown-item')=val
         

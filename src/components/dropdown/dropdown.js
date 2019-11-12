@@ -73,7 +73,7 @@ export default class Dropdown {
       if (item === 1) {
         this.text += `${item} ${arrValues[i][0]}, `;
       }
-      if (item > 1 && item < 5) {
+      if (this.matchesWordFromMiddleArray(item)) {
         this.text += `${item} ${arrValues[i][1]}, `;
       }
       if (item > 4) {
@@ -103,15 +103,23 @@ export default class Dropdown {
       if (item === 1) {
         this.text += `${item} ${arrValues[i][0]}, `;
       }
-      if (item > 1 && item < 5) {
+      if (this.matchesWordFromMiddleArray(item)) {
         this.text += `${item} ${arrValues[i][1]}, `;
       }
-      if (item > 4 || item === 0) {
+      if (this.matchesWordFromEndArray(item)) {
         this.text += `${item} ${arrValues[i][2]}, `;
       }
     });
 
     this.text = this.text.slice(0, this.text.length - 2);
+  }
+
+  matchesWordFromMiddleArray(item) {
+    return item > 1 && item < 5;
+  }
+
+  matchesWordFromEndArray(item) {
+    return item > 4 || item === 0;
   }
 
   setValueDropdown() {

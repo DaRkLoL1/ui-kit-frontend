@@ -15,7 +15,7 @@ mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', 
           if i === 0
             li(class='room__dot room__dot_selected')
           li(class='room__dot')
-          - i++
+          - i += 1
     div(class='room__description')
       div(class='room__number-and-cost')
         if classRoom

@@ -29,8 +29,11 @@ mixin room-booking
             ['Сбор за услуги: скидка 2 179\u20bd', '0\u20bd'],
             ['Сбор за дополнительные услуги', '300\u20bd']
           ];
+          let checkNeedIcon = function(i) {
+            return i === 1 || i === 2;
+          }
         each val, i in arrCalculated
-          if i === 1 || i === 2
+          if checkNeedIcon(i)
             p(class='room-booking__name-price')
               span(class='room-booking__name room-booking__name_warning')=val[0]
               span(class='room-booking_price')=val[1]
