@@ -1,6 +1,6 @@
 include ../rate-button/rate-button.pug
 
-mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', comments = '100', image = 'room-img-1.jpg'} = {})
+mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', comments = '100', image = 'room-img-1.jpg', slideCount = 3} = {})
   .room 
     div(class='room__slide-image')
       img( class='room__image' src=`../../components/room/${image}` alt='room')
@@ -11,7 +11,7 @@ mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', 
           i(class='material-icons room__right-arrow') expand_more
       ul(class='room__slide')
         - let i = 0
-        while i < 3
+        while i < slideCount
           if i === 0
             li(class='room__dot room__dot_selected')
           li(class='room__dot')
