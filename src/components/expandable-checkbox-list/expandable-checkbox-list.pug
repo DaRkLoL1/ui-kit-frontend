@@ -2,9 +2,9 @@ include ../switch/switch.pug
 
 mixin expandable-checkbox-list({text = 'expandable-checkbox-list', arr = []} = {}) 
   .expandable-checkbox-list
-    div(class='expandable-checkbox-list__dropdown js-expandable-checkbox-list__dropdown')
-      h3(class='expandable-checkbox-list__title')=text
-      i(class='material-icons expandable-checkbox-list__icon') keyboard_arrow_down
+    div(class="expandable-checkbox-list__dropdown js-expandable-checkbox-list__dropdown")
+      h3(class="expandable-checkbox-list__title")=text
+      i(class="material-icons expandable-checkbox-list__icon") keyboard_arrow_down
     .expandable-checkbox-list__items
       each val in arr
         .expandable-checkbox-list__item

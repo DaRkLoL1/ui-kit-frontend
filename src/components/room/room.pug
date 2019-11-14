@@ -2,44 +2,44 @@ include ../rate-button/rate-button.pug
 
 mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', comments = '100', image = 'room-img-1.jpg', slideCount = 4} = {})
   .room 
-    div(class='room__slide-image')
-      img( class='room__image' src=`../../components/room/${image}` alt='room')
+    div(class="room__slide-image")
+      img( class="room__image" src=`../../components/room/${image}` alt="room")
       if type
         .room__slide-left-button
-          i(class='material-icons room__left-arrow') expand_more
+          i(class="material-icons room__left-arrow") expand_more
         .room__slide-right-button
-          i(class='material-icons room__right-arrow') expand_more
-      ul(class='room__slide')
+          i(class="material-icons room__right-arrow") expand_more
+      ul(class="room__slide")
         - let i = 0
         while i < slideCount
           if i === 0
-            li(class='room__dot room__dot_selected')
+            li(class="room__dot room__dot_selected")
           else
-            li(class='room__dot')
+            li(class="room__dot")
           - i += 1
-    div(class='room__description')
-      div(class='room__number-and-cost')
+    div(class="room__description")
+      div(class="room__number-and-cost")
         if classRoom
-          p(class='room__number')
+          p(class="room__number")
             = '№ '
             |
-            span(class='room__numbers')= number
+            span(class="room__numbers")= number
             |
-            span(class='room__luxe')= ' люкс'
+            span(class="room__luxe")= ' люкс'
         else
-          p(class='room__number')
+          p(class="room__number")
             = '№ '
             | 
-            span(class='room__numbers')= number
-        p(class='room__cost')
-          span(class='room__cost-price')= cost
-          span(class='room__cost-sign') c
-          span(class='room__cost-text')= ' в сутки'
-      div(class='room__line')
-      div(class='room__stars-and-comments')
-        div(class='room__stars')
+            span(class="room__numbers")= number
+        p(class="room__cost")
+          span(class="room__cost-price")= cost
+          span(class="room__cost-sign") c
+          span(class="room__cost-text")= ' в сутки'
+      div(class="room__line")
+      div(class="room__stars-and-comments")
+        div(class="room__stars")
           +rate-button(stars)
-        p(class='room__comments')
-          span(class='room__comments-count')= comments
-          span(class='room__comments-text')= ' Отзывов'
+        p(class="room__comments")
+          span(class="room__comments-count")= comments
+          span(class="room__comments-text")= ' Отзывов'
         

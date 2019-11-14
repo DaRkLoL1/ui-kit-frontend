@@ -2,8 +2,8 @@ include ../switch/switch.pug
 
 mixin rich-checkbox-buttons({text = 'rich-checkbox-buttons', arr = []}= {}) 
   .rich-checkbox-buttons
-    h3(class='rich-checkbox-buttons__title')=text
+    h3(class="rich-checkbox-buttons__title")=text
     .rich-checkbox-buttons__item
       each val in arr 
         +switch({type: 'checkbox', text: val.checkboxText, weight: 'b'})
-        p(class='rich-checkbox-buttons__descriptor')=val.descriptor
+        p(class="rich-checkbox-buttons__descriptor")=val.descriptor

@@ -31,14 +31,14 @@ block body
       main.search-room__content
         .search-room__action  
           .search-room__datepicker
-            h3(class='search-room__title') даты пребывания в отеле
+            h3(class="search-room__title") даты пребывания в отеле
             +calendar({dates: ['2019-08-19','2019-08-23'], type: 'filter'})
           .search-room__dropdown-visit
-            h3(class='search-room__title') гости
+            h3(class="search-room__title") гости
             +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы'], arrDefaultNumbers: [2, 1, 1]})
           .search-room__slider
             +range-slider('диапазон цены')
-            p(class='search-room__description') Стоимость за сутки пребывания в номере
+            p(class="search-room__description") Стоимость за сутки пребывания в номере
           .search-room__checkbox-buttons
             +checkbox-buttons({
               text: 'checkbox-buttons',
@@ -59,7 +59,7 @@ block body
               ]
             })
           .search-room__dropdown-furniture
-            h3(class='search-room__title') удобства номера
+            h3(class="search-room__title") удобства номера
             +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
           .search-room__expandable-checkbox-list
             +expandable-checkbox-list({
@@ -67,7 +67,7 @@ block body
               arr: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь']
             })
         .search-room__numbers
-          h1(class='search-room__main-title') Номера, которые мы для вас подобрали
+          h1(class="search-room__main-title") Номера, которые мы для вас подобрали
           .search-room__rooms
             .search-room__room
               +room({classRoom: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.jpg'})

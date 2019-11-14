@@ -20,8 +20,8 @@ block body
           .colors-and-type__colors
             div(class=`colors-and-type__colors-square${val[0]}`)
             .colors-and-type__colors-title
-              h2(class='colors-and-type__colors-name')= val[1]
-              p(class='colors-and-type__colors-color')= val[2]
+              h2(class="colors-and-type__colors-name")= val[1]
+              p(class="colors-and-type__colors-color")= val[2]
       .color-and-type__right-wrapper
         -
           let types = [
@@ -32,5 +32,5 @@ block body
           ]
         each val in types
           p(class=`colors-and-type__types${val[0]}`)
-            span(class='colors-and-type__types-tag')= val[2]
+            span(class="colors-and-type__types-tag")= val[2]
             span(class=`colors-and-type__types-text${val[1]}`)=val[3]

@@ -1,7 +1,7 @@
 include ../switch/switch.pug
 mixin checkbox-buttons({text = 'checkbox-buttons', arr = []} = {})
   .checkbox-buttons
-    h3(class='checkbox-buttons__title')= text
+    h3(class="checkbox-buttons__title")= text
     each val in arr
       .checkbox-buttons__item
         +switch({type: 'checkbox', text: val})

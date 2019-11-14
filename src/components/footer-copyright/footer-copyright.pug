@@ -1,30 +1,30 @@
 include ../field-button/field-button.pug
 
 mixin footer-copyright({text = '', lists = [], subscribe = [], copyright = '' } = {}) 
-  footer(class='footer-copyright')
+  footer(class="footer-copyright")
     .footer-copyright__top-wrapper
       .footer-copyright__footer
         .footer-copyright__description
-          img(class='footer-copyright__logo' src='../../components/footer-copyright/logo.png' alt='logo')
-          p(class='footer-copyright__text')= text
+          img(class="footer-copyright__logo" src="../../components/footer-copyright/logo.png" alt="logo")
+          p(class="footer-copyright__text")= text
         .footer-copyright__lists
           each value in lists
-            ul(class='footer-copyright__list')
+            ul(class="footer-copyright__list")
               each val, i in value
                 if i === 0
                   li
-                    h3(class='footer-copyright__list-title')= val
+                    h3(class="footer-copyright__list-title")= val
                 else
-                  li(class='footer-copyright__list-item')
-                    a(class='footer-copyright__list-link' href='/mock-address/change-me')= val
+                  li(class="footer-copyright__list-item")
+                    a(class="footer-copyright__list-link" href="/mock-address/change-me")= val
         .footer-copyright__subscribe
-          h3(class='footer-copyright__subscribe-title')= subscribe[0]
-          p(class='footer-copyright__subscribe-text')= subscribe[1]
+          h3(class="footer-copyright__subscribe-title")= subscribe[0]
+          p(class="footer-copyright__subscribe-text")= subscribe[1]
           .footer-copyright__subscribe-input
             +field-button({text: subscribe[2], theme: 'gradient'})
     .footer-copyright__bottom-wrapper
       .footer-copyright__copyright
-        p(class='footer-copyright__text')= copyright
+        p(class="footer-copyright__text")= copyright
         .footer-copyright__icons
           each val in ['twitter', 'facebook-square', 'instagram']
             i(class=`footer-copyright__icon fab fa-${val}`)

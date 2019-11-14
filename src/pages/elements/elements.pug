@@ -26,27 +26,27 @@ block body
       .elements__wrapper
         .elements__left-line
           .elements__text-field
-            h3(class='elements__title') text field
+            h3(class="elements__title") text field
             +text-field({text: 'Email'})
           .elements__dropdown-visitor
-            h3(class='elements__title') dropdown
+            h3(class="elements__title") dropdown
             +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
           .elements__masked-text-field
-            h3(class='elements__title') masked text field
+            h3(class="elements__title") masked text field
             +masked-text-field
           .elements__date-dropdown
             .elements__titles
-              h3(class='elements__title') date dropdown
-              h3(class='elements__title') date dropdown
+              h3(class="elements__title") date dropdown
+              h3(class="elements__title") date dropdown
             +calendar({dates: ['2019-08-19'], type: 'dropdown'})
           .elements__filter-date-dropdown
-            h3(class='elements__title') filter date dropdown
+            h3(class="elements__title") filter date dropdown
             +calendar({dates: ['2019-09-13','2019-09-16'], type: 'filter'})
           .elements__subscription-text-field
-            h3(class='elements__title') subscription text field
+            h3(class="elements__title") subscription text field
             +field-button({text: 'Email', theme: 'gradient'})
           .elements__dropdown-furniture
-            h3(class='elements__title') dropdown
+            h3(class="elements__title") dropdown
             +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
           .elements__expandable-checkbox-list
             +expandable-checkbox-list({
@@ -60,16 +60,16 @@ block body
               arr: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
             })
           .elements__radio-buttons
-            h3(class='elements__title') radio buttons
+            h3(class="elements__title") radio buttons
             +radio-buttons
           .elements__toggle
-            h3(class='elements__title') toggle
+            h3(class="elements__title") toggle
             +switch({type: 'toggle', text: 'Получать спецпредложения'})
           .elements__like-button
-            h3(class='elements__title') like-button
+            h3(class="elements__title") like-button
             +like-button(9)
           .elements__rate-button
-            h3(class='elements__title') rate-button
+            h3(class="elements__title") rate-button
             +rate-button(4)
           .elements__rich-checkbox-buttons
             +rich-checkbox-buttons({
@@ -89,7 +89,7 @@ block body
           .elements__range-slider
             +range-slider('range slider')
           .elements__buttons
-            h3(class='elements__title') buttons
+            h3(class="elements__title") buttons
             .elements__button.elements__button_medium
               +button({size: 'medium', text: 'click me'})
             .elements__button.elements__button_medium
@@ -100,10 +100,10 @@ block body
             .elements__button
                 +button({size: 'big', type: 'submit', text: 'перейти к оплате'})
           .elements__pagination
-            h3(class='elements__title') pagination
+            h3(class="elements__title") pagination
             +pagination
           .elements__bullet-list
-            h3(class='elements__title') bullet-list
+            h3(class="elements__title") bullet-list
             +bullet-list([
               'Нельзя с питомцами',
               'Без вечеринок и мероприятий',
