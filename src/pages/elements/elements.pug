@@ -3,7 +3,6 @@ block title
   title Form Elements
 block body
   include ../../components/text-field/text-field.pug
-  include ../../components/masked-text-field/masked-text-field.pug
   include ../../components/field-button/field-button.pug
   include ../../components/switch/switch.pug
   include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
@@ -33,7 +32,7 @@ block body
             +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
           .elements__masked-text-field
             h3(class="elements__title") masked text field
-            +masked-text-field
+            +text-field({type: 'date'})
           .elements__date-dropdown
             .elements__titles
               h3(class="elements__title") date dropdown
@@ -44,7 +43,7 @@ block body
             +calendar({dates: ['2019-09-13','2019-09-16'], type: 'filter'})
           .elements__subscription-text-field
             h3(class="elements__title") subscription text field
-            +field-button({text: 'Email', theme: 'gradient'})
+            +field-button({text: 'Email', theme: 'gradient', type: 'email'})
           .elements__dropdown-furniture
             h3(class="elements__title") dropdown
             +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})

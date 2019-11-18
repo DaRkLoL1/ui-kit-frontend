@@ -6,9 +6,9 @@ mixin window-login
     .window-login__wrapper
       h1(class="window-login__title") Войти
       .window-login__email
-        +text-field({text: 'Email'})
+        +text-field({text: 'Email', type: "email"})
       .window-login__password 
-        +text-field({text: 'Пароль'})
+        +text-field({text: 'Пароль', type: "password"})
       .window-login__submit
         +button({size: 'big', type: 'submit', text: 'войти'})
       .window-login__footer

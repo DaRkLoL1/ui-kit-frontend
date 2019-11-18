@@ -3,6 +3,8 @@
   width: 100%;
   padding: 0;
   padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 1px solid $placeholder-color;
   box-sizing: border-box;
   border-radius: 4px;
@@ -10,7 +12,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 0.875rem;
-  line-height: 1.71;
   color: $placeholder-color;
 
   &:focus, &:hover {
@@ -37,4 +38,7 @@
     border-radius: 0;
   }
   
+  &_text_upper {
+    text-transform: uppercase;
+  }
 }

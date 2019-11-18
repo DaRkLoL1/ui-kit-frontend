@@ -1,5 +1,4 @@
 include ../text-field/text-field.pug
-include ../masked-text-field/masked-text-field.pug
 include ../switch/switch.pug
 include ../button/button.pug
 include ../radio-buttons/radio-buttons.pug
@@ -17,13 +16,13 @@ mixin window-registration
       .window-registration__date
         h3(class="window-registration__birthday-title") дата рождения
         .window-registration__masked-date
-          +masked-text-field
+          +text-field({type: 'date'})
       .window-registration__data
         h3(class="window-registration__data-title") данные для входа в сервис
         .window-registration__email
-          +text-field({text: 'Email'})
+          +text-field({text: 'Email', type: "email"})
         .window-registration__password
-          +text-field({text: 'Пароль'})
+          +text-field({text: 'Пароль', type: "password"})
       .window-registration__toggle
         +switch({type: 'toggle', text: 'Получать спецпредложения'})
       .window-registration__submit
