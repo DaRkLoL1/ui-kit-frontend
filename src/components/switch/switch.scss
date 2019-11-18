@@ -10,7 +10,7 @@
   cursor: pointer;
   
   &_checkbox {
-    padding-left: 30px;
+    padding-left: 1.875rem;
     line-height: 1.125rem;
     color: $paragraph-color;
 
@@ -22,13 +22,13 @@
     &::before {
       content: '';
       position: absolute;
-      left: 0px;
-      top: -1px;
-      width: 20px;
-      height: 20px;
+      left: 0;
+      top: -0.0625rem;
+      width: 1.25rem;
+      height: 1.25rem;
       box-sizing: border-box;
-      border: 1px solid $placeholder-color;
-      border-radius: 4px;
+      border: 0.0625rem solid $placeholder-color;
+      border-radius: 0.25rem;
     }
 
     &_checked::before {
@@ -41,30 +41,30 @@
   }
 
   &_radio {
-    padding-left: 30px;
+    padding-left: 1.875rem;
     color: $paragraph-color;
 
     &::before {
       content: '';
       position: absolute;
-      top: 2px;
-      left: 1px;
-      width: 20px;
-      height: 20px;
+      top: 0.125rem;
+      left: 0.0625rem;
+      width: 1.25rem;
+      height: 1.25rem;
       box-sizing: border-box;
-      border: 1px solid $placeholder-color;
-      border-radius: 10px;
+      border: 0.0625rem solid $placeholder-color;
+      border-radius: 0.625rem;
     }
 
     &::after {
       content: '';
       position: absolute;
       display: none;
-      top: 6px;
-      left: 5px;
-      width: 12px;
-      height: 12px;
-      border-radius: 10px;
+      top: 0.375rem;
+      left: 0.3125rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 0.625rem;
       background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     }
 
@@ -82,28 +82,28 @@
   }
 
   &_toggle {
-    padding-left: 50px;
+    padding-left: 3.125rem;
 
     &::before {
       content: '';
       position: absolute;
-      top: 2px;
+      top: 0.125rem;
       left: 0;
-      width: 40px;
-      height: 20px;
-      border: 1px solid $placeholder-color;
+      width: 2.5rem;
+      height: 1.25rem;
+      border: 0.0625rem solid $placeholder-color;
       box-sizing: border-box;
-      border-radius: 10px;
+      border-radius: 0.625rem;
     }
 
     &::after {
       content: '';
       position: absolute;
-      top: 6px;
-      left: 4px;
-      width: 12px;
-      height: 12px;
-      border-radius: 10px;
+      top: 0.375rem;
+      left: 0.25rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 0.625rem;
       background-color: $placeholder-color;
       transition: left 0.3s linear;
     }
@@ -115,7 +115,7 @@
       }
 
       &::after {
-        left: 24px;
+        left: 1.5rem;
         background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
       }
     }

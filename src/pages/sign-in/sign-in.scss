@@ -6,19 +6,19 @@
   
   &__content {
     background: url('./registration-sign-in-img-1.jpg');
-    background-position: 0 -70px;
+    background-position: 0 -4.375rem;
     box-sizing: border-box;
   }
 
   &__window {
-    padding-top: 163px;
-    padding-bottom: 163px;
-    width: 380px;
+    padding-top: 10.1875rem;
+    padding-bottom: 10.1875rem;
+    width: 23.75rem;
     margin: auto;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 23.75rem) {
   .sign-in__window {
     width: 100%;
   }

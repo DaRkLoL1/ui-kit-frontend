@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  width: 40px;
-  min-width: 40px;
-  height: 20px;
+  width: 2.5rem;
+  min-width: 2.5rem;
+  height: 1.25rem;
   box-sizing: border-box;
-  border: 1px solid $placeholder-color;
-  border-radius: 10px;
+  border: 0.0625rem solid $placeholder-color;
+  border-radius: 0.625rem;
   overflow: hidden;
   color: $placeholder-color;
   cursor: pointer;
@@ -15,7 +15,7 @@
   &_click {
     position: relative;
     border: none;
-    padding: 1px;
+    padding: 0.0625rem;
     background: $background;
     background-clip: content-box;
     color: $primary-color;
@@ -34,14 +34,14 @@
   }
 
   &__icon {
-    width: 20px;
+    width: 1.25rem;
     font-size: 0.625rem;
-    line-height: 9px;
+    line-height: 0.5625rem;
     text-align: center; 
   }
 
   &__number {
-    margin-left: 2px;
+    margin-left: 0.125rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -50,7 +50,7 @@
     color: inherit;
 
     &_margin_null {
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
 

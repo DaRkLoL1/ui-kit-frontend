@@ -1,5 +1,5 @@
 .pagination {
-  width: 240px;
+  width: 15rem;
 
   &__items {
     margin:0;
@@ -10,30 +10,30 @@
 
   &__item {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 0.75rem;
-    line-height: 40px;
+    line-height: 2.5rem;
     color: $paragraph-color;
 
     &_begin {
       background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
-      border-radius: 22px;
+      border-radius: 1.375rem;
       color: $background;
       font-weight: bold;
     }
 
     &_end {
       background: linear-gradient(180deg, $secondary-color 0%, $second-linear 100%);
-      border-radius: 22px;
+      border-radius: 1.375rem;
 
       & > i {
-        line-height: 40px;
+        line-height: 2.5rem;
         color: $background;
       }
     }
@@ -41,7 +41,7 @@
 
   &__description {
     margin:0;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-align: center;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;

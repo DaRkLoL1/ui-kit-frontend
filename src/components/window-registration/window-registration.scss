@@ -1,21 +1,21 @@
 .window-registration {
   width: 100%;
   background: $background;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
 
   &__wrapper {
-    width: 320px;
+    width: 20rem;
     margin: auto;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 2.5rem;
+    padding-bottom: 1.875rem;
   }
 
   &__title {
     margin:0;
-    margin-bottom: 19px;
+    margin-bottom: 1.1875rem;
     font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -26,24 +26,24 @@
 
   &__last-name,
   &__password {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 
   &__sex {
-    margin-top: 9px;
+    margin-top: 0.5625rem;
   }
 
   &__date,
   &__submit {
-    margin-top: 23px;
+    margin-top: 1.4375rem;
   }
 
   &__data {
-    margin-top: 21px;
+    margin-top: 1.3125rem;
   }
   &__birthday-title,
   &__data-title {
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -54,14 +54,14 @@
   }
 
   &__toggle {
-    margin-top: 8px;
+    margin-top: 0.5rem;
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 
   &__text {
@@ -76,14 +76,14 @@
 
   &__button {
     position: relative;
-    width: 99px;
-    height: 44px;
+    width: 6.1875rem;
+    height: 2.75rem;
     z-index: 1;
   }
 
 }
 
-@media (max-width: 330px) {
+@media (max-width: 20.625rem) {
   .window-registration {
     border: none;
   }

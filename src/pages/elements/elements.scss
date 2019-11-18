@@ -1,17 +1,17 @@
 .elements {
   background-image: url('./icon.png');
   background-repeat: no-repeat;
-  background-position: 30px 30px;
-  padding-top: 150px;
+  background-position: 1.875rem 1.875rem;
+  padding-top: 9.375rem;
 
   &__main-wrapper {
-    width: 1160px;
+    width: 72.5rem;
     margin: auto;
   }
 
   &__title {
-    margin-bottom: 5px;
-    margin-top: 18px;
+    margin-bottom: 0.3125rem;
+    margin-top: 1.125rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -27,24 +27,24 @@
   }
 
   &__left-line {
-    width: 320px;
+    width: 20rem;
   }
 
   &__center-line {
-    width: 266px;
+    width: 16.625rem;
   }
 
   &__titles{
     display: flex;
 
     & .elements__title:last-child {
-      margin-left: 55px;
+      margin-left: 3.4375rem;
     }
   }
 
   &__button_medium {
-    width: 99px;
-    height: 44px;
+    width: 6.1875rem;
+    height: 2.75rem;
   }
 
   &__filter-date-dropdown,
@@ -52,10 +52,10 @@
   &__dropdown-furniture,
   &__range-slider,
   &__bullet-list {
-    width: 266px;
+    width: 16.625rem;
   }
 
   &__comment {
-    width: 711px;
+    width: 44.4375rem;
   }
 }

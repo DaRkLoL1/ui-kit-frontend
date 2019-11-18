@@ -9,17 +9,17 @@
     justify-content: space-between;
     width: 80.5%;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 68px;
-    border-bottom: 1px solid $placeholder-color;
+    padding-top: 1.875rem;
+    padding-bottom: 4.25rem;
+    border-bottom: 0.0625rem solid $placeholder-color;
   }
 
   &__action {
-    width: 266px;
+    width: 16.625rem;
   }
 
   &__numbers {
-    margin-left: 60px;
+    margin-left: 3.75rem;
   }
 
   &__rooms {
@@ -29,12 +29,12 @@
   }
 
   &__room {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   &__pagination {
-    width: 240px;
-    margin-top: 40px;
+    width: 15rem;
+    margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -51,7 +51,7 @@
 
   &__title {
     margin:0;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -63,22 +63,22 @@
 
   &__dropdown-visit,
   &__slider  {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   &__expandable-checkbox-list  {
-    margin-top: 18px;
+    margin-top: 1.125rem;
   }
 
   &__checkbox-buttons,
   &__rich-checkbox-buttons,
   &__dropdown-furniture {
-    margin-top: 31px;
+    margin-top: 1.9375rem;
   }
 
   &__description {
     margin: 0;
-    margin-top: 13px;
+    margin-top: 0.8125rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -89,7 +89,7 @@
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 68.75rem) {
   .search-room {
 
     &__content {
@@ -110,12 +110,12 @@
     &__checkbox-buttons,
     &__rich-checkbox-buttons,
     &__dropdown-furniture {
-    margin-top: 0px;
+    margin-top: 0;
   }
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 46.875rem) {
   .search-room {
     
     
@@ -125,7 +125,7 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 42.5rem) {
   .search-room {
     
     
@@ -139,7 +139,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   .search-room {
     
     

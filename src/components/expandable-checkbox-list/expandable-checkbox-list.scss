@@ -1,6 +1,6 @@
 .expandable-checkbox-list {
   position: relative;
-  width: 266px;
+  width: 16.625rem;
 
   &__dropdown {
     display: flex;
@@ -20,7 +20,7 @@
   }
   
   &__icon {
-    width: 44px;
+    width: 2.75rem;
     text-align: center;
   }
 
@@ -30,7 +30,7 @@
 
   &__items {
     position: absolute;
-    top: 32px;
+    top: 2rem;
     display: none;
     width: 100%;
     background: $background;
@@ -41,6 +41,6 @@
     }
   }
   &__item {
-    margin-top: 11px;
+    margin-top: 0.6875rem;
   }
 }

@@ -1,9 +1,9 @@
 .pie-chart {
-  width: 310px;
+  width: 19.375rem;
 
   &__title {
     margin-top: 0;
-    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
     font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -21,11 +21,11 @@
   &__circle {
     display: flex;
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     border-radius: 50%;
     box-sizing: border-box;
-    border: 10px solid transparent;
+    border: 0.625rem solid transparent;
     background-size: 100% 100%, 49% 49%;
     background-image:
       linear-gradient(white, white),
@@ -43,9 +43,9 @@
       left: 0;
       right: 0;
       border-radius: 50%;
-      margin: -10px;
+      margin: -0.625rem;
       box-sizing: border-box;
-      border: 5px solid transparent;
+      border: 0.3125rem solid transparent;
       background-size: 100% 100%, 49% 100%, 49% 49%;
       background-image:linear-gradient(white, white),
         linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%),
@@ -95,8 +95,8 @@
 
   &__item {
     position: relative;
-    padding-top: 1px;
-    padding-left: 15px;
+    padding-top: 0.0625rem;
+    padding-left: 0.9375rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -107,10 +107,10 @@
     &::before {
       content: '';
       position: absolute;
-      top: 7px;
-      left: 1px;
-      width: 10px;
-      height: 10px;
+      top: 0.4375rem;
+      left: 0.0625rem;
+      width: 0.625rem;
+      height: 0.625rem;
       border-radius: 50%;
       background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
     }

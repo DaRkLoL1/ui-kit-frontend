@@ -1,8 +1,8 @@
 .header {
   background: $background;
-  box-shadow: 0px 10px 20px $shadow-color;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  box-shadow: 0 0.625rem 1.25rem $shadow-color;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 
   &__content,
   &__list,
@@ -60,7 +60,7 @@
         content: 'expand_more';
         font-family: 'Material Icons';
         font-size: 1.5rem;
-        line-height: 17px;
+        line-height: 1.0625rem;
         vertical-align: middle;
       }
     }
@@ -68,38 +68,38 @@
 
   &__login {
     position: relative;
-    margin-left: 25px;
-    height: 34px;
+    margin-left: 1.5625rem;
+    height: 2.125rem;
     z-index: 1;
   } 
 
   &__register {
-    height: 34px;
-    margin-left: 20px;
+    height: 2.125rem;
+    margin-left: 1.25rem;
   }
 
   &__name {
-    margin-left: 30px;
+    margin-left: 1.875rem;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   &__line {
-    width: 1px;
-    height: 30px;
-    margin-left: 30px;
+    width: 0.0625rem;
+    height: 1.875rem;
+    margin-left: 1.875rem;
     background: rgba(31, 32, 65, 0.1);
   }
 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 68.75rem) {
   .header {
 
     &__wrapper {
       width: auto;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
     }
 
     &__content {
@@ -109,7 +109,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
   .header {
 
     &__wrapper {
@@ -122,24 +122,24 @@
     }
 
     &__nav {
-      margin: 10px;
+      margin: 0.625rem;
     }
     &__item {
-      margin-right: 10px;
+      margin-right: 0.625rem;
 
       &_contains_arrow  {
-        margin-right: 10px;
+        margin-right: 0.625rem;
       }
     }
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
   .header {
 
     &__content {
       align-items: flex-start;
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
     
     &__nav {

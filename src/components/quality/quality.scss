@@ -3,13 +3,13 @@
   align-items: center;
 
   &__icon {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     color: $primary-color;
     background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
-    line-height: 41px;
+    line-height: 2.5625rem;
   }
 
   &__property {
