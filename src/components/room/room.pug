@@ -1,6 +1,6 @@
 include ../rate-button/rate-button.pug
 
-mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', comments = '100', image = 'room-img-1.jpg', slideCount = 4} = {})
+mixin room({classRoom = "", type = "", stars = 4, number = 100, cost = "5 555", comments = "100", image = "room-img-1.jpg", slideCount = 4} = {})
   .room 
     div(class="room__slide-image")
       img( class="room__image" src=`../../components/room/${image}` alt="room")
@@ -21,25 +21,25 @@ mixin room({classRoom = '', type = '', stars = 4, number = 100, cost = '5 555', 
       div(class="room__number-and-cost")
         if classRoom
           p(class="room__number")
-            = '№ '
+            = "№ "
             |
             span(class="room__numbers")= number
             |
-            span(class="room__luxe")= ' люкс'
+            span(class="room__luxe")= " люкс"
         else
           p(class="room__number")
-            = '№ '
+            = "№ "
             | 
             span(class="room__numbers")= number
         p(class="room__cost")
           span(class="room__cost-price")= cost
           span(class="room__cost-sign") c
-          span(class="room__cost-text")= ' в сутки'
+          span(class="room__cost-text")= " в сутки"
       div(class="room__line")
       div(class="room__stars-and-comments")
         div(class="room__stars")
           +rate-button(stars)
         p(class="room__comments")
           span(class="room__comments-count")= comments
-          span(class="room__comments-text")= ' Отзывов'
+          span(class="room__comments-text")= " Отзывов"
         

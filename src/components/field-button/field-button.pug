@@ -1,18 +1,18 @@
 include ../text-field/text-field.pug
-mixin field-button({text = '', opacity = '', focus = undefined, theme = '' } = {})
+mixin field-button({text = "", opacity = "", focus = undefined, theme = "" } = {})
   - 
     let obj = {
       text,
       borderOff: true
     };
-    let icon = 'keyboard_arrow_down';
-    let className = opacity ? ' field-button__icon_opacity_h' : '';
-    let parentClass = (focus !== false) ? ' js-field-button_focused' : '';
-    if(theme === 'gradient') {
-      icon = 'arrow_forward';
-      className += ' field-button__icon_color_gradient';
+    let icon = "keyboard_arrow_down";
+    let className = opacity ? " field-button__icon_opacity_h" : "";
+    let parentClass = (focus !== false) ? " js-field-button_focused" : "";
+    if(theme === "gradient") {
+      icon = "arrow_forward";
+      className += " field-button__icon_color_gradient";
     } else {
-      obj.opacity = 'high';
+      obj.opacity = "high";
     }
     
   div(class=`field-button js-field-button${parentClass}`)

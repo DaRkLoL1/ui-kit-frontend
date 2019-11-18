@@ -26,44 +26,44 @@ block body
         .elements__left-line
           .elements__text-field
             h3(class="elements__title") text field
-            +text-field({text: 'Email'})
+            +text-field({text: "Email"})
           .elements__dropdown-visitor
             h3(class="elements__title") dropdown
-            +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
+            +dropdown({type: "withButtons", arrTitles: ["взрослые", "дети", "младенцы"]})
           .elements__masked-text-field
             h3(class="elements__title") masked text field
-            +text-field({type: 'date'})
+            +text-field({type: "date"})
           .elements__date-dropdown
             .elements__titles
               h3(class="elements__title") date dropdown
               h3(class="elements__title") date dropdown
-            +calendar({dates: ['2019-08-19'], type: 'dropdown'})
+            +calendar({dates: ["2019-08-19"], type: "dropdown"})
           .elements__filter-date-dropdown
             h3(class="elements__title") filter date dropdown
-            +calendar({dates: ['2019-09-13','2019-09-16'], type: 'filter'})
+            +calendar({dates: ["2019-09-13","2019-09-16"], type: "filter"})
           .elements__subscription-text-field
             h3(class="elements__title") subscription text field
-            +field-button({text: 'Email', theme: 'gradient', type: 'email'})
+            +field-button({text: "Email", theme: "gradient", type: "email"})
           .elements__dropdown-furniture
             h3(class="elements__title") dropdown
-            +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
+            +dropdown({arrTitles: ["спальни", "кровати", "ванные комнаты"], arrDefaultNumbers: [2, 2, 0]})
           .elements__expandable-checkbox-list
             +expandable-checkbox-list({
-              text: 'expandable checkbox list',
-              arr: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь']
+              text: "expandable checkbox list",
+              arr: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор", "Шампунь", "Телевизор", "Шампунь"]
             })
         .elements__center-line
           .elements__checkbox-buttons
             +checkbox-buttons({
-              text: 'checkbox-buttons',
-              arr: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
+              text: "checkbox-buttons",
+              arr: ["Можно курить", "Можно с питомцами", "Можно пригласить гостей (до 10 человек)"]
             })
           .elements__radio-buttons
             h3(class="elements__title") radio buttons
             +radio-buttons
           .elements__toggle
             h3(class="elements__title") toggle
-            +switch({type: 'toggle', text: 'Получать спецпредложения'})
+            +switch({type: "toggle", text: "Получать спецпредложения"})
           .elements__like-button
             h3(class="elements__title") like-button
             +like-button(9)
@@ -72,46 +72,46 @@ block body
             +rate-button(4)
           .elements__rich-checkbox-buttons
             +rich-checkbox-buttons({
-              text: 'rich checkbox buttons', 
+              text: "rich checkbox buttons", 
               arr: [
                 {
-                  checkboxText: 'Широкий коридор',
-                  descriptor: 'Ширина коридоров в номере не менее 91 см.'
+                  checkboxText: "Широкий коридор",
+                  descriptor: "Ширина коридоров в номере не менее 91 см."
                 },
                 {
-                  checkboxText: 'Помощник для инвалидов',
-                  descriptor: 'На 1 этаже вас встретит специалист и проводит до номера.'
+                  checkboxText: "Помощник для инвалидов",
+                  descriptor: "На 1 этаже вас встретит специалист и проводит до номера."
                 }
               ]
             })
         .elements__right-line
           .elements__range-slider
-            +range-slider('range slider')
+            +range-slider("range slider")
           .elements__buttons
             h3(class="elements__title") buttons
             .elements__button.elements__button_medium
-              +button({size: 'medium', text: 'click me'})
+              +button({size: "medium", text: "click me"})
             .elements__button.elements__button_medium
-              +button({size: 'medium', style: 'ghost', text: 'click me'})
+              +button({size: "medium", style: "ghost", text: "click me"})
             .elements__button
-              +button({text: 'click me'})
-              +button({color: 'grey', text: 'click me'})
+              +button({text: "click me"})
+              +button({color: "grey", text: "click me"})
             .elements__button
-                +button({size: 'big', type: 'submit', text: 'перейти к оплате'})
+                +button({size: "big", type: "submit", text: "перейти к оплате"})
           .elements__pagination
             h3(class="elements__title") pagination
             +pagination
           .elements__bullet-list
             h3(class="elements__title") bullet-list
             +bullet-list([
-              'Нельзя с питомцами',
-              'Без вечеринок и мероприятий',
-              'Время прибытия — после 13:00, а выезд до 12:00'
+              "Нельзя с питомцами",
+              "Без вечеринок и мероприятий",
+              "Время прибытия — после 13:00, а выезд до 12:00"
             ])
       .elements__wrapper
         .elements__set-of-qualities
           +set-of-qualities
         .elements__comment
-          +comment({image: 'comment-img-1.png', name: 'Мурад Сарафанов', time: '5 дней назад', like: 11,
-            text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.' + 
-              ' И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+          +comment({image: "comment-img-1.png", name: "Мурад Сарафанов", time: "5 дней назад", like: 11,
+            text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий." + 
+              " И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})

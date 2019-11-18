@@ -1,11 +1,11 @@
 
-mixin button({size = '', style = '', type = '', text = '', color = ''} = {})
+mixin button({size = "", style = "", type = "", text = "", color = ""} = {})
   - 
-    let sizeButton = size ? ' button_size_' + size : '';
+    let sizeButton = size ? " button_size_" + size : "";
 
-    let styleButton = style ? ' button_style_ghost' : '';
+    let styleButton = style ? " button_style_ghost" : "";
 
-    let colorButton = color ? ' button_color_grey' : '';
+    let colorButton = color ? " button_color_grey" : "";
 
-    let typeButton = type ? 'submit' : 'button';
+    let typeButton = type ? "submit" : "button";
   button(class=`button${sizeButton}${styleButton}${colorButton}` type=typeButton)=text

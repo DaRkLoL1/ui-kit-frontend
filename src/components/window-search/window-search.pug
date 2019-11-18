@@ -8,9 +8,9 @@ mixin window-search
       h1(class="window-search__title") Найдём номера под ваши пожелания
       .window-search__arrival-departure
         h3(class="window-search__arrival-departure-title") прибытие выезд
-        +calendar({type: 'dropdown'})
+        +calendar({type: "dropdown"})
       .window-search__company
         h3(class="window-search__company-title") гости
-        +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы']})
+        +dropdown({type: "withButtons", arrTitles: ["взрослые", "дети", "младенцы"]})
       .window-search__button
-        +button({size: 'big', type: 'submit', text: 'подобрать номер'})
+        +button({size: "big", type: "submit", text: "подобрать номер"})

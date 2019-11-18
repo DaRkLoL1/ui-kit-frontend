@@ -14,15 +14,15 @@ block body
     .room-details__wrapper 
       +header({
         list: [
-          {text: 'О нас'},
-          {text: 'Услуги', style: 'containArrow'},
-          {text: 'Вакансии'},
-          {text: 'Новости'},
-          {text: 'Соглашения', style: 'containArrow'},
+          {text: "О нас"},
+          {text: "Услуги", style: "containArrow"},
+          {text: "Вакансии"},
+          {text: "Новости"},
+          {text: "Соглашения", style: "containArrow"},
         ],
         buttons: [
-          'войти',
-          'зарегистрироваться'
+          "войти",
+          "зарегистрироваться"
         ]
       })
       .room-details__images
@@ -40,7 +40,7 @@ block body
                   .room-details__set-of-qualities
                     +set-of-qualities
                   .room-details__quality
-                    +quality({icon: 'whatshot', header: 'Уют', text: 'Номер оснащён камином'})
+                    +quality({icon: "whatshot", header: "Уют", text: "Номер оснащён камином"})
                 .room-details__pie-chart
                   +pie-chart
               .room-details__comments
@@ -48,22 +48,22 @@ block body
                   h2(class="room-details__comments-title") Отзывы посетителей номера
                   p(class="room-details__comments-counter") 2 отзыва
                 .room-details__top-comment
-                  +comment({image: 'comment-img-1.png', name: 'Мурад Сарафанов', time: '5 дней назад', like: 11, 
-                    text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.' + 
-                      ' И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+                  +comment({image: "comment-img-1.png", name: "Мурад Сарафанов", time: "5 дней назад", like: 11, 
+                    text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий." + 
+                      " И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
                 .room-details__bottom-comment
-                  +comment({image: 'comment-img-2.png', name: 'Патрисия Стёклышкова', time: 'Неделю назад', like: 2,
-                    text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, ' + 
-                      'каждый день новое блюдо и десерт как комплимент'})
+                  +comment({image: "comment-img-2.png", name: "Патрисия Стёклышкова", time: "Неделю назад", like: 2,
+                    text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, " + 
+                      "каждый день новое блюдо и десерт как комплимент"})
             .room-details__booking
               +room-booking
           .room-details__rules-cancel
             .room-details__rules
               h2(class="room-details__rules-title") Правила
               +bullet-list([
-                'Нельзя с питомцами',
-                'Без вечеринок и мероприятий',
-                'Время прибытия — после 13:00, а выезд до 12:00'
+                "Нельзя с питомцами",
+                "Без вечеринок и мероприятий",
+                "Время прибытия — после 13:00, а выезд до 12:00"
               ])
             .room-details__cancel
               h2(class="room-details__cancel-title") Отмена

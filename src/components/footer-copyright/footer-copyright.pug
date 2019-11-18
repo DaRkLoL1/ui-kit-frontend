@@ -1,6 +1,6 @@
 include ../field-button/field-button.pug
 
-mixin footer-copyright({text = '', lists = [], subscribe = [], copyright = '' } = {}) 
+mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } = {}) 
   footer(class="footer-copyright")
     .footer-copyright__top-wrapper
       .footer-copyright__footer
@@ -21,12 +21,12 @@ mixin footer-copyright({text = '', lists = [], subscribe = [], copyright = '' } 
           h3(class="footer-copyright__subscribe-title")= subscribe[0]
           p(class="footer-copyright__subscribe-text")= subscribe[1]
           .footer-copyright__subscribe-input
-            +field-button({text: subscribe[2], theme: 'gradient', type: "email"})
+            +field-button({text: subscribe[2], theme: "gradient", type: "email"})
     .footer-copyright__bottom-wrapper
       .footer-copyright__copyright
         p(class="footer-copyright__text")= copyright
         .footer-copyright__icons
-          each val in ['twitter', 'facebook-square', 'instagram']
+          each val in ["twitter", "facebook-square", "instagram"]
             i(class=`footer-copyright__icon fab fa-${val}`)
 
 

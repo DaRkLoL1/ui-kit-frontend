@@ -17,82 +17,82 @@ block body
     .search-room__wrapper 
       +header({
         list: [
-          {text: 'О нас'},
-          {text: 'Услуги', style: 'containArrow'},
-          {text: 'Вакансии'},
-          {text: 'Новости'},
-          {text: 'Соглашения', style: 'containArrow'},
+          {text: "О нас"},
+          {text: "Услуги", style: "containArrow"},
+          {text: "Вакансии"},
+          {text: "Новости"},
+          {text: "Соглашения", style: "containArrow"},
         ],
         buttons: [
-          'войти',
-          'зарегистрироваться'
+          "войти",
+          "зарегистрироваться"
         ]
       })
       main.search-room__content
         .search-room__action  
           .search-room__datepicker
             h3(class="search-room__title") даты пребывания в отеле
-            +calendar({dates: ['2019-08-19','2019-08-23'], type: 'filter'})
+            +calendar({dates: ["2019-08-19","2019-08-23"], type: "filter"})
           .search-room__dropdown-visit
             h3(class="search-room__title") гости
-            +dropdown({type: 'withButtons', arrTitles: ['взрослые', 'дети', 'младенцы'], arrDefaultNumbers: [2, 1, 1]})
+            +dropdown({type: "withButtons", arrTitles: ["взрослые", "дети", "младенцы"], arrDefaultNumbers: [2, 1, 1]})
           .search-room__slider
-            +range-slider('диапазон цены')
+            +range-slider("диапазон цены")
             p(class="search-room__description") Стоимость за сутки пребывания в номере
           .search-room__checkbox-buttons
             +checkbox-buttons({
-              text: 'checkbox-buttons',
-              arr: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
+              text: "checkbox-buttons",
+              arr: ["Можно курить", "Можно с питомцами", "Можно пригласить гостей (до 10 человек)"]
             })
           .search-room__rich-checkbox-buttons
             +rich-checkbox-buttons({
-              text: 'доступность', 
+              text: "доступность", 
               arr: [
                 {
-                  checkboxText: 'Широкий коридор',
-                  descriptor: 'Ширина коридоров в номере не менее 91 см.'
+                  checkboxText: "Широкий коридор",
+                  descriptor: "Ширина коридоров в номере не менее 91 см."
                 },
                 {
-                  checkboxText: 'Помощник для инвалидов',
-                  descriptor: 'На 1 этаже вас встретит специалист и проводит до номера.'
+                  checkboxText: "Помощник для инвалидов",
+                  descriptor: "На 1 этаже вас встретит специалист и проводит до номера."
                 }
               ]
             })
           .search-room__dropdown-furniture
             h3(class="search-room__title") удобства номера
-            +dropdown({arrTitles: ['спальни', 'кровати', 'ванные комнаты'], arrDefaultNumbers: [2, 2, 0]})
+            +dropdown({arrTitles: ["спальни", "кровати", "ванные комнаты"], arrDefaultNumbers: [2, 2, 0]})
           .search-room__expandable-checkbox-list
             +expandable-checkbox-list({
-              text: 'дополнительные удобства',
-              arr: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь']
+              text: "дополнительные удобства",
+              arr: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор", "Шампунь", "Телевизор", "Шампунь"]
             })
         .search-room__numbers
           h1(class="search-room__main-title") Номера, которые мы для вас подобрали
           .search-room__rooms
             .search-room__room
-              +room({classRoom: 'luxe', type: 'main', stars: 5, number: 888, cost: '9 990', comments: '145', image: 'room-img-1.jpg'})
+              +room({classRoom: "luxe", type: "main", stars: 5, number: 888, cost: "9 990", comments: "145", image: "room-img-1.jpg"})
             .search-room__room
-              +room({stars: 4, number: 840, cost: '9 990', comments: '65', image: 'room-img-2.jpg'})
+              +room({stars: 4, number: 840, cost: "9 990", comments: "65", image: "room-img-2.jpg"})
             .search-room__room
-              +room({classRoom: 'luxe', stars: 3, number: 980, cost: '8 500', comments: '35', image: 'room-img-3.jpg'})
+              +room({classRoom: "luxe", stars: 3, number: 980, cost: "8 500", comments: "35", image: "room-img-3.jpg"})
             .search-room__room
-              +room({stars: 5, number: 856, cost: '7 300', comments: '19', image: 'room-img-4.jpg'})
+              +room({stars: 5, number: 856, cost: "7 300", comments: "19", image: "room-img-4.jpg"})
             .search-room__room
-              +room({stars: 4, number: 740, cost: '6 000', comments: '44', image: 'room-img-5.jpg'})
+              +room({stars: 4, number: 740, cost: "6 000", comments: "44", image: "room-img-5.jpg"})
             .search-room__room
-              +room({stars: 4, number: 982, cost: '5 800', comments: '56', image: 'room-img-6.jpg'})
+              +room({stars: 4, number: 982, cost: "5 800", comments: "56", image: "room-img-6.jpg"})
             .search-room__room
-              +room({stars: 5, number: 678, cost: '5 500', comments: '45', image: 'room-img-7.jpg'})
+              +room({stars: 5, number: 678, cost: "5 500", comments: "45", image: "room-img-7.jpg"})
             .search-room__room
-              +room({stars: 4, number: 450, cost: '5 300', comments: '39', image: 'room-img-8.jpg'})
+              +room({stars: 4, number: 450, cost: "5 300", comments: "39", image: "room-img-8.jpg"})
             .search-room__room
-              +room({stars: 3, number: 350, cost: '5 000', comments: '77', image: 'room-img-9.jpg'})
+              +room({stars: 3, number: 350, cost: "5 000", comments: "77", image: "room-img-9.jpg"})
             .search-room__room
-              +room({stars: 5, number: 666, cost: '5 000', comments: '25', image: 'room-img-10.jpg'})
+              +room({stars: 5, number: 666, cost: "5 000", comments: "25", image: "room-img-10.jpg"})
             .search-room__room
-              +room({stars: 3, number: 444, cost: '5 000', comments: '15', image: 'room-img-11.jpg'})
+              +room({stars: 3, number: 444, cost: "5 000", comments: "15", image: "room-img-11.jpg"})
             .search-room__room
-              +room({stars: 3, number: 352, cost: '5 000', comments: '55', image: 'room-img-12.jpg'})
+              +room({stars: 3, number: 352, cost: "5 000", comments: "55", image: "room-img-12.jpg"})
           .search-room__pagination
             +pagination
     include ../../components/block-footer/block-footer.pug

@@ -1,8 +1,8 @@
-mixin text-field({opacity = false, borderOff = false, text = '', type = 'text'} = {})
+mixin text-field({opacity = false, borderOff = false, text = "", type = "text"} = {})
   - 
-    var className = 'text-field'
-    className += opacity ? ' text-field_opacity_h' : ''
-    className += borderOff ? ' text-field_border_off js-text-field' : ''
+    var className = "text-field"
+    className += opacity ? " text-field_opacity_h" : ""
+    className += borderOff ? " text-field_border_off js-text-field" : ""
     className += type === "date" ? " text-field_text_upper" : ""
 
   input(type=type class=className placeholder=text)

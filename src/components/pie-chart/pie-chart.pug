@@ -9,10 +9,10 @@ mixin pie-chart
       ul(class="pie-chart__list")
         - 
           let arrColor = [
-            ['Великолепно', ''],
-            ['Хорошо', ' pie-chart__item_list-item_green'],
-            ['Удовлетворительно', ' pie-chart__item_list-item_purple'],
-            ['Разочарован', ' pie-chart__item_list-item_black'],
+            ["Великолепно", ""],
+            ["Хорошо", " pie-chart__item_list-item_green"],
+            ["Удовлетворительно", " pie-chart__item_list-item_purple"],
+            ["Разочарован", " pie-chart__item_list-item_black"],
           ]
         each val in arrColor
           li(class=`pie-chart__item${val[1]}`)= val[0]

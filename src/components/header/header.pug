@@ -1,6 +1,6 @@
 include ../button/button.pug
 
-mixin header({list = [], name = '', buttons = [], logged = false} = {})
+mixin header({list = [], name = "", buttons = [], logged = false} = {})
   header.header
     .header__wrapper
       img(src="../../components/header/logo.png" alt="logo")
@@ -8,8 +8,8 @@ mixin header({list = [], name = '', buttons = [], logged = false} = {})
         .header__nav
           ul.header__list
             each val in list
-              li(class=`header__item${val.style ? ' header__item_contains_arrow' : ''}`)
-                a(href="/mock-address/change-me" class=`header__link${val.weight ? ' header__link_weight_bold' : ''}${val.style ? ' header__link_contains_arrow' : ''}`)= val.text
+              li(class=`header__item${val.style ? " header__item_contains_arrow" : ""}`)
+                a(href="/mock-address/change-me" class=`header__link${val.weight ? " header__link_weight_bold" : ""}${val.style ? " header__link_contains_arrow" : ""}`)= val.text
         if logged
           .header__logged
             .header__line
@@ -17,6 +17,6 @@ mixin header({list = [], name = '', buttons = [], logged = false} = {})
         else 
           .header__buttons
             .header__login
-              +button({size: 'medium', style: 'ghost', text: buttons[0]})
+              +button({size: "medium", style: "ghost", text: buttons[0]})
             .header__register
-              +button({size: 'medium', text: buttons[1]})
+              +button({size: "medium", text: buttons[1]})
