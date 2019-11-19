@@ -20,7 +20,7 @@ mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } 
         .footer-copyright__subscribe
           h3(class="footer-copyright__subscribe-title")= subscribe[0]
           p(class="footer-copyright__subscribe-text")= subscribe[1]
-          .footer-copyright__subscribe-input
+          form.footer-copyright__subscribe-input
             +field-button({text: subscribe[2], theme: "gradient"})
     .footer-copyright__bottom-wrapper
       .footer-copyright__copyright
