@@ -49,6 +49,7 @@ const config = {
         exclude: [/fonts/],
         use: [
           'file-loader?name=./images/[name].[ext]',
+          'image-webpack-loader',
         ],
       },
       {
