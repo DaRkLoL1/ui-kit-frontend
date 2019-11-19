@@ -11,6 +11,7 @@ mixin field-button({text = "", opacity = "", focus = undefined, theme = "" } = {
     if(theme === "gradient") {
       icon = "arrow_forward";
       className += " field-button__icon_color_gradient";
+      obj.type = "email"
     } else {
       obj.opacity = "high";
     }
