@@ -1,4 +1,4 @@
-import './jquery.star.rating.min';
+import '../../vendors/jquery.star.rating.min';
 
 export default class RateButton {
   constructor(rate) {
