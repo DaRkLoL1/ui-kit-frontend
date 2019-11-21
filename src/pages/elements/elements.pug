@@ -3,6 +3,7 @@ block title
   title Form Elements
 block body
   include ../../components/text-field/text-field.pug
+  include ../../components/masked-text-field/masked-text-field.pug
   include ../../components/field-button/field-button.pug
   include ../../components/switch/switch.pug
   include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
@@ -32,7 +33,7 @@ block body
             +dropdown({type: "withButtons", arrTitles: ["взрослые", "дети", "младенцы"]})
           .elements__masked-text-field
             h3(class="elements__title") masked text field
-            +text-field({type: "date"})
+            +masked-text-field
           .elements__date-dropdown
             .elements__titles
               h3(class="elements__title") date dropdown
