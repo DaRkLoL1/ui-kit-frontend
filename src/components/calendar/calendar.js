@@ -41,8 +41,8 @@ export default class Calendar {
           const arrDates = formattedDate.split(',');
 
           if (arrDates.length === 1) {
-            $left.val('');
-            $right.val(arrDates[0]);
+            $left.val(arrDates[0]);
+            $right.val('');
           } else {
             $left.val(arrDates[0]);
             $right.val(arrDates[1]);
