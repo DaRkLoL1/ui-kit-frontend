@@ -64,7 +64,7 @@ export default class Calendar {
       });
 
     this.calendar = $textField.datepicker(this.param).data('datepicker');
-    this.calendar.$datepicker.css('width', '266px');
+    this.calendar.$datepicker.addClass('datepicker_width_small');
 
     this.setMethodShow();
   }

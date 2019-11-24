@@ -1,5 +1,5 @@
 include ../text-field/text-field.pug
-mixin field-button({text = "", opacity = "", focus = undefined, theme = "" } = {})
+mixin field-button({text = "", opacity = "", focus = undefined, theme = ""} = {})
   - 
     let obj = {
       text,
@@ -8,14 +8,16 @@ mixin field-button({text = "", opacity = "", focus = undefined, theme = "" } = {
     let icon = "keyboard_arrow_down";
     let className = opacity ? " field-button__icon_opacity_h" : "";
     let parentClass = (focus !== false) ? " js-field-button_focused" : "";
+    let type = "button";
     if(theme === "gradient") {
       icon = "arrow_forward";
       className += " field-button__icon_color_gradient";
-      obj.type = "email"
+      obj.type = "email";
+      type = "submit";
     } else {
       obj.opacity = "high";
     }
     
   div(class=`field-button js-field-button${parentClass}`)
     +text-field(obj)
-    button(class=`material-icons field-button__icon js-field-button__icon${className}`)= icon
+    button(type=type class=`material-icons field-button__icon js-field-button__icon${className}`)= icon
