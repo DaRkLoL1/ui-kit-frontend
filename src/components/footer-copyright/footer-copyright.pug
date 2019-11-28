@@ -26,8 +26,24 @@ mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } 
       .footer-copyright__copyright
         p(class="footer-copyright__text")= copyright
         .footer-copyright__icons
-          each val in ["twitter", "facebook-square", "instagram"]
-            i(class=`footer-copyright__icon fab fa-${val}`)
+          -
+            let network = [
+              {
+                way: "https://twitter.com/",
+                logo: "twitter",
+              },
+              {
+                way: "https://www.facebook.com/",
+                logo: "facebook-square",
+              },
+              {
+                way: "https://www.instagram.com/",
+                logo: "instagram",
+              },
+            ];
+          each val in network
+            a(href=val.way target="_blank")
+              i(class=`footer-copyright__icon fab fa-${val.logo}`)
 
 
 
