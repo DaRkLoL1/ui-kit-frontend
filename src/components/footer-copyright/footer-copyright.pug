@@ -8,8 +8,10 @@ mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } 
           img(class="footer-copyright__logo" src="../../images/logo.png" alt="logo")
           p(class="footer-copyright__text")= text
         .footer-copyright__lists
-          each value in lists
-            ul(class="footer-copyright__list")
+          - 
+            let titleList = ["navigation", "about", "support"];
+          each value, index in lists
+            ul(class=`footer-copyright__list footer-copyright__list_type_${titleList[index]}`)
               each val, i in value
                 if i === 0
                   li

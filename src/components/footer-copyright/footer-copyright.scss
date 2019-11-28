@@ -26,6 +26,7 @@
 
   &__description {
     width: 16.25rem; 
+    margin-right: 2.5rem;
   }
 
   &__text {
@@ -39,8 +40,7 @@
 
   &__lists {
     display: flex;
-    justify-content: space-around;
-    width: 55%;
+    justify-content: space-between;
     padding-top: 0.3125rem;
   }
 
@@ -48,7 +48,14 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    
+
+    &_type_navigation {
+      margin-right: 3.5625rem;
+    }
+
+    &_type_about {
+      margin-right: 5.75rem;
+    }
 
     &-title {
       margin-top: 0;
@@ -60,6 +67,7 @@
       line-height: 1.25;
       text-transform: uppercase;
       color: $title-color;
+      white-space: nowrap;
     }
 
     &-item{
@@ -79,6 +87,7 @@
 
   &__subscribe {
     width: 16.25rem;
+    margin-left: 3.1875rem;
     padding-top: 0.3125rem;
 
     &-title {
@@ -129,7 +138,35 @@
 
 }
 
-@media (max-width: 71.875rem) {
+@media (max-width: 84.375rem) {
+  .footer-copyright {
+    &__description {
+      margin-right: 0;
+    }
+
+    &__lists {
+      justify-content: space-between;
+      width: 45%;
+    }
+
+    &__list {
+      &_type_navigation {
+        margin-right: 0;
+      }
+  
+      &_type_about {
+        margin-right: 0;
+      }
+    }
+
+    &__subscribe {
+      margin-left: 0;
+    }
+  }
+
+}
+
+@media (max-width: 78.125rem) {
 
   .footer-copyright {
     &__footer {
