@@ -3,7 +3,7 @@ include ../like-button/like-button.pug
 mixin comment({image = "", name = "", time = "", text = "", like = 10} = {})
   .comment
     .comment__header  
-      img(class="comment__image" src=`../../components/comment/${image}` alt="image-visitor")
+      img(class="comment__image" src=`../../components/comment/images/${image}` alt="image-visitor")
       p(class="comment__name-and-time")
         span(class="comment__name")= name
         span(class="comment__time")= time

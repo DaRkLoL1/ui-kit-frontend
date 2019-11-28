@@ -16,7 +16,7 @@
   &__main-img {
     width: 68%;
     height: 100%;
-    background: url('./room-details-img-1.jpg');
+    background: url('./images/room-details-img-1.jpg');
     background-repeat: no-repeat;
   }
 
@@ -27,14 +27,13 @@
 
   &__secondary-top-img {
     height: 50%;
-    background: url('./room-details-img-2.jpg');
+    background: url('./images/room-details-img-2.jpg');
     background-repeat: no-repeat;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
   &__secondary-bottom-img {
     height: 50%;
-    background: url('./room-details-img-3.jpg');
+    background: url('./images/room-details-img-3.jpg');
     background-repeat: no-repeat;
   }
 

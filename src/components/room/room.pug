@@ -3,7 +3,7 @@ include ../rate-button/rate-button.pug
 mixin room({classRoom = "", type = "", stars = 4, number = 100, cost = "5 555", comments = "100", image = "room-img-1.jpg", slideCount = 4} = {})
   .room 
     div(class="room__slide-image")
-      img( class="room__image" src=`../../components/room/${image}` alt="room")
+      img( class="room__image" src=`../../components/room/images/${image}` alt="room")
       if type
         .room__slide-left-button
           i(class="material-icons room__left-arrow") expand_more
