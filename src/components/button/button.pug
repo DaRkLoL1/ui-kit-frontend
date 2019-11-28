@@ -1,5 +1,5 @@
 
-mixin button({size = "", style = "", type = "", text = "", color = ""} = {})
+mixin button({size = "", style = "", type = "", text = "", color = "", page = ""} = {})
   - 
     let sizeButton = size ? " button_size_" + size : "";
 
@@ -8,4 +8,7 @@ mixin button({size = "", style = "", type = "", text = "", color = ""} = {})
     let colorButton = color ? " button_color_grey" : "";
 
     let typeButton = type ? "submit" : "button";
-  button(class=`button${sizeButton}${styleButton}${colorButton}` type=typeButton)=text
+  if size === "medium"
+    a(href=`./${page}.html` class=`button${sizeButton}${styleButton}${colorButton}`)=text
+  else
+    button(class=`button${sizeButton}${styleButton}${colorButton}` type=typeButton)=text

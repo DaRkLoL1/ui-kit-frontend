@@ -17,6 +17,6 @@ mixin header({list = [], name = "", buttons = [], logged = false} = {})
         else 
           .header__buttons
             .header__login
-              +button({size: "medium", style: "ghost", text: buttons[0]})
+              +button({size: "medium", style: "ghost", page: "sign-in", text: buttons[0]})
             .header__register
-              +button({size: "medium", text: buttons[1]})
+              +button({size: "medium", page: "registration", text: buttons[1]})
