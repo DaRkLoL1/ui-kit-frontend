@@ -34,9 +34,8 @@
 
   &__pagination {
     width: 15rem;
-    margin-top: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2.25rem;
+    margin-left: 18.125rem;
   }
 
   &__main-title {
@@ -88,6 +87,12 @@
   }
 }
 
+@media (max-width: 88.125rem) {
+  .search-room__pagination {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @media (max-width: 68.75rem) {
   .search-room {

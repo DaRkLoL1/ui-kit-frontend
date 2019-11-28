@@ -78,7 +78,7 @@ const config = {
 
   devServer: {
     contentBase: './dist',
-    index: 'sign-in.html',
+    index: 'search-room.html',
   },
 };
 
