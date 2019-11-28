@@ -61,7 +61,7 @@
         font-family: 'Material Icons';
         font-size: 1.5rem;
         line-height: 1.0625rem;
-        vertical-align: middle;
+        vertical-align: bottom;
       }
     }
   }
@@ -93,7 +93,13 @@
 
 }
 
-@media (max-width: 68.75rem) {
+@media (max-width: 84.375rem) {
+  .header__content {
+    width: 75%;
+  }
+}
+
+@media (max-width: 75rem) {
   .header {
 
     &__wrapper {
@@ -101,15 +107,11 @@
       margin-left: 0.625rem;
       margin-right: 0.625rem;
     }
-
-    &__content {
-      width: 75%;
-    }
   }
 }
 
 
-@media (max-width: 56.25rem) {
+@media (max-width: 62.5rem) {
   .header {
 
     &__wrapper {
