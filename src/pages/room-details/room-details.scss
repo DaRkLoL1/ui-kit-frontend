@@ -42,15 +42,43 @@
     margin: auto;
     padding-top: 4.375rem;
     padding-bottom: 4.5625rem;
+
+    @media (max-width: 84.375rem) {
+      & {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+      }
+    }
+
+    @media (max-width: 25rem) {
+      & {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 
   &__main-content-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 68.75rem) {
+      & {
+        flex-direction: column;
+      }
+    }
   }
 
   &__info-and-feel {
     display: flex;
+
+    @media (max-width: 45.625rem) {
+      & {
+        flex-direction: column;
+      }
+    }
   }
 
   &__title {
@@ -66,11 +94,24 @@
 
   &__pie-chart {
     margin-left: 5rem;
+
+    @media (max-width: 45.625rem) {
+      & {
+        margin-left: 0;
+        margin-top: 1.25rem;
+      }   
+    }
   }
 
   &__comments {
     margin-top: 2.1875rem;
     width: 44.4375rem;
+
+    @media (max-width: 45.625rem) {
+      & {
+        width: 100%;
+       }
+    }
 
     &-wrapper {
       display: flex;
@@ -109,11 +150,29 @@
 
   &__booking {
     width: 23.75rem;
+
+    @media (max-width: 68.75rem) {
+      & {
+        margin-top: 1.875rem;
+      }
+    }
+
+    @media (max-width: 23.75rem) {
+      & {
+        width: 100%;
+      }
+    }
   }
 
   &__rules-cancel {
     display: flex;
     margin-top: 2.0625rem;
+
+    @media (max-width: 31.25rem) {
+      & {
+        flex-direction: column;
+      }
+    }
   }
 
   &__rules {
@@ -138,6 +197,19 @@
     margin-left: 6.25rem;
     width: 21.25rem;
 
+    @media (max-width: 31.25rem) {
+      & {
+        margin-left: 0;
+        margin-top: 0.625rem;
+      }
+    }
+
+    @media (max-width: 23.75rem) {
+      & {
+        width: 100%;
+      }
+    }
+
     &-title {
       margin-top: 0;
       margin-bottom: 1.3125rem;
@@ -156,81 +228,6 @@
       font-size: 0.875rem;
       line-height: 1.71;
       color: $label-color;
-    }
-  }
-}
-
-
-@media (max-width: 84.375rem) {
-  .room-details {
-
-    &__content {
-      width: 100%;
-      box-sizing: border-box;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
-    }
-  }
-}
-
-@media (max-width: 68.75rem) {
-  .room-details {
-
-    &__main-content-wrapper {
-      flex-direction: column;
-    }
-
-    &__booking {
-      margin-top: 1.875rem;
-    } 
-  }
-}
-
-@media (max-width: 45.625rem) {
-  .room-details {
-
-    &__comments {
-      width: 100%;
-   }
-
-    &__info-and-feel {
-      flex-direction: column;
-    }
-
-    &__pie-chart {
-      margin-left: 0;
-      margin-top: 1.25rem;
-    }
-  }
-}
-
-@media (max-width: 31.25rem) {
-  .room-details {
-
-    &__rules-cancel {
-      flex-direction: column;
-    }
-
-    &__cancel {
-      margin-left: 0;
-      margin-top: 0.625rem;
-    }
-  }
-}
-
-@media (max-width: 25rem) {
-  .room-details__content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 23.75rem) {
-  .room-details {
-    
-    &__booking,
-    &__cancel {
-      width: 100%;
     }
   }
 }
