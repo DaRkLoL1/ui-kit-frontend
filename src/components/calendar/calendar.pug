@@ -1,5 +1,5 @@
 include ../field-button/field-button.pug
-include ../button/button.pug
+include ../button-link/button-link.pug
 
 mixin calendar({dates = [], type = ""} = {})
   if type === "dropdown"
@@ -10,21 +10,21 @@ mixin calendar({dates = [], type = ""} = {})
         +field-button({text: "ДД.ММ.ГГГГ", focus: false})
       div(class="calendar__buttons js-calendar__buttons")
         div(class="js-calendar__clear-button calendar__clear-button")
-          +button({text: "очистить", color: "grey"})
+          +button-link({text: "очистить", color: "grey"})
         div(class="js-calendar__apply-button calendar__apply-button")
-          +button({text: "применить"})
+          +button-link({text: "применить"})
   else if type === "filter"
     div(class="calendar js-calendar js-calendar_type_filter" data-dates=dates) 
       +field-button({text: "ДД.ММ.ГГГГ", focus: false})
       div(class="calendar__buttons js-calendar__buttons")
         div(class="js-calendar__clear-button calendar__clear-button")
-          +button({text: "очистить", color: "grey"})
+          +button-link({text: "очистить", color: "grey"})
         div(class="js-calendar__apply-button calendar__apply-button")
-          +button({text: "применить"})
+          +button-link({text: "применить"})
   else
     div(class="calendar js-calendar" data-dates=dates)
       div(class="calendar__buttons js-calendar__buttons")
         div(class="js-calendar__clear-button calendar__clear-button")
-          +button({text: "очистить", color: "grey"})
+          +button-link({text: "очистить", color: "grey"})
         div(class="js-calendar__apply-button calendar__apply-button")
-          +button({text: "применить"})
+          +button-link({text: "применить"})

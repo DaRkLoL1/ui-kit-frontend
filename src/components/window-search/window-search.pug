@@ -1,6 +1,6 @@
 include ../calendar/calendar.pug
 include ../dropdown/dropdown.pug
-include ../button/button.pug
+include ../button-link/button-link.pug
 
 mixin window-search 
   form(class="window-search" action="search-room.html")
@@ -13,4 +13,4 @@ mixin window-search
         h3(class="window-search__company-title") гости
         +dropdown({type: "withButtons", arrTitles: ["взрослые", "дети", "младенцы"]})
       .window-search__button
-        +button({size: "big", type: "submit", text: "подобрать номер"})
+        +button-link({size: "big", type: "submit", text: "подобрать номер"})

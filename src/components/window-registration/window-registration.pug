@@ -1,7 +1,7 @@
 include ../text-field/text-field.pug
 include ../masked-text-field/masked-text-field.pug
 include ../switch/switch.pug
-include ../button/button.pug
+include ../button-link/button-link.pug
 include ../radio-buttons/radio-buttons.pug
 
 mixin window-registration
@@ -27,11 +27,11 @@ mixin window-registration
       .window-registration__toggle
         +switch({type: "toggle", text: "Получать спецпредложения"})
       .window-registration__submit
-        +button({size: "big", type: "submit", text: "перейти к оплате"})
+        +button-link({size: "big", type: "submit", text: "перейти к оплате"})
       .window-registration__footer
         p(class="window-registration__text") Уже есть аккаунт на Toxin
-        .window-registration__button  
-          +button({size: "medium", style: "ghost", text: "войти", page: "sign-in"})
+        .window-registration__link 
+          +button-link({size: "medium", style: "ghost", text: "войти", page: "sign-in"})
 
 
         

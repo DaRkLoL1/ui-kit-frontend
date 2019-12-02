@@ -14,7 +14,7 @@ block body
   include ../../components/checkbox-buttons/checkbox-buttons.pug
   include ../../components/bullet-list/bullet-list.pug
   include ../../components/dropdown/dropdown.pug
-  include ../../components/button/button.pug 
+  include ../../components/button-link/button-link.pug 
   include ../../components/set-of-qualities/set-of-qualities.pug
   include ../../components/radio-buttons/radio-buttons.pug
   include ../../components/pagination/pagination.pug
@@ -91,14 +91,14 @@ block body
           .elements__buttons
             h3(class="elements__title") buttons
             .elements__button.elements__button_medium
-              +button({size: "medium", text: "click me"})
+              +button-link({size: "medium", text: "click me"})
             .elements__button.elements__button_medium
-              +button({size: "medium", style: "ghost", text: "click me"})
+              +button-link({size: "medium", style: "ghost", text: "click me"})
             .elements__button
-              +button({text: "click me"})
-              +button({color: "grey", text: "click me"})
+              +button-link({text: "click me", page: "index.html"})
+              +button-link({color: "grey", text: "click me"})
             .elements__button
-                +button({size: "big", type: "submit", text: "перейти к оплате"})
+              +button-link({size: "big", type: "submit", text: "перейти к оплате"})
           .elements__pagination
             h3(class="elements__title") pagination
             +pagination
