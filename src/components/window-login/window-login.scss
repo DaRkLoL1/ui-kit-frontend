@@ -6,6 +6,12 @@
   box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
 
+  @media (max-width: 20.625rem) {
+    & {
+      border: none;
+    }
+  }
+
   &__wrapper {
     width: 20rem;
     margin: auto;
@@ -57,10 +63,4 @@
     z-index: 1;
   }
 
-}
-
-@media (max-width: 20.625rem) {
-  .window-login {
-    border: none;
-  }
 }

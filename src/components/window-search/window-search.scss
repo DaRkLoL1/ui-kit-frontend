@@ -6,6 +6,12 @@
   box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
 
+  @media (max-width: 20.625rem) {
+    & {
+      border: none;
+    }
+  }
+
   &__wrapper {
     width: 20rem;
     margin: auto;
@@ -59,11 +65,5 @@
 
   &__button {
     margin-top: 1.9375rem;
-  }
-}
-
-@media (max-width: 20.625rem) {
-  .window-search {
-    border: none;
   }
 }
