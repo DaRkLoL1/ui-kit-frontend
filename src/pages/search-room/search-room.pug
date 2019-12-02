@@ -70,7 +70,8 @@ block body
           h1(class="search-room__main-title") Номера, которые мы для вас подобрали
           .search-room__rooms
             .search-room__room
-              +room({classRoom: "luxe", type: "main", stars: 5, number: 888, cost: "9 990", comments: "145", image: "room-img-1.jpg"})
+              a(href="room-details.html" class="search-room__link")
+                +room({classRoom: "luxe", type: "main", stars: 5, number: 888, cost: "9 990", comments: "145", image: "room-img-1.jpg"})
             .search-room__room
               +room({stars: 4, number: 840, cost: "9 990", comments: "65", image: "room-img-2.jpg"})
             .search-room__room
