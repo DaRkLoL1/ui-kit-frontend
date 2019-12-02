@@ -15,11 +15,11 @@
     margin: auto;
     padding-top: 1.875rem;
     padding-bottom: 1.625rem;
+
+    @media (max-width: 23.75rem) {
+      & {
+        width: 100%;
+      }
+    } 
   }
 }
-
-@media (max-width: 23.75rem) {
-  .registration__window {
-    width: 100%;
-  }
-} 
