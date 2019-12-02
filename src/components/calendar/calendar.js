@@ -87,14 +87,14 @@ export default class Calendar {
 
   setMethodShow() {
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      this.$datepicker.find('.js-calendar__input').on('click', () => {
-        this.calendar.show();
-      });
+      this.$datepicker.find('.js-calendar__input').on('click', this.handleShowCalendarClick.bind(this));
     } else {
-      this.$datepicker.on('click', () => {
-        this.calendar.show();
-      });
+      this.$datepicker.on('click', this.handleShowCalendarClick.bind(this));
     }
+  }
+
+  handleShowCalendarClick() {
+    this.calendar.show();
   }
 
   addButtons() {
@@ -108,12 +108,16 @@ export default class Calendar {
   }
 
   addHandleButtons($clear, $apply) {
-    $clear.on('click', () => {
-      this.calendar.clear();
-    });
+    $clear.on('click', this.handleButtonClearClick.bind(this));
 
-    $apply.on('click', () => {
-      this.calendar.hide();
-    });
+    $apply.on('click', this.handleButtonApplyClick.bind(this));
+  }
+
+  handleButtonClearClick() {
+    this.calendar.clear();
+  }
+
+  handleButtonApplyClick() {
+    this.calendar.hide();
   }
 }

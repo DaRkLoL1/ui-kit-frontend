@@ -4,17 +4,19 @@ export default class Switch {
   }
 
   addHandleClick() {
-    $('.js-switch').on('click', (event) => {
-      const $target = $(event.currentTarget);
-      const $input = $target.find('.js-switch__input');
-      if (!($input.attr('type') === 'checkbox')) return;
+    $('.js-switch').on('click', this.handleSwitchClick);
+  }
 
-      const className = $target.hasClass('switch_checkbox') ? 'switch_checkbox' : 'switch_toggle';
-      if ($input.prop('checked')) {
-        $target.addClass(`${className}_checked`);
-      } else {
-        $target.removeClass(`${className}_checked`);
-      }
-    });
+  handleSwitchClick(event) {
+    const $target = $(event.currentTarget);
+    const $input = $target.find('.js-switch__input');
+    if (!($input.attr('type') === 'checkbox')) return;
+
+    const className = $target.hasClass('switch_checkbox') ? 'switch_checkbox' : 'switch_toggle';
+    if ($input.prop('checked')) {
+      $target.addClass(`${className}_checked`);
+    } else {
+      $target.removeClass(`${className}_checked`);
+    }
   }
 }

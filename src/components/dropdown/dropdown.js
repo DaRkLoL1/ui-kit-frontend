@@ -29,20 +29,27 @@ export default class Dropdown {
   }
 
   addHandlesForButtons($buttons, $clear, $apply) {
-    $buttons.on('click', (event) => {
-      event.stopPropagation();
-    });
+    $buttons.on('click', this.handleButtonsClick);
 
-    $clear.on('click', () => {
-      while (Number.parseInt(this.$dropdown.find('.counter').text(), 10) !== 0) {
-        this.$dropdown.find('.button-decrement').trigger('click');
-      }
-    });
+    $clear.on('click', this.handleButonClearClick.bind(this));
 
-    $apply.on('click', () => {
-      this.$dropdown.find('.iqdropdown').trigger('click');
-    });
+    $apply.on('click', this.handleButtonApplyClick.bind(this));
+
     this.$dropdown.find('.iqdropdown-menu').append($buttons);
+  }
+
+  handleButtonsClick(event) {
+    event.stopPropagation();
+  }
+
+  handleButonClearClick() {
+    while (Number.parseInt(this.$dropdown.find('.counter').text(), 10) !== 0) {
+      this.$dropdown.find('.button-decrement').trigger('click');
+    }
+  }
+
+  handleButtonApplyClick() {
+    this.$dropdown.find('.iqdropdown').trigger('click');
   }
 
   checkOnNull(arrCount) {

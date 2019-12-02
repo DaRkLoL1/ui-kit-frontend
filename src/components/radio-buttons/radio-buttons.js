@@ -11,18 +11,20 @@ export default class RadioButtons {
   }
 
   addHandleClick() {
-    this.$radio.on('click', (event) => {
-      const $target = $(event.target);
-      if ($target.hasClass('js-radio-buttons')) return;
-      $target.find('.js-switch__input').prop('checked', true);
-      $target.addClass('switch_radio_checked');
+    this.$radio.on('click', this.handleRadioClick.bind(this));
+  }
 
-      this.$arrRadio.each((i, radioItem) => {
-        const $radioItem = $(radioItem);
-        if (!($radioItem.find('.js-switch__input').prop('checked'))) {
-          $radioItem.removeClass('switch_radio_checked');
-        }
-      });
+  handleRadioClick(event) {
+    const $target = $(event.target);
+    if ($target.hasClass('js-radio-buttons')) return;
+    $target.find('.js-switch__input').prop('checked', true);
+    $target.addClass('switch_radio_checked');
+
+    this.$arrRadio.each((i, radioItem) => {
+      const $radioItem = $(radioItem);
+      if (!($radioItem.find('.js-switch__input').prop('checked'))) {
+        $radioItem.removeClass('switch_radio_checked');
+      }
     });
   }
 }
