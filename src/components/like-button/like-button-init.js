@@ -1,3 +1,6 @@
 import Like from './like-button';
 
-new Like();
+const likes = document.querySelectorAll('.js-like-button');
+likes.forEach((like) => {
+  new Like(like);
+});

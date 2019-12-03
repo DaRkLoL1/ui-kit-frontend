@@ -8,7 +8,7 @@ export default class Calendar {
   }
 
   createDatepicker() {
-    this.param = {
+    this.defaultParameters = {
       range: true,
       offset: 16,
       prevHtml: '<i class="material-icons">arrow_back</i>',
@@ -33,23 +33,24 @@ export default class Calendar {
     const $left = this.$datepicker.find('.js-calendar__left-input .js-text-field');
     const $right = this.$datepicker.find('.js-calendar__right-input .js-text-field');
 
-    this.param = Object.assign(this.param,
-      {
-        altField: $right,
-        altFieldDateFormat: '',
-        onSelect(formattedDate) {
-          const arrDates = formattedDate.split(',');
+    const dropdownParameters = {
+      ...this.defaultParameters,
+      altField: $right,
+      altFieldDateFormat: '',
+      onSelect(formattedDate) {
+        const arrDates = formattedDate.split(',');
 
-          if (arrDates.length === 1) {
-            $left.val(arrDates[0]);
-            $right.val('');
-          } else {
-            $left.val(arrDates[0]);
-            $right.val(arrDates[1]);
-          }
-        },
-      });
-    this.calendar = $left.datepicker(this.param).data('datepicker');
+        if (arrDates.length === 1) {
+          $left.val(arrDates[0]);
+          $right.val('');
+        } else {
+          $left.val(arrDates[0]);
+          $right.val(arrDates[1]);
+        }
+      },
+    };
+
+    this.calendar = $left.datepicker(dropdownParameters).data('datepicker');
 
     this.setMethodShow();
   }
@@ -57,20 +58,20 @@ export default class Calendar {
   createFilterDatepicker() {
     const $textField = this.$datepicker.find('.js-text-field');
 
-    this.param = Object.assign(this.param,
-      {
-        multipleDatesSeparator: ' - ',
-        dateFormat: 'dd M',
-      });
+    const FilterParameters = {
+      ...this.defaultParameters,
+      multipleDatesSeparator: ' - ',
+      dateFormat: 'dd M',
+    };
 
-    this.calendar = $textField.datepicker(this.param).data('datepicker');
+    this.calendar = $textField.datepicker(FilterParameters).data('datepicker');
     this.calendar.$datepicker.addClass('datepicker_width_small');
 
     this.setMethodShow();
   }
 
   createInlineDatepicker() {
-    this.calendar = this.$datepicker.datepicker(this.param).data('datepicker');
+    this.calendar = this.$datepicker.datepicker(this.defaultParameters).data('datepicker');
   }
 
   setDate() {

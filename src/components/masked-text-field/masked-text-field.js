@@ -17,10 +17,10 @@ export default class Mask {
         O: { pattern: /[0-1]/ },
         K: { pattern: /[0-9]/ },
       },
-      onKeyPress(val, e, field, options) {
-        const obj = Mask.createMaskOption(val);
+      onKeyPress(value, e, field, options) {
+        const patternObject = Mask.createMaskOption(value);
         field.mask('AB.SR.YXOK', {
-          translation: obj,
+          translation: patternObject,
           onKeyPress: options.onKeyPress,
         });
       },
