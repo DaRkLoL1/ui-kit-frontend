@@ -3,8 +3,8 @@ import 'item-quantity-dropdown/lib/item-quantity-dropdown.min';
 export default class Dropdown {
   constructor(dropdown) {
     this.$dropdown = $(dropdown);
-    this.addButtons();
     this.createDropdown();
+    this.addButtons();
   }
 
   createDropdown() {
@@ -21,31 +21,41 @@ export default class Dropdown {
 
   addButtons() {
     if (this.$dropdown.hasClass('js-dropdown_with-buttons')) {
-      const $buttons = this.$dropdown.find('.js-dropdown__buttons');
-      const $clear = $buttons.find('.js-dropdown__clear-button');
-      const $apply = $buttons.find('.js-dropdown__apply-button');
-      this.addHandlesForButtons($buttons, $clear, $apply);
+      const $fieldForbuttons = this.$dropdown.find('.js-dropdown__buttons');
+      const $clear = $fieldForbuttons.find('.js-dropdown__clear-button');
+      const $apply = $fieldForbuttons.find('.js-dropdown__apply-button');
+      this.$counterVisitors = this.$dropdown.find('.counter');
+      this.addHandlesForButtons($fieldForbuttons, $clear, $apply);
     }
   }
 
-  addHandlesForButtons($buttons, $clear, $apply) {
-    $buttons.on('click', this.handleButtonsClick);
+  addHandlesForButtons($fieldForbuttons, $clear, $apply) {
+    $fieldForbuttons.on('click', this.handlefieldForbuttonsClick);
 
     $clear.on('click', this.handleButonClearClick.bind(this));
 
     $apply.on('click', this.handleButtonApplyClick.bind(this));
 
-    this.$dropdown.find('.iqdropdown-menu').append($buttons);
+    this.$dropdown.find('.iqdropdown-menu').append($fieldForbuttons);
   }
 
-  handleButtonsClick(event) {
+  handlefieldForbuttonsClick(event) {
     event.stopPropagation();
   }
 
   handleButonClearClick() {
-    while (Number.parseInt(this.$dropdown.find('.counter').text(), 10) !== 0) {
+    let isTrue = true;
+    do {
+      let count = 0;
       this.$dropdown.find('.button-decrement').trigger('click');
-    }
+      this.$counterVisitors.each((i, counter) => {
+        count += Number.parseInt(counter.innerHTML, 10);
+      });
+
+      if (count === 0) {
+        isTrue = false;
+      }
+    } while (isTrue);
   }
 
   handleButtonApplyClick() {
