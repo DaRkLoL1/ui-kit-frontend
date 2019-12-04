@@ -1,6 +1,7 @@
 export default class Switch {
-  constructor(switchItem) {
+  constructor(switchItem, index) {
     this.$switch = $(switchItem);
+    this.index = index;
     this.createSwitch();
   }
 
@@ -10,7 +11,7 @@ export default class Switch {
   }
 
   addHandleClick() {
-    this.$switch.on('click', this.handleSwitchClick.bind(this));
+    this.$switch.on(`click.switch${this.index}`, this.handleSwitchClick.bind(this));
   }
 
   handleSwitchClick(event) {

@@ -1,8 +1,9 @@
 import 'air-datepicker';
 
 export default class Calendar {
-  constructor(datepicker) {
+  constructor(datepicker, index) {
     this.$datepicker = $(datepicker);
+    this.index = index;
     this.createDatepicker();
     this.addButtons();
   }
@@ -88,9 +89,9 @@ export default class Calendar {
 
   setMethodShow() {
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      this.$datepicker.find('.js-calendar__input').on('click', this.handleShowCalendarClick.bind(this));
+      this.$datepicker.find('.js-calendar__input').on(`click.input${this.index}`, this.handleShowCalendarClick.bind(this));
     } else {
-      this.$datepicker.on('click', this.handleShowCalendarClick.bind(this));
+      this.$datepicker.on(`click.calendar${this.index}`, this.handleShowCalendarClick.bind(this));
     }
   }
 
@@ -109,9 +110,9 @@ export default class Calendar {
   }
 
   addHandleButtons($clear, $apply) {
-    $clear.on('click', this.handleButtonClearClick.bind(this));
+    $clear.on(`click.clearButton${this.index}`, this.handleButtonClearClick.bind(this));
 
-    $apply.on('click', this.handleButtonApplyClick.bind(this));
+    $apply.on(`click.applyButton${this.index}`, this.handleButtonApplyClick.bind(this));
   }
 
   handleButtonClearClick() {

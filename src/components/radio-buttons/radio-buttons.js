@@ -11,7 +11,7 @@ export default class RadioButtons {
   }
 
   addHandleClick() {
-    this.$radio.on('click', this.handleRadioClick.bind(this));
+    this.$radio.on('click.radioButtons', this.handleRadioClick.bind(this));
   }
 
   handleRadioClick(event) {

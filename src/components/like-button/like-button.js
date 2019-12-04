@@ -1,6 +1,7 @@
 export default class Like {
-  constructor(like) {
+  constructor(like, index) {
     this.$like = $(like);
+    this.index = index;
     this.createLike();
   }
 
@@ -11,7 +12,7 @@ export default class Like {
   }
 
   addHandleClick() {
-    this.$like.on('click', this.handleLikeClick.bind(this));
+    this.$like.on(`click.likeButton${this.index}`, this.handleLikeClick.bind(this));
   }
 
   handleLikeClick(event) {

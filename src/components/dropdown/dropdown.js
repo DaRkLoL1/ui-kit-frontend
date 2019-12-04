@@ -1,8 +1,9 @@
 import 'item-quantity-dropdown/lib/item-quantity-dropdown.min';
 
 export default class Dropdown {
-  constructor(dropdown) {
+  constructor(dropdown, index) {
     this.$dropdown = $(dropdown);
+    this.index = index;
     this.createDropdown();
     this.addButtons();
   }
@@ -30,11 +31,11 @@ export default class Dropdown {
   }
 
   addHandlesForButtons($fieldForbuttons, $clear, $apply) {
-    $fieldForbuttons.on('click', this.handlefieldForbuttonsClick);
+    $fieldForbuttons.on(`click.buttons${this.index}`, this.handlefieldForbuttonsClick);
 
-    $clear.on('click', this.handleButonClearClick.bind(this));
+    $clear.on(`click.clearButton${this.index}`, this.handleButonClearClick.bind(this));
 
-    $apply.on('click', this.handleButtonApplyClick.bind(this));
+    $apply.on(`click.applyButton${this.index}`, this.handleButtonApplyClick.bind(this));
 
     this.$dropdown.find('.iqdropdown-menu').append($fieldForbuttons);
   }

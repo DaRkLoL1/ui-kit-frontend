@@ -11,7 +11,7 @@ export default class CheckboxList {
   }
 
   addHandleClick() {
-    $('.js-expandable-checkbox-list__dropdown').on('click', this.handleCheckboxListClick.bind(this));
+    this.$checkboxList.on('click.dropdown', this.handleCheckboxListClick.bind(this));
   }
 
   handleCheckboxListClick() {
