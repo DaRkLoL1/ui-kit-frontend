@@ -23,28 +23,28 @@ export default class Dropdown {
   addButtons() {
     if (this.$dropdown.hasClass('js-dropdown_with-buttons')) {
       const $fieldForbuttons = this.$dropdown.find('.js-dropdown__buttons');
-      const $clear = $fieldForbuttons.find('.js-dropdown__clear-button');
-      const $apply = $fieldForbuttons.find('.js-dropdown__apply-button');
+      const $clearButton = $fieldForbuttons.find('.js-dropdown__clear-button');
+      const $applyButton = $fieldForbuttons.find('.js-dropdown__apply-button');
       this.$counterVisitors = this.$dropdown.find('.counter');
-      this.addHandlesForButtons($fieldForbuttons, $clear, $apply);
+      this.addHandlesForButtons($fieldForbuttons, $clearButton, $applyButton);
     }
   }
 
-  addHandlesForButtons($fieldForbuttons, $clear, $apply) {
-    $fieldForbuttons.on(`click.buttons${this.index}`, this.handlefieldForbuttonsClick);
+  addHandlesForButtons($fieldForbuttons, $clearButton, $applyButton) {
+    $fieldForbuttons.on(`click.buttons${this.index}`, this.handleButtonsClick);
 
-    $clear.on(`click.clearButton${this.index}`, this.handleButonClearClick.bind(this));
+    $clearButton.on(`click.clearButton${this.index}`, this.handleClearButtonClick.bind(this));
 
-    $apply.on(`click.applyButton${this.index}`, this.handleButtonApplyClick.bind(this));
+    $applyButton.on(`click.applyButton${this.index}`, this.handleApplyButtonClick.bind(this));
 
     this.$dropdown.find('.iqdropdown-menu').append($fieldForbuttons);
   }
 
-  handlefieldForbuttonsClick(event) {
+  handleButtonsClick(event) {
     event.stopPropagation();
   }
 
-  handleButonClearClick() {
+  handleClearButtonClick() {
     let isTrue = true;
     do {
       let count = 0;
@@ -59,7 +59,7 @@ export default class Dropdown {
     } while (isTrue);
   }
 
-  handleButtonApplyClick() {
+  handleApplyButtonClick() {
     this.$dropdown.find('.iqdropdown').trigger('click');
   }
 
@@ -99,14 +99,14 @@ export default class Dropdown {
       }
     });
 
-    const $clear = this.$dropdown.find('.js-dropdown__clear-button');
+    const $clearButton = this.$dropdown.find('.js-dropdown__clear-button');
 
     if (this.text.length > 0) {
       this.text = this.text.slice(0, this.text.length - 2);
-      $clear.removeClass('dropdown__clear-button_hide_clean');
+      $clearButton.removeClass('dropdown__clear-button_hide_clean');
     } else {
       this.text = 'Сколько гостей';
-      $clear.addClass('dropdown__clear-button_hide_clean');
+      $clearButton.addClass('dropdown__clear-button_hide_clean');
     }
   }
 

@@ -11,10 +11,10 @@ export default class RadioButtons {
   }
 
   addHandleClick() {
-    this.$radio.on('click.radioButtons', this.handleRadioClick.bind(this));
+    this.$radio.on('click.radioButtons', this.handleRadioButtonsClick.bind(this));
   }
 
-  handleRadioClick(event) {
+  handleRadioButtonsClick(event) {
     const $target = $(event.target);
     if ($target.hasClass('js-radio-buttons')) return;
     $target.find('.js-switch__input').prop('checked', true);

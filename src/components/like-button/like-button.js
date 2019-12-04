@@ -12,10 +12,10 @@ export default class Like {
   }
 
   addHandleClick() {
-    this.$like.on(`click.likeButton${this.index}`, this.handleLikeClick.bind(this));
+    this.$like.on(`click.likeButton${this.index}`, this.handleLikeButtonClick.bind(this));
   }
 
-  handleLikeClick(event) {
+  handleLikeButtonClick(event) {
     const $target = $(event.currentTarget);
     let text = Number.parseInt(this.$number.text(), 10);
     if (!($target.hasClass('like-button_click'))) {

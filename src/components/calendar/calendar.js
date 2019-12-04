@@ -31,27 +31,27 @@ export default class Calendar {
   }
 
   createDropdownDatepicker() {
-    const $left = this.$datepicker.find('.js-calendar__left-input .js-text-field');
-    const $right = this.$datepicker.find('.js-calendar__right-input .js-text-field');
+    const $arrivalField = this.$datepicker.find('.js-calendar__left-input .js-text-field');
+    const $departureField = this.$datepicker.find('.js-calendar__right-input .js-text-field');
 
     const dropdownParameters = {
       ...this.defaultParameters,
-      altField: $right,
+      altField: $departureField,
       altFieldDateFormat: '',
       onSelect(formattedDate) {
         const arrDates = formattedDate.split(',');
 
         if (arrDates.length === 1) {
-          $left.val(arrDates[0]);
-          $right.val('');
+          $arrivalField.val(arrDates[0]);
+          $departureField.val('');
         } else {
-          $left.val(arrDates[0]);
-          $right.val(arrDates[1]);
+          $arrivalField.val(arrDates[0]);
+          $departureField.val(arrDates[1]);
         }
       },
     };
 
-    this.calendar = $left.datepicker(dropdownParameters).data('datepicker');
+    this.calendar = $arrivalField.datepicker(dropdownParameters).data('datepicker');
 
     this.setMethodShow();
   }
@@ -89,37 +89,41 @@ export default class Calendar {
 
   setMethodShow() {
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      this.$datepicker.find('.js-calendar__input').on(`click.input${this.index}`, this.handleShowCalendarClick.bind(this));
+      this.$datepicker.find('.js-calendar__input').on(`click.input${this.index}`, this.handleInputClick.bind(this));
     } else {
-      this.$datepicker.on(`click.calendar${this.index}`, this.handleShowCalendarClick.bind(this));
+      this.$datepicker.on(`click.calendar${this.index}`, this.handleCalendarClick.bind(this));
     }
   }
 
-  handleShowCalendarClick() {
+  handleInputClick() {
+    this.calendar.show();
+  }
+
+  handleCalendarClick() {
     this.calendar.show();
   }
 
   addButtons() {
     const $buttons = this.$datepicker.find('.js-calendar__buttons');
-    const $clear = this.$datepicker.find('.js-calendar__clear-button');
-    const $apply = this.$datepicker.find('.js-calendar__apply-button');
+    const $clearButton = this.$datepicker.find('.js-calendar__clear-button');
+    const $applyButton = this.$datepicker.find('.js-calendar__apply-button');
 
-    this.addHandleButtons($clear, $apply);
+    this.addHandleButtons($clearButton, $applyButton);
 
     this.calendar.$datepicker.append($buttons);
   }
 
-  addHandleButtons($clear, $apply) {
-    $clear.on(`click.clearButton${this.index}`, this.handleButtonClearClick.bind(this));
+  addHandleButtons($clearButton, $applyButton) {
+    $clearButton.on(`click.clearButton${this.index}`, this.handleClearButtonClick.bind(this));
 
-    $apply.on(`click.applyButton${this.index}`, this.handleButtonApplyClick.bind(this));
+    $applyButton.on(`click.applyButton${this.index}`, this.handleApplyButtonClick.bind(this));
   }
 
-  handleButtonClearClick() {
+  handleClearButtonClick() {
     this.calendar.clear();
   }
 
-  handleButtonApplyClick() {
+  handleApplyButtonClick() {
     this.calendar.hide();
   }
 }

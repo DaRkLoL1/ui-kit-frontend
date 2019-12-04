@@ -18,36 +18,36 @@ export default class Field {
   }
 
   addHandleFocus() {
-    this.$textField.on(`focus.textField${this.index}`, this.handleFieldFocus.bind(this));
+    this.$textField.on(`focus.textField${this.index}`, this.handleTextFieldFocus.bind(this));
   }
 
-  handleFieldFocus() {
+  handleTextFieldFocus() {
     this.$field.addClass('field-button_isFocused');
     this.$fieldButton.addClass('field-button__icon_isFocused');
   }
 
   addHandleBlur() {
-    this.$textField.on(`blur.textField${this.index}`, this.handleFieldBlur.bind(this));
+    this.$textField.on(`blur.textField${this.index}`, this.handleTextFieldBlur.bind(this));
   }
 
-  handleFieldBlur() {
+  handleTextFieldBlur() {
     this.$field.removeClass('field-button_isFocused');
     this.$fieldButton.removeClass('field-button__icon_isFocused');
   }
 
   addHandleMouseEnter() {
-    this.$fieldButton.on(`mouseenter.icon${this.index}`, this.handleFieldMouseEnter);
+    this.$fieldButton.on(`mouseenter.icon${this.index}`, this.handleIconMouseEnter);
   }
 
   addHandleMoueseLeave() {
-    this.$fieldButton.on(`mouseleave.icon${this.index}`, this.handleFieldMoueseLeave);
+    this.$fieldButton.on(`mouseleave.icon${this.index}`, this.handleIconMoueseLeave);
   }
 
-  handleFieldMouseEnter(event) {
+  handleIconMouseEnter(event) {
     $(event.currentTarget).addClass('field-button__icon_hovered');
   }
 
-  handleFieldMoueseLeave(event) {
+  handleIconMoueseLeave(event) {
     $(event.currentTarget).removeClass('field-button__icon_hovered');
   }
 }

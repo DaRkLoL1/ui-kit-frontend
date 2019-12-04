@@ -11,10 +11,10 @@ export default class CheckboxList {
   }
 
   addHandleClick() {
-    this.$checkboxList.on('click.dropdown', this.handleCheckboxListClick.bind(this));
+    this.$checkboxList.on('click.dropdown', this.handleDropdownClick.bind(this));
   }
 
-  handleCheckboxListClick() {
+  handleDropdownClick() {
     if (!(this.$icon.hasClass('expandable-checkbox-list__icon_turn'))) {
       this.$icon.addClass('expandable-checkbox-list__icon_turn');
       this.$items.addClass('expandable-checkbox-list__items_display_on');
