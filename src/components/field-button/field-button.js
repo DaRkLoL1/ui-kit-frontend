@@ -18,7 +18,7 @@ export default class Field {
   }
 
   addHandleFocus() {
-    this.$textField.on('focus', this.handleFieldFocus.bind(this));
+    this.$textField.on(`focus.textField${this.index}`, this.handleFieldFocus.bind(this));
   }
 
   handleFieldFocus() {
@@ -27,7 +27,7 @@ export default class Field {
   }
 
   addHandleBlur() {
-    this.$textField.on('blur', this.handleFieldBlur.bind(this));
+    this.$textField.on(`blur.textField${this.index}`, this.handleFieldBlur.bind(this));
   }
 
   handleFieldBlur() {
@@ -36,11 +36,11 @@ export default class Field {
   }
 
   addHandleMouseEnter() {
-    this.$fieldButton.on('mouseenter', this.handleFieldMouseEnter);
+    this.$fieldButton.on(`mouseenter.icon${this.index}`, this.handleFieldMouseEnter);
   }
 
   addHandleMoueseLeave() {
-    this.$fieldButton.on('mouseleave', this.handleFieldMoueseLeave);
+    this.$fieldButton.on(`mouseleave.icon${this.index}`, this.handleFieldMoueseLeave);
   }
 
   handleFieldMouseEnter(event) {
