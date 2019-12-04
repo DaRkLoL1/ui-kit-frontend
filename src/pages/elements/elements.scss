@@ -19,6 +19,10 @@
     line-height: 1.25;
     text-transform: uppercase;
     color: $title-color;
+
+    &-buttons {
+      margin-bottom: 1rem;
+    }
   }
 
   &__wrapper {
@@ -38,12 +42,22 @@
     width: 20rem;
   }
 
-  &__titles{
+  &__titles {
     display: flex;
 
     & .elements__title:last-child {
       margin-left: 3.4375rem;
     }
+  }
+
+  &__button {
+    margin-bottom: 1.875rem;
+  }
+
+  &__button_small {
+    display: flex;
+    justify-content: space-between;
+    width: 8.9375rem;
   }
 
   &__button_medium {
@@ -54,9 +68,12 @@
   &__filter-date-dropdown,
   &__subscription-text-field,
   &__dropdown-furniture,
-  &__range-slider,
-  &__bullet-list {
+  &__range-slider {
     width: 16.625rem;
+  }
+
+  &__bullet-list {
+    width: 16.25rem;
   }
 
   &__comment {

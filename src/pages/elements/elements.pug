@@ -89,12 +89,12 @@ block body
           .elements__range-slider
             +range-slider("range slider")
           .elements__buttons
-            h3(class="elements__title") buttons
+            h3(class="elements__title elements__title-buttons") buttons
             .elements__button.elements__button_medium
               +button-link({size: "medium", text: "click me"})
             .elements__button.elements__button_medium
               +button-link({size: "medium", style: "ghost", text: "click me"})
-            .elements__button
+            .elements__button.elements__button_small
               +button-link({text: "click me", page: "index.html"})
               +button-link({color: "grey", text: "click me"})
             .elements__button
