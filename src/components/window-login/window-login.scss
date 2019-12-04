@@ -7,9 +7,7 @@
   border-radius: 0.25rem;
 
   @media (max-width: 20.625rem) {
-    & {
-      border: none;
-    }
+    border: none;
   }
 
   &__wrapper {

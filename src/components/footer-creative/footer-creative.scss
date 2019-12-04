@@ -5,17 +5,13 @@
   box-shadow: 0 0.625rem 1.25rem $shadow-color;
 
   @media (max-width: 62.5rem) {
-    & {
-      padding-top: 3.125rem;
-      padding-bottom: 3.125rem;
-    }
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
   }
 
   @media (max-width: 31.25rem) {
-    & {
-      padding-top: 1.25rem;
-      padding-bottom: 1.25rem;
-    }
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   &__wrapper {
@@ -26,21 +22,15 @@
     margin: auto;
 
     @media (max-width: 62.5rem) {
-      & {
-        width: 60%;
-      }
+      width: 60%;
     }
 
     @media (max-width: 43.75rem) {
-      & {
-        width: 70%;
-      }
+      width: 70%;
     }
 
     @media (max-width: 31.25rem) {
-      & {
-        width: 90%;
-      }
+      width: 90%;
     }
   }
 

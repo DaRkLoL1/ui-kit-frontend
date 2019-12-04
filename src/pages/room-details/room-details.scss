@@ -44,19 +44,15 @@
     padding-bottom: 4.5625rem;
 
     @media (max-width: 84.375rem) {
-      & {
-        width: 100%;
-        box-sizing: border-box;
-        padding-left: 0.625rem;
-        padding-right: 0.625rem;
-      }
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
     }
 
     @media (max-width: 25rem) {
-      & {
-        padding-left: 0;
-        padding-right: 0;
-      }
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -65,9 +61,7 @@
     justify-content: space-between;
 
     @media (max-width: 68.75rem) {
-      & {
-        flex-direction: column;
-      }
+      flex-direction: column;
     }
   }
 
@@ -75,9 +69,7 @@
     display: flex;
 
     @media (max-width: 45.625rem) {
-      & {
-        flex-direction: column;
-      }
+      flex-direction: column;
     }
   }
 
@@ -96,10 +88,8 @@
     margin-left: 5rem;
 
     @media (max-width: 45.625rem) {
-      & {
-        margin-left: 0;
-        margin-top: 1.25rem;
-      }   
+      margin-left: 0;
+      margin-top: 1.25rem; 
     }
   }
 
@@ -108,9 +98,7 @@
     width: 44.4375rem;
 
     @media (max-width: 45.625rem) {
-      & {
-        width: 100%;
-       }
+      width: 100%;
     }
 
     &-wrapper {
@@ -152,15 +140,11 @@
     width: 23.75rem;
 
     @media (max-width: 68.75rem) {
-      & {
-        margin-top: 1.875rem;
-      }
+      margin-top: 1.875rem;
     }
 
     @media (max-width: 23.75rem) {
-      & {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 
@@ -169,9 +153,7 @@
     margin-top: 2.0625rem;
 
     @media (max-width: 31.25rem) {
-      & {
-        flex-direction: column;
-      }
+      flex-direction: column;
     }
   }
 
@@ -198,16 +180,12 @@
     width: 21.25rem;
 
     @media (max-width: 31.25rem) {
-      & {
-        margin-left: 0;
-        margin-top: 0.625rem;
-      }
+      margin-left: 0;
+      margin-top: 0.625rem;
     }
 
     @media (max-width: 23.75rem) {
-      & {
-        width: 100%;
-      }
+      width: 100%;
     }
 
     &-title {

@@ -11,16 +11,12 @@
     margin-left: 8.75rem;
 
     @media (max-width: 42.5rem) {
-      & {
-        margin: auto;
-      }  
+      margin: auto;
     }
 
     
     @media (max-width: 23.75rem) {
-      & {
-        width: auto;
-      }
+      width: auto;
     }
   }
 
@@ -45,9 +41,7 @@
     text-align: right;
 
     @media (max-width: 42.5rem) {
-      & {
-        margin-right: 0.625rem;
-      }
+      margin-right: 0.625rem;
     }
   }
 }

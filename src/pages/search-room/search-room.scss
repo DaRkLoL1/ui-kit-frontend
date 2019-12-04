@@ -14,27 +14,19 @@
     border-bottom: 0.0625rem solid $placeholder-color;
 
     @media (max-width: 68.75rem) {
-      & {
-        flex-direction: column;
-      }
+      flex-direction: column;
     }
 
     @media (max-width: 46.875rem) {
-      & {
-        width: 90%;
-      }
+      width: 90%;
     }
 
     @media (max-width: 42.5rem) {
-      & {
-        width: 95%;
-      }
+      width: 95%;
     }
 
     @media (max-width: 25rem) {
-      & {
-        width: 99%;
-      }
+      width: 99%;
     }
   }
 
@@ -42,13 +34,11 @@
     width: 16.625rem;
 
     @media (max-width: 68.75rem) {
-      & {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
     @media (max-width: 34.9375rem) {
@@ -70,9 +60,7 @@
     flex-wrap: wrap;
 
     @media (max-width: 42.5rem) {
-      & {
-        justify-content: center;
-      }
+      justify-content: center;
     }
   }
 
@@ -90,10 +78,8 @@
     margin-left: 18.125rem;
 
     @media (max-width: 88.125rem) {
-      & {
-        margin-left: auto;
-        margin-right: auto;
-      }
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -140,17 +126,13 @@
 
   &__dropdown-visit {
     @media (max-width: 68.75rem) {
-      & {
-        margin-top: 0;
-      }
+      margin-top: 0;
     }
   }
   
   &__slider {
     @media (max-width: 68.75rem) {
-      & {
-        margin-top: 0;
-      }
+      margin-top: 0;
     }
   }
 
@@ -160,9 +142,7 @@
   
   &__expandable-checkbox-list {
     @media (max-width: 68.75rem) {
-      & {
-        margin-top: 0;
-      }
+      margin-top: 0;
     }
   }
 
@@ -174,25 +154,19 @@
 
   &__checkbox-buttons {
     @media (max-width: 68.75rem) {
-      & {
-        margin-top: 0;
-      }
+      margin-top: 0;
     }
   }
 
   &__rich-checkbox-buttons {
     @media (max-width: 68.75rem) {
-      & {
-        margin-top: 0;
-      }
+      margin-top: 0;
     }
   }
 
   &__dropdown-furniture {
     @media (max-width: 68.75rem) {
-      & {
-        margin-top: 0;
-      }
+      margin-top: 0;
     }
   }
 

@@ -7,17 +7,13 @@
     padding-bottom: 5.9375rem;
 
     @media (max-width: 62.5rem) {
-      & {
-        padding-top: 3.125rem;
-        padding-bottom: 3.125rem;
-      }
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
     }
 
     @media (max-width: 31.25rem) {
-      & {
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-      }
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
     }
   }
 
@@ -32,22 +28,16 @@
     justify-content: space-between;
 
     @media (max-width: 78.125rem) {
-      & {
-        width: 90%;
-      }
+      width: 90%;
     }
 
     @media (max-width: 62.5rem) {
-      & {
-        flex-direction: column;
-        align-items: center;
-      }
+      flex-direction: column;
+      align-items: center;
     }
 
     @media (max-width: 31.25rem) {
-      & {
-        display: block;
-      }
+      display: block;
     }
   }
 
@@ -57,24 +47,18 @@
     padding: 0.6875rem 0;
 
     @media (max-width: 78.125rem) {
-      & {
-        width: 90%;
-      }
+      width: 90%;
     }
 
     @media (max-width: 31.25rem) {
-      & {
-        flex-direction: column;
-        width: auto;
-        margin: 0;
-        padding: 0;
-      }
+      flex-direction: column;
+      width: auto;
+      margin: 0;
+      padding: 0;
     }
 
     @media (max-width: 21.25rem) { 
-      & {
-        text-align: center;
-      }
+      text-align: center;
     }
   }
 
@@ -83,15 +67,11 @@
     margin-right: 2.5rem;
 
     @media (max-width: 84.375rem) {
-      & {
-        margin-right: 0;
-      }
+      margin-right: 0;
     }
 
     @media (max-width: 62.5rem) {
-      & {
-        width: 70%;
-      }
+      width: 70%;
     }
   }
 
@@ -110,31 +90,23 @@
     padding-top: 0.3125rem;
 
     @media (max-width: 84.375rem) {
-      & {
-        justify-content: space-between;
-        width: 45%;
-      }
+      justify-content: space-between;
+      width: 45%;
     }
 
     @media (max-width: 78.125rem) {
-      & {
-        width: 40%;
-        margin-left: 0;
-      }
+      width: 40%;
+      margin-left: 0;
     }
 
     @media (max-width: 62.5rem) {
-      & {
-        width: 70%;
-        margin-top: 2.5rem;
-      }
+      width: 70%;
+      margin-top: 2.5rem;
     }
 
     @media (max-width: 31.25rem) {
-      & {
-        flex-direction: column;
-        margin-top: 0;
-      }
+      flex-direction: column;
+      margin-top: 0;
     }
   }
 
@@ -144,18 +116,14 @@
     list-style: none;
 
     @media (max-width: 31.25rem) {
-      & {
-        margin-top: 1.875rem;
-      }
+      margin-top: 1.875rem;
     }
 
     &_type_navigation {
       margin-right: 3.5625rem;
 
       @media (max-width: 84.375rem) {
-        & {
-          margin-right: 0;
-        }
+        margin-right: 0;
       }
     }
 
@@ -163,9 +131,7 @@
       margin-right: 5.75rem;
 
       @media (max-width: 84.375rem) {
-        & {
-          margin-right: 0;
-        }
+        margin-right: 0;
       }
     }
 
@@ -203,16 +169,12 @@
     padding-top: 0.3125rem;
 
     @media (max-width: 84.375rem) {
-      & {
-        margin-left: 0;
-      }
+      margin-left: 0;
     }
 
     @media (max-width: 62.5rem) {
-      & {
-        width: 70%;
-        margin-top: 2.5rem;
-      }
+      width: 70%;
+      margin-top: 2.5rem;
     }
 
     &-title {
@@ -261,10 +223,4 @@
     -webkit-text-fill-color: transparent; /* Прозрачный текст */
   }
 
-}
-
-@media (max-width: 21.25rem) { 
-  .footer-copyright__copyright {
-    text-align: center;
-  }
 }

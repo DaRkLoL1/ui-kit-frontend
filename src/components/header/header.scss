@@ -19,17 +19,13 @@
     margin: auto;
 
     @media (max-width: 75rem) { 
-      & {
-        width: auto;
-        margin-left: 0.625rem;
-        margin-right: 0.625rem;
-      }
+      width: auto;
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
     }
 
     @media (max-width: 62.5rem) {
-      & {
-        flex-direction: column;
-      }
+      flex-direction: column;
     }
   }
 
@@ -37,23 +33,17 @@
     width: 66%;
 
     @media (max-width: 84.375rem) {
-      & {
-        width: 75%;
-      }
+      width: 75%;
     }
 
     @media (max-width: 62.5rem) {
-      & {
-        flex-direction: column;
-        width: 85%;
-      }
+      flex-direction: column;
+      width: 85%;
     }
 
     @media (max-width: 31.25rem) {
-      & {
-        align-items: flex-start;
-        margin-top: 0.625rem;
-      }
+      align-items: flex-start;
+      margin-top: 0.625rem;
     }
   }
 
@@ -64,15 +54,11 @@
     margin-left: auto;
 
     @media (max-width: 62.5rem) {
-      & {
-        margin: 0.625rem;
-      }
+      margin: 0.625rem;
     }
 
     @media (max-width: 31.25rem) {
-      & {
-        margin: 0;
-      }
+      margin: 0;
     }
   }
 
@@ -84,21 +70,19 @@
     list-style: none;
 
     @media (max-width: 31.25rem) {
-      & {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
   &__item {
     @media (max-width: 62.5rem) {
-      & {
-        margin-right: 0.625rem;
+      margin-right: 0.625rem;
+    }
 
-        &_contains_arrow  {
-          margin-right: 0.625rem;
-        }
+    &_contains_arrow {
+      @media (max-width: 62.5rem) {
+        margin-right: 0.625rem;
       }
     }
   }
@@ -140,9 +124,7 @@
     z-index: 1;
 
     @media (max-width: 31.25rem) {
-      & {
-        margin-left: 0;
-      }
+      margin-left: 0;
     }
   } 
 
@@ -151,9 +133,7 @@
     margin-left: 1.25rem;
 
     @media (max-width: 31.25rem) {
-      & {
-        margin-left: 0;
-      }
+      margin-left: 0;
     }
   }
 
@@ -170,9 +150,7 @@
     background: rgba(31, 32, 65, 0.1);
 
     @media (max-width: 31.25rem) {
-      & {
-        margin-left: 0;
-      }
+      margin-left: 0;
     }
   }
 
