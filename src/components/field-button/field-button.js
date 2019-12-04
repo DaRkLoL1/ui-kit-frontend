@@ -1,42 +1,53 @@
 export default class Field {
-  constructor() {
-    this.addHandleFocus();
-    this.addHandleBlur();
-    this.addHandleHover();
+  constructor(field, index) {
+    this.$field = $(field);
+    this.index = index;
+    this.createField();
+  }
+
+  createField() {
+    this.$fieldButton = this.$field.find('.js-field-button__icon');
+    this.addHandleMouseEnter();
+    this.addHandleMoueseLeave();
+
+    if (this.$field.hasClass('js-field-button_focused')) {
+      this.$textField = this.$field.find('.js-text-field');
+      this.addHandleFocus();
+      this.addHandleBlur();
+    }
   }
 
   addHandleFocus() {
-    $('.js-field-button_focused .js-text-field').on('focus', this.handleFieldFocus);
+    this.$textField.on('focus', this.handleFieldFocus.bind(this));
   }
 
-  handleFieldFocus(event) {
-    const $target = $(event.currentTarget);
-    $target.parent().addClass('field-button_isFocused');
-    $target.next().addClass('field-button__icon_isFocused');
+  handleFieldFocus() {
+    this.$field.addClass('field-button_isFocused');
+    this.$fieldButton.addClass('field-button__icon_isFocused');
   }
 
   addHandleBlur() {
-    $('.js-field-button_focused .js-text-field').on('blur', this.handleFieldBlur);
+    this.$textField.on('blur', this.handleFieldBlur.bind(this));
   }
 
-  handleFieldBlur(event) {
-    const $target = $(event.currentTarget);
-    $target.parent().removeClass('field-button_isFocused');
-    $target.next().removeClass('field-button__icon_isFocused');
+  handleFieldBlur() {
+    this.$field.removeClass('field-button_isFocused');
+    this.$fieldButton.removeClass('field-button__icon_isFocused');
   }
 
-  addHandleHover() {
-    $('.js-field-button .js-field-button__icon').hover(
-      this.handleFieldTurnOnHover,
-      this.handleFieldTurnOffHover,
-    );
+  addHandleMouseEnter() {
+    this.$fieldButton.on('mouseenter', this.handleFieldMouseEnter);
   }
 
-  handleFieldTurnOnHover(event) {
+  addHandleMoueseLeave() {
+    this.$fieldButton.on('mouseleave', this.handleFieldMoueseLeave);
+  }
+
+  handleFieldMouseEnter(event) {
     $(event.currentTarget).addClass('field-button__icon_hovered');
   }
 
-  handleFieldTurnOffHover(event) {
+  handleFieldMoueseLeave(event) {
     $(event.currentTarget).removeClass('field-button__icon_hovered');
   }
 }

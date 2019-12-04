@@ -1,12 +1,13 @@
 import 'jquery-mask-plugin';
 
 export default class Mask {
-  constructor() {
+  constructor(mask) {
+    this.$mask = $(mask);
     this.createMask();
   }
 
   createMask() {
-    $('.js-mask').mask('AB.SR.YXOK', {
+    this.$mask.mask('AB.SR.YXOK', {
       translation: {
         A: { pattern: /[0-3]/ },
         B: { pattern: /[0-9]/ },

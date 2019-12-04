@@ -1,5 +1,5 @@
 include ../text-field/text-field.pug
-mixin field-button({text = "", opacity = "", focus = undefined, theme = ""} = {})
+mixin field-button({text = "", opacity = "", focus = false, theme = ""} = {})
   - 
     let obj = {
       text,
@@ -7,7 +7,7 @@ mixin field-button({text = "", opacity = "", focus = undefined, theme = ""} = {}
     };
     let icon = "keyboard_arrow_down";
     let className = opacity ? " field-button__icon_opacity_h" : "";
-    let parentClass = (focus !== false) ? " js-field-button_focused" : "";
+    let parentClass = focus ? " js-field-button_focused" : "";
     let type = "button";
     if(theme === "gradient") {
       icon = "arrow_forward";
