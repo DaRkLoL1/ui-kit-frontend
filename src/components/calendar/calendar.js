@@ -33,6 +33,7 @@ export default class Calendar {
   createDropdownDatepicker() {
     const $arrivalField = this.$datepicker.find('.js-calendar__left-input .js-text-field');
     const $departureField = this.$datepicker.find('.js-calendar__right-input .js-text-field');
+    this.$fields = this.$datepicker.find('.js-calendar__input');
 
     const dropdownParameters = {
       ...this.defaultParameters,
@@ -89,7 +90,7 @@ export default class Calendar {
 
   setMethodShow() {
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      this.$datepicker.find('.js-calendar__input').on(`click.input${this.index}`, this.handleInputClick.bind(this));
+      this.$fields.on(`click.input${this.index}`, this.handleInputClick.bind(this));
     } else {
       this.$datepicker.on(`click.calendar${this.index}`, this.handleCalendarClick.bind(this));
     }

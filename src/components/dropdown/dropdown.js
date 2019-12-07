@@ -9,7 +9,9 @@ export default class Dropdown {
   }
 
   createDropdown() {
-    this.$dropdown.find('.iqdropdown').iqDropdown({
+    this.$pluginDropdown = this.$dropdown.find('.iqdropdown');
+
+    this.$pluginDropdown.iqDropdown({
       selectionText: '',
       textPlural: '',
       onChange: () => {
@@ -17,39 +19,46 @@ export default class Dropdown {
       },
     });
 
+    if (this.$dropdown.hasClass('js-dropdown_with-buttons')) {
+      this.$clearButton = this.$dropdown.find('.js-dropdown__clear-button');
+    }
+
+    this.$dropdownMenu = this.$dropdown.find('.iqdropdown-menu');
+    this.addHandledropdownMenu();
+
+    this.$arrCounters = this.$dropdown.find('.counter');
+    this.$buttonsDecrement = this.$dropdown.find('.button-decrement');
+    this.$textField = this.$dropdown.find('.iqdropdown-selection');
+
     this.setValueDropdown();
+  }
+
+  addHandledropdownMenu() {
+    this.$dropdownMenu.on(`click.menu${this.index}`, this.handleMenuClick);
+  }
+
+  handleMenuClick(event) {
+    event.stopPropagation();
   }
 
   addButtons() {
     if (this.$dropdown.hasClass('js-dropdown_with-buttons')) {
-      const $fieldForbuttons = this.$dropdown.find('.js-dropdown__buttons');
-      const $clearButton = $fieldForbuttons.find('.js-dropdown__clear-button');
-      const $applyButton = $fieldForbuttons.find('.js-dropdown__apply-button');
-      this.$counterVisitors = this.$dropdown.find('.counter');
-      this.addHandlesForButtons($fieldForbuttons, $clearButton, $applyButton);
+      this.$applyButton = this.$dropdown.find('.js-dropdown__apply-button');
+      this.addHandlesForButtons();
     }
   }
 
-  addHandlesForButtons($fieldForbuttons, $clearButton, $applyButton) {
-    $fieldForbuttons.on(`click.buttons${this.index}`, this.handleButtonsClick);
-
-    $clearButton.on(`click.clearButton${this.index}`, this.handleClearButtonClick.bind(this));
-
-    $applyButton.on(`click.applyButton${this.index}`, this.handleApplyButtonClick.bind(this));
-
-    this.$dropdown.find('.iqdropdown-menu').append($fieldForbuttons);
-  }
-
-  handleButtonsClick(event) {
-    event.stopPropagation();
+  addHandlesForButtons() {
+    this.$clearButton.on(`click.clearButton${this.index}`, this.handleClearButtonClick.bind(this));
+    this.$applyButton.on(`click.applyButton${this.index}`, this.handleApplyButtonClick.bind(this));
   }
 
   handleClearButtonClick() {
     let isTrue = true;
     do {
       let count = 0;
-      this.$dropdown.find('.button-decrement').trigger('click');
-      this.$counterVisitors.each((i, counter) => {
+      this.$buttonsDecrement.trigger('click');
+      this.$arrCounters.each((i, counter) => {
         count += Number.parseInt(counter.innerHTML, 10);
       });
 
@@ -60,14 +69,12 @@ export default class Dropdown {
   }
 
   handleApplyButtonClick() {
-    this.$dropdown.find('.iqdropdown').trigger('click');
+    this.$pluginDropdown.trigger('click');
   }
 
   checkOnNull(arrCount) {
-    const buttons = this.$dropdown.find('.button-decrement');
-
     arrCount.forEach((item, i) => {
-      const $button = $(buttons[i]);
+      const $button = $(this.$buttonsDecrement[i]);
 
       if (item === 0) {
         $button.addClass('button-zero');
@@ -99,14 +106,12 @@ export default class Dropdown {
       }
     });
 
-    const $clearButton = this.$dropdown.find('.js-dropdown__clear-button');
-
     if (this.text.length > 0) {
       this.text = this.text.slice(0, this.text.length - 2);
-      $clearButton.removeClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.removeClass('dropdown__clear-button_hide_clean');
     } else {
       this.text = 'Сколько гостей';
-      $clearButton.addClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.addClass('dropdown__clear-button_hide_clean');
     }
   }
 
@@ -141,10 +146,8 @@ export default class Dropdown {
   }
 
   setValueDropdown() {
-    const arrItems = this.$dropdown.find('.counter');
-
     const arrCount = [];
-    arrItems.each((i, item) => {
+    this.$arrCounters.each((i, item) => {
       arrCount.push(Number.parseInt($(item).text(), 10));
     });
 
@@ -158,6 +161,6 @@ export default class Dropdown {
       this.setValueFurnitureAndSetText(arrCount);
     }
 
-    this.$dropdown.find('.iqdropdown-selection').text(this.text);
+    this.$textField.text(this.text);
   }
 }
