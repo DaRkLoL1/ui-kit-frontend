@@ -6,16 +6,17 @@
   box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
 
-  @media (max-width: 20.625rem) {
-    border: none;
-  }
-
   &__wrapper {
     width: 20rem;
     padding-top: 2.5rem;
     padding-bottom: 1.8125rem;
     margin: auto;
+
+    @media (max-width: 21.875rem) {
+      width: 19.375rem;
+    }
   }
+
   &__number-and-cost {
     display: flex;
     justify-content: space-between;

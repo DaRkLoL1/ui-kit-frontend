@@ -53,6 +53,7 @@ export default class Calendar {
     };
 
     this.calendar = $arrivalField.datepicker(dropdownParameters).data('datepicker');
+    this.calendar.$datepicker.addClass('datepicker_width_310');
 
     this.setMethodShow();
   }
@@ -67,7 +68,7 @@ export default class Calendar {
     };
 
     this.calendar = $textField.datepicker(FilterParameters).data('datepicker');
-    this.calendar.$datepicker.addClass('datepicker_width_small');
+    this.calendar.$datepicker.addClass('datepicker_width_266');
 
     this.setMethodShow();
   }
