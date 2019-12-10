@@ -1,6 +1,6 @@
 include ../like-button/like-button.pug
 
-mixin comment({image = "", name = "", time = "", text = "", like = 10} = {})
+mixin comment({image = "", name = "", time = "", text = "", like = 10, likeClicked = false} = {})
   .comment
     .comment__header  
       img(class="comment__image" src=`../../components/comment/images/${image}` alt="image-visitor")
@@ -9,5 +9,5 @@ mixin comment({image = "", name = "", time = "", text = "", like = 10} = {})
         span(class="comment__time")= time
     .comment__main
       .comment__like
-        +like-button(like)
+        +like-button({number: like, clicked: likeClicked})
       p(class="comment__text")= text

@@ -50,6 +50,12 @@
     }
   }
 
+  &__like-button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+  }
+
   &__button {
     margin-bottom: 1.875rem;
   }

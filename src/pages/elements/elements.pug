@@ -67,7 +67,9 @@ block body
             +switch({type: "toggle", text: "Получать спецпредложения"})
           .elements__like-button
             h3(class="elements__title") like-button
-            +like-button(9)
+            .elements__like-button-container
+              +like-button({number: 9})
+              +like-button({number: 12, clicked: true})
           .elements__rate-button
             h3(class="elements__title") rate-button
             +rate-button(4)
@@ -113,6 +115,6 @@ block body
         .elements__set-of-qualities
           +set-of-qualities
         .elements__comment
-          +comment({image: "comment-img-1.png", name: "Мурад Сарафанов", time: "5 дней назад", like: 11,
+          +comment({image: "comment-img-1.png", name: "Мурад Сарафанов", time: "5 дней назад", like: 12, likeClicked: true,
             text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий." + 
               " И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})

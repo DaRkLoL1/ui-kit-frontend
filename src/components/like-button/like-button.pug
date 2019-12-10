@@ -1,8 +1,12 @@
-mixin like-button(number)
+mixin like-button({number = 0, clicked = false})
   -
     number = number < 0 ? 0 : number;
+    let parentClass = clicked ? " like-button_clicked" : "";
     let className = number > 9 ? " like-button__number_margin_null" : "";
 
-  div(class="like-button js-like-button") 
-    i(class="material-icons like-button__icon") favorite_border
+  div(class=`like-button js-like-button${parentClass}`)
+    if clicked
+      i(class="material-icons like-button__icon") favorite
+    else   
+      i(class="material-icons like-button__icon") favorite_border
     div(class=`like-button__number${className}`)=number
