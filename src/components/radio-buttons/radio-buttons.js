@@ -18,12 +18,12 @@ export default class RadioButtons {
   handleRadioButtonsClick(event) {
     const $target = $(event.target);
     if ($target.hasClass('js-radio-buttons')) return;
-    $target.find('.js-switch__input').prop('checked', true);
+    $target.children().prop('checked', true);
     $target.addClass('switch_type_radio-checked');
 
     this.$arrRadio.each((i, radioItem) => {
       const $radioItem = $(radioItem);
-      if (!($radioItem.find('.js-switch__input').prop('checked'))) {
+      if (!($radioItem.children().prop('checked'))) {
         $radioItem.removeClass('switch_type_radio-checked');
       }
     });
