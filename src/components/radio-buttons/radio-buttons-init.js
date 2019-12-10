@@ -1,6 +1,6 @@
 import RadioButtons from './radio-buttons';
 
-const item = document.querySelector('.js-radio-buttons');
-if (item) {
-  new RadioButtons(item);
-}
+const arrRadioItem = document.querySelectorAll('.js-radio-buttons');
+arrRadioItem.forEach((radio, index) => {
+  new RadioButtons(radio, index);
+});

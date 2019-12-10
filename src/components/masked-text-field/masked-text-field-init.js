@@ -1,6 +1,6 @@
 import Mask from './masked-text-field';
 
-const mask = document.querySelector('.js-mask');
-if (mask) {
+const masks = document.querySelectorAll('.js-mask');
+masks.forEach((mask) => {
   new Mask(mask);
-}
+});

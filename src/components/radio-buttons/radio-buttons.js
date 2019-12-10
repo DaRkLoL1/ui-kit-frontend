@@ -1,6 +1,7 @@
 export default class RadioButtons {
-  constructor(radio) {
+  constructor(radio, index) {
     this.$radio = $(radio);
+    this.index = index;
     this.createRadio();
   }
 
@@ -11,7 +12,7 @@ export default class RadioButtons {
   }
 
   addHandleClick() {
-    this.$radio.on('click.radioButtons', this.handleRadioButtonsClick.bind(this));
+    this.$radio.on(`click.radioButtons${this.index}`, this.handleRadioButtonsClick.bind(this));
   }
 
   handleRadioButtonsClick(event) {

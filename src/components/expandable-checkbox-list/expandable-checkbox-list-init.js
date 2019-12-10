@@ -1,6 +1,6 @@
 import CheckboxList from './expandable-checkbox-list';
 
-const checkboxList = document.querySelector('.js-expandable-checkbox-list__dropdown');
-if (checkboxList) {
-  new CheckboxList(checkboxList);
-}
+const checkboxLists = document.querySelectorAll('.js-expandable-checkbox-list__dropdown');
+checkboxLists.forEach((checkboxList, index) => {
+  new CheckboxList(checkboxList, index);
+});

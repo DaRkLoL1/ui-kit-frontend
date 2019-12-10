@@ -1,6 +1,7 @@
 export default class CheckboxList {
-  constructor(checkboxList) {
+  constructor(checkboxList, index) {
     this.$checkboxList = $(checkboxList);
+    this.index = index;
     this.createCheckboxList();
   }
 
@@ -11,7 +12,7 @@ export default class CheckboxList {
   }
 
   addHandleClick() {
-    this.$checkboxList.on('click.dropdown', this.handleDropdownClick.bind(this));
+    this.$checkboxList.on(`click.dropdown${this.index}`, this.handleDropdownClick.bind(this));
   }
 
   handleDropdownClick() {
