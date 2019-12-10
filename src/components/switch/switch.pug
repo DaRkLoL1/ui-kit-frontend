@@ -4,16 +4,16 @@ mixin switch({type = "checkbox", name = "", weight = "", text = ""} = {})
     let typeName = "";
 
     if(type === "checkbox") {
-      className += weight === "b" ? " switch_checkbox_weight_b" : "";
-      className += " switch_checkbox";
+      className += weight === "b" ? " switch_weight_bold" : "";
+      className += " switch_type_checkbox";
       typeName = "checkbox";
     }
     else if(type === "radio") {
-      className += " switch_radio";
+      className += " switch_type_radio";
       typeName = "radio";
     }
     else if(type === "toggle") {
-      className += " switch_toggle";
+      className += " switch_type_toggle";
       typeName = "checkbox";
     }
   label(class=className)

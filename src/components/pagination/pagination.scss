@@ -21,23 +21,23 @@
     line-height: 2.5rem;
     color: $paragraph-color;
 
-    &_begin {
+    &_position_begin {
       background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
       border-radius: 1.375rem;
       color: $background;
       font-weight: bold;
     }
 
-    &_end {
+    &_position_end {
       background: linear-gradient(180deg, $secondary-color 0%, $second-linear 100%);
       border-radius: 1.375rem;
-
-      & > i {
-        line-height: 2.5rem;
-        color: $background;
-      }
     }
   }
+
+  &__icon {
+    line-height: 2.5rem;
+    color: $background;
+  } 
 
   &__description {
     margin:0;

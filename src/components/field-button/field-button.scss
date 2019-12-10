@@ -8,7 +8,7 @@
   border: 0.0625rem solid $placeholder-color;
   background: $background;
 
-  &:hover, &_isFocused {
+  &:hover, &_focused {
     border-color: $paragraph-color;
   }
 
@@ -23,7 +23,7 @@
     cursor: pointer;
     color: $paragraph-color;
 
-    &_opacity_h, &_hovered, &_isFocused {
+    &_opacity_high, &_hovered, &_focused {
       color: $label-color;
     }
 

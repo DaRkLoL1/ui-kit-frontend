@@ -18,11 +18,11 @@ export default class Switch {
     const $target = $(event.currentTarget);
     if (!(this.$input.attr('type') === 'checkbox')) return;
 
-    const className = $target.hasClass('switch_checkbox') ? 'switch_checkbox' : 'switch_toggle';
+    const className = $target.hasClass('switch_type_checkbox') ? 'switch_type_checkbox' : 'switch_type_toggle';
     if (this.$input.prop('checked')) {
-      $target.addClass(`${className}_checked`);
+      $target.addClass(`${className}-checked`);
     } else {
-      $target.removeClass(`${className}_checked`);
+      $target.removeClass(`${className}-checked`);
     }
   }
 }

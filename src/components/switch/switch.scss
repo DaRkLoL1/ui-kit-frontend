@@ -8,16 +8,16 @@
   line-height: 1.71;
   color: $label-color;
   cursor: pointer;
-  
-  &_checkbox {
+
+  &_weight_bold {
+    font-weight: bold;
+    color: $label-color;
+  }
+
+  &_type_checkbox {
     padding-left: 1.875rem;
     line-height: 1.125rem;
     color: $paragraph-color;
-
-    &_weight_b {
-      font-weight: bold;
-      color: $label-color;
-    }
 
     &::before {
       content: '';
@@ -31,7 +31,7 @@
       border-radius: 0.25rem;
     }
 
-    &_checked::before {
+    &-checked::before {
       border-color: $primary-color;
       background-image: url('./images/vector-checkbox.png');
       background-repeat: no-repeat;
@@ -40,7 +40,7 @@
 
   }
 
-  &_radio {
+  &_type_radio {
     padding-left: 1.875rem;
     color: $paragraph-color;
 
@@ -68,7 +68,7 @@
       background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     }
 
-    &_checked {
+    &-checked {
       color: $label-color;
 
       &::before {
@@ -81,7 +81,7 @@
     }
   }
 
-  &_toggle {
+  &_type_toggle {
     padding-left: 3.125rem;
 
     &::before {
@@ -108,7 +108,7 @@
       transition: left 0.3s linear;
     }
 
-    &_checked {
+    &-checked {
 
       &::before {
         border-color: $primary-color;

@@ -18,8 +18,8 @@ export default class Like {
   handleLikeButtonClick(event) {
     const $target = $(event.currentTarget);
     let text = Number.parseInt(this.$number.text(), 10);
-    if (!($target.hasClass('like-button_click'))) {
-      $target.addClass('like-button_click');
+    if (!($target.hasClass('like-button_clicked'))) {
+      $target.addClass('like-button_clicked');
       text += 1;
       this.$number.text(text);
 
@@ -28,7 +28,7 @@ export default class Like {
       }
       this.$icon.text('favorite');
     } else {
-      $target.removeClass('like-button_click');
+      $target.removeClass('like-button_clicked');
       text -= 1;
       this.$number.text(text);
 

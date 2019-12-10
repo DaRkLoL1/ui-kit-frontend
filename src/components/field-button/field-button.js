@@ -22,8 +22,8 @@ export default class Field {
   }
 
   handleTextFieldFocus() {
-    this.$field.addClass('field-button_isFocused');
-    this.$fieldButton.addClass('field-button__icon_isFocused');
+    this.$field.addClass('field-button_focused');
+    this.$fieldButton.addClass('field-button__icon_focused');
   }
 
   addHandleBlur() {
@@ -31,8 +31,8 @@ export default class Field {
   }
 
   handleTextFieldBlur() {
-    this.$field.removeClass('field-button_isFocused');
-    this.$fieldButton.removeClass('field-button__icon_isFocused');
+    this.$field.removeClass('field-button_focused');
+    this.$fieldButton.removeClass('field-button__icon_focused');
   }
 
   addHandleMouseEnter() {

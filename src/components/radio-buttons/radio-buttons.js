@@ -7,7 +7,7 @@ export default class RadioButtons {
 
   createRadio() {
     this.$arrRadio = this.$radio.find('.js-switch');
-    $(this.$arrRadio[0]).addClass('switch_radio_checked');
+    $(this.$arrRadio[0]).addClass('switch_type_radio-checked');
     this.addHandleClick();
   }
 
@@ -19,12 +19,12 @@ export default class RadioButtons {
     const $target = $(event.target);
     if ($target.hasClass('js-radio-buttons')) return;
     $target.find('.js-switch__input').prop('checked', true);
-    $target.addClass('switch_radio_checked');
+    $target.addClass('switch_type_radio-checked');
 
     this.$arrRadio.each((i, radioItem) => {
       const $radioItem = $(radioItem);
       if (!($radioItem.find('.js-switch__input').prop('checked'))) {
-        $radioItem.removeClass('switch_radio_checked');
+        $radioItem.removeClass('switch_type_radio-checked');
       }
     });
   }
