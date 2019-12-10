@@ -1,4 +1,4 @@
-mixin like-button({number = 0, clicked = false})
+mixin like-button({number = 0, clicked = false} = {})
   -
     number = number < 0 ? 0 : number;
     let parentClass = clicked ? " like-button_clicked" : "";
