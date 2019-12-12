@@ -13746,10 +13746,10 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/button/button.scss":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/components/button/button.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/button-link/button-link.scss":
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/components/button-link/button-link.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13761,17 +13761,6 @@ return jQuery;
 /*!******************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/components/calendar/calendar.scss ***!
   \******************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/calendar/datepicker.scss":
-/*!********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/components/calendar/datepicker.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13805,17 +13794,6 @@ return jQuery;
 /*!******************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/components/dropdown/dropdown.scss ***!
   \******************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/dropdown/item-quantity-dropdown.scss":
-/*!********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/components/dropdown/item-quantity-dropdown.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14175,6 +14153,28 @@ return jQuery;
 
 /***/ }),
 
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/vendors/datepicker.scss":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/vendors/datepicker.scss ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/vendors/item-quantity-dropdown.scss":
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--5-2!./node_modules/resolve-url-loader!./node_modules/sass-loader/lib/loader.js??ref--5-4!./src/vendors/item-quantity-dropdown.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -14478,17 +14478,15 @@ module.exports = function (list, options) {
 var map = {
 	"./colors/colors.scss": "./src/colors/colors.scss",
 	"./components/bullet-list/bullet-list.scss": "./src/components/bullet-list/bullet-list.scss",
-	"./components/button/button.scss": "./src/components/button/button.scss",
+	"./components/button-link/button-link.scss": "./src/components/button-link/button-link.scss",
 	"./components/calendar/calendar-init.js": "./src/components/calendar/calendar-init.js",
 	"./components/calendar/calendar.js": "./src/components/calendar/calendar.js",
 	"./components/calendar/calendar.scss": "./src/components/calendar/calendar.scss",
-	"./components/calendar/datepicker.scss": "./src/components/calendar/datepicker.scss",
 	"./components/checkbox-buttons/checkbox-buttons.scss": "./src/components/checkbox-buttons/checkbox-buttons.scss",
 	"./components/comment/comment.scss": "./src/components/comment/comment.scss",
 	"./components/dropdown/dropdown-init.js": "./src/components/dropdown/dropdown-init.js",
 	"./components/dropdown/dropdown.js": "./src/components/dropdown/dropdown.js",
 	"./components/dropdown/dropdown.scss": "./src/components/dropdown/dropdown.scss",
-	"./components/dropdown/item-quantity-dropdown.scss": "./src/components/dropdown/item-quantity-dropdown.scss",
 	"./components/expandable-checkbox-list/expandable-checkbox-list-init.js": "./src/components/expandable-checkbox-list/expandable-checkbox-list-init.js",
 	"./components/expandable-checkbox-list/expandable-checkbox-list.js": "./src/components/expandable-checkbox-list/expandable-checkbox-list.js",
 	"./components/expandable-checkbox-list/expandable-checkbox-list.scss": "./src/components/expandable-checkbox-list/expandable-checkbox-list.scss",
@@ -14512,7 +14510,6 @@ var map = {
 	"./components/range-slider/range-slider-init.js": "./src/components/range-slider/range-slider-init.js",
 	"./components/range-slider/range-slider.js": "./src/components/range-slider/range-slider.js",
 	"./components/range-slider/range-slider.scss": "./src/components/range-slider/range-slider.scss",
-	"./components/rate-button/jquery.star.rating.min.js": "./src/components/rate-button/jquery.star.rating.min.js",
 	"./components/rate-button/rate-button-init.js": "./src/components/rate-button/rate-button-init.js",
 	"./components/rate-button/rate-button.js": "./src/components/rate-button/rate-button.js",
 	"./components/rate-button/rate-button.scss": "./src/components/rate-button/rate-button.scss",
@@ -14539,7 +14536,10 @@ var map = {
 	"./pages/registration/registration.scss": "./src/pages/registration/registration.scss",
 	"./pages/room-details/room-details.scss": "./src/pages/room-details/room-details.scss",
 	"./pages/search-room/search-room.scss": "./src/pages/search-room/search-room.scss",
-	"./pages/sign-in/sign-in.scss": "./src/pages/sign-in/sign-in.scss"
+	"./pages/sign-in/sign-in.scss": "./src/pages/sign-in/sign-in.scss",
+	"./vendors/datepicker.scss": "./src/vendors/datepicker.scss",
+	"./vendors/item-quantity-dropdown.scss": "./src/vendors/item-quantity-dropdown.scss",
+	"./vendors/jquery.star.rating.min.js": "./src/vendors/jquery.star.rating.min.js"
 };
 
 
@@ -14618,14 +14618,14 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/button/button.scss":
-/*!*******************************************!*\
-  !*** ./src/components/button/button.scss ***!
-  \*******************************************/
+/***/ "./src/components/button-link/button-link.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/button-link/button-link.scss ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/lib/loader.js??ref--5-4!./button.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/button/button.scss");
+var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/lib/loader.js??ref--5-4!./button-link.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/button-link/button-link.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -14658,8 +14658,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const arrCalendar = document.querySelectorAll('.js-calendar');
-arrCalendar.forEach((item) => {
-  new _calendar__WEBPACK_IMPORTED_MODULE_0__["default"](item);
+arrCalendar.forEach((item, index) => {
+  new _calendar__WEBPACK_IMPORTED_MODULE_0__["default"](item, index);
 });
 
 
@@ -14680,14 +14680,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class Calendar {
-  constructor(datepicker) {
+  constructor(datepicker, index) {
     this.$datepicker = $(datepicker);
+    this.index = index;
     this.createDatepicker();
     this.addButtons();
   }
 
   createDatepicker() {
-    this.param = {
+    this.defaultParameters = {
       range: true,
       offset: 16,
       prevHtml: '<i class="material-icons">arrow_back</i>',
@@ -14709,26 +14710,29 @@ class Calendar {
   }
 
   createDropdownDatepicker() {
-    const $left = this.$datepicker.find('.js-calendar__left-input .js-text-field');
-    const $right = this.$datepicker.find('.js-calendar__right-input .js-text-field');
+    const $arrivalField = this.$datepicker.find('.js-calendar__left-input .js-text-field');
+    const $departureField = this.$datepicker.find('.js-calendar__right-input .js-text-field');
+    this.$fields = this.$datepicker.find('.js-calendar__input');
 
-    this.param = Object.assign(this.param,
-      {
-        altField: $right,
-        altFieldDateFormat: '',
-        onSelect(formattedDate) {
-          const arrDates = formattedDate.split(',');
+    const dropdownParameters = {
+      ...this.defaultParameters,
+      altField: $departureField,
+      altFieldDateFormat: '',
+      onSelect(formattedDate) {
+        const arrDates = formattedDate.split(',');
 
-          if (arrDates.length === 1) {
-            $left.val('');
-            $right.val(arrDates[0]);
-          } else {
-            $left.val(arrDates[0]);
-            $right.val(arrDates[1]);
-          }
-        },
-      });
-    this.calendar = $left.datepicker(this.param).data('datepicker');
+        if (arrDates.length === 1) {
+          $arrivalField.val(arrDates[0]);
+          $departureField.val('');
+        } else {
+          $arrivalField.val(arrDates[0]);
+          $departureField.val(arrDates[1]);
+        }
+      },
+    };
+
+    this.calendar = $arrivalField.datepicker(dropdownParameters).data('datepicker');
+    this.calendar.$datepicker.addClass('datepicker_width_310');
 
     this.setMethodShow();
   }
@@ -14736,20 +14740,20 @@ class Calendar {
   createFilterDatepicker() {
     const $textField = this.$datepicker.find('.js-text-field');
 
-    this.param = Object.assign(this.param,
-      {
-        multipleDatesSeparator: ' - ',
-        dateFormat: 'dd M',
-      });
+    const FilterParameters = {
+      ...this.defaultParameters,
+      multipleDatesSeparator: ' - ',
+      dateFormat: 'dd M',
+    };
 
-    this.calendar = $textField.datepicker(this.param).data('datepicker');
-    this.calendar.$datepicker.css('width', '266px');
+    this.calendar = $textField.datepicker(FilterParameters).data('datepicker');
+    this.calendar.$datepicker.addClass('datepicker_width_266');
 
     this.setMethodShow();
   }
 
   createInlineDatepicker() {
-    this.calendar = this.$datepicker.datepicker(this.param).data('datepicker');
+    this.calendar = this.$datepicker.datepicker(this.defaultParameters).data('datepicker');
   }
 
   setDate() {
@@ -14766,34 +14770,42 @@ class Calendar {
 
   setMethodShow() {
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      this.$datepicker.find('.js-calendar__input').on('click', () => {
-        this.calendar.show();
-      });
+      this.$fields.on(`click.input${this.index}`, this.handleInputClick.bind(this));
     } else {
-      this.$datepicker.on('click', () => {
-        this.calendar.show();
-      });
+      this.$datepicker.on(`click.calendar${this.index}`, this.handleCalendarClick.bind(this));
     }
+  }
+
+  handleInputClick() {
+    this.calendar.show();
+  }
+
+  handleCalendarClick() {
+    this.calendar.show();
   }
 
   addButtons() {
     const $buttons = this.$datepicker.find('.js-calendar__buttons');
-    const $clear = this.$datepicker.find('.js-calendar__clear-button');
-    const $apply = this.$datepicker.find('.js-calendar__apply-button');
+    const $clearButton = this.$datepicker.find('.js-calendar__clear-button');
+    const $applyButton = this.$datepicker.find('.js-calendar__apply-button');
 
-    this.addHandleButtons($clear, $apply);
+    this.addHandleButtons($clearButton, $applyButton);
 
     this.calendar.$datepicker.append($buttons);
   }
 
-  addHandleButtons($clear, $apply) {
-    $clear.on('click', () => {
-      this.calendar.clear();
-    });
+  addHandleButtons($clearButton, $applyButton) {
+    $clearButton.on(`click.clearButton${this.index}`, this.handleClearButtonClick.bind(this));
 
-    $apply.on('click', () => {
-      this.calendar.hide();
-    });
+    $applyButton.on(`click.applyButton${this.index}`, this.handleApplyButtonClick.bind(this));
+  }
+
+  handleClearButtonClick() {
+    this.calendar.clear();
+  }
+
+  handleApplyButtonClick() {
+    this.calendar.hide();
   }
 }
 
@@ -14809,33 +14821,6 @@ class Calendar {
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/lib/loader.js??ref--5-4!./calendar.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/calendar/calendar.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-
-/***/ }),
-
-/***/ "./src/components/calendar/datepicker.scss":
-/*!*************************************************!*\
-  !*** ./src/components/calendar/datepicker.scss ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/lib/loader.js??ref--5-4!./datepicker.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/calendar/datepicker.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -14922,8 +14907,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const arrDropdown = document.querySelectorAll('.js-dropdown');
-arrDropdown.forEach((item) => {
-  new _dropdown__WEBPACK_IMPORTED_MODULE_0__["default"](item);
+arrDropdown.forEach((item, index) => {
+  new _dropdown__WEBPACK_IMPORTED_MODULE_0__["default"](item, index);
 });
 
 
@@ -14944,14 +14929,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class Dropdown {
-  constructor(dropdown) {
+  constructor(dropdown, index) {
     this.$dropdown = $(dropdown);
-    this.addButtons();
+    this.index = index;
     this.createDropdown();
+    this.addButtons();
   }
 
   createDropdown() {
-    this.$dropdown.find('.iqdropdown').iqDropdown({
+    this.$pluginDropdown = this.$dropdown.find('.iqdropdown');
+
+    this.$pluginDropdown.iqDropdown({
       selectionText: '',
       textPlural: '',
       onChange: () => {
@@ -14959,40 +14947,62 @@ class Dropdown {
       },
     });
 
+    if (this.$dropdown.hasClass('js-dropdown_with-buttons')) {
+      this.$clearButton = this.$dropdown.find('.js-dropdown__clear-button');
+    }
+
+    this.$dropdownMenu = this.$dropdown.find('.iqdropdown-menu');
+    this.addHandledropdownMenu();
+
+    this.$arrCounters = this.$dropdown.find('.counter');
+    this.$buttonsDecrement = this.$dropdown.find('.button-decrement');
+    this.$textField = this.$dropdown.find('.iqdropdown-selection');
+
     this.setValueDropdown();
+  }
+
+  addHandledropdownMenu() {
+    this.$dropdownMenu.on(`click.menu${this.index}`, this.handleMenuClick);
+  }
+
+  handleMenuClick(event) {
+    event.stopPropagation();
   }
 
   addButtons() {
     if (this.$dropdown.hasClass('js-dropdown_with-buttons')) {
-      const $buttons = this.$dropdown.find('.js-dropdown__buttons');
-      const $clear = $buttons.find('.js-dropdown__clear-button');
-      const $apply = $buttons.find('.js-dropdown__apply-button');
-      this.addHandlesForButtons($buttons, $clear, $apply);
+      this.$applyButton = this.$dropdown.find('.js-dropdown__apply-button');
+      this.addHandlesForButtons();
     }
   }
 
-  addHandlesForButtons($buttons, $clear, $apply) {
-    $buttons.on('click', (event) => {
-      event.stopPropagation();
-    });
+  addHandlesForButtons() {
+    this.$clearButton.on(`click.clearButton${this.index}`, this.handleClearButtonClick.bind(this));
+    this.$applyButton.on(`click.applyButton${this.index}`, this.handleApplyButtonClick.bind(this));
+  }
 
-    $clear.on('click', () => {
-      while (Number.parseInt(this.$dropdown.find('.counter').text(), 10) !== 0) {
-        this.$dropdown.find('.button-decrement').trigger('click');
+  handleClearButtonClick() {
+    let isTrue = true;
+    do {
+      let count = 0;
+      this.$buttonsDecrement.trigger('click');
+      this.$arrCounters.each((i, counter) => {
+        count += Number.parseInt(counter.innerHTML, 10);
+      });
+
+      if (count === 0) {
+        isTrue = false;
       }
-    });
+    } while (isTrue);
+  }
 
-    $apply.on('click', () => {
-      this.$dropdown.find('.iqdropdown').trigger('click');
-    });
-    this.$dropdown.find('.iqdropdown-menu').append($buttons);
+  handleApplyButtonClick() {
+    this.$pluginDropdown.trigger('click');
   }
 
   checkOnNull(arrCount) {
-    const buttons = this.$dropdown.find('.button-decrement');
-
     arrCount.forEach((item, i) => {
-      const $button = $(buttons[i]);
+      const $button = $(this.$buttonsDecrement[i]);
 
       if (item === 0) {
         $button.addClass('button-zero');
@@ -15016,7 +15026,7 @@ class Dropdown {
       if (item === 1) {
         this.text += `${item} ${arrValues[i][0]}, `;
       }
-      if (item > 1 && item < 5) {
+      if (this.matchesWordFromMiddleArray(item)) {
         this.text += `${item} ${arrValues[i][1]}, `;
       }
       if (item > 4) {
@@ -15024,14 +15034,12 @@ class Dropdown {
       }
     });
 
-    const $clear = this.$dropdown.find('.js-dropdown__clear-button');
-
     if (this.text.length > 0) {
       this.text = this.text.slice(0, this.text.length - 2);
-      $clear.removeClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.removeClass('dropdown__clear-button_hide_clean');
     } else {
       this.text = 'Сколько гостей';
-      $clear.addClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.addClass('dropdown__clear-button_hide_clean');
     }
   }
 
@@ -15046,10 +15054,10 @@ class Dropdown {
       if (item === 1) {
         this.text += `${item} ${arrValues[i][0]}, `;
       }
-      if (item > 1 && item < 5) {
+      if (this.matchesWordFromMiddleArray(item)) {
         this.text += `${item} ${arrValues[i][1]}, `;
       }
-      if (item > 4 || item === 0) {
+      if (this.matchesWordFromEndArray(item)) {
         this.text += `${item} ${arrValues[i][2]}, `;
       }
     });
@@ -15057,11 +15065,17 @@ class Dropdown {
     this.text = this.text.slice(0, this.text.length - 2);
   }
 
-  setValueDropdown() {
-    const arrItems = this.$dropdown.find('.counter');
+  matchesWordFromMiddleArray(item) {
+    return item > 1 && item < 5;
+  }
 
+  matchesWordFromEndArray(item) {
+    return item > 4 || item === 0;
+  }
+
+  setValueDropdown() {
     const arrCount = [];
-    arrItems.each((i, item) => {
+    this.$arrCounters.each((i, item) => {
       arrCount.push(Number.parseInt($(item).text(), 10));
     });
 
@@ -15075,7 +15089,7 @@ class Dropdown {
       this.setValueFurnitureAndSetText(arrCount);
     }
 
-    this.$dropdown.find('.iqdropdown-selection').text(this.text);
+    this.$textField.text(this.text);
   }
 }
 
@@ -15110,33 +15124,6 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/dropdown/item-quantity-dropdown.scss":
-/*!*************************************************************!*\
-  !*** ./src/components/dropdown/item-quantity-dropdown.scss ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/lib/loader.js??ref--5-4!./item-quantity-dropdown.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/components/dropdown/item-quantity-dropdown.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-
-/***/ }),
-
 /***/ "./src/components/expandable-checkbox-list/expandable-checkbox-list-init.js":
 /*!**********************************************************************************!*\
   !*** ./src/components/expandable-checkbox-list/expandable-checkbox-list-init.js ***!
@@ -15149,7 +15136,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./expandable-checkbox-list */ "./src/components/expandable-checkbox-list/expandable-checkbox-list.js");
 
 
-new _expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__["default"]();
+const checkboxLists = document.querySelectorAll('.js-expandable-checkbox-list__dropdown');
+checkboxLists.forEach((checkboxList, index) => {
+  new _expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__["default"](checkboxList, index);
+});
 
 
 /***/ }),
@@ -15165,24 +15155,30 @@ new _expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__["default"]();
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CheckboxList; });
 class CheckboxList {
-  constructor() {
+  constructor(checkboxList, index) {
+    this.$checkboxList = $(checkboxList);
+    this.index = index;
+    this.createCheckboxList();
+  }
+
+  createCheckboxList() {
+    this.$icon = this.$checkboxList.find('.expandable-checkbox-list__icon');
+    this.$items = this.$checkboxList.parent().find('.expandable-checkbox-list__items');
     this.addHandleClick();
   }
 
   addHandleClick() {
-    $('.js-expandable-checkbox-list__dropdown').on('click', (event) => {
-      const $target = $(event.currentTarget);
-      const $icon = $target.find('.expandable-checkbox-list__icon');
-      const $items = $target.parent().find('.expandable-checkbox-list__items');
+    this.$checkboxList.on(`click.dropdown${this.index}`, this.handleDropdownClick.bind(this));
+  }
 
-      if (!($icon.hasClass('expandable-checkbox-list__icon_turn'))) {
-        $icon.addClass('expandable-checkbox-list__icon_turn');
-        $items.addClass('expandable-checkbox-list__items_display_on');
-      } else {
-        $icon.removeClass('expandable-checkbox-list__icon_turn');
-        $items.removeClass('expandable-checkbox-list__items_display_on');
-      }
-    });
+  handleDropdownClick() {
+    if (!(this.$icon.hasClass('expandable-checkbox-list__icon_turn'))) {
+      this.$icon.addClass('expandable-checkbox-list__icon_turn');
+      this.$items.addClass('expandable-checkbox-list__items_display_on');
+    } else {
+      this.$icon.removeClass('expandable-checkbox-list__icon_turn');
+      this.$items.removeClass('expandable-checkbox-list__items_display_on');
+    }
   }
 }
 
@@ -15229,7 +15225,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./field-button */ "./src/components/field-button/field-button.js");
 
 
-new _field_button__WEBPACK_IMPORTED_MODULE_0__["default"]();
+const fields = document.querySelectorAll('.js-field-button');
+
+fields.forEach((field, index) => {
+  new _field_button__WEBPACK_IMPORTED_MODULE_0__["default"](field, index);
+});
 
 
 /***/ }),
@@ -15245,37 +15245,56 @@ new _field_button__WEBPACK_IMPORTED_MODULE_0__["default"]();
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Field; });
 class Field {
-  constructor() {
-    this.addHandleFocus();
-    this.addHandleBlur();
-    this.addHandleHover();
+  constructor(field, index) {
+    this.$field = $(field);
+    this.index = index;
+    this.createField();
+  }
+
+  createField() {
+    this.$fieldButton = this.$field.find('.js-field-button__icon');
+    this.addHandleMouseEnter();
+    this.addHandleMoueseLeave();
+
+    if (this.$field.hasClass('js-field-button_focused')) {
+      this.$textField = this.$field.find('.js-text-field');
+      this.addHandleFocus();
+      this.addHandleBlur();
+    }
   }
 
   addHandleFocus() {
-    $('.js-field-button_focused .js-text-field').on('focus', (event) => {
-      const $target = $(event.currentTarget);
-      $target.parent().addClass('field-button_isFocused');
-      $target.next().addClass('field-button__icon_isFocused');
-    });
+    this.$textField.on(`focus.textField${this.index}`, this.handleTextFieldFocus.bind(this));
+  }
+
+  handleTextFieldFocus() {
+    this.$field.addClass('field-button_focused');
+    this.$fieldButton.addClass('field-button__icon_focused');
   }
 
   addHandleBlur() {
-    $('.js-field-button_focused .js-text-field').on('blur', (event) => {
-      const $target = $(event.currentTarget);
-      $target.parent().removeClass('field-button_isFocused');
-      $target.next().removeClass('field-button__icon_isFocused');
-    });
+    this.$textField.on(`blur.textField${this.index}`, this.handleTextFieldBlur.bind(this));
   }
 
-  addHandleHover() {
-    $('.js-field-button .js-field-button__icon').hover(
-      (event) => {
-        $(event.currentTarget).addClass('field-button__icon_hovered');
-      },
-      (event) => {
-        $(event.currentTarget).removeClass('field-button__icon_hovered');
-      },
-    );
+  handleTextFieldBlur() {
+    this.$field.removeClass('field-button_focused');
+    this.$fieldButton.removeClass('field-button__icon_focused');
+  }
+
+  addHandleMouseEnter() {
+    this.$fieldButton.on(`mouseenter.icon${this.index}`, this.handleIconMouseEnter);
+  }
+
+  addHandleMoueseLeave() {
+    this.$fieldButton.on(`mouseleave.icon${this.index}`, this.handleIconMoueseLeave);
+  }
+
+  handleIconMouseEnter(event) {
+    $(event.currentTarget).addClass('field-button__icon_hovered');
+  }
+
+  handleIconMoueseLeave(event) {
+    $(event.currentTarget).removeClass('field-button__icon_hovered');
   }
 }
 
@@ -15403,7 +15422,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _like_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like-button */ "./src/components/like-button/like-button.js");
 
 
-new _like_button__WEBPACK_IMPORTED_MODULE_0__["default"]();
+const likes = document.querySelectorAll('.js-like-button');
+likes.forEach((like, index) => {
+  new _like_button__WEBPACK_IMPORTED_MODULE_0__["default"](like, index);
+});
 
 
 /***/ }),
@@ -15419,37 +15441,45 @@ new _like_button__WEBPACK_IMPORTED_MODULE_0__["default"]();
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Like; });
 class Like {
-  constructor() {
+  constructor(like, index) {
+    this.$like = $(like);
+    this.index = index;
+    this.createLike();
+  }
+
+  createLike() {
+    this.$icon = this.$like.find('.like-button__icon');
+    this.$number = this.$like.find('.like-button__number');
     this.addHandleClick();
   }
 
   addHandleClick() {
-    $('.js-like-button').on('click', (event) => {
-      const $target = $(event.currentTarget);
-      const $icon = $target.find('.like-button__icon');
-      const $number = $target.find('.like-button__number');
-      let text = Number.parseInt($number.text(), 10);
-      if (!($target.hasClass('like-button_click'))) {
-        $target.addClass('like-button_click');
-        text += 1;
-        $number.text(text);
+    this.$like.on(`click.likeButton${this.index}`, this.handleLikeButtonClick.bind(this));
+  }
 
-        if (text > 9) {
-          $number.addClass('like-button__number_margin_null');
-        }
-        $icon.text('favorite');
-      } else {
-        $target.removeClass('like-button_click');
-        text -= 1;
-        $number.text(text);
+  handleLikeButtonClick(event) {
+    const $target = $(event.currentTarget);
+    let text = Number.parseInt(this.$number.text(), 10);
+    if (!($target.hasClass('like-button_clicked'))) {
+      $target.addClass('like-button_clicked');
+      text += 1;
+      this.$number.text(text);
 
-        if (text < 10) {
-          $number.removeClass('like-button__number_margin_null');
-        }
-
-        $icon.text('favorite_border');
+      if (text > 9) {
+        this.$number.addClass('like-button__number_margin_null');
       }
-    });
+      this.$icon.text('favorite');
+    } else {
+      $target.removeClass('like-button_clicked');
+      text -= 1;
+      this.$number.text(text);
+
+      if (text < 10) {
+        this.$number.removeClass('like-button__number_margin_null');
+      }
+
+      this.$icon.text('favorite_border');
+    }
   }
 }
 
@@ -15496,7 +15526,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _masked_text_field__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./masked-text-field */ "./src/components/masked-text-field/masked-text-field.js");
 
 
-new _masked_text_field__WEBPACK_IMPORTED_MODULE_0__["default"]();
+const masks = document.querySelectorAll('.js-mask');
+masks.forEach((mask) => {
+  new _masked_text_field__WEBPACK_IMPORTED_MODULE_0__["default"](mask);
+});
 
 
 /***/ }),
@@ -15516,12 +15549,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class Mask {
-  constructor() {
+  constructor(mask) {
+    this.$mask = $(mask);
     this.createMask();
   }
 
   createMask() {
-    $('.js-mask').mask('AB.SR.YXOQ', {
+    this.$mask.mask('AB.SR.YXOK', {
       translation: {
         A: { pattern: /[0-3]/ },
         B: { pattern: /[0-9]/ },
@@ -15532,10 +15566,10 @@ class Mask {
         O: { pattern: /[0-1]/ },
         K: { pattern: /[0-9]/ },
       },
-      onKeyPress(val, e, field, options) {
-        const obj = Mask.createMaskOption(val);
+      onKeyPress(value, e, field, options) {
+        const patternObject = Mask.createMaskOption(value);
         field.mask('AB.SR.YXOK', {
-          translation: obj,
+          translation: patternObject,
           onKeyPress: options.onKeyPress,
         });
       },
@@ -15545,7 +15579,7 @@ class Mask {
   static createMaskOption(val) {
     if (Number.parseInt(val[6], 10) === 1) {
       return {
-        O: { pattern: /[5-9]/ },
+        O: { pattern: /[0-9]/ },
         X: { pattern: /[9]/ },
         A: { pattern: /[0-3]/ },
         B: { pattern: /[0-9]/ },
@@ -15559,7 +15593,7 @@ class Mask {
       return {
         R: { pattern: /[0-2]/ },
         A: { pattern: /[0-3]/ },
-        B: { pattern: /[0-1]/ },
+        B: { pattern: /[0-9]/ },
         S: { pattern: /[0-1]/ },
         Y: { pattern: /[1-2]/ },
         X: { pattern: /[0]/ },
@@ -15569,8 +15603,8 @@ class Mask {
     }
     if (Number.parseInt(val[0], 10) === 0) {
       return {
-        A: { pattern: /[0-3]/ },
         B: { pattern: /[1-9]/ },
+        A: { pattern: /[0-3]/ },
         S: { pattern: /[0-1]/ },
         R: { pattern: /[1-9]/ },
         Y: { pattern: /[1-2]/ },
@@ -15581,8 +15615,8 @@ class Mask {
     }
     if (Number.parseInt(val[0], 10) === 3) {
       return {
-        A: { pattern: /[0-3]/ },
         B: { pattern: /[0-1]/ },
+        A: { pattern: /[0-3]/ },
         S: { pattern: /[0-1]/ },
         R: { pattern: /[1-9]/ },
         Y: { pattern: /[1-2]/ },
@@ -15591,10 +15625,9 @@ class Mask {
         K: { pattern: /[0-9]/ },
       };
     }
-
     return {
-      B: { pattern: /[0-9]/ },
       A: { pattern: /[0-3]/ },
+      B: { pattern: /[0-9]/ },
       S: { pattern: /[0-1]/ },
       R: { pattern: /[1-9]/ },
       Y: { pattern: /[1-2]/ },
@@ -15702,10 +15735,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _radio_buttons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./radio-buttons */ "./src/components/radio-buttons/radio-buttons.js");
 
 
-const item = document.querySelector('.js-radio-buttons');
-if (item) {
-  new _radio_buttons__WEBPACK_IMPORTED_MODULE_0__["default"](item);
-}
+const arrRadioItem = document.querySelectorAll('.js-radio-buttons');
+arrRadioItem.forEach((radio, index) => {
+  new _radio_buttons__WEBPACK_IMPORTED_MODULE_0__["default"](radio, index);
+});
 
 
 /***/ }),
@@ -15721,30 +15754,33 @@ if (item) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RadioButtons; });
 class RadioButtons {
-  constructor(radio) {
+  constructor(radio, index) {
     this.$radio = $(radio);
+    this.index = index;
     this.createRadio();
   }
 
   createRadio() {
     this.$arrRadio = this.$radio.find('.js-switch');
-    $(this.$arrRadio[0]).addClass('switch_radio_checked');
+    $(this.$arrRadio[0]).addClass('switch_type_radio-checked');
     this.addHandleClick();
   }
 
   addHandleClick() {
-    this.$radio.on('click', (event) => {
-      const $target = $(event.target);
-      if ($target.hasClass('js-radio-buttons')) return;
-      $target.find('.js-switch__input').prop('checked', true);
-      $target.addClass('switch_radio_checked');
+    this.$radio.on(`click.radioButtons${this.index}`, this.handleRadioButtonsClick.bind(this));
+  }
 
-      this.$arrRadio.each((i, radioItem) => {
-        const $radioItem = $(radioItem);
-        if (!($radioItem.find('.js-switch__input').prop('checked'))) {
-          $radioItem.removeClass('switch_radio_checked');
-        }
-      });
+  handleRadioButtonsClick(event) {
+    const $target = $(event.target);
+    if ($target.hasClass('js-radio-buttons')) return;
+    $target.children().prop('checked', true);
+    $target.addClass('switch_type_radio-checked');
+
+    this.$arrRadio.each((i, radioItem) => {
+      const $radioItem = $(radioItem);
+      if (!($radioItem.children().prop('checked'))) {
+        $radioItem.removeClass('switch_type_radio-checked');
+      }
     });
   }
 }
@@ -15792,10 +15828,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _range_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./range-slider */ "./src/components/range-slider/range-slider.js");
 
 
-const item = document.querySelector('.js-range-slider');
-if (item) {
-  new _range_slider__WEBPACK_IMPORTED_MODULE_0__["default"]('.js-range-slider');
-}
+const arrSliders = document.querySelectorAll('.js-range-slider');
+arrSliders.forEach((slider) => {
+  new _range_slider__WEBPACK_IMPORTED_MODULE_0__["default"](slider);
+});
 
 
 /***/ }),
@@ -15879,28 +15915,6 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/rate-button/jquery.star.rating.min.js":
-/*!**************************************************************!*\
-  !*** ./src/components/rate-button/jquery.star.rating.min.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/**
- * jQuery Star Rating plugin
- * Joost van Velzen - http://joost.in
- *
- * v 1.0.3
- *
- * cc - attribution + share alike
- * http://creativecommons.org/licenses/by-sa/4.0/
- */
-(function(n){n.fn.addRating=function(t){var r=this,i=n.extend({max:5,half:!0,fieldName:"rating",fieldId:"rating",icon:"star",selectedRatings:0},t),u,f;for(this.settings=i,u=1;u<=i.max;u++)f=n("<i/>").addClass("material-icons").html(this.settings.icon+"_border").data("rating",u).appendTo(this).click(function(){r.setRating(n(this).data("rating"))}).hover(function(){r.showRating(n(this).data("rating"),!1)},function(){r.showRating(0,!1)});n(this).append('<input type="hidden" name="'+i.fieldName+'" id="'+i.fieldId+'" value="'+i.selectedRatings+'" />');r.showRating(i.selectedRatings,!0)};n.fn.setRating=function(t){var i=this;n("#"+i.settings.fieldId).val(t);i.showRating(t,!0)};n.fn.showRating=function(t,i){var r=this;(n("#"+r.settings.fieldId).val()==""||i)&&n(r).find("i").each(function(){var i=r.settings.icon+"_border";n(this).removeClass("selected");n(this).data("rating")<=t&&(i=r.settings.icon,n(this).addClass("selected"));n(this).html(i)})}})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
 /***/ "./src/components/rate-button/rate-button-init.js":
 /*!********************************************************!*\
   !*** ./src/components/rate-button/rate-button-init.js ***!
@@ -15931,8 +15945,8 @@ rateButtons.forEach((item) => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RateButton; });
-/* harmony import */ var _jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./jquery.star.rating.min */ "./src/components/rate-button/jquery.star.rating.min.js");
-/* harmony import */ var _jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vendors_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../vendors/jquery.star.rating.min */ "./src/vendors/jquery.star.rating.min.js");
+/* harmony import */ var _vendors_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendors_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__);
 
 
 class RateButton {
@@ -16104,7 +16118,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./switch */ "./src/components/switch/switch.js");
 
 
-new _switch__WEBPACK_IMPORTED_MODULE_0__["default"]();
+const switchs = document.querySelectorAll('.js-switch');
+switchs.forEach((item, index) => {
+  new _switch__WEBPACK_IMPORTED_MODULE_0__["default"](item, index);
+});
 
 
 /***/ }),
@@ -16120,23 +16137,31 @@ new _switch__WEBPACK_IMPORTED_MODULE_0__["default"]();
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Switch; });
 class Switch {
-  constructor() {
+  constructor(switchItem, index) {
+    this.$switch = $(switchItem);
+    this.index = index;
+    this.createSwitch();
+  }
+
+  createSwitch() {
+    this.$input = this.$switch.find('.js-switch__input');
     this.addHandleClick();
   }
 
   addHandleClick() {
-    $('.js-switch').on('click', (event) => {
-      const $target = $(event.currentTarget);
-      const $input = $target.find('.js-switch__input');
-      if (!($input.attr('type') === 'checkbox')) return;
+    this.$switch.on(`click.switch${this.index}`, this.handleSwitchClick.bind(this));
+  }
 
-      const className = $target.hasClass('switch_checkbox') ? 'switch_checkbox' : 'switch_toggle';
-      if ($input.prop('checked')) {
-        $target.addClass(`${className}_checked`);
-      } else {
-        $target.removeClass(`${className}_checked`);
-      }
-    });
+  handleSwitchClick(event) {
+    const $target = $(event.currentTarget);
+    if (!(this.$input.attr('type') === 'checkbox')) return;
+
+    const className = $target.hasClass('switch_type_checkbox') ? 'switch_type_checkbox' : 'switch_type_toggle';
+    if (this.$input.prop('checked')) {
+      $target.addClass(`${className}-checked`);
+    } else {
+      $target.removeClass(`${className}-checked`);
+    }
   }
 }
 
@@ -16648,6 +16673,82 @@ if (content.locals) {
   module.exports = content.locals;
 }
 
+
+/***/ }),
+
+/***/ "./src/vendors/datepicker.scss":
+/*!*************************************!*\
+  !*** ./src/vendors/datepicker.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/lib/loader.js??ref--5-4!./datepicker.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/vendors/datepicker.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/vendors/item-quantity-dropdown.scss":
+/*!*************************************************!*\
+  !*** ./src/vendors/item-quantity-dropdown.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js??ref--5-2!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/lib/loader.js??ref--5-4!./item-quantity-dropdown.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/lib/loader.js?!./src/vendors/item-quantity-dropdown.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/vendors/jquery.star.rating.min.js":
+/*!***********************************************!*\
+  !*** ./src/vendors/jquery.star.rating.min.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {/**
+ * jQuery Star Rating plugin
+ * Joost van Velzen - http://joost.in
+ *
+ * v 1.0.3
+ *
+ * cc - attribution + share alike
+ * http://creativecommons.org/licenses/by-sa/4.0/
+ */
+(function(n){n.fn.addRating=function(t){var r=this,i=n.extend({max:5,half:!0,fieldName:"rating",fieldId:"rating",icon:"star",selectedRatings:0},t),u,f;for(this.settings=i,u=1;u<=i.max;u++)f=n("<i/>").addClass("material-icons").html(this.settings.icon+"_border").data("rating",u).appendTo(this).click(function(){r.setRating(n(this).data("rating"))}).hover(function(){r.showRating(n(this).data("rating"),!1)},function(){r.showRating(0,!1)});n(this).append('<input type="hidden" name="'+i.fieldName+'" id="'+i.fieldId+'" value="'+i.selectedRatings+'" />');r.showRating(i.selectedRatings,!0)};n.fn.setRating=function(t){var i=this;n("#"+i.settings.fieldId).val(t);i.showRating(t,!0)};n.fn.showRating=function(t,i){var r=this;(n("#"+r.settings.fieldId).val()==""||i)&&n(r).find("i").each(function(){var i=r.settings.icon+"_border";n(this).removeClass("selected");n(this).data("rating")<=t&&(i=r.settings.icon,n(this).addClass("selected"));n(this).html(i)})}})(jQuery);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ })
 
