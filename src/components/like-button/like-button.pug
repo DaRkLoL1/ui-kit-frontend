@@ -6,7 +6,7 @@ mixin like-button({number = 0, clicked = false} = {})
 
   div(class=`like-button js-like-button${parentClass}`)
     if clicked
-      i(class="material-icons like-button__icon") favorite
+      i(class="material-icons like-button__icon js-like-button__icon") favorite
     else   
-      i(class="material-icons like-button__icon") favorite_border
-    div(class=`like-button__number${className}`)=number
+      i(class="material-icons like-button__icon js-like-button__icon") favorite_border
+    div(class=`js-like-button__number like-button__number${className}`)=number

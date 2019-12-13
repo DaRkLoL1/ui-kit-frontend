@@ -6,8 +6,8 @@ export default class Like {
   }
 
   createLike() {
-    this.$icon = this.$like.find('.like-button__icon');
-    this.$number = this.$like.find('.like-button__number');
+    this.$icon = this.$like.find('.js-like-button__icon');
+    this.$number = this.$like.find('.js-like-button__number');
     this.addHandleClick();
   }
 
