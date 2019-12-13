@@ -7,7 +7,7 @@ export default class RadioButtons {
 
   createRadio() {
     this.$arrRadio = this.$radio.find('.js-switch');
-    $(this.$arrRadio[0]).addClass('switch_type_radio-checked');
+    $(this.$arrRadio).eq(0).addClass('switch_type_radio-checked');
     this.addHandleClick();
   }
 
