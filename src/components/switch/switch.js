@@ -1,4 +1,4 @@
-export default class Switch {
+class Switch {
   constructor(switchItem, index) {
     this.$switch = $(switchItem);
     this.index = index;
@@ -26,3 +26,5 @@ export default class Switch {
     }
   }
 }
+
+export { Switch };

@@ -1,4 +1,4 @@
-export default class Like {
+class Like {
   constructor(like, index) {
     this.$like = $(like);
     this.index = index;
@@ -40,3 +40,5 @@ export default class Like {
     }
   }
 }
+
+export { Like };

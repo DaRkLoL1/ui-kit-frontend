@@ -19,5 +19,6 @@ module.exports = {
     "rules": {
         "no-new": 0,
         "class-methods-use-this": 0,
+        "import/prefer-default-export": 0,
     }
 };

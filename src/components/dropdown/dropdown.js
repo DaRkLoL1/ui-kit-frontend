@@ -1,6 +1,6 @@
 import 'item-quantity-dropdown/lib/item-quantity-dropdown.min';
 
-export default class Dropdown {
+class Dropdown {
   constructor(dropdown, index) {
     this.$dropdown = $(dropdown);
     this.index = index;
@@ -164,3 +164,5 @@ export default class Dropdown {
     this.$textField.text(this.text);
   }
 }
+
+export { Dropdown };

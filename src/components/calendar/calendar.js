@@ -1,6 +1,6 @@
 import 'air-datepicker';
 
-export default class Calendar {
+class Calendar {
   constructor(datepicker, index) {
     this.$datepicker = $(datepicker);
     this.index = index;
@@ -125,3 +125,5 @@ export default class Calendar {
     this.calendar.hide();
   }
 }
+
+export { Calendar };

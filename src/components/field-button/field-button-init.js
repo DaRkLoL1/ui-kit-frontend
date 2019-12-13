@@ -1,4 +1,4 @@
-import Field from './field-button';
+import { Field } from './field-button';
 
 const fields = document.querySelectorAll('.js-field-button');
 

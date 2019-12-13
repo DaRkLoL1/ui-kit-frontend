@@ -1,4 +1,4 @@
-export default class Field {
+class Field {
   constructor(field, index) {
     this.$field = $(field);
     this.index = index;
@@ -51,3 +51,5 @@ export default class Field {
     $(event.currentTarget).removeClass('field-button__icon_hovered');
   }
 }
+
+export { Field };

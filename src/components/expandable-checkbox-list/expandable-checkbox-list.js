@@ -1,4 +1,4 @@
-export default class CheckboxList {
+class CheckboxList {
   constructor(checkboxList, index) {
     this.$checkboxList = $(checkboxList);
     this.index = index;
@@ -25,3 +25,5 @@ export default class CheckboxList {
     }
   }
 }
+
+export { CheckboxList };

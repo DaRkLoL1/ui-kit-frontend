@@ -1,6 +1,6 @@
 import 'jquery-mask-plugin';
 
-export default class Mask {
+class Mask {
   constructor(mask) {
     this.$mask = $(mask);
     this.createMask();
@@ -89,3 +89,5 @@ export default class Mask {
     };
   }
 }
+
+export { Mask };

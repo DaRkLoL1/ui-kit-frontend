@@ -1,4 +1,4 @@
-export default class RadioButtons {
+class RadioButtons {
   constructor(radio, index) {
     this.$radio = $(radio);
     this.index = index;
@@ -29,3 +29,5 @@ export default class RadioButtons {
     });
   }
 }
+
+export { RadioButtons };

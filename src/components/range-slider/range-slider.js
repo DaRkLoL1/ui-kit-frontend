@@ -1,6 +1,6 @@
 import 'jquery-ui-slider/jquery-ui.min';
 
-export default class RangeSlider {
+class RangeSlider {
   constructor(slider) {
     this.$slider = $(slider);
     this.createSlider();
@@ -33,3 +33,5 @@ export default class RangeSlider {
     });
   }
 }
+
+export { RangeSlider };

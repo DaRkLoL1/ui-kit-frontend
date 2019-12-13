@@ -1,4 +1,4 @@
-import RadioButtons from './radio-buttons';
+import { RadioButtons } from './radio-buttons';
 
 const arrRadioItem = document.querySelectorAll('.js-radio-buttons');
 arrRadioItem.forEach((radio, index) => {

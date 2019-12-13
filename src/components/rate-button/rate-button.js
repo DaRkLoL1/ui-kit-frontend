@@ -1,6 +1,6 @@
 import '../../vendors/jquery.star.rating.min';
 
-export default class RateButton {
+class RateButton {
   constructor(rate) {
     this.$rate = $(rate);
     this.createStars();
@@ -17,3 +17,5 @@ export default class RateButton {
     this.$rate.find('i').addClass('rate-button__icon');
   }
 }
+
+export { RateButton };
