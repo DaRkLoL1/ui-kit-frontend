@@ -20,14 +20,14 @@ html
           let arr = [
             ["colors-types", "Colors & Type"],
             ["elements", "Form Elements"],
-            ["cards", "Cards"], 
+            ["cards", "Cards"],
             ["headers-footers", "Headers & Footers"],
             ["landing-page", "Landing page"],
             ["search-room", "Search room/Filter"],
             ["room-details", "Room details"],
             ["registration", "Registration"],
             ["sign-in", "Sign in"],
-          ]
+          ];
         each val in arr
           li
             a(href=`./${val[0]}.html` target="_blank")= val[1]

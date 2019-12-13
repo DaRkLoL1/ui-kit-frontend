@@ -14,4 +14,11 @@ mixin window-login
       .window-login__footer
         p(class="window-login__text") Нет аккаунта на Toxin?
         .window-login__link
-          +button-link({size: "medium", style: "ghost", text: "создать", page: "registration"})
+          +button-link(
+            {
+              size: "medium", 
+              style: "ghost", 
+              text: "создать", 
+              page: "registration"
+            }
+          )

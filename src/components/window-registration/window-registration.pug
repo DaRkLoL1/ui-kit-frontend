@@ -31,7 +31,14 @@ mixin window-registration
       .window-registration__footer
         p(class="window-registration__text") Уже есть аккаунт на Toxin
         .window-registration__link 
-          +button-link({size: "medium", style: "ghost", text: "войти", page: "sign-in"})
+          +button-link(
+            {
+              size: "medium", 
+              style: "ghost", 
+              text: "войти", 
+              page: "sign-in"
+            }
+          )
 
 
         

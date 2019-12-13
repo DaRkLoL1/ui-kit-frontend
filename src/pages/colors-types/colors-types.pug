@@ -25,10 +25,30 @@ block body
       .color-and-type__right-wrapper
         -
           let types = [
-            [" colors-and-type__types_type_widjet-title", "", "H1", "This one is the sub-section or widget title"],
-            [" colors-and-type__types_type_item-title", "",  "H2", "Next one is the item title inside widgets"],
-            [" colors-and-type__types_type_label-text", "", "H3", "This is a label or CTA text"],
-            [" colors-and-type__types_type_text", " colors-and-type__types-text_width_301", "Body", "This is the body text which is used for most of the design, like paragraphs, lists, etc."]
+            [
+              " colors-and-type__types_type_widjet-title", 
+              "", 
+              "H1", 
+              "This one is the sub-section or widget title"
+            ],
+            [
+              " colors-and-type__types_type_item-title", 
+              "",  
+              "H2", 
+              "Next one is the item title inside widgets"
+            ],
+            [
+              " colors-and-type__types_type_label-text", 
+              "", 
+              "H3", 
+              "This is a label or CTA text"
+            ],
+            [
+              " colors-and-type__types_type_text", 
+              " colors-and-type__types-text_width_301", 
+              "Body", 
+              "This is the body text which is used for most of the design, like paragraphs, lists, etc."
+            ]
           ]
         each val in types
           p(class=`colors-and-type__types${val[0]}`)
