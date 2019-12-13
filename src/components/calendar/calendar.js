@@ -91,17 +91,13 @@ export default class Calendar {
 
   setMethodShow() {
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      this.$fields.on(`click.input${this.index}`, this.handleInputClick.bind(this));
+      this.$fields.on(`click.input${this.index}`, this.handleDatepickerClick.bind(this));
     } else {
-      this.$datepicker.on(`click.calendar${this.index}`, this.handleCalendarClick.bind(this));
+      this.$datepicker.on(`click.calendar${this.index}`, this.handleDatepickerClick.bind(this));
     }
   }
 
-  handleInputClick() {
-    this.calendar.show();
-  }
-
-  handleCalendarClick() {
+  handleDatepickerClick() {
     this.calendar.show();
   }
 
