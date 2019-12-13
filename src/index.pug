@@ -1,21 +1,33 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Бродилка по Github pages</title>
-    </head>
-    <body>
-      <h1 class="index__title">Бродилка по Github pages</h1>
-      <ul>
-        <li><a href="./colors-types.html" target="_blank">Colors & Type</a></li>
-        <li><a href="./elements.html" target="_blank">Form Elements</a></li>
-        <li><a href="./cards.html" target="_blank">Cards</a></li>
-        <li><a href="./headers-footers.html" target="_blank">Headers & Footers</a></li>
-        <li><a href="./landing-page.html" target="_blank">Landing page</a></li>
-        <li><a href="./search-room.html" target="_blank">Search room/Filter</a></li>
-        <li><a href="./room-details.html" target="_blank">Room details</a></li>
-        <li><a href="./registration.html" target="_blank">Registration</a></li>
-        <li><a href="./sign-in.html" target="_blank">Sign in</a></li>
-      </ul>
-    </body>
-  </html>
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Бродилка по Github pages
+    meta(name="keywords" content="")
+    meta(name="description" content="")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    link(rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png")
+    link(rel="manifest" href="./favicons/site.webmanifest")
+    link(rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="msapplication-TileColor" content="#da532c")
+    meta(name="theme-color" content="#ffffff")
+  body
+      h1(class="index__title") Бродилка по Github pages
+      ul
+        -
+          let arr = [
+            ["colors-types", "Colors & Type"],
+            ["elements", "Form Elements"],
+            ["cards", "Cards"], 
+            ["headers-footers", "Headers & Footers"],
+            ["landing-page", "Landing page"],
+            ["search-room", "Search room/Filter"],
+            ["room-details", "Room details"],
+            ["registration", "Registration"],
+            ["sign-in", "Sign in"],
+          ]
+        each val in arr
+          li
+            a(href=`./${val[0]}.html` target="_blank")= val[1]
