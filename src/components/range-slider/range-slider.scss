@@ -1,7 +1,6 @@
 @import '~jquery-ui-slider/jquery-ui.min.css';
 
 .range-slider {
-
   &__header {
     display: flex;
     justify-content: space-between;
@@ -88,5 +87,4 @@
     left: 0;
     width: 0.375rem;
   }
-
 }

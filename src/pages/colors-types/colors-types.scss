@@ -58,6 +58,7 @@
     &-title {
       margin-left: 2.5rem;
     }
+
     &-name {
       margin-top: 0.625rem;
       margin-bottom: 0;
@@ -79,7 +80,6 @@
       line-height: 1.26;
       color: $title-color;
     }
-  
   }
 
   &__types {
@@ -90,7 +90,6 @@
     margin-bottom: 3.125rem;
 
     &_type {
-      
       &_widjet-title {
         font-family: 'Quicksand', 'Open Sans', Arial, Helvetica, sans-serif;
         font-style: normal;
@@ -146,6 +145,5 @@
         width: 18.8125rem;
       }
     }
-  
   }
 }

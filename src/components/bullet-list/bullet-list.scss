@@ -16,6 +16,7 @@
     &:last-child {
       margin-bottom: 0;
     }
+    
     &::before {
       content: '';
       position: absolute;
@@ -27,5 +28,4 @@
       border-radius: 0.625rem;
     } 
   }
-
 }
