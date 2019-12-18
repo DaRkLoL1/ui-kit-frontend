@@ -9,7 +9,7 @@
   border-radius: 0.25rem;
 
   &_width_266 {
-    width: 266px;
+    width: 16.625rem;
   }
 
   &_width_310 {
@@ -75,7 +75,8 @@
       border: none;
     }
 
-    &.-range-to-, &.-range-from- {
+    &.-range-to-, 
+    &.-range-from- {
       background: $background;
       border: none;
     }
