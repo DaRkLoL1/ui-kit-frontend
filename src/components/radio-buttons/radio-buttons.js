@@ -7,7 +7,7 @@ class RadioButtons {
 
   initRadioButtons() {
     this.$arrRadio = this.$radio.find('.js-switch');
-    $(this.$arrRadio).eq(0).addClass('switch_type_radio-checked');
+    this.$arrRadio.eq(0).addClass('switch_type_radio-checked');
     this.addHandleClick();
   }
 
