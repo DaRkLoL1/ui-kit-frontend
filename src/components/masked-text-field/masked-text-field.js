@@ -3,10 +3,10 @@ import 'jquery-mask-plugin';
 class MaskedTextField {
   constructor(mask) {
     this.$mask = $(mask);
-    this.createMask();
+    this.initMaskedTextField();
   }
 
-  createMask() {
+  initMaskedTextField() {
     this.$mask.mask('AB.SR.YXOK', {
       translation: {
         A: { pattern: /[0-3]/ },

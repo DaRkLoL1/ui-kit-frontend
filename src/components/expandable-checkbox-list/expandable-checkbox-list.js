@@ -2,10 +2,10 @@ class ExpandableCheckboxList {
   constructor(checkboxList, index) {
     this.$checkboxList = $(checkboxList);
     this.index = index;
-    this.createCheckboxList();
+    this.initExpandableCheckboxList();
   }
 
-  createCheckboxList() {
+  initExpandableCheckboxList() {
     this.$icon = this.$checkboxList.find('.js-expandable-checkbox-list__icon');
     this.$items = this.$checkboxList.parent().find('.js-expandable-checkbox-list__items');
     this.addHandleClick();

@@ -2,10 +2,10 @@ class LikeButton {
   constructor(like, index) {
     this.$like = $(like);
     this.index = index;
-    this.createLike();
+    this.initLikeButton();
   }
 
-  createLike() {
+  initLikeButton() {
     this.$icon = this.$like.find('.js-like-button__icon');
     this.$number = this.$like.find('.js-like-button__number');
     this.addHandleClick();

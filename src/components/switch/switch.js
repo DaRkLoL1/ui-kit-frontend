@@ -2,10 +2,10 @@ class Switch {
   constructor(switchItem, index) {
     this.$switch = $(switchItem);
     this.index = index;
-    this.createSwitch();
+    this.initSwitch();
   }
 
-  createSwitch() {
+  initSwitch() {
     this.$input = this.$switch.find('.js-switch__input');
     this.addHandleClick();
   }

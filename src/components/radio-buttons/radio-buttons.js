@@ -2,10 +2,10 @@ class RadioButtons {
   constructor(radio, index) {
     this.$radio = $(radio);
     this.index = index;
-    this.createRadio();
+    this.initRadioButtons();
   }
 
-  createRadio() {
+  initRadioButtons() {
     this.$arrRadio = this.$radio.find('.js-switch');
     $(this.$arrRadio).eq(0).addClass('switch_type_radio-checked');
     this.addHandleClick();

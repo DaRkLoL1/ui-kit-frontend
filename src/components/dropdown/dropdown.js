@@ -4,11 +4,11 @@ class Dropdown {
   constructor(dropdown, index) {
     this.$dropdown = $(dropdown);
     this.index = index;
-    this.createDropdown();
+    this.initDropdown();
     this.addButtons();
   }
 
-  createDropdown() {
+  initDropdown() {
     this.$pluginDropdown = this.$dropdown.find('.iqdropdown');
 
     this.$pluginDropdown.iqDropdown({
