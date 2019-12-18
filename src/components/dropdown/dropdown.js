@@ -108,10 +108,10 @@ class Dropdown {
 
     if (this.text.length > 0) {
       this.text = this.text.slice(0, this.text.length - 2);
-      this.$clearButton.removeClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.removeClass('dropdown__clear-button_hidden');
     } else {
       this.text = 'Сколько гостей';
-      this.$clearButton.addClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.addClass('dropdown__clear-button_hidden');
     }
   }
 

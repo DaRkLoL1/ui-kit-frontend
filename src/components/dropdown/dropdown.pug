@@ -15,7 +15,7 @@ mixin dropdown({arrDefaultNumbers = "", type = "", arrTitles = [], } = {})
               div
                 p(class="iqdropdown-item")=val
           div(class="js-dropdown__buttons dropdown__buttons")
-            div(class="js-dropdown__clear-button dropdown__clear-button dropdown__clear-button_hide_clean")
+            div(class="js-dropdown__clear-button dropdown__clear-button dropdown__clear-button_hidden")
               +button-link({text: "Очистить", color: "grey"})
             div(class="js-dropdown__apply-button dropdown__apply-button")
               +button-link({text: "Применить"})
