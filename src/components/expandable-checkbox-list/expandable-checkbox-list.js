@@ -1,4 +1,4 @@
-class CheckboxList {
+class ExpandableCheckboxList {
   constructor(checkboxList, index) {
     this.$checkboxList = $(checkboxList);
     this.index = index;
@@ -21,4 +21,4 @@ class CheckboxList {
   }
 }
 
-export { CheckboxList };
+export { ExpandableCheckboxList };

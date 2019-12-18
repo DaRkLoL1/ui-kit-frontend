@@ -1,6 +1,6 @@
 import 'jquery-mask-plugin';
 
-class Mask {
+class MaskedTextField {
   constructor(mask) {
     this.$mask = $(mask);
     this.createMask();
@@ -19,7 +19,7 @@ class Mask {
         K: { pattern: /[0-9]/ },
       },
       onKeyPress(value, e, field, options) {
-        const patternObject = Mask.createMaskOption(value);
+        const patternObject = MaskedTextField.createMaskOption(value);
         field.mask('AB.SR.YXOK', {
           translation: patternObject,
           onKeyPress: options.onKeyPress,
@@ -90,4 +90,4 @@ class Mask {
   }
 }
 
-export { Mask };
+export { MaskedTextField };

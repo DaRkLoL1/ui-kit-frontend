@@ -1,4 +1,4 @@
-class Like {
+class LikeButton {
   constructor(like, index) {
     this.$like = $(like);
     this.index = index;
@@ -41,4 +41,4 @@ class Like {
   }
 }
 
-export { Like };
+export { LikeButton };
