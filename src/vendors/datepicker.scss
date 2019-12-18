@@ -23,7 +23,6 @@
   }
 
   &--nav {
-    
     margin-top: 0.9375rem;
     padding-top: 0;
     padding-left: 0.9375rem;
@@ -38,7 +37,6 @@
       line-height: 1.26;
       color: $title-color;
       
-
       &:hover {
         background: $background;
       }
@@ -72,7 +70,8 @@
     line-height: 1.25;
     color: $paragraph-color;
 
-    &.-range-to-.-focus-, &.-range-from-.-focus- {
+    &.-range-to-.-focus-,
+    &.-range-from-.-focus- {
       border: none;
     }
 
@@ -85,12 +84,15 @@
       background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     }
 
-    &.-range-to-.-selected-, &.-range-to-.-selected-.-current-, 
-    &.-range-from-.-selected-, &.-range-from-.-selected-.-current-{
+    &.-range-to-.-selected-,
+    &.-range-to-.-selected-.-current-,
+    &.-range-from-.-selected-,
+    &.-range-from-.-selected-.-current- {
       position: relative;
     }
 
-    &.-range-to-.-selected-::before, &.-range-to-.-selected-.-current-::before {
+    &.-range-to-.-selected-::before,
+    &.-range-to-.-selected-.-current-::before {
       content: '';
       position: absolute;
       left: 0;
@@ -100,7 +102,8 @@
       z-index: -1;
     }
 
-    &.-range-from-.-selected-::before, &.-range-from-.-selected-.-current-::before {
+    &.-range-from-.-selected-::before,
+    &.-range-from-.-selected-.-current-::before {
       content: '';
       position: absolute;
       right: 0;
@@ -114,7 +117,8 @@
       background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
     }
 
-    &-day.-other-month-:hover, &-year.-other-decade-:hover,
+    &-day.-other-month-:hover, 
+    &-year.-other-decade-:hover,
     &-day.-other-month- {
       color: $placeholder-color;
     }
@@ -136,7 +140,8 @@
 
     &-year.-range-to-.-selected-,
     &-month.-selected-.-range-to-,
-    &.-selected-, &.-selected-.-current-{
+    &.-selected-,
+    &.-selected-.-current- {
       background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
       border-radius: 1.375rem;
       font-weight: bold;
@@ -171,26 +176,30 @@
     text-transform: none;
     color: $primary-color;
   }
-
 }
-.-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-,
+.-selected-.-focus-.datepicker--cell-year.-other-decade- {
   background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
   color: $background;
 }
 
-.-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+.-in-range-.datepicker--cell-day.-other-month-,
+.-in-range-.datepicker--cell-year.-other-decade- {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
   color: $paragraph-color;
   border-radius: 0;
 }
 
-.-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+.-selected-.datepicker--cell-day.-other-month-,
+.-selected-.datepicker--cell-year.-other-decade- {
   background: linear-gradient(180deg, $primary-color 0%, $linear 100%);
   color: $background;
   border-radius: 1.375rem;
 }
 
-.-in-range-.-focus-.datepicker--cell-day.-other-month-,.-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+.-in-range-.-focus-.datepicker--cell-day.-other-month-,
+.-in-range-.-focus-.datepicker--cell-year.-other-decade- {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
 }
 
@@ -199,8 +208,9 @@
   color: $background;
   border-radius: 1.375rem;
 }
+
 .-in-range-.datepicker--cell-day.-other-month-.-current-, 
-.-in-range-.datepicker--cell-year.-other-decade-.-current-{
+.-in-range-.datepicker--cell-year.-other-decade-.-current- {
   color: $background;
 }
 

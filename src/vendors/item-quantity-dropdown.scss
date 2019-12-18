@@ -79,7 +79,7 @@
   }
 
   &-item,
-  & &-item-controls .counter  {
+  & &-item-controls .counter {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -123,7 +123,6 @@
       line-height: 1.875rem;
       text-align: center;
     }
-
   }
 
   & .icon-decrement::after {
@@ -161,6 +160,4 @@
   &:hover .iqdropdown-selection_opacity_m::after {
     color: $label-color;
   }
-
 }
-

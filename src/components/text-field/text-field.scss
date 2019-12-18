@@ -15,7 +15,8 @@
   font-size: 0.875rem;
   color: $placeholder-color;
 
-  &:focus, &:hover {
+  &:focus, 
+  &:hover {
     border-color: $paragraph-color;
     color: $label-color;
     outline-style: none;
