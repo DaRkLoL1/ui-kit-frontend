@@ -16,13 +16,8 @@ class CheckboxList {
   }
 
   handleDropdownClick() {
-    if (!(this.$icon.hasClass('expandable-checkbox-list__icon_turn'))) {
-      this.$icon.addClass('expandable-checkbox-list__icon_turn');
-      this.$items.addClass('expandable-checkbox-list__items_display_on');
-    } else {
-      this.$icon.removeClass('expandable-checkbox-list__icon_turn');
-      this.$items.removeClass('expandable-checkbox-list__items_display_on');
-    }
+    this.$icon.toggleClass('expandable-checkbox-list__icon_turn');
+    this.$items.toggleClass('expandable-checkbox-list__items_display_on');
   }
 }
 
