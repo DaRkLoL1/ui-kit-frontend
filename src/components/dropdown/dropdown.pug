@@ -1,11 +1,7 @@
 include ../button-link/button-link.pug
 
-mixin dropdown({arrDefaultNumbers = "", type = "", arrTitles = [], } = {}) 
+mixin dropdown({arrDefaultNumbers = [0, 0, 0], type = "", arrTitles = []} = {}) 
   -
-    if(!arrDefaultNumbers) {
-      arrDefaultNumbers = [0, 0, 0];
-    }
-
     let parentClass = type ? " dropdown_with-buttons js-dropdown_with-buttons" : "";
     let className = type ? " iqdropdown-selection_opacity_m" : "";
   div(class=`js-dropdown dropdown${parentClass}`)
