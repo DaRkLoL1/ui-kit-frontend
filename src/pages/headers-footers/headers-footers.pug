@@ -1,11 +1,11 @@
 extends ../../components/block-head/block-head.pug
+include ../../components/footer-copyright/footer-copyright.pug 
+include ../../components/header/header.pug
+include ../../components/footer-creative/footer-creative.pug
+
 block title
   title Headers & Footers
 block body
-  include ../../components/footer-copyright/footer-copyright.pug 
-  include ../../components/header/header.pug
-  include ../../components/footer-creative/footer-creative.pug
-  
   .headers-footers
     .headers-footers__wrapper
       +header({

@@ -1,10 +1,11 @@
 extends ../../components/block-head/block-head.pug
+include ../../components/header/header.pug
+include ../../components/window-login/window-login.pug
+include ../../components/block-footer/block-footer.pug
+
 block title
   title Sign-in
 block body
-  include ../../components/header/header.pug
-  include ../../components/window-login/window-login.pug
-
   .sign-in 
     .sign-in__wrapper 
       +header({
@@ -23,4 +24,4 @@ block body
       .sign-in__content
         .sign-in__window
           +window-login
-    include ../../components/block-footer/block-footer.pug
+    +block-footer

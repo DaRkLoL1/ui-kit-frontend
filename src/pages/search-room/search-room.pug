@@ -1,18 +1,19 @@
 extends ../../components/block-head/block-head.pug
+include ../../components/header/header.pug
+include ../../components/window-search/window-search.pug
+include ../../components/dropdown/dropdown.pug
+include ../../components/range-slider/range-slider.pug
+include ../../components/checkbox-buttons/checkbox-buttons.pug
+include ../../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
+include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
+include ../../components/pagination/pagination.pug
+include ../../components/room/room.pug
+include ../../components/calendar/calendar.pug
+include ../../components/block-footer/block-footer.pug
+
 block title
   title Search room
 block body
-  include ../../components/header/header.pug
-  include ../../components/window-search/window-search.pug
-  include ../../components/dropdown/dropdown.pug
-  include ../../components/range-slider/range-slider.pug
-  include ../../components/checkbox-buttons/checkbox-buttons.pug
-  include ../../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
-  include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
-  include ../../components/pagination/pagination.pug
-  include ../../components/room/room.pug
-  include ../../components/calendar/calendar.pug
-
   .search-room
     .search-room__wrapper 
       +header({
@@ -209,4 +210,4 @@ block body
               )
           .search-room__pagination
             +pagination
-    include ../../components/block-footer/block-footer.pug
+    +block-footer

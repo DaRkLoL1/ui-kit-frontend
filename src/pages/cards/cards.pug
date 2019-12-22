@@ -1,14 +1,14 @@
 extends ../../components/block-head/block-head.pug
+include ../../components/window-login/window-login.pug
+include ../../components/window-search/window-search.pug
+include ../../components/window-registration/window-registration.pug
+include ../../components/room/room.pug
+include ../../components/room-booking/room-booking.pug
+include ../../components/calendar/calendar.pug
+
 block title
   title Card
 block body
-  include ../../components/window-login/window-login.pug
-  include ../../components/window-search/window-search.pug
-  include ../../components/window-registration/window-registration.pug
-  include ../../components/room/room.pug
-  include ../../components/room-booking/room-booking.pug
-  include ../../components/calendar/calendar.pug
-
   .cards
     .cards__main-wrapper
       .cards__wrapper

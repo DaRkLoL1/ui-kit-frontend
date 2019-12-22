@@ -1,10 +1,11 @@
 extends ../../components/block-head/block-head.pug
+include ../../components/header/header.pug
+include ../../components/window-search/window-search.pug
+include ../../components/block-footer/block-footer.pug
+
 block title
   title Landing page
 block body
-  include ../../components/header/header.pug
-  include ../../components/window-search/window-search.pug
-  
   .landing-page
     .landing-page__wrapper
       +header({
@@ -24,4 +25,4 @@ block body
         .landing-page__search
           +window-search
         p(class="landing-page__text") Лучшие номера для вашей работы, отдыха и просто вдохновения
-    include ../../components/block-footer/block-footer.pug
+    +block-footer
