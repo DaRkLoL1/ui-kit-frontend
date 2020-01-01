@@ -15,7 +15,7 @@ html
     meta(name="theme-color" content="#ffffff")
   body
       h1(class="index__title") Бродилка по Github pages
-      ul
+      ul.index__items
         -
           let arr = [
             ["colors-types", "Colors & Type"],
@@ -29,5 +29,5 @@ html
             ["sign-in", "Sign in"],
           ];
         each val in arr
-          li
-            a(href=`./${val[0]}.html` target="_blank")= val[1]
+          li.index__item
+            a(href=`./${val[0]}.html` target="_blank" class="index__link")= val[1]
