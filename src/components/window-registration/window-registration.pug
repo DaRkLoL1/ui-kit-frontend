@@ -5,9 +5,9 @@ include ../button-link/button-link.pug
 include ../radio-buttons/radio-buttons.pug
 
 mixin window-registration
-  form(class="window-registration")
+  form.window-registration
     .window-registration__wrapper
-      h1(class="window-registration__title") Регистрация аккаунта
+      h1.window-registration__title Регистрация аккаунта
       .window-registration__first-name
         +text-field({text: "Имя"})
       .window-registration__last-name
@@ -15,11 +15,11 @@ mixin window-registration
       .window-registration__sex
         +radio-buttons
       .window-registration__date
-        h3(class="window-registration__birthday-title") дата рождения
+        h3.window-registration__birthday-title дата рождения
         .window-registration__masked-date
           +masked-text-field
       .window-registration__data
-        h3(class="window-registration__data-title") данные для входа в сервис
+        h3.window-registration__data-title данные для входа в сервис
         .window-registration__email
           +text-field({text: "Email", type: "email"})
         .window-registration__password
@@ -29,7 +29,7 @@ mixin window-registration
       .window-registration__submit
         +button-link({size: "big", type: "submit", text: "перейти к оплате"})
       .window-registration__footer
-        p(class="window-registration__text") Уже есть аккаунт на Toxin
+        p.window-registration__text Уже есть аккаунт на Toxin
         .window-registration__link 
           +button-link(
             {

@@ -14,7 +14,7 @@ mixin header({list = [], name = "", buttons = [], logged = false} = {})
         if logged
           .header__logged
             .header__line
-            p(class="header__name")= name
+            p.header__name= name
         else 
           .header__links
             .header__login

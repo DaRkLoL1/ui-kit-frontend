@@ -1,6 +1,6 @@
 mixin pagination
   .pagination
-    ul(class="pagination__items")
+    ul.pagination__items
       li
         a(href="/mock-address/change-me" class="pagination__item pagination__item_position_begin")="1"
       each val in ["2", "3", "...", "15"]
@@ -8,5 +8,5 @@ mixin pagination
           a(href="/mock-address/change-me" class="pagination__item")= val
       li
         a(href="/mock-address/change-me" class="pagination__item pagination__item_position_end")
-          i(class="material-icons pagination__icon") arrow_forward
-    p(class="pagination__description") 1 – 12 из 100+ вариантов аренды
+          i.material-icons.pagination__icon arrow_forward
+    p.pagination__description 1 – 12 из 100+ вариантов аренды

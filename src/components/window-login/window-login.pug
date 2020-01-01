@@ -2,9 +2,9 @@ include ../text-field/text-field.pug
 include ../button-link/button-link.pug
 
 mixin window-login
-  form(class="window-login")
+  form.window-login
     .window-login__wrapper
-      h1(class="window-login__title") Войти
+      h1.window-login__title Войти
       .window-login__email
         +text-field({text: "Email", type: "email"})
       .window-login__password 
@@ -12,7 +12,7 @@ mixin window-login
       .window-login__submit
         +button-link({size: "big", type: "submit", text: "войти"})
       .window-login__footer
-        p(class="window-login__text") Нет аккаунта на Toxin?
+        p.window-login__text Нет аккаунта на Toxin?
         .window-login__link
           +button-link(
             {

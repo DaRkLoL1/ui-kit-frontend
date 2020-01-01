@@ -32,10 +32,10 @@ block body
       main.search-room__content
         form.search-room__action  
           .search-room__datepicker
-            h3(class="search-room__title") даты пребывания в отеле
+            h3.search-room__title даты пребывания в отеле
             +calendar({dates: ["2019-08-19","2019-08-23"], type: "filter"})
           .search-room__dropdown-visit
-            h3(class="search-room__title") гости
+            h3.search-room__title гости
             +dropdown(
               {
                 type: "withButtons", 
@@ -45,7 +45,7 @@ block body
             )
           .search-room__slider
             +range-slider("диапазон цены")
-            p(class="search-room__description") Стоимость за сутки пребывания в номере
+            p.search-room__description Стоимость за сутки пребывания в номере
           .search-room__checkbox-buttons
             +checkbox-buttons({
               text: "checkbox-buttons",
@@ -66,7 +66,7 @@ block body
               ]
             })
           .search-room__dropdown-furniture
-            h3(class="search-room__title") удобства номера
+            h3.search-room__title удобства номера
             +dropdown({arrTitles: ["спальни", "кровати", "ванные комнаты"], arrDefaultNumbers: [2, 2, 0]})
           .search-room__expandable-checkbox-list
             +expandable-checkbox-list({
@@ -83,7 +83,7 @@ block body
               ]
             })
         .search-room__numbers
-          h1(class="search-room__main-title") Номера, которые мы для вас подобрали
+          h1.search-room__main-title Номера, которые мы для вас подобрали
           .search-room__rooms
             .search-room__room
               a(href="room-details.html" class="search-room__link")

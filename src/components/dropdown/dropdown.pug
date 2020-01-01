@@ -11,10 +11,10 @@ mixin dropdown({arrDefaultNumbers = [0, 0, 0], type = "", arrTitles = []} = {})
         each val, i in arrTitles
           div(class="iqdropdown-menu-option" data-id=`item${i + 1}` data-defaultcount=arrDefaultNumbers[i]  data-maxcount="10")
             div
-              p(class="iqdropdown-item")=val
+              p.iqdropdown-item=val
         if type
-          div(class="js-dropdown__buttons dropdown__buttons")
-            div(class="js-dropdown__clear-button dropdown__clear-button dropdown__clear-button_hidden")
+          .js-dropdown__buttons.dropdown__buttons
+            .js-dropdown__clear-button.dropdown__clear-button.dropdown__clear-button_hidden
               +button-link({text: "Очистить", color: "grey"})
-            div(class="js-dropdown__apply-button dropdown__apply-button")
+            .js-dropdown__apply-button.dropdown__apply-button
               +button-link({text: "Применить"})

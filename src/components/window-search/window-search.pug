@@ -5,12 +5,12 @@ include ../button-link/button-link.pug
 mixin window-search 
   form(class="window-search" action="search-room.html")
     .window-search__wrapper
-      h1(class="window-search__title") Найдём номера под ваши пожелания
+      h1.window-search__title Найдём номера под ваши пожелания
       .window-search__arrival-departure
-        h3(class="window-search__arrival-departure-title") прибытие выезд
+        h3.window-search__arrival-departure-title прибытие выезд
         +calendar({type: "dropdown"})
       .window-search__company
-        h3(class="window-search__company-title") гости
+        h3.window-search__company-title гости
         +dropdown({type: "withButtons", arrTitles: ["взрослые", "дети", "младенцы"]})
       .window-search__button
         +button-link({size: "big", type: "submit", text: "подобрать номер"})
