@@ -1,12 +1,12 @@
 mixin pagination
   .pagination
     ul.pagination__items
-      li
-        a.pagination__item.pagination__item_position_begin(href="/mock-address/change-me")="1"
+      li.pagination__item
+        a.pagination__link.pagination__link_position_begin(href="/mock-address/change-me")="1"
       each val in ["2", "3", "...", "15"]
-        li  
-          a.pagination__item(href="/mock-address/change-me")= val
-      li
-        a.pagination__item.pagination__item_position_end(href="/mock-address/change-me")
+        li.pagination__item
+          a.pagination__link(href="/mock-address/change-me")= val
+      li.pagination__item
+        a.pagination__link.pagination__link_position_end(href="/mock-address/change-me")
           i.material-icons.pagination__icon arrow_forward
     p.pagination__description 1 – 12 из 100+ вариантов аренды

@@ -14,7 +14,7 @@ mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } 
             ul.footer-copyright__list(class=`footer-copyright__list_type_${titleList[index]}`)
               each val, i in value
                 if i === 0
-                  li
+                  li.footer-copyright__list-title-item
                     h3.footer-copyright__list-title= val
                 else
                   li.footer-copyright__list-item
@@ -44,5 +44,5 @@ mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } 
               },
             ];
           each val in network
-            a(href=val.way target="_blank" rel="noopener noreferrer")
+            a.footer-copyright__icon-link(href=val.way target="_blank" rel="noopener noreferrer")
               i.footer-copyright__icon.fab(class=`fa-${val.logo}`)

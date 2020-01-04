@@ -1,7 +1,7 @@
 mixin footer-creative(text)
   .footer-creative
     .footer-creative__wrapper
-      img(src="../../images/logo.png" alt="logo")
+      img.footer-creative__logo(src="../../images/logo.png" alt="logo")
       p.footer-creative__text= text
       .footer-creative__icons
         -
@@ -20,5 +20,5 @@ mixin footer-creative(text)
             },
           ];
         each val in network
-          a(href=val.way target="_blank" rel="noopener noreferrer")
-            i.footer-copyright__icon.fab(class=`fa-${val.logo}`)
+          a.footer-creative__icon-link(href=val.way target="_blank" rel="noopener noreferrer")
+            i.footer-creative__icon.fab(class=`fa-${val.logo}`)

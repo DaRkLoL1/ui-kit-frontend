@@ -3,8 +3,8 @@ include ../button-link/button-link.pug
 mixin header({list = [], name = "", buttons = [], logged = false} = {})
   header.header
     .header__wrapper
-      a(href="landing-page.html")
-        img(src="../../images/logo.png" alt="logo")
+      a.header__logo-link(href="landing-page.html")
+        img.header__logo(src="../../images/logo.png" alt="logo")
       .header__content
         .header__nav
           ul.header__list
