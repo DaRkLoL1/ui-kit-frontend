@@ -3,7 +3,7 @@ include ../button-link/button-link.pug
 
 mixin calendar({dates = [], type = ""} = {})
   if type === "dropdown"
-    div(class="calendar js-calendar calendar_type_dropdown js-calendar_type_dropdown" data-dates=dates)
+    .calendar.js-calendar.calendar_type_dropdown.js-calendar_type_dropdown(data-dates=dates)
       .calendar__input.js-calendar__input.js-calendar__left-input
         +field-button({text: "ДД.ММ.ГГГГ"})
       .calendar__input.js-calendar__input.js-calendar__right-input
@@ -14,7 +14,7 @@ mixin calendar({dates = [], type = ""} = {})
         .js-calendar__apply-button.calendar__apply-button
           +button-link({text: "применить"})
   else if type === "filter"
-    div(class="calendar js-calendar js-calendar_type_filter" data-dates=dates) 
+    .calendar.js-calendar.js-calendar_type_filter(data-dates=dates) 
       +field-button({text: "ДД.ММ.ГГГГ"})
       .calendar__buttons.js-calendar__buttons
         .js-calendar__clear-button.calendar__clear-button
@@ -22,7 +22,7 @@ mixin calendar({dates = [], type = ""} = {})
         .js-calendar__apply-button.calendar__apply-button
           +button-link({text: "применить"})
   else
-    div(class="calendar js-calendar" data-dates=dates)
+    .calendar.js-calendar(data-dates=dates)
       .calendar__buttons.js-calendar__buttons
         .js-calendar__clear-button.calendar__clear-button
           +button-link({text: "очистить", color: "grey"})

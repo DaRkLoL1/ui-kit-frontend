@@ -1,4 +1,4 @@
-import { MaskedTextField } from './masked-text-field';
+import { MaskedTextField } from './Masked-text-field';
 
 const masks = document.querySelectorAll('.js-mask');
 masks.forEach((mask) => {

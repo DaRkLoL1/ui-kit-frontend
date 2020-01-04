@@ -5,20 +5,20 @@ mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } 
     .footer-copyright__top-wrapper
       .footer-copyright__footer
         .footer-copyright__description
-          img(class="footer-copyright__logo" src="../../images/logo.png" alt="logo")
+          img.footer-copyright__logo(src="../../images/logo.png" alt="logo")
           p.footer-copyright__text= text
         .footer-copyright__lists
           - 
             let titleList = ["navigation", "about", "support"];
           each value, index in lists
-            ul(class=`footer-copyright__list footer-copyright__list_type_${titleList[index]}`)
+            ul.footer-copyright__list(class=`footer-copyright__list_type_${titleList[index]}`)
               each val, i in value
                 if i === 0
                   li
                     h3.footer-copyright__list-title= val
                 else
                   li.footer-copyright__list-item
-                    a(class="footer-copyright__list-link" href="/mock-address/change-me")= val
+                    a.footer-copyright__list-link(href="/mock-address/change-me")= val
         .footer-copyright__subscribe
           h3.footer-copyright__subscribe-title= subscribe[0]
           p.footer-copyright__subscribe-text= subscribe[1]
@@ -45,4 +45,4 @@ mixin footer-copyright({text = "", lists = [], subscribe = [], copyright = "" } 
             ];
           each val in network
             a(href=val.way target="_blank" rel="noopener noreferrer")
-              i(class=`footer-copyright__icon fab fa-${val.logo}`)
+              i.footer-copyright__icon.fab(class=`fa-${val.logo}`)

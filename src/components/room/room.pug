@@ -2,8 +2,8 @@ include ../rate-button/rate-button.pug
 
 mixin room({classRoom = "", type = "", stars = 4, number = 100, cost = "5 555", comments = "100", image = "room-img-1.jpg", slideCount = 4} = {})
   .room 
-    div.room__slide-image
-      img(class="room__image" src=`../../components/room/images/${image}` alt="room")
+    .room__slide-image
+      img.room__image(src=`../../components/room/images/${image}` alt="room")
       if type
         .room__slide-left-button
           i.material-icons.room__left-arrow expand_more
@@ -17,8 +17,8 @@ mixin room({classRoom = "", type = "", stars = 4, number = 100, cost = "5 555", 
           else
             li.room__dot
           - i += 1
-    div.room__description
-      div.room__number-and-cost
+    .room__description
+      .room__number-and-cost
         if classRoom
           p.room__number
             = "№ "
@@ -35,9 +35,9 @@ mixin room({classRoom = "", type = "", stars = 4, number = 100, cost = "5 555", 
           span.room__cost-price= cost
           span.room__cost-sign c
           span.room__cost-text= " в сутки"
-      div.room__line
-      div.room__stars-and-comments
-        div.room__stars
+      .room__line
+      .room__stars-and-comments
+        .room__stars
           +rate-button(stars)
         p.room__comments
           span.room__comments-count= comments

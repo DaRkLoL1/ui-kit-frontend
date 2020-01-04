@@ -21,4 +21,4 @@ mixin footer-creative(text)
           ];
         each val in network
           a(href=val.way target="_blank" rel="noopener noreferrer")
-            i(class=`footer-copyright__icon fab fa-${val.logo}`)
+            i.footer-copyright__icon.fab(class=`fa-${val.logo}`)

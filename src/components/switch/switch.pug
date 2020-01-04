@@ -17,5 +17,5 @@ mixin switch({type = "checkbox", name = "", weight = "", text = ""} = {})
       typeName = "checkbox";
     }
   label(class=className)
-    input(type=typeName name=name class="switch__input js-switch__input")
+    input.switch__input.js-switch__input(type=typeName name=name)
     =text

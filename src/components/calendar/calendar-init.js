@@ -1,4 +1,4 @@
-import { Calendar } from './calendar';
+import { Calendar } from './Calendar';
 
 const arrCalendar = document.querySelectorAll('.js-calendar');
 arrCalendar.forEach((item, index) => {

@@ -18,6 +18,6 @@ mixin field-button({text = "", opacity = "", focus = false, theme = ""} = {})
     } else {
       obj.opacity = "high";
     }
-  div(class=`field-button js-field-button${parentClass}`)
+  .field-button(class=`js-field-button${parentClass}`)
     +text-field(obj)
-    button(type=type class=`material-icons field-button__icon js-field-button__icon${className}`)= icon
+    button.material-icons.field-button__icon(type=type class=`js-field-button__icon${className}`)= icon

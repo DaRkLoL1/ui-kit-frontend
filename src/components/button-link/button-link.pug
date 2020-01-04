@@ -1,6 +1,6 @@
 mixin button-link({size = "", style = "", type = "", text = "", color = "", page = ""} = {})
   - 
-    let sizeButton = size ? " button-link_size_" + size : "";
+    let sizeButton = size ? "button-link_size_" + size : "";
 
     let styleButton = style ? " button-link_style_ghost" : "";
 
@@ -8,6 +8,6 @@ mixin button-link({size = "", style = "", type = "", text = "", color = "", page
 
     let typeButton = type ? "submit" : "button";
   if page
-    a(href=`./${page}.html` class=`button-link${sizeButton}${styleButton}${colorButton}`)=text
+    a.button-link(href=`./${page}.html` class=`${sizeButton}${styleButton}${colorButton}`)=text
   else
-    button(class=`button-link${sizeButton}${styleButton}${colorButton}` type=typeButton)=text
+    button.button-link(class=`${sizeButton}${styleButton}${colorButton}` type=typeButton)=text

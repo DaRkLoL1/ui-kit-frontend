@@ -4,13 +4,13 @@ mixin dropdown({arrDefaultNumbers = [0, 0, 0], type = "", arrTitles = []} = {})
   -
     let parentClass = type ? " dropdown_with-buttons js-dropdown_with-buttons" : "";
     let className = type ? " iqdropdown-selection_opacity_m" : "";
-  div(class=`js-dropdown dropdown${parentClass}`)
+  .js-dropdown(class=`dropdown${parentClass}`)
     .iqdropdown
       p(class=`iqdropdown-selection${className}`)
       .iqdropdown-menu
         each val, i in arrTitles
-          div(class="iqdropdown-menu-option" data-id=`item${i + 1}` data-defaultcount=arrDefaultNumbers[i]  data-maxcount="10")
-            div
+          .iqdropdown-menu-option(data-id=`item${i + 1}` data-defaultcount=arrDefaultNumbers[i]  data-maxcount="10")
+            .iqdropdown-content
               p.iqdropdown-item=val
         if type
           .js-dropdown__buttons.dropdown__buttons

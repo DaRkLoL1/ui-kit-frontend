@@ -3,9 +3,9 @@ mixin like-button({number = 0, clicked = false} = {})
     number = number < 0 ? 0 : number;
     let parentClass = clicked ? " like-button_clicked" : "";
     let className = number > 9 ? " like-button__number_margin_null" : "";
-  div(class=`like-button js-like-button${parentClass}`)
+  .like-button(class=`js-like-button${parentClass}`)
     if clicked
-      i(class="material-icons like-button__icon js-like-button__icon") favorite
+      i.material-icons.like-button__icon.js-like-button__icon favorite
     else   
-      i(class="material-icons like-button__icon js-like-button__icon") favorite_border
-    div(class=`js-like-button__number like-button__number${className}`)=number
+      i.material-icons.like-button__icon.js-like-button__icon favorite_border
+    .js-like-button__number(class=`like-button__number${className}`)=number

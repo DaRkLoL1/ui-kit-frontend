@@ -1,4 +1,4 @@
-import { Dropdown } from './dropdown';
+import { Dropdown } from './Dropdown';
 
 const arrDropdown = document.querySelectorAll('.js-dropdown');
 arrDropdown.forEach((item, index) => {

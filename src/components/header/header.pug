@@ -9,8 +9,8 @@ mixin header({list = [], name = "", buttons = [], logged = false} = {})
         .header__nav
           ul.header__list
             each val in list
-              li(class=`header__item${val.style ? " header__item_contains_arrow" : ""}`)
-                a(href="/mock-address/change-me" class=`header__link${val.weight ? " header__link_weight_bold" : ""}${val.style ? " header__link_contains_arrow" : ""}`)= val.text
+              li.header__item(class=`${val.style ? "header__item_contains_arrow" : ""}`)
+                a.header__link(href="/mock-address/change-me" class=`${val.weight ? "header__link_weight_bold" : ""}${val.style ? " header__link_contains_arrow" : ""}`)= val.text
         if logged
           .header__logged
             .header__line
