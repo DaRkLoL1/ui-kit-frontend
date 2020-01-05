@@ -2380,91 +2380,102 @@ __webpack_require__(/*! ./timepicker */ "./node_modules/air-datepicker/src/js/ti
 
 /***/ }),
 
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/android-chrome-48x48.png":
-/*!******************************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/android-chrome-48x48.png ***!
-  \******************************************************************************************************************/
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/android-chrome-48x48.png":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/android-chrome-48x48.png ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/favicons/android-chrome-48x48.png";
+module.exports = __webpack_require__.p + "./favicons/android-chrome-48x48.png";
 
 /***/ }),
 
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/apple-touch-icon.png":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/apple-touch-icon.png ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/favicons/apple-touch-icon.png";
-
-/***/ }),
-
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/browserconfig.xml":
-/*!***********************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/browserconfig.xml ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/favicons/browserconfig.xml";
-
-/***/ }),
-
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon-16x16.png":
-/*!***********************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon-16x16.png ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/favicons/favicon-16x16.png";
-
-/***/ }),
-
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon-32x32.png":
-/*!***********************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon-32x32.png ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/favicons/favicon-32x32.png";
-
-/***/ }),
-
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon.ico":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon.ico ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/favicons/favicon.ico";
-
-/***/ }),
-
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/mstile-150x150.png":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/mstile-150x150.png ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/favicons/mstile-150x150.png";
-
-/***/ }),
-
-/***/ "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/safari-pinned-tab.svg":
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/apple-touch-icon.png":
 /*!***************************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/safari-pinned-tab.svg ***!
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/apple-touch-icon.png ***!
   \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/favicons/safari-pinned-tab.svg";
+module.exports = __webpack_require__.p + "./favicons/apple-touch-icon.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/browserconfig.xml":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/browserconfig.xml ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./favicons/browserconfig.xml";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon-16x16.png":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon-16x16.png ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./favicons/favicon-16x16.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon-32x32.png":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon-32x32.png ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./favicons/favicon-32x32.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon.ico":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon.ico ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./favicons/favicon.ico";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/mstile-150x150.png":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/mstile-150x150.png ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./favicons/mstile-150x150.png";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/safari-pinned-tab.svg":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/safari-pinned-tab.svg ***!
+  \****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./favicons/safari-pinned-tab.svg";
+
+/***/ }),
+
+/***/ "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/site.webmanifest":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/site.webmanifest ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./favicons/site.webmanifest";
 
 /***/ }),
 
@@ -14479,46 +14490,46 @@ var map = {
 	"./colors/colors.scss": "./src/colors/colors.scss",
 	"./components/bullet-list/bullet-list.scss": "./src/components/bullet-list/bullet-list.scss",
 	"./components/button-link/button-link.scss": "./src/components/button-link/button-link.scss",
+	"./components/calendar/Calendar.js": "./src/components/calendar/Calendar.js",
 	"./components/calendar/calendar-init.js": "./src/components/calendar/calendar-init.js",
-	"./components/calendar/calendar.js": "./src/components/calendar/calendar.js",
 	"./components/calendar/calendar.scss": "./src/components/calendar/calendar.scss",
 	"./components/checkbox-buttons/checkbox-buttons.scss": "./src/components/checkbox-buttons/checkbox-buttons.scss",
 	"./components/comment/comment.scss": "./src/components/comment/comment.scss",
+	"./components/dropdown/Dropdown.js": "./src/components/dropdown/Dropdown.js",
 	"./components/dropdown/dropdown-init.js": "./src/components/dropdown/dropdown-init.js",
-	"./components/dropdown/dropdown.js": "./src/components/dropdown/dropdown.js",
 	"./components/dropdown/dropdown.scss": "./src/components/dropdown/dropdown.scss",
+	"./components/expandable-checkbox-list/Expandable-checkbox-list.js": "./src/components/expandable-checkbox-list/Expandable-checkbox-list.js",
 	"./components/expandable-checkbox-list/expandable-checkbox-list-init.js": "./src/components/expandable-checkbox-list/expandable-checkbox-list-init.js",
-	"./components/expandable-checkbox-list/expandable-checkbox-list.js": "./src/components/expandable-checkbox-list/expandable-checkbox-list.js",
 	"./components/expandable-checkbox-list/expandable-checkbox-list.scss": "./src/components/expandable-checkbox-list/expandable-checkbox-list.scss",
+	"./components/field-button/Field-button.js": "./src/components/field-button/Field-button.js",
 	"./components/field-button/field-button-init.js": "./src/components/field-button/field-button-init.js",
-	"./components/field-button/field-button.js": "./src/components/field-button/field-button.js",
 	"./components/field-button/field-button.scss": "./src/components/field-button/field-button.scss",
 	"./components/footer-copyright/footer-copyright.scss": "./src/components/footer-copyright/footer-copyright.scss",
 	"./components/footer-creative/footer-creative.scss": "./src/components/footer-creative/footer-creative.scss",
 	"./components/header/header.scss": "./src/components/header/header.scss",
+	"./components/like-button/Like-button.js": "./src/components/like-button/Like-button.js",
 	"./components/like-button/like-button-init.js": "./src/components/like-button/like-button-init.js",
-	"./components/like-button/like-button.js": "./src/components/like-button/like-button.js",
 	"./components/like-button/like-button.scss": "./src/components/like-button/like-button.scss",
+	"./components/masked-text-field/Masked-text-field.js": "./src/components/masked-text-field/Masked-text-field.js",
 	"./components/masked-text-field/masked-text-field-init.js": "./src/components/masked-text-field/masked-text-field-init.js",
-	"./components/masked-text-field/masked-text-field.js": "./src/components/masked-text-field/masked-text-field.js",
 	"./components/pagination/pagination.scss": "./src/components/pagination/pagination.scss",
 	"./components/pie-chart/pie-chart.scss": "./src/components/pie-chart/pie-chart.scss",
 	"./components/quality/quality.scss": "./src/components/quality/quality.scss",
+	"./components/radio-buttons/Radio-buttons.js": "./src/components/radio-buttons/Radio-buttons.js",
 	"./components/radio-buttons/radio-buttons-init.js": "./src/components/radio-buttons/radio-buttons-init.js",
-	"./components/radio-buttons/radio-buttons.js": "./src/components/radio-buttons/radio-buttons.js",
 	"./components/radio-buttons/radio-buttons.scss": "./src/components/radio-buttons/radio-buttons.scss",
+	"./components/range-slider/Range-slider.js": "./src/components/range-slider/Range-slider.js",
 	"./components/range-slider/range-slider-init.js": "./src/components/range-slider/range-slider-init.js",
-	"./components/range-slider/range-slider.js": "./src/components/range-slider/range-slider.js",
 	"./components/range-slider/range-slider.scss": "./src/components/range-slider/range-slider.scss",
+	"./components/rate-button/Rate-button.js": "./src/components/rate-button/Rate-button.js",
 	"./components/rate-button/rate-button-init.js": "./src/components/rate-button/rate-button-init.js",
-	"./components/rate-button/rate-button.js": "./src/components/rate-button/rate-button.js",
 	"./components/rate-button/rate-button.scss": "./src/components/rate-button/rate-button.scss",
 	"./components/rich-checkbox-buttons/rich-checkbox-buttons.scss": "./src/components/rich-checkbox-buttons/rich-checkbox-buttons.scss",
 	"./components/room-booking/room-booking.scss": "./src/components/room-booking/room-booking.scss",
 	"./components/room/room.scss": "./src/components/room/room.scss",
 	"./components/set-of-qualities/set-of-qualities.scss": "./src/components/set-of-qualities/set-of-qualities.scss",
+	"./components/switch/Switch.js": "./src/components/switch/Switch.js",
 	"./components/switch/switch-init.js": "./src/components/switch/switch-init.js",
-	"./components/switch/switch.js": "./src/components/switch/switch.js",
 	"./components/switch/switch.scss": "./src/components/switch/switch.scss",
 	"./components/text-field/text-field.scss": "./src/components/text-field/text-field.scss",
 	"./components/window-login/window-login.scss": "./src/components/window-login/window-login.scss",
@@ -14645,36 +14656,16 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/calendar/calendar-init.js":
-/*!**************************************************!*\
-  !*** ./src/components/calendar/calendar-init.js ***!
-  \**************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calendar */ "./src/components/calendar/calendar.js");
-
-
-const arrCalendar = document.querySelectorAll('.js-calendar');
-arrCalendar.forEach((item, index) => {
-  new _calendar__WEBPACK_IMPORTED_MODULE_0__["default"](item, index);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/calendar/calendar.js":
+/***/ "./src/components/calendar/Calendar.js":
 /*!*********************************************!*\
-  !*** ./src/components/calendar/calendar.js ***!
+  !*** ./src/components/calendar/Calendar.js ***!
   \*********************************************/
-/*! exports provided: default */
+/*! exports provided: Calendar */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Calendar; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Calendar", function() { return Calendar; });
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -14732,7 +14723,7 @@ class Calendar {
     };
 
     this.calendar = $arrivalField.datepicker(dropdownParameters).data('datepicker');
-    this.calendar.$datepicker.addClass('datepicker_width_310');
+    this.calendar.$datepicker.addClass('datepicker_width_medium');
 
     this.setMethodShow();
   }
@@ -14747,7 +14738,7 @@ class Calendar {
     };
 
     this.calendar = $textField.datepicker(FilterParameters).data('datepicker');
-    this.calendar.$datepicker.addClass('datepicker_width_266');
+    this.calendar.$datepicker.addClass('datepicker_width_small');
 
     this.setMethodShow();
   }
@@ -14770,17 +14761,13 @@ class Calendar {
 
   setMethodShow() {
     if (this.$datepicker.hasClass('js-calendar_type_dropdown')) {
-      this.$fields.on(`click.input${this.index}`, this.handleInputClick.bind(this));
+      this.$fields.on(`click.input${this.index}`, this.handleDatepickerClick.bind(this));
     } else {
-      this.$datepicker.on(`click.calendar${this.index}`, this.handleCalendarClick.bind(this));
+      this.$datepicker.on(`click.calendar${this.index}`, this.handleDatepickerClick.bind(this));
     }
   }
 
-  handleInputClick() {
-    this.calendar.show();
-  }
-
-  handleCalendarClick() {
+  handleDatepickerClick() {
     this.calendar.show();
   }
 
@@ -14809,7 +14796,29 @@ class Calendar {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/calendar/calendar-init.js":
+/*!**************************************************!*\
+  !*** ./src/components/calendar/calendar-init.js ***!
+  \**************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Calendar */ "./src/components/calendar/Calendar.js");
+
+
+const arrCalendar = document.querySelectorAll('.js-calendar');
+arrCalendar.forEach((item, index) => {
+  new _Calendar__WEBPACK_IMPORTED_MODULE_0__["Calendar"](item, index);
+});
+
 
 /***/ }),
 
@@ -14894,36 +14903,16 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/dropdown/dropdown-init.js":
-/*!**************************************************!*\
-  !*** ./src/components/dropdown/dropdown-init.js ***!
-  \**************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown */ "./src/components/dropdown/dropdown.js");
-
-
-const arrDropdown = document.querySelectorAll('.js-dropdown');
-arrDropdown.forEach((item, index) => {
-  new _dropdown__WEBPACK_IMPORTED_MODULE_0__["default"](item, index);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/dropdown/dropdown.js":
+/***/ "./src/components/dropdown/Dropdown.js":
 /*!*********************************************!*\
-  !*** ./src/components/dropdown/dropdown.js ***!
+  !*** ./src/components/dropdown/Dropdown.js ***!
   \*********************************************/
-/*! exports provided: default */
+/*! exports provided: Dropdown */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Dropdown; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Dropdown", function() { return Dropdown; });
 /* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! item-quantity-dropdown/lib/item-quantity-dropdown.min */ "./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js");
 /* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(item_quantity_dropdown_lib_item_quantity_dropdown_min__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -14932,11 +14921,11 @@ class Dropdown {
   constructor(dropdown, index) {
     this.$dropdown = $(dropdown);
     this.index = index;
-    this.createDropdown();
+    this.initDropdown();
     this.addButtons();
   }
 
-  createDropdown() {
+  initDropdown() {
     this.$pluginDropdown = this.$dropdown.find('.iqdropdown');
 
     this.$pluginDropdown.iqDropdown({
@@ -15036,10 +15025,10 @@ class Dropdown {
 
     if (this.text.length > 0) {
       this.text = this.text.slice(0, this.text.length - 2);
-      this.$clearButton.removeClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.removeClass('dropdown__clear-button_hidden');
     } else {
       this.text = 'Сколько гостей';
-      this.$clearButton.addClass('dropdown__clear-button_hide_clean');
+      this.$clearButton.addClass('dropdown__clear-button_hidden');
     }
   }
 
@@ -15093,7 +15082,29 @@ class Dropdown {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/dropdown/dropdown-init.js":
+/*!**************************************************!*\
+  !*** ./src/components/dropdown/dropdown-init.js ***!
+  \**************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dropdown */ "./src/components/dropdown/Dropdown.js");
+
+
+const arrDropdown = document.querySelectorAll('.js-dropdown');
+arrDropdown.forEach((item, index) => {
+  new _Dropdown__WEBPACK_IMPORTED_MODULE_0__["Dropdown"](item, index);
+});
+
 
 /***/ }),
 
@@ -15124,6 +15135,45 @@ if (content.locals) {
 
 /***/ }),
 
+/***/ "./src/components/expandable-checkbox-list/Expandable-checkbox-list.js":
+/*!*****************************************************************************!*\
+  !*** ./src/components/expandable-checkbox-list/Expandable-checkbox-list.js ***!
+  \*****************************************************************************/
+/*! exports provided: ExpandableCheckboxList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExpandableCheckboxList", function() { return ExpandableCheckboxList; });
+class ExpandableCheckboxList {
+  constructor(checkboxList, index) {
+    this.$checkboxList = $(checkboxList);
+    this.index = index;
+    this.initExpandableCheckboxList();
+  }
+
+  initExpandableCheckboxList() {
+    this.$icon = this.$checkboxList.find('.js-expandable-checkbox-list__icon');
+    this.$items = this.$checkboxList.parent().find('.js-expandable-checkbox-list__items');
+    this.addHandleClick();
+  }
+
+  addHandleClick() {
+    this.$checkboxList.on(`click.dropdown${this.index}`, this.handleDropdownClick.bind(this));
+  }
+
+  handleDropdownClick() {
+    this.$icon.toggleClass('expandable-checkbox-list__icon_turn');
+    this.$items.toggleClass('expandable-checkbox-list__items_display_on');
+  }
+}
+
+
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./src/components/expandable-checkbox-list/expandable-checkbox-list-init.js":
 /*!**********************************************************************************!*\
   !*** ./src/components/expandable-checkbox-list/expandable-checkbox-list-init.js ***!
@@ -15133,56 +15183,14 @@ if (content.locals) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./expandable-checkbox-list */ "./src/components/expandable-checkbox-list/expandable-checkbox-list.js");
+/* harmony import */ var _Expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Expandable-checkbox-list */ "./src/components/expandable-checkbox-list/Expandable-checkbox-list.js");
 
 
 const checkboxLists = document.querySelectorAll('.js-expandable-checkbox-list__dropdown');
 checkboxLists.forEach((checkboxList, index) => {
-  new _expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__["default"](checkboxList, index);
+  new _Expandable_checkbox_list__WEBPACK_IMPORTED_MODULE_0__["ExpandableCheckboxList"](checkboxList, index);
 });
 
-
-/***/ }),
-
-/***/ "./src/components/expandable-checkbox-list/expandable-checkbox-list.js":
-/*!*****************************************************************************!*\
-  !*** ./src/components/expandable-checkbox-list/expandable-checkbox-list.js ***!
-  \*****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CheckboxList; });
-class CheckboxList {
-  constructor(checkboxList, index) {
-    this.$checkboxList = $(checkboxList);
-    this.index = index;
-    this.createCheckboxList();
-  }
-
-  createCheckboxList() {
-    this.$icon = this.$checkboxList.find('.expandable-checkbox-list__icon');
-    this.$items = this.$checkboxList.parent().find('.expandable-checkbox-list__items');
-    this.addHandleClick();
-  }
-
-  addHandleClick() {
-    this.$checkboxList.on(`click.dropdown${this.index}`, this.handleDropdownClick.bind(this));
-  }
-
-  handleDropdownClick() {
-    if (!(this.$icon.hasClass('expandable-checkbox-list__icon_turn'))) {
-      this.$icon.addClass('expandable-checkbox-list__icon_turn');
-      this.$items.addClass('expandable-checkbox-list__items_display_on');
-    } else {
-      this.$icon.removeClass('expandable-checkbox-list__icon_turn');
-      this.$items.removeClass('expandable-checkbox-list__items_display_on');
-    }
-  }
-}
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -15213,80 +15221,37 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/field-button/field-button-init.js":
-/*!**********************************************************!*\
-  !*** ./src/components/field-button/field-button-init.js ***!
-  \**********************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./field-button */ "./src/components/field-button/field-button.js");
-
-
-const fields = document.querySelectorAll('.js-field-button');
-
-fields.forEach((field, index) => {
-  new _field_button__WEBPACK_IMPORTED_MODULE_0__["default"](field, index);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/field-button/field-button.js":
+/***/ "./src/components/field-button/Field-button.js":
 /*!*****************************************************!*\
-  !*** ./src/components/field-button/field-button.js ***!
+  !*** ./src/components/field-button/Field-button.js ***!
   \*****************************************************/
-/*! exports provided: default */
+/*! exports provided: FieldButton */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Field; });
-class Field {
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FieldButton", function() { return FieldButton; });
+class FieldButton {
   constructor(field, index) {
     this.$field = $(field);
     this.index = index;
-    this.createField();
+    this.initFieldButton();
   }
 
-  createField() {
+  initFieldButton() {
     this.$fieldButton = this.$field.find('.js-field-button__icon');
-    this.addHandleMouseEnter();
-    this.addHandleMoueseLeave();
+    this.$textField = this.$field.find('.js-text-field');
+    this.addHandlesEvents();
+  }
+
+  addHandlesEvents() {
+    this.$fieldButton.on(`mouseenter.icon${this.index}`, this.handleIconMouseEnter);
+    this.$fieldButton.on(`mouseleave.icon${this.index}`, this.handleIconMoueseLeave);
 
     if (this.$field.hasClass('js-field-button_focused')) {
-      this.$textField = this.$field.find('.js-text-field');
-      this.addHandleFocus();
-      this.addHandleBlur();
+      this.$textField.on(`focus.textField${this.index}`, this.handleTextFieldFocus.bind(this));
+      this.$textField.on(`blur.textField${this.index}`, this.handleTextFieldBlur.bind(this));
     }
-  }
-
-  addHandleFocus() {
-    this.$textField.on(`focus.textField${this.index}`, this.handleTextFieldFocus.bind(this));
-  }
-
-  handleTextFieldFocus() {
-    this.$field.addClass('field-button_focused');
-    this.$fieldButton.addClass('field-button__icon_focused');
-  }
-
-  addHandleBlur() {
-    this.$textField.on(`blur.textField${this.index}`, this.handleTextFieldBlur.bind(this));
-  }
-
-  handleTextFieldBlur() {
-    this.$field.removeClass('field-button_focused');
-    this.$fieldButton.removeClass('field-button__icon_focused');
-  }
-
-  addHandleMouseEnter() {
-    this.$fieldButton.on(`mouseenter.icon${this.index}`, this.handleIconMouseEnter);
-  }
-
-  addHandleMoueseLeave() {
-    this.$fieldButton.on(`mouseleave.icon${this.index}`, this.handleIconMoueseLeave);
   }
 
   handleIconMouseEnter(event) {
@@ -15296,9 +15261,42 @@ class Field {
   handleIconMoueseLeave(event) {
     $(event.currentTarget).removeClass('field-button__icon_hovered');
   }
+
+  handleTextFieldFocus() {
+    this.$field.addClass('field-button_focused');
+    this.$fieldButton.addClass('field-button__icon_focused');
+  }
+
+  handleTextFieldBlur() {
+    this.$field.removeClass('field-button_focused');
+    this.$fieldButton.removeClass('field-button__icon_focused');
+  }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/field-button/field-button-init.js":
+/*!**********************************************************!*\
+  !*** ./src/components/field-button/field-button-init.js ***!
+  \**********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Field_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Field-button */ "./src/components/field-button/Field-button.js");
+
+
+const fields = document.querySelectorAll('.js-field-button');
+
+fields.forEach((field, index) => {
+  new _Field_button__WEBPACK_IMPORTED_MODULE_0__["FieldButton"](field, index);
+});
+
 
 /***/ }),
 
@@ -15410,46 +15408,26 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/like-button/like-button-init.js":
-/*!********************************************************!*\
-  !*** ./src/components/like-button/like-button-init.js ***!
-  \********************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _like_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like-button */ "./src/components/like-button/like-button.js");
-
-
-const likes = document.querySelectorAll('.js-like-button');
-likes.forEach((like, index) => {
-  new _like_button__WEBPACK_IMPORTED_MODULE_0__["default"](like, index);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/like-button/like-button.js":
+/***/ "./src/components/like-button/Like-button.js":
 /*!***************************************************!*\
-  !*** ./src/components/like-button/like-button.js ***!
+  !*** ./src/components/like-button/Like-button.js ***!
   \***************************************************/
-/*! exports provided: default */
+/*! exports provided: LikeButton */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Like; });
-class Like {
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LikeButton", function() { return LikeButton; });
+class LikeButton {
   constructor(like, index) {
     this.$like = $(like);
     this.index = index;
-    this.createLike();
+    this.initLikeButton();
   }
 
-  createLike() {
-    this.$icon = this.$like.find('.like-button__icon');
-    this.$number = this.$like.find('.like-button__number');
+  initLikeButton() {
+    this.$icon = this.$like.find('.js-like-button__icon');
+    this.$number = this.$like.find('.js-like-button__number');
     this.addHandleClick();
   }
 
@@ -15483,7 +15461,29 @@ class Like {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/like-button/like-button-init.js":
+/*!********************************************************!*\
+  !*** ./src/components/like-button/like-button-init.js ***!
+  \********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Like_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Like-button */ "./src/components/like-button/Like-button.js");
+
+
+const likes = document.querySelectorAll('.js-like-button');
+likes.forEach((like, index) => {
+  new _Like_button__WEBPACK_IMPORTED_MODULE_0__["LikeButton"](like, index);
+});
+
 
 /***/ }),
 
@@ -15514,47 +15514,27 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/masked-text-field/masked-text-field-init.js":
-/*!********************************************************************!*\
-  !*** ./src/components/masked-text-field/masked-text-field-init.js ***!
-  \********************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _masked_text_field__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./masked-text-field */ "./src/components/masked-text-field/masked-text-field.js");
-
-
-const masks = document.querySelectorAll('.js-mask');
-masks.forEach((mask) => {
-  new _masked_text_field__WEBPACK_IMPORTED_MODULE_0__["default"](mask);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/masked-text-field/masked-text-field.js":
+/***/ "./src/components/masked-text-field/Masked-text-field.js":
 /*!***************************************************************!*\
-  !*** ./src/components/masked-text-field/masked-text-field.js ***!
+  !*** ./src/components/masked-text-field/Masked-text-field.js ***!
   \***************************************************************/
-/*! exports provided: default */
+/*! exports provided: MaskedTextField */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Mask; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaskedTextField", function() { return MaskedTextField; });
 /* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery-mask-plugin */ "./node_modules/jquery-mask-plugin/dist/jquery.mask.js");
 /* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__);
 
 
-class Mask {
+class MaskedTextField {
   constructor(mask) {
     this.$mask = $(mask);
-    this.createMask();
+    this.initMaskedTextField();
   }
 
-  createMask() {
+  initMaskedTextField() {
     this.$mask.mask('AB.SR.YXOK', {
       translation: {
         A: { pattern: /[0-3]/ },
@@ -15567,7 +15547,7 @@ class Mask {
         K: { pattern: /[0-9]/ },
       },
       onKeyPress(value, e, field, options) {
-        const patternObject = Mask.createMaskOption(value);
+        const patternObject = MaskedTextField.createMaskOption(value);
         field.mask('AB.SR.YXOK', {
           translation: patternObject,
           onKeyPress: options.onKeyPress,
@@ -15638,7 +15618,29 @@ class Mask {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/masked-text-field/masked-text-field-init.js":
+/*!********************************************************************!*\
+  !*** ./src/components/masked-text-field/masked-text-field-init.js ***!
+  \********************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Masked_text_field__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Masked-text-field */ "./src/components/masked-text-field/Masked-text-field.js");
+
+
+const masks = document.querySelectorAll('.js-mask');
+masks.forEach((mask) => {
+  new _Masked_text_field__WEBPACK_IMPORTED_MODULE_0__["MaskedTextField"](mask);
+});
+
 
 /***/ }),
 
@@ -15723,46 +15725,26 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/radio-buttons/radio-buttons-init.js":
-/*!************************************************************!*\
-  !*** ./src/components/radio-buttons/radio-buttons-init.js ***!
-  \************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _radio_buttons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./radio-buttons */ "./src/components/radio-buttons/radio-buttons.js");
-
-
-const arrRadioItem = document.querySelectorAll('.js-radio-buttons');
-arrRadioItem.forEach((radio, index) => {
-  new _radio_buttons__WEBPACK_IMPORTED_MODULE_0__["default"](radio, index);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/radio-buttons/radio-buttons.js":
+/***/ "./src/components/radio-buttons/Radio-buttons.js":
 /*!*******************************************************!*\
-  !*** ./src/components/radio-buttons/radio-buttons.js ***!
+  !*** ./src/components/radio-buttons/Radio-buttons.js ***!
   \*******************************************************/
-/*! exports provided: default */
+/*! exports provided: RadioButtons */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RadioButtons; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioButtons", function() { return RadioButtons; });
 class RadioButtons {
   constructor(radio, index) {
     this.$radio = $(radio);
     this.index = index;
-    this.createRadio();
+    this.initRadioButtons();
   }
 
-  createRadio() {
+  initRadioButtons() {
     this.$arrRadio = this.$radio.find('.js-switch');
-    $(this.$arrRadio[0]).addClass('switch_type_radio-checked');
+    this.$arrRadio.eq(0).addClass('switch_type_radio-checked');
     this.addHandleClick();
   }
 
@@ -15785,7 +15767,29 @@ class RadioButtons {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/radio-buttons/radio-buttons-init.js":
+/*!************************************************************!*\
+  !*** ./src/components/radio-buttons/radio-buttons-init.js ***!
+  \************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Radio_buttons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Radio-buttons */ "./src/components/radio-buttons/Radio-buttons.js");
+
+
+const arrRadioItem = document.querySelectorAll('.js-radio-buttons');
+arrRadioItem.forEach((radio, index) => {
+  new _Radio_buttons__WEBPACK_IMPORTED_MODULE_0__["RadioButtons"](radio, index);
+});
+
 
 /***/ }),
 
@@ -15816,36 +15820,16 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/range-slider/range-slider-init.js":
-/*!**********************************************************!*\
-  !*** ./src/components/range-slider/range-slider-init.js ***!
-  \**********************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _range_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./range-slider */ "./src/components/range-slider/range-slider.js");
-
-
-const arrSliders = document.querySelectorAll('.js-range-slider');
-arrSliders.forEach((slider) => {
-  new _range_slider__WEBPACK_IMPORTED_MODULE_0__["default"](slider);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/range-slider/range-slider.js":
+/***/ "./src/components/range-slider/Range-slider.js":
 /*!*****************************************************!*\
-  !*** ./src/components/range-slider/range-slider.js ***!
+  !*** ./src/components/range-slider/Range-slider.js ***!
   \*****************************************************/
-/*! exports provided: default */
+/*! exports provided: RangeSlider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RangeSlider; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RangeSlider", function() { return RangeSlider; });
 /* harmony import */ var jquery_ui_slider_jquery_ui_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery-ui-slider/jquery-ui.min */ "./node_modules/jquery-ui-slider/jquery-ui.min.js");
 /* harmony import */ var jquery_ui_slider_jquery_ui_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery_ui_slider_jquery_ui_min__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -15884,7 +15868,29 @@ class RangeSlider {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/range-slider/range-slider-init.js":
+/*!**********************************************************!*\
+  !*** ./src/components/range-slider/range-slider-init.js ***!
+  \**********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Range_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Range-slider */ "./src/components/range-slider/Range-slider.js");
+
+
+const arrSliders = document.querySelectorAll('.js-range-slider');
+arrSliders.forEach((slider) => {
+  new _Range_slider__WEBPACK_IMPORTED_MODULE_0__["RangeSlider"](slider);
+});
+
 
 /***/ }),
 
@@ -15915,36 +15921,16 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/rate-button/rate-button-init.js":
-/*!********************************************************!*\
-  !*** ./src/components/rate-button/rate-button-init.js ***!
-  \********************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _rate_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rate-button */ "./src/components/rate-button/rate-button.js");
-
-
-const rateButtons = document.querySelectorAll('.js-rate-button');
-rateButtons.forEach((item) => {
-  new _rate_button__WEBPACK_IMPORTED_MODULE_0__["default"](item);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/rate-button/rate-button.js":
+/***/ "./src/components/rate-button/Rate-button.js":
 /*!***************************************************!*\
-  !*** ./src/components/rate-button/rate-button.js ***!
+  !*** ./src/components/rate-button/Rate-button.js ***!
   \***************************************************/
-/*! exports provided: default */
+/*! exports provided: RateButton */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RateButton; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RateButton", function() { return RateButton; });
 /* harmony import */ var _vendors_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../vendors/jquery.star.rating.min */ "./src/vendors/jquery.star.rating.min.js");
 /* harmony import */ var _vendors_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendors_jquery_star_rating_min__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -15967,7 +15953,29 @@ class RateButton {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/rate-button/rate-button-init.js":
+/*!********************************************************!*\
+  !*** ./src/components/rate-button/rate-button-init.js ***!
+  \********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Rate_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Rate-button */ "./src/components/rate-button/Rate-button.js");
+
+
+const rateButtons = document.querySelectorAll('.js-rate-button');
+rateButtons.forEach((item) => {
+  new _Rate_button__WEBPACK_IMPORTED_MODULE_0__["RateButton"](item);
+});
+
 
 /***/ }),
 
@@ -16106,44 +16114,24 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/switch/switch-init.js":
-/*!**********************************************!*\
-  !*** ./src/components/switch/switch-init.js ***!
-  \**********************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./switch */ "./src/components/switch/switch.js");
-
-
-const switchs = document.querySelectorAll('.js-switch');
-switchs.forEach((item, index) => {
-  new _switch__WEBPACK_IMPORTED_MODULE_0__["default"](item, index);
-});
-
-
-/***/ }),
-
-/***/ "./src/components/switch/switch.js":
+/***/ "./src/components/switch/Switch.js":
 /*!*****************************************!*\
-  !*** ./src/components/switch/switch.js ***!
+  !*** ./src/components/switch/Switch.js ***!
   \*****************************************/
-/*! exports provided: default */
+/*! exports provided: Switch */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Switch; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return Switch; });
 class Switch {
   constructor(switchItem, index) {
     this.$switch = $(switchItem);
     this.index = index;
-    this.createSwitch();
+    this.initSwitch();
   }
 
-  createSwitch() {
+  initSwitch() {
     this.$input = this.$switch.find('.js-switch__input');
     this.addHandleClick();
   }
@@ -16165,7 +16153,29 @@ class Switch {
   }
 }
 
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/switch/switch-init.js":
+/*!**********************************************!*\
+  !*** ./src/components/switch/switch-init.js ***!
+  \**********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Switch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Switch */ "./src/components/switch/Switch.js");
+
+
+const switchs = document.querySelectorAll('.js-switch');
+switchs.forEach((item, index) => {
+  new _Switch__WEBPACK_IMPORTED_MODULE_0__["Switch"](item, index);
+});
+
 
 /***/ }),
 
@@ -16304,22 +16314,23 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$":
-/*!*************************************************************************************************************************!*\
-  !*** ./src/favicons sync !./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext] \.(svg|png|ico|xml|json)$ ***!
-  \*************************************************************************************************************************/
+/***/ "./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json|webmanifest)$":
+/*!**************************************************************************************************************************************!*\
+  !*** ./src/favicons sync !./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext] \.(svg|png|ico|xml|json|webmanifest)$ ***!
+  \**************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./android-chrome-48x48.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/android-chrome-48x48.png",
-	"./apple-touch-icon.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/apple-touch-icon.png",
-	"./browserconfig.xml": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/browserconfig.xml",
-	"./favicon-16x16.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon-16x16.png",
-	"./favicon-32x32.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon-32x32.png",
-	"./favicon.ico": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/favicon.ico",
-	"./mstile-150x150.png": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/mstile-150x150.png",
-	"./safari-pinned-tab.svg": "./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./src/favicons/safari-pinned-tab.svg"
+	"./android-chrome-48x48.png": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/android-chrome-48x48.png",
+	"./apple-touch-icon.png": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/apple-touch-icon.png",
+	"./browserconfig.xml": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/browserconfig.xml",
+	"./favicon-16x16.png": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon-16x16.png",
+	"./favicon-32x32.png": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon-32x32.png",
+	"./favicon.ico": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/favicon.ico",
+	"./mstile-150x150.png": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/mstile-150x150.png",
+	"./safari-pinned-tab.svg": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/safari-pinned-tab.svg",
+	"./site.webmanifest": "./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./src/favicons/site.webmanifest"
 };
 
 
@@ -16340,7 +16351,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = "./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$";
+webpackContext.id = "./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json|webmanifest)$";
 
 /***/ }),
 
@@ -16351,7 +16362,7 @@ webpackContext.id = "./src/favicons sync recursive ./!./!./node_modules/file-loa
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-const faviconsContext = __webpack_require__("./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json)$");
+const faviconsContext = __webpack_require__("./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=./favicons/[name].[ext]!./ \\.(svg|png|ico|xml|json|webmanifest)$");
 faviconsContext.keys().forEach(faviconsContext);
 
 
