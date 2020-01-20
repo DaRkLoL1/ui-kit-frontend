@@ -98,7 +98,6 @@ const config = {
       hash: false,
       template: `./src/pages/${item}/${item}.pug`,
       filename: `${item}.html`,
-      chunks: ['name'],
     }),
   );
 });
