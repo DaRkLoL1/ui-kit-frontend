@@ -6182,9 +6182,9 @@ body {
       .landing-page__search {
         width: auto; } }
   .landing-page__content {
-    background: url(./images/landing-page-img-1.jpg);
-    background-position: 0 -4.375rem;
-    background-repeat: no-repeat; }
+    background-image: url(./images/landing-page-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .landing-page__text {
     width: 18.75rem;
     margin: 0;
@@ -6208,8 +6208,9 @@ body {
   justify-content: space-between;
   height: 100%; }
   .registration__content {
-    background: url(./images/registration-sign-in-img-1.jpg);
-    background-position: 0 -4.375rem;
+    background-image: url(./images/registration-sign-in-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box; }
   .registration__window {
     width: 23.75rem;
@@ -6233,19 +6234,22 @@ body {
   .room-details__main-img {
     width: 68%;
     height: 100%;
-    background: url(./images/room-details-img-1.jpg);
-    background-repeat: no-repeat; }
+    background-image: url(./images/room-details-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .room-details__secondary-images {
     width: 32%;
     height: 100%; }
   .room-details__secondary-top-img {
     height: 50%;
-    background: url(./images/room-details-img-2.jpg);
-    background-repeat: no-repeat; }
+    background-image: url(./images/room-details-img-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .room-details__secondary-bottom-img {
     height: 50%;
-    background: url(./images/room-details-img-3.jpg);
-    background-repeat: no-repeat; }
+    background-image: url(./images/room-details-img-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .room-details__content {
     width: 80.5%;
     margin: auto;
@@ -6496,8 +6500,9 @@ body {
   justify-content: space-between;
   height: 100%; }
   .sign-in__content {
-    background: url(./images/registration-sign-in-img-1.jpg);
-    background-position: 0 -4.375rem;
+    background-image: url(./images/registration-sign-in-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box; }
   .sign-in__window {
     padding-top: 10.1875rem;
