@@ -16,8 +16,9 @@
   &__main-img {
     width: 68%;
     height: 100%;
-    background: url('./images/room-details-img-1.jpg');
+    background-image: url('./images/room-details-img-1.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__secondary-images {
@@ -27,14 +28,16 @@
 
   &__secondary-top-img {
     height: 50%;
-    background: url('./images/room-details-img-2.jpg');
+    background-image: url('./images/room-details-img-2.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__secondary-bottom-img {
     height: 50%;
-    background: url('./images/room-details-img-3.jpg');
+    background-image: url('./images/room-details-img-3.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__content {

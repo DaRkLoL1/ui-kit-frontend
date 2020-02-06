@@ -5,8 +5,9 @@
   height: 100%;
   
   &__content {
-    background: url('../../images/registration-sign-in-img-1.jpg');
-    background-position: 0 -4.375rem;
+    background-image: url('../../images/registration-sign-in-img-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
   }
 

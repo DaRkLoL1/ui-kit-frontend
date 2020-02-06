@@ -20,9 +20,9 @@
   }
 
   &__content {
-    background: url('./images/landing-page-img-1.jpg');
-    background-position: 0 -4.375rem;
+    background-image: url('./images/landing-page-img-1.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__text {
